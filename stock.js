@@ -181,7 +181,7 @@ const produits = [
         categorie: "Scarlet & Violet Era",
         nom: "Chasing Glory (CSV10)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
-        lien: defaultLink,
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1064632260800&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jT3JnKpQfOuqjz8%3Ftk%3DfOtV6ZLsuv7&ref=301118558",
         image: "https://collectorstore.com/cdn/shop/files/CollectorStore00001_937038ac-8bb9-4f6e-950b-742363216669.jpg?v=1784582543&width=990"
     },
     {
@@ -195,14 +195,14 @@ const produits = [
         categorie: "Scarlet & Violet Era",
         nom: "Stellar Crystal (CSV9)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
-        lien: defaultLink,
+        lien: "https://joyagoo.com/product?id=0000TRZ4f2M_v8n72OEm4u71Jb3hxpJPfl1_6gVnSH9zeVs&platform=TAOBAO&ref=301118558",
         image: "https://remicardtrader.ca/cdn/shop/files/POKECNSTELCRYSSLIM.jpg?v=1781539002"
     },
     {
         categorie: "Scarlet & Violet Era",
         nom: "Bright Fantasy (CSV8)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
-        lien: defaultLink,
+        lien: "https://joyagoo.com/product?id=0000K7Ab5IcNrhS5nGTYB-HdoxJzUAEt-7OW3O4rkgpDWW0&platform=TAOBAO&ref=301118558",
         image: "https://packflipps.com/cdn/shop/files/IMG_2671.jpg?v=1776975091"
     },
     {
@@ -216,7 +216,7 @@ const produits = [
         categorie: "Scarlet & Violet Era",
         nom: "Paradox Veil (CSV6)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
-        lien: defaultLink,
+        lien: "https://joyagoo.com/product?id=0000gzsGQPZVwB90jFE2YZMfkmvV3mVJ4Puv6SxwOLCKpP0&platform=TAOBAO&ref=301118558",
         image: "https://galactictoys.com/cdn/shop/files/6977321128086_1.jpg?v=1787884173"
     },
     {
@@ -230,7 +230,7 @@ const produits = [
         categorie: "Scarlet & Violet Era",
         nom: "Reward Round (CSV4)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
-        lien: defaultLink,
+        lien: "https://joyagoo.com/product?id=0000XET-X2intlV-OvSHK5Gxn9jR4oJhLGbyUp5RvuMfZLA&platform=TAOBAO&ref=301118558",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSztHore7cjIXIaCEjlnPeenDehZZb9N-jrM2zQrArON31YbNnEW8eUiLA&s=10"
     },
     {
