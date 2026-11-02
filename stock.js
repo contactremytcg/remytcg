@@ -8,7 +8,7 @@ const produits = [
         nom: "Greninja Keychain Set",
         description: "As seen in my latest opening video![cite: 2]",
         lien: "https://joyagoo.com/product/?shop_type=taobao&id=1080814663430&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jTiK1Ov3j7ZePoc%3Ftk%3DFjg46a8Zg0o&ref=301118558",
-        image: "https://img.alicdn.com/bao/uploaded/i2/2222201646212/O1CN01ve2wKwL9zgF1chua_!!2222201646212.png"
+        image: "https://x-playground.com/cdn/shop/files/Pokemon_TCG_30th_Celebration_Greninja_ex_Card_Display_Sleeve_Set.jpg?v=1789822489&width=1920"
     },
     // 30th Anniversary Exclusive Collection
     {
