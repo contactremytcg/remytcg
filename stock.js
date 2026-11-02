@@ -92,21 +92,21 @@ const produits = [
         categorie: "30th Anniversary",
         nom: "Starter Pack Vol. 1",
         description: "Perfect entry point for the 30th-anniversary set.",
-        lien: defaultLink,
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1036462263685&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jT3AG1ewBO0H0xq%3Ftk%3D6glA6ZpZ9Aa&ref=301118558",
         image: "https://www.tcghobby.com/cdn/shop/files/Simplified_Chinese_Pokemon_30th_Anniversary_First_Partner_Special_Illustration_Card_Set_Vol._1_Display_Set.jpg?v=1776401355&width=645"
     },
     {
         categorie: "30th Anniversary",
         nom: "Starter Pack Vol. 2",
         description: "Second wave starter collection for the 30th anniversary.",
-        lien: defaultLink,
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1054578164218&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jg1OKZ6xMoWKWfY%3Ftk%3D6kft6ZpYh2U&ref=301118558",
         image: "https://www.tcghobby.com/cdn/shop/files/SimplifiedChinesePokemon30thAnniversaryFirstPartnerSpecialIllustrationCardSetVol.2.webp?crop=center&height=500&v=1778251789&width=600"
     },
     {
         categorie: "30th Anniversary",
         nom: "Starter Pack Vol. 3",
         description: "Third wave starter collection for the 30th anniversary.",
-        lien: defaultLink,
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1067989553110&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jSVIavRKf5WbIn7%3Ftk%3DYONJ6ZpY2m2&ref=301118558",
         image: "https://www.tcghobby.com/cdn/shop/files/firstpartnerdisplaysetvol.3set.webp?v=1784301375"
     },
 
@@ -117,7 +117,7 @@ const produits = [
         categorie: "Blind Boxes",
         nom: "Ditto Blind Box",
         description: "Ditto Blind Box collection.",
-        lien: defaultLink,
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1085294497168&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.j6nTiIwTzQE4iMJ%3Ftk%3DWVQP6Zp50mf&ref=301118558",
         image: "https://icecreamshopper.com/cdn/shop/files/O1CN01z0YkZYMt2vC1chua__4611686018427385661-0-item_pic.webp?v=1790240505&width=533"
     },
 
@@ -128,7 +128,7 @@ const produits = [
         categorie: "Gem Packs",
         nom: "Gem Pack Vol. 1",
         description: "Classic Jumbo Booster boxes containing expanded packs with guaranteed hits per box.",
-        lien: defaultLink,
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=979607578715&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jS4bDBKGZJPTvTK%3Ftk%3DUKBM6Zpien6&ref=301118558",
         image: "https://www.maxgaming.com/bilder/artiklar/zoom/35546_1.jpg?m=1753267142"
     },
     {
@@ -188,7 +188,7 @@ const produits = [
         categorie: "Scarlet & Violet Era",
         nom: "Crystal Gathering (CSV9.5)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
-        lien: defaultLink,
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1058877644488&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.j6ne8gzc9GFXCEZ%3Ftk%3DG2JF6ZpWaP2&ref=301118558",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStiWS_bFR5gh7QRwgevHWL5Naw-8q9-wlqlLHh-Gwil5rhRVYNoP7wSfI&s=10"
     },
     {
@@ -209,7 +209,7 @@ const produits = [
         categorie: "Scarlet & Violet Era",
         nom: "Blade Awakened (CSV7)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
-        lien: defaultLink,
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1036430851914&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jTed3zxXl2qztoM%3Ftk%3DgPWX6ZpWrw8&ref=301118558",
         image: "https://remicardtrader.ca/cdn/shop/files/PKCNBASBBOX.jpg?v=1792010716"
     },
     {
@@ -223,7 +223,7 @@ const produits = [
         categorie: "Scarlet & Violet Era",
         nom: "Dark Crystal Blaze (CSV5)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
-        lien: defaultLink,
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1038938904501&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jSVuXhwEqT5nRov%3Ftk%3DebXY6ZpXecg&ref=301118558",
         image: "https://godofcards.com/cdn/shop/files/pokemon-dark-crystal-blaze-csv5c-15er-display-s-chinesisch.jpg?v=1773292564&width=600"
     },
     {
@@ -232,27 +232,6 @@ const produits = [
         description: "Standard display boxes for the Scarlet & Violet era sets.",
         lien: "https://joyagoo.com/product?id=0000XET-X2intlV-OvSHK5Gxn9jR4oJhLGbyUp5RvuMfZLA&platform=TAOBAO&ref=301118558",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSztHore7cjIXIaCEjlnPeenDehZZb9N-jrM2zQrArON31YbNnEW8eUiLA&s=10"
-    },
-    {
-        categorie: "Scarlet & Violet Era",
-        nom: "Fearless Terastal (CSV3)",
-        description: "Standard display boxes for the Scarlet & Violet era sets.",
-        lien: defaultLink,
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxJW1ZUQq0kSU4cJ6OqrZbZTsuMKkHFU5Wyx7n5IUikA&s=10"
-    },
-    {
-        categorie: "Scarlet & Violet Era",
-        nom: "Miracle Journey (CSV2)",
-        description: "Standard display boxes for the Scarlet & Violet era sets.",
-        lien: defaultLink,
-        image: "https://godofcards.com/cdn/shop/files/Pokemon_Miracle_Journey_Jumbo_Display_S-Chinesisch_Komprimiert.jpg?v=1748912914&width=600"
-    },
-    {
-        categorie: "Scarlet & Violet Era",
-        nom: "Eternal Beginnings (CSV1)",
-        description: "Standard display boxes for the Scarlet & Violet era sets.",
-        lien: defaultLink,
-        image: "https://cdn.shopify.com/s/files/1/0552/4874/8641/files/PKMCN-CSV1C-P_4.png?v=1757627916"
     },
 
     // ==========================================
@@ -293,12 +272,6 @@ function afficher(liste) {
     container.innerHTML = '';
     liste.forEach(p => {
         const catBadge = Array.isArray(p.categorie) ? p.categorie.join(" • ") : p.categorie;
-        
-        // --- DÉTECTION VISUELLE DE PROGRESSION ---
-        const estManquant = (p.lien === defaultLink);
-        const texteBouton = estManquant ? "⚠️ LIEN MANQUANT" : "✅ Order via Joyagoo";
-        const styleBouton = estManquant ? "background: #e74c3c; color: #fff; border: 1px solid #c0392b;" : "";
-        // ----------------------------------------
 
         container.innerHTML += `
             <div class="card">
@@ -307,7 +280,7 @@ function afficher(liste) {
                     <span class="category">${catBadge}</span>
                     <h3>${p.nom}</h3>
                     <p>${p.description}</p>
-                    <a href="${p.lien}" class="btn" style="${styleBouton}" target="_blank">${texteBouton}</a>
+                    <a href="${p.lien}" class="btn" target="_blank">Order via Joyagoo</a>
                 </div>
             </div>
         `;
