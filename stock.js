@@ -1,5 +1,7 @@
 const placeholderImg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0PMkOk0FTHAa1QT4_ESpb7qv8fCuF9Y7BK-xsgWgN7HkxM93A9W2eDLT&s=10";
 const defaultLink = "https://joyagoo.com/register/?ref=301118558";
+const gemPacksLink = "https://joyagoo.com/product/?shop_type=taobao&id=932678630102&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.j6NruYWF4FP0eDO%3Ftk%3D39pe6ZLLR1H&ref=301118558";
+const collect151Link = "https://joyagoo.com/product/?shop_type=taobao&id=899608090307&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jg13MY4AuDDL8G6%3Ftk%3DxVdu6ZLJRjU&ref=301118558";
 
 const produits = [
     // ==========================================
@@ -133,42 +135,42 @@ const produits = [
         categorie: "Gem Packs",
         nom: "Gem Pack Vol. 2",
         description: "Classic Jumbo Booster boxes containing expanded packs with guaranteed hits per box.",
-        lien: "https://joyagoo.com/product?id=0000c7mkLEwiS9BlodYY8fJfHXlV81kqmqQz1Awcj4qE8pI&platform=TAOBAO&ref=301118558",
+        lien: gemPacksLink,
         image: "https://m.media-amazon.com/images/I/51+kPL0qduL.jpg"
     },
     {
         categorie: "Gem Packs",
         nom: "Gem Pack Vol. 3",
         description: "Classic Jumbo Booster boxes containing expanded packs with guaranteed hits per box.",
-        lien: defaultLink,
+        lien: gemPacksLink,
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUmoBQZ-Tg4lSqbjGr8VX3w-v8xzRaFsq9_HL5LCq2kFeJpnMO1km0xeoX&s=10"
     },
     {
         categorie: "Gem Packs",
         nom: "Gem Pack Vol. 4",
         description: "Classic Jumbo Booster boxes containing expanded packs with guaranteed hits per box.",
-        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1036427603877&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jgYnxsV%3Ftk%3DaYIJ6ZLYT6f&ref=301118558",
+        lien: gemPacksLink,
         image: "https://spoilsandloot.com/cdn/shop/files/chinese-gem-pack-vol-4-pokemon-booster-box.webp?v=1774588957"
     },
     {
         categorie: "Gem Packs",
         nom: "Gem Pack Vol. 5",
         description: "Classic Jumbo Booster boxes containing expanded packs with guaranteed hits per box.",
-        lien: defaultLink,
+        lien: gemPacksLink,
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9TLXDOLzUX85KYbOhVhPXGUZuYcuJ5YgnPabKA6OwVNgTR-WnT4xAA3o&s=10"
     },
     {
         categorie: "Gem Packs",
         nom: "Gem Pack Vol. 6",
         description: "Classic Jumbo Booster boxes containing expanded packs with guaranteed hits per box.",
-        lien: defaultLink,
+        lien: gemPacksLink,
         image: "https://remicardtrader.ca/cdn/shop/files/POKECNGEMPACK6.jpg?v=1786454812"
     },
     {
         categorie: "Gem Packs",
         nom: "Gem Pack Vol. 7 (Psyduck Cover)",
         description: "The brand new, highly anticipated jumbo set featuring Psyduck and fresh alternate arts.",
-        lien: "https://joyagoo.com/product?id=0000KicQs0FlQrbxFWKroy3YR9zP8OqbVycLovBbxQfur5Q&platform=TAOBAO&ref=301118558",
+        lien: gemPacksLink,
         image: placeholderImg
     },
 
@@ -260,28 +262,28 @@ const produits = [
         categorie: "Collect 151 Series",
         nom: "Collect 151 Gathering",
         description: "Standard 151 booster box display.",
-        lien: defaultLink,
+        lien: collect151Link,
         image: "https://card-binder.com/cdn/shop/files/Pokemon-151C-Collect-151-Gathering-Boosterbox.webp?v=1756631761"
     },
     {
         categorie: "Collect 151 Series",
         nom: "Collect 151 Surprise",
         description: "Standard 151 booster box display.",
-        lien: defaultLink,
+        lien: collect151Link,
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJBo7t9UrnS88uDSBRdYcKyJuJY3eSGZ-bGMO9YIQq2ZYIcxXRVxfNzSza&s=10"
     },
     {
         categorie: "Collect 151 Series",
         nom: "Collect 151 Hope",
         description: "Standard 151 booster box display.",
-        lien: defaultLink,
+        lien: collect151Link,
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROwzkSMA16zX0CK3vVFebOtzYpxpKYLMUUO_WFJzprM49JVi5TImfCYKph&s=10"
     },
     {
         categorie: "Collect 151 Series",
         nom: "Collect 151 Journey",
         description: "Standard 151 booster box display.",
-        lien: defaultLink,
+        lien: collect151Link,
         image: "https://lh6.googleusercontent.com/proxy/rDdWYwY6yLcBtTbQbQ5CzcCqmcUCUs-9ebr0zXjK2IisW3SqfJE6PWm99SUGDmKabd7M7HkgGpwog6F0T4g1c19Rov_ZzKlepN3P7rInxo9J39EJt9oRnic-HqVKTw_5mr6D"
     }
 ];
