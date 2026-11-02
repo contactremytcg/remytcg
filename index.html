@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,6 @@
         .subtitle { font-weight: 700; opacity: 0.8; margin-top: 5px; }
         .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
         
-        /* Nouveaux styles pour les filtres */
         .filters { display: flex; gap: 15px; max-width: 800px; margin: -25px auto 40px auto; justify-content: center; padding: 0 20px; flex-wrap: wrap;}
         .search-bar, .category-select { padding: 15px 25px; border-radius: 50px; border: 2px solid #333; background: #222; color: white; font-size: 1.1em; outline: none; transition: border-color 0.3s; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
         .search-bar { flex-grow: 1; min-width: 250px;}
@@ -38,10 +37,9 @@
     </div>
     
     <div class="filters">
-        <input type="text" id="search" class="search-bar" placeholder="🔍 Rechercher un booster, une box..." onkeyup="filtrer()">
+        <input type="text" id="search" class="search-bar" placeholder="🔍 Search for a booster, a box..." onkeyup="filtrer()">
         <select id="category-filter" class="category-select" onchange="filtrer()">
-            <option value="">Toutes les catégories</option>
-            <!-- Les catégories seront injectées ici par stock.js -->
+            <option value="">All Categories</option>
         </select>
     </div>
     
