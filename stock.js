@@ -20,21 +20,21 @@ const produits = [
         categorie: "30th Anniversary",
         nom: "30th Anniversary Booster Box (Display)",
         description: "Contains 20 booster packs. The core set for anniversary pulls!",
-        lien: defaultLink,
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1062273634908&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jUxToEYvXzkRKZA%3Ftk%3DZkkW6a8TLRV&ref=301118558",
         image: "https://toy-treasure.com/cdn/shop/files/30th-celebration-chinese.jpg?v=1790767347&width=1445"
     },
     {
         categorie: "30th Anniversary",
         nom: "Charizard Figure Box",
         description: "Premium box featuring an exclusive Charizard figure and special promos.",
-        lien: defaultLink,
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1084248931939&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.j6NMYqlW7GBi4OL%3Ftk%3D3pxF6ZLP775&ref=301118558",
         image: "https://www.tcghobby.com/cdn/shop/files/30thcelebrationcharizardfigurine.webp?v=1787160912"
     },
     {
         categorie: "30th Anniversary",
         nom: "Futuristic Box",
         description: "A highly sought-after collector's box with a futuristic theme and exclusive hits.",
-        lien: defaultLink,
+        lien: "https://joyagoo.com/product?id=00007wmPKf3gPgJEwsQcdOKAdY3uynmM7EnBQdfc16XhQFQ&platform=TAOBAO&ref=301118558",
         image: "https://monketic.com/cdn/shop/files/002_b0146a55-cf66-42d3-921c-9b62d7c09e3b.png?v=1792512443&width=1445"
     },
     {
@@ -168,7 +168,7 @@ const produits = [
         categorie: "Gem Packs",
         nom: "Gem Pack Vol. 7 (Psyduck Cover)",
         description: "The brand new, highly anticipated jumbo set featuring Psyduck and fresh alternate arts.",
-        lien: defaultLink,
+        lien: "https://joyagoo.com/product?id=0000KicQs0FlQrbxFWKroy3YR9zP8OqbVycLovBbxQfur5Q&platform=TAOBAO&ref=301118558",
         image: placeholderImg
     },
 
@@ -292,11 +292,11 @@ function afficher(liste) {
     liste.forEach(p => {
         const catBadge = Array.isArray(p.categorie) ? p.categorie.join(" • ") : p.categorie;
         
-        // --- ASTUCE VISUELLE : DÉTECTION DE LIEN MANQUANT ---
+        // --- DÉTECTION VISUELLE DE PROGRESSION ---
         const estManquant = (p.lien === defaultLink);
         const texteBouton = estManquant ? "⚠️ LIEN MANQUANT" : "✅ Order via Joyagoo";
         const styleBouton = estManquant ? "background: #e74c3c; color: #fff; border: 1px solid #c0392b;" : "";
-        // ----------------------------------------------------
+        // ----------------------------------------
 
         container.innerHTML += `
             <div class="card">
