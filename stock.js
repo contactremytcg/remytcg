@@ -115,42 +115,42 @@ const produits = [
         nom: "Gem Pack Vol. 1",
         description: "Classic Jumbo Booster boxes containing expanded packs with guaranteed hits per box.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://www.maxgaming.com/bilder/artiklar/zoom/35546_1.jpg?m=1753267142"
     },
     {
         categorie: "Gem Packs",
         nom: "Gem Pack Vol. 2",
         description: "Classic Jumbo Booster boxes containing expanded packs with guaranteed hits per box.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://m.media-amazon.com/images/I/51+kPL0qduL.jpg"
     },
     {
         categorie: "Gem Packs",
         nom: "Gem Pack Vol. 3",
         description: "Classic Jumbo Booster boxes containing expanded packs with guaranteed hits per box.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUmoBQZ-Tg4lSqbjGr8VX3w-v8xzRaFsq9_HL5LCq2kFeJpnMO1km0xeoX&s=10"
     },
     {
         categorie: "Gem Packs",
         nom: "Gem Pack Vol. 4",
         description: "Classic Jumbo Booster boxes containing expanded packs with guaranteed hits per box.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://spoilsandloot.com/cdn/shop/files/chinese-gem-pack-vol-4-pokemon-booster-box.webp?v=1774588957"
     },
     {
         categorie: "Gem Packs",
         nom: "Gem Pack Vol. 5",
         description: "Classic Jumbo Booster boxes containing expanded packs with guaranteed hits per box.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9TLXDOLzUX85KYbOhVhPXGUZuYcuJ5YgnPabKA6OwVNgTR-WnT4xAA3o&s=10"
     },
     {
         categorie: "Gem Packs",
         nom: "Gem Pack Vol. 6",
         description: "Classic Jumbo Booster boxes containing expanded packs with guaranteed hits per box.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://remicardtrader.ca/cdn/shop/files/POKECNGEMPACK6.jpg?v=1786454812"
     },
     {
         categorie: "Gem Packs",
@@ -165,56 +165,56 @@ const produits = [
         nom: "Chasing Glory (CSV10)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://collectorstore.com/cdn/shop/files/CollectorStore00001_937038ac-8bb9-4f6e-950b-742363216669.jpg?v=1784582543&width=990"
     },
     {
         categorie: "Scarlet & Violet Era",
         nom: "Crystal Gathering (CSV9.5)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStiWS_bFR5gh7QRwgevHWL5Naw-8q9-wlqlLHh-Gwil5rhRVYNoP7wSfI&s=10"
     },
     {
         categorie: "Scarlet & Violet Era",
         nom: "Stellar Crystal (CSV9)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://remicardtrader.ca/cdn/shop/files/POKECNSTELCRYSSLIM.jpg?v=1781539002"
     },
     {
         categorie: "Scarlet & Violet Era",
         nom: "Bright Fantasy (CSV8)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://packflipps.com/cdn/shop/files/IMG_2671.jpg?v=1776975091"
     },
     {
         categorie: "Scarlet & Violet Era",
         nom: "Blade Awakened (CSV7)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://remicardtrader.ca/cdn/shop/files/PKCNBASBBOX.jpg?v=1792010716"
     },
     {
         categorie: "Scarlet & Violet Era",
         nom: "Paradox Veil (CSV6)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://galactictoys.com/cdn/shop/files/6977321128086_1.jpg?v=1787884173"
     },
     {
         categorie: "Scarlet & Violet Era",
         nom: "Dark Crystal Blaze (CSV5)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://godofcards.com/cdn/shop/files/pokemon-dark-crystal-blaze-csv5c-15er-display-s-chinesisch.jpg?v=1773292564&width=600"
     },
     {
         categorie: "Scarlet & Violet Era",
         nom: "Reward Round (CSV4)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSztHore7cjIXIaCEjlnPeenDehZZb9N-jrM2zQrArON31YbNnEW8eUiLA&s=10"
     },
     {
         categorie: "Scarlet & Violet Era",
