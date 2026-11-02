@@ -221,21 +221,21 @@ const produits = [
         nom: "Fearless Terastal (CSV3)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxJW1ZUQq0kSU4cJ6OqrZbZTsuMKkHFU5Wyx7n5IUikA&s=10"
     },
     {
         categorie: "Scarlet & Violet Era",
         nom: "Miracle Journey (CSV2)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://godofcards.com/cdn/shop/files/Pokemon_Miracle_Journey_Jumbo_Display_S-Chinesisch_Komprimiert.jpg?v=1748912914&width=600"
     },
     {
         categorie: "Scarlet & Violet Era",
         nom: "Eternal Beginnings (CSV1)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://cdn.shopify.com/s/files/1/0552/4874/8641/files/PKMCN-CSV1C-P_4.png?v=1757627916"
     },
     // Collect 151 Series
     {
@@ -243,86 +243,28 @@ const produits = [
         nom: "Collect 151 Gathering",
         description: "Standard 151 booster box display.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://card-binder.com/cdn/shop/files/Pokemon-151C-Collect-151-Gathering-Boosterbox.webp?v=1756631761"
     },
     {
         categorie: "Collect 151 Series",
         nom: "Collect 151 Surprise",
         description: "Standard 151 booster box display.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJBo7t9UrnS88uDSBRdYcKyJuJY3eSGZ-bGMO9YIQq2ZYIcxXRVxfNzSza&s=10"
     },
     {
         categorie: "Collect 151 Series",
         nom: "Collect 151 Hope",
         description: "Standard 151 booster box display.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROwzkSMA16zX0CK3vVFebOtzYpxpKYLMUUO_WFJzprM49JVi5TImfCYKph&s=10"
     },
     {
         categorie: "Collect 151 Series",
         nom: "Collect 151 Journey",
         description: "Standard 151 booster box display.",
         lien: defaultLink,
-        image: placeholderImg
-    },
-    // Sword & Shield Era
-    {
-        categorie: "Sword & Shield Era",
-        nom: "Dynamax Clash (CS1B / CS1A)",
-        description: "Standard booster box display. Classic Sword & Shield era.",
-        lien: defaultLink,
-        image: placeholderImg
-    },
-    {
-        categorie: "Sword & Shield Era",
-        nom: "Vivid Portrayals (CS2B / CS2A)",
-        description: "Standard booster box display. Classic Sword & Shield era.",
-        lien: defaultLink,
-        image: placeholderImg
-    },
-    {
-        categorie: "Sword & Shield Era",
-        nom: "Primordial Arts (CS3B / CS3A)",
-        description: "Standard booster box display. Classic Sword & Shield era.",
-        lien: defaultLink,
-        image: placeholderImg
-    },
-    {
-        categorie: "Sword & Shield Era",
-        nom: "Nine Colors Gathering (CS4B / CS4A)",
-        description: "Standard booster box display. Classic Sword & Shield era.",
-        lien: defaultLink,
-        image: placeholderImg
-    },
-    {
-        categorie: "Sword & Shield Era",
-        nom: "Brave Stars (CS5B / CS5A)",
-        description: "Standard booster box display. Classic Sword & Shield era.",
-        lien: defaultLink,
-        image: placeholderImg
-    },
-    {
-        categorie: "Sword & Shield Era",
-        nom: "Shadow of the Blue Sea (CS6B / CS6A)",
-        description: "Standard booster box display. Classic Sword & Shield era.",
-        lien: defaultLink,
-        image: placeholderImg
-    },
-    // Sun & Moon Era
-    {
-        categorie: "Sun & Moon Era",
-        nom: "Storming Emergence (CSM1A/1B/1C)",
-        description: "Vintage Simplified Chinese booster box display.",
-        lien: defaultLink,
-        image: placeholderImg
-    },
-    {
-        categorie: "Sun & Moon Era",
-        nom: "Shining Synergy (CSM2A/2B / 2C)",
-        description: "Vintage Simplified Chinese booster box display.",
-        lien: defaultLink,
-        image: placeholderImg
+        image: "https://lh6.googleusercontent.com/proxy/rDdWYwY6yLcBtTbQbQ5CzcCqmcUCUs-9ebr0zXjK2IisW3SqfJE6PWm99SUGDmKabd7M7HkgGpwog6F0T4g1c19Rov_ZzKlepN3P7rInxo9J39EJt9oRnic-HqVKTw_5mr6D"
     }
 ];
 
