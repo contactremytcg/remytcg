@@ -6,7 +6,7 @@
     <title>RemyTCG - Exclusive Proxy Service</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
-        body { font-family: 'Inter', sans-serif; background: #111111; color: #fff; margin: 0; padding: 0; line-height: 1.6; }
+        body { font-family: 'Inter', sans-serif; background: #111111; color: #fff; margin: 0; padding: 0; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
         
         /* Header & Logo */
         .header { background: linear-gradient(135deg, #FFCB05 0%, #d4a700 100%); padding: 50px 20px 80px 20px; text-align: center; color: #111; position: relative; }
@@ -25,7 +25,7 @@
         .btn-main { display: inline-block; background: #FFCB05; color: #111; padding: 16px 30px; text-decoration: none; font-weight: 900; border-radius: 8px; font-size: 1.1em; transition: transform 0.2s, background 0.2s; text-align: center; width: calc(100% - 60px); max-width: 300px; box-sizing: border-box;}
         .btn-main:hover { background: #fff; transform: translateY(-2px); }
 
-        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; flex-grow: 1; }
         
         /* Filters */
         .filters { display: flex; gap: 15px; max-width: 800px; margin: 0 auto 40px auto; justify-content: center; flex-wrap: wrap;}
@@ -45,12 +45,21 @@
         .card p { color: #aaa; font-size: 0.9em; line-height: 1.5; flex-grow: 1; }
         .btn { background: #333; color: #fff; text-align: center; padding: 12px; text-decoration: none; font-weight: 700; border-radius: 8px; margin-top: 20px; transition: background 0.2s, color 0.2s; }
         .card:hover .btn { background: #FFCB05; color: #111; }
+
+        /* Footer & Contact Section */
+        .footer-contact { background: #151515; padding: 60px 20px; text-align: center; border-top: 1px solid #333; margin-top: 60px; }
+        .footer-contact h2 { color: #fff; font-size: 2.2em; margin: 0 0 15px 0; font-weight: 900; }
+        .footer-contact p { color: #aaa; max-width: 600px; margin: 0 auto 30px auto; font-size: 1.1em; }
+        .contact-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .contact-btn { display: flex; align-items: center; gap: 10px; padding: 15px 25px; border-radius: 8px; text-decoration: none; font-weight: 700; transition: all 0.2s; border: 1px solid #333; color: #fff; background: #1c1c1c; font-size: 1.1em; }
+        .contact-btn:hover { transform: translateY(-3px); }
+        .insta-btn:hover { background: #E1306C; border-color: #E1306C; color: #fff; }
+        .email-btn:hover { background: #FFCB05; border-color: #FFCB05; color: #111; }
     </style>
 </head>
 <body>
     <div class="header">
         <div class="logo-container">
-            <!-- Simple SVG Pokeball Logo -->
             <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"></circle>
                 <circle cx="12" cy="12" r="3"></circle>
@@ -84,6 +93,22 @@
         </div>
         
         <div class="grid" id="catalogue"></div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="footer-contact">
+        <h2>Connect With Us!</h2>
+        <p>Reach out with any questions, custom orders, or B2B wholesale collaborations. We are here to help you source the best Simplified Chinese products.</p>
+        <div class="contact-links">
+            <a href="https://instagram.com/remy.tcg" target="_blank" class="contact-btn insta-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                @remy.tcg
+            </a>
+            <a href="mailto:contact.remytcg@gmail.com" class="contact-btn email-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                contact.remytcg@gmail.com
+            </a>
+        </div>
     </div>
 
     <script src="stock.js"></script>
