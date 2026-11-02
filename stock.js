@@ -65,49 +65,49 @@ const produits = [
         nom: "Greninja Keychain Box",
         description: "Includes an exclusive Greninja keychain and assorted booster packs.",
         lien: "https://joyagoo.com/product/?shop_type=taobao&id=1080814663430&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jTiK1Ov3j7ZePoc%3Ftk%3DFjg46a8Zg0o&ref=301118558",
-        image: placeholderImg
+        image: "https://x-playground.com/cdn/shop/files/Pokemon_TCG_30th_Celebration_Greninja_ex_Card_Display_Sleeve_Set.jpg?v=1789822489&width=600"
     },
     {
         categorie: "30th Anniversary",
         nom: "Espeon Keychain Box",
         description: "Includes an exclusive Espeon keychain and assorted booster packs.",
         lien: "https://joyagoo.com/product/?shop_type=taobao&id=1080814663430&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jTiK1Ov3j7ZePoc%3Ftk%3DFjg46a8Zg0o&ref=301118558",
-        image: placeholderImg
+        image: "https://spoilsandloot.com/cdn/shop/files/syl_1.jpg?v=1789577455"
     },
     {
         categorie: "30th Anniversary",
         nom: "Pikachu Blind Box",
         description: "A fun mystery box featuring Pikachu exclusives and surprise hits.",
         lien: "https://joyagoo.com/product/?shop_type=taobao&id=1062273634908&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jUxToEYvXzkRKZA%3Ftk%3DZkkW6a8TLRV&ref=301118558",
-        image: placeholderImg
+        image: "https://collectorstore.com/cdn/shop/files/CollectorStore00002_7207263c-4504-4ee0-ae14-b3d648f6dba7.jpg?v=1790101321&width=1445"
     },
     {
         categorie: "30th Anniversary",
         nom: "Starter Pack Vol. 1",
         description: "Perfect entry point for the 30th-anniversary set.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://www.tcghobby.com/cdn/shop/files/Simplified_Chinese_Pokemon_30th_Anniversary_First_Partner_Special_Illustration_Card_Set_Vol._1_Display_Set.jpg?v=1776401355&width=645"
     },
     {
         categorie: "30th Anniversary",
         nom: "Starter Pack Vol. 2",
         description: "Second wave starter collection for the 30th anniversary.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://www.tcghobby.com/cdn/shop/files/SimplifiedChinesePokemon30thAnniversaryFirstPartnerSpecialIllustrationCardSetVol.2.webp?crop=center&height=500&v=1778251789&width=600"
     },
     {
         categorie: "30th Anniversary",
         nom: "Starter Pack Vol. 3",
         description: "Third wave starter collection for the 30th anniversary.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://www.tcghobby.com/cdn/shop/files/firstpartnerdisplaysetvol.3set.webp?v=1784301375"
     },
     {
         categorie: "30th Anniversary",
         nom: "Ditto Blind Box",
         description: "Ditto Blind Box collection.",
         lien: defaultLink,
-        image: placeholderImg
+        image: "https://icecreamshopper.com/cdn/shop/files/O1CN01z0YkZYMt2vC1chua__4611686018427385661-0-item_pic.webp?v=1790240505&width=533"
     },
     // Gem Packs
     {
