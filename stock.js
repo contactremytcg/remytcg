@@ -75,7 +75,7 @@ const produits = [
         image: "https://spoilsandloot.com/cdn/shop/files/syl_1.jpg?v=1789577455"
     },
     {
-        categorie: "30th Anniversary",
+        categorie: ["30th Anniversary", "Blind Boxes"],
         nom: "Pikachu Blind Box",
         description: "A fun mystery box featuring Pikachu exclusives and surprise hits.",
         lien: "https://joyagoo.com/product/?shop_type=taobao&id=1062273634908&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jUxToEYvXzkRKZA%3Ftk%3DZkkW6a8TLRV&ref=301118558",
@@ -102,8 +102,9 @@ const produits = [
         lien: defaultLink,
         image: "https://www.tcghobby.com/cdn/shop/files/firstpartnerdisplaysetvol.3set.webp?v=1784301375"
     },
+    // Blind Boxes
     {
-        categorie: "30th Anniversary",
+        categorie: "Blind Boxes",
         nom: "Ditto Blind Box",
         description: "Ditto Blind Box collection.",
         lien: defaultLink,
@@ -272,11 +273,12 @@ function afficher(liste) {
     const container = document.getElementById('catalogue');
     container.innerHTML = '';
     liste.forEach(p => {
+        const catBadge = Array.isArray(p.categorie) ? p.categorie.join(" • ") : p.categorie;
         container.innerHTML += `
             <div class="card">
                 <img src="${p.image}" alt="${p.nom}" class="card-img" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0PMkOk0FTHAa1QT4_ESpb7qv8fCuF9Y7BK-xsgWgN7HkxM93A9W2eDLT&s=10'">
                 <div class="card-content">
-                    <span class="category">${p.categorie}</span>
+                    <span class="category">${catBadge}</span>
                     <h3>${p.nom}</h3>
                     <p>${p.description}</p>
                     <a href="${p.lien}" class="btn" target="_blank">Order via Joyagoo</a>
@@ -288,7 +290,15 @@ function afficher(liste) {
 
 function genererCategories() {
     const select = document.getElementById('category-filter');
-    const categoriesUniques = [...new Set(produits.map(p => p.categorie))];
+    const allCats = [];
+    produits.forEach(p => {
+        if (Array.isArray(p.categorie)) {
+            allCats.push(...p.categorie);
+        } else {
+            allCats.push(p.categorie);
+        }
+    });
+    const categoriesUniques = [...new Set(allCats)];
     
     categoriesUniques.forEach(cat => {
         select.innerHTML += `<option value="${cat}">${cat}</option>`;
@@ -301,7 +311,8 @@ function filtrer() {
 
     const resultats = produits.filter(p => {
         const correspondTexte = p.nom.toLowerCase().includes(recherche) || p.description.toLowerCase().includes(recherche);
-        const correspondCategorie = categorieSelectionnee === "" || p.categorie === categorieSelectionnee;
+        const correspondCategorie = categorieSelectionnee === "" || 
+            (Array.isArray(p.categorie) ? p.categorie.includes(categorieSelectionnee) : p.categorie === categorieSelectionnee);
         
         return correspondTexte && correspondCategorie;
     });
