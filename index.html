@@ -11,8 +11,14 @@
         h1 { margin: 0; font-weight: 900; font-size: 3em; letter-spacing: -1px; }
         .subtitle { font-weight: 700; opacity: 0.8; margin-top: 5px; }
         .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
-        .search-bar { width: 100%; max-width: 600px; padding: 15px 25px; border-radius: 50px; border: 2px solid #333; background: #222; color: white; font-size: 1.1em; display: block; margin: -25px auto 40px auto; box-shadow: 0 10px 20px rgba(0,0,0,0.5); outline: none; transition: border-color 0.3s; }
-        .search-bar:focus { border-color: #FFCB05; }
+        
+        /* Nouveaux styles pour les filtres */
+        .filters { display: flex; gap: 15px; max-width: 800px; margin: -25px auto 40px auto; justify-content: center; padding: 0 20px; flex-wrap: wrap;}
+        .search-bar, .category-select { padding: 15px 25px; border-radius: 50px; border: 2px solid #333; background: #222; color: white; font-size: 1.1em; outline: none; transition: border-color 0.3s; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        .search-bar { flex-grow: 1; min-width: 250px;}
+        .category-select { cursor: pointer; appearance: none; padding-right: 45px; background-image: url('data:image/svg+xml;utf8,<svg fill="%23FFCB05" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); background-repeat: no-repeat; background-position: right 15px center; }
+        .search-bar:focus, .category-select:focus { border-color: #FFCB05; }
+        
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; }
         .card { background: #1c1c1c; border-radius: 16px; overflow: hidden; border: 1px solid #333; transition: transform 0.2s, border-color 0.2s; display: flex; flex-direction: column; }
         .card:hover { transform: translateY(-5px); border-color: #FFCB05; }
@@ -30,7 +36,14 @@
         <h1>RemyTCG</h1>
         <div class="subtitle">100% Authentic Chinese Pokémon TCG</div>
     </div>
-    <input type="text" id="search" class="search-bar" placeholder="🔍 Rechercher un booster, une box..." onkeyup="filtrer()">
+    
+    <div class="filters">
+        <input type="text" id="search" class="search-bar" placeholder="🔍 Rechercher un booster, une box..." onkeyup="filtrer()">
+        <select id="category-filter" class="category-select" onchange="filtrer()">
+            <option value="">Toutes les catégories</option>
+            <!-- Les catégories seront injectées ici par stock.js -->
+        </select>
+    </div>
     
     <div class="container">
         <div class="grid" id="catalogue"></div>
