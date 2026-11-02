@@ -1,4 +1,4 @@
-const placeholderImg = "https://via.placeholder.com/300x250/2a2a2a/FFCB05?text=Image+Unavailable";
+const placeholderImg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0PMkOk0FTHAa1QT4_ESpb7qv8fCuF9Y7BK-xsgWgN7HkxM93A9W2eDLT&s=10";
 const defaultLink = "https://joyagoo.com/register/?ref=301118558";
 
 const produits = [
@@ -332,7 +332,7 @@ function afficher(liste) {
     liste.forEach(p => {
         container.innerHTML += `
             <div class="card">
-                <img src="${p.image}" alt="${p.nom}" class="card-img" onerror="this.src='https://via.placeholder.com/300x250/2a2a2a/FFCB05?text=Image+Unavailable'">
+                <img src="${p.image}" alt="${p.nom}" class="card-img" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0PMkOk0FTHAa1QT4_ESpb7qv8fCuF9Y7BK-xsgWgN7HkxM93A9W2eDLT&s=10'">
                 <div class="card-content">
                     <span class="category">${p.categorie}</span>
                     <h3>${p.nom}</h3>
