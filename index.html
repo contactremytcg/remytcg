@@ -13,7 +13,7 @@
         
         /* --- POP-UP CACHÉE PAR DÉFAUT --- */
         .modal-overlay {
-            display: none; /* Invisible au chargement */
+            display: none; 
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(8px);
             justify-content: center; align-items: center;
@@ -153,11 +153,11 @@
     <div id="welcomeModal" class="modal-overlay">
         <div class="modal-content">
             <h2>Before you order... 🛑</h2>
-            <p>To access local Chinese prices and claim your <strong>$110 in Shipping Coupons</strong>, you must register your Sugargoo proxy account via our official link.</p>
-            <p style="font-size: 0.9em; color: #aaa;">If you proceed without an account created through us, we cannot guarantee your bonuses or offer order support.</p>
+            <p>To access local Chinese prices, you need a proxy account. <strong>Sugargoo is our official partner.</strong></p>
+            <p style="font-size: 0.9em; color: #aaa;">Creating your account via our link ensures you get your <strong>800 CNY (~$110 USD) Welcome Coupon Bundle</strong>, and it directly supports RemyTCG so we can keep updating this catalog daily for you!</p>
             
-            <button class="btn-modal-main" onclick="registerAndClose()">1. Create Account (Opens Sugargoo)</button>
-            <button class="btn-modal-secondary" onclick="continueToProduct()">2. I already have my account, continue to product</button>
+            <button class="btn-modal-main" onclick="registerAndClose()">1. Support us & Create Account</button>
+            <button class="btn-modal-secondary" onclick="continueToProduct()">2. I already created my account, continue</button>
         </div>
     </div>
 
@@ -182,11 +182,12 @@
     </div>
     
     <div id="setup" class="intro-banner">
-        <h2>⚠️ ACCOUNT WARNING</h2>
-        <p>To buy from the Chinese Taobao market at local prices, you need a proxy account. <strong>Sugargoo is our official partner.</strong></p>
+        <h2>📦 Step 1: Account Setup</h2>
+        <p>To buy from the Chinese Taobao market at local prices without Western markups, you need a proxy account.</p>
 
         <ul>
-            <li><strong>CRITICAL:</strong> You MUST register via the orange button below. If you skip this step or register manually on their app, you will lose your <strong>800 CNY (~$110 USD)</strong> in Welcome Shipping Coupons and we cannot help you with your orders.</li>
+            <li><strong>Support the Site:</strong> Register via the orange button below to claim your <strong>800 CNY (~$110 USD)</strong> in Welcome Shipping Coupons. Using our link directly supports RemyTCG!</li>
+            <li><strong>Local Prices:</strong> You only pay the true item price + transparent international shipping. Consolidate your items into one package to save even more on shipping.</li>
             <li><strong>How to use on Mobile:</strong> Once registered and the app downloaded, simply click "Copy Link for App" on any product here, open your Sugargoo App, and it will read your clipboard automatically!</li>
         </ul>
         <div style="text-align: center;">
@@ -261,17 +262,14 @@
 
     <script>
         // --- GESTION INTELLIGENTE DE LA POP-UP ---
-        let pendingAction = null; // Mémorise l'action (PC ou Mobile) en attente
+        let pendingAction = null; 
 
-        // Fonction appelée quand on clique sur un bouton d'achat de produit
         function triggerProductAction(type, data, element = null) {
             const hasSeenPopup = localStorage.getItem('remytcg_setup_done');
             
             if (hasSeenPopup === 'true') {
-                // Si la pop-up a déjà été validée dans le passé, on exécute l'achat direct
                 executeAction(type, data, element);
             } else {
-                // Sinon, on bloque l'action, on la met en mémoire, et on affiche la pop-up
                 pendingAction = { type, data, element };
                 const modal = document.getElementById('welcomeModal');
                 modal.style.display = 'flex';
@@ -279,7 +277,6 @@
             }
         }
 
-        // Exécute la vraie action (Ouvrir URL ou Copier Lien)
         function executeAction(type, data, element) {
             if (type === 'pc') {
                 window.open(data, '_blank');
@@ -288,16 +285,14 @@
             }
         }
 
-        // Bouton 1 : S'inscrire (Valide la pop-up pour l'avenir)
         function registerAndClose() {
-            localStorage.setItem('remytcg_setup_done', 'true'); // Enregistre dans le navigateur
+            localStorage.setItem('remytcg_setup_done', 'true'); 
             window.open('https://m.sugargoo.com/register?memberId=3894055016867374984', '_blank');
             closeModal();
         }
 
-        // Bouton 2 : Continuer vers le produit (Valide la pop-up pour l'avenir)
         function continueToProduct() {
-            localStorage.setItem('remytcg_setup_done', 'true'); // Enregistre dans le navigateur
+            localStorage.setItem('remytcg_setup_done', 'true'); 
             closeModal();
             if (pendingAction) {
                 executeAction(pendingAction.type, pendingAction.data, pendingAction.element);
@@ -311,6 +306,5 @@
             setTimeout(() => modal.style.display = 'none', 300);
         }
     </script>
-    <script src="stock.js"></script>
 </body>
 </html>
