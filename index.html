@@ -31,10 +31,6 @@
         .intro-banner li { margin-bottom: 10px; }
         .intro-banner strong { color: #fff; }
         
-        /* Alerte Mobile */
-        .mobile-alert { background: rgba(255, 203, 5, 0.1); border-left: 4px solid #FFCB05; padding: 15px; border-radius: 4px; margin-bottom: 25px; font-size: 0.95em; }
-        .mobile-alert strong { color: #FFCB05; }
-        
         .btn-main { display: inline-block; background: #FFCB05; color: #111; padding: 16px 30px; text-decoration: none; font-weight: 900; border-radius: 8px; font-size: 1.1em; transition: transform 0.2s, background 0.2s; text-align: center; width: 100%; max-width: 320px; box-sizing: border-box;}
         .btn-main:hover { background: #fff; transform: translateY(-2px); }
 
@@ -68,10 +64,13 @@
         /* Tiny Mobile Note sous les boutons */
         .mobile-hint { font-size: 0.7em; color: #777; text-align: center; margin-top: 8px; font-style: italic; display: none; }
 
-        /* FAQ Item */
+        /* Guide & FAQ Items */
         .faq-item { background: #1c1c1c; border: 1px solid #333; border-radius: 12px; padding: 25px; margin-bottom: 20px; }
-        .faq-item h3 { color: #fff; margin-top: 0; }
-        .faq-item p { color: #aaa; margin-bottom: 0; }
+        .faq-item h3 { color: #FFCB05; margin-top: 0; font-size: 1.3em;}
+        .faq-item p, .faq-item ul { color: #aaa; margin-bottom: 10px; font-size: 0.95em;}
+        .faq-item ul { padding-left: 20px; }
+        .faq-item li { margin-bottom: 5px; }
+        .faq-item strong { color: #fff; }
 
         /* Footer & Contact Section */
         .footer-contact { background: #151515; padding: 60px 20px; text-align: center; border-top: 1px solid #333; margin-top: 60px; scroll-margin-top: 50px;}
@@ -96,7 +95,6 @@
             .intro-banner { padding: 20px 15px; margin-top: -35px; border-radius: 12px; }
             .intro-banner h2 { font-size: 1.2em; }
             .intro-banner p, .intro-banner ul { font-size: 0.85em; }
-            .mobile-alert { font-size: 0.85em; padding: 12px; }
             .btn-main { padding: 12px 20px; font-size: 0.95em; }
 
             .filters { gap: 10px; margin-bottom: 25px; }
@@ -118,16 +116,16 @@
             .mobile-hint { display: block; } /* Affiché uniquement sur mobile */
 
             .faq-item { padding: 16px; }
-            .faq-item h3 { font-size: 1em; }
-            .faq-item p { font-size: 0.85em; }
+            .faq-item h3 { font-size: 1.1em; }
+            .faq-item p, .faq-item ul { font-size: 0.85em; }
         }
     </style>
 </head>
 <body>
     <nav class="top-nav">
-        <a href="#setup">Setup Guide</a>
+        <a href="#setup">Setup</a>
         <a href="#shop">Catalog</a>
-        <a href="#faq">FAQ</a>
+        <a href="#guide">Buyer Guide</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -147,14 +145,10 @@
     <div id="setup" class="intro-banner">
         <h2>⚠️ Step 1: Account Setup (Required)</h2>
         <p>To buy from the Chinese Taobao market at local prices without Western markups, you need a proxy account. <strong>Joyagoo is our official and secure partner.</strong></p>
-        
-        <div class="mobile-alert">
-            📱 <strong>Mobile Users:</strong> Joyagoo links may not open in Safari due to browser restrictions. Simply click <strong>"Copy Link"</strong> on any product below and paste it directly into the search bar of your <strong>Joyagoo App</strong>!
-        </div>
 
         <ul>
-            <li><strong>Exclusive Welcome Gift:</strong> Register via the link below to unlock up to <strong>1200 CNY (~$165 USD)</strong> in shipping coupons!</li>
-            <li><strong>Local Prices:</strong> You only pay the true item price + transparent international shipping.</li>
+            <li><strong>Exclusive Welcome Gift:</strong> Register via the link below to unlock up to <strong>1200 CNY (~$165 USD)</strong> in shipping coupons! You can apply these to reduce your international shipping costs.</li>
+            <li><strong>Local Prices:</strong> You only pay the true item price + transparent international shipping. Consolidate your items into one package to save even more on shipping.</li>
             <li><strong>Guaranteed Authenticity:</strong> Do not search for products yourself. I personally vet and update every link in this catalog daily.</li>
         </ul>
         <div style="text-align: center;">
@@ -174,28 +168,40 @@
         <div class="grid" id="catalogue"></div>
     </div>
 
-    <!-- Section FAQ -->
-    <div id="faq" class="faq-container">
-        <h2 style="text-align: center; color: #FFCB05; font-size: 2em; margin-bottom: 40px;">Frequently Asked Questions</h2>
+    <!-- Section Guide & FAQ -->
+    <div id="guide" class="faq-container">
+        <h2 style="text-align: center; color: #FFCB05; font-size: 2em; margin-bottom: 40px;">How to Order & Buyer Guide</h2>
         
         <div class="faq-item">
-            <h3>How does the shipping process work?</h3>
-            <p>All orders are processed securely through Joyagoo. The handling time (for the local supplier to ship to the export warehouse) is typically 1-6 days. The international shipping time is generally 7-15 business days, depending on your location.</p>
+            <h3>📦 1. Estimating Your Shipping Costs</h3>
+            <p>Joyagoo offers a transparent <strong>Shipping Estimator</strong> directly in their app or website. Here is how it works:</p>
+            <ul>
+                <li>Enter your <strong>Destination Country</strong> (e.g., United States, France, UK).</li>
+                <li>Estimate the <strong>Weight</strong> (e.g., a standard Booster Box is roughly 400g-500g, a Jumbo Gem Pack is around 1000g).</li>
+                <li>Select the category (usually <em>Toys/Popular Merchandise</em>).</li>
+            </ul>
+            <p>The estimator will show you multiple carrier options (like US-air, EMS, etc.) with different delivery speeds (usually 8 to 20 days) and prices. <strong>Pro Tip:</strong> The more items you ship together in one parcel, the cheaper the shipping cost per item!</p>
         </div>
 
         <div class="faq-item">
-            <h3>Will I have to pay custom fees?</h3>
-            <p>Custom and import fees are calculated transparently at checkout based on your specific location. You will see the full cost before finalizing your purchase on Joyagoo.</p>
+            <h3>🎟️ 2. Using Your Welcome Coupons</h3>
+            <p>When you register using the <em>Setup Step 1</em> link, you receive a bundle of shipping coupons. When you are ready to ship your items from the Joyagoo warehouse to your home, you can apply these coupons at checkout to significantly reduce your freight cost (e.g., saving €7 to €15+ depending on the package size).</p>
         </div>
 
         <div class="faq-item">
-            <h3>What is your return policy?</h3>
-            <p>There is a 10% fee for returns and cancellations. Please note that cancellations are only accepted before the item leaves the Chinese warehouse.</p>
+            <h3>💳 3. Secure Payment Methods</h3>
+            <p>Joyagoo provides a highly secure checkout process. They do not store your payment information and offer multiple ways to pay:</p>
+            <ul>
+                <li><strong>Credit/Debit Cards:</strong> VISA and major cards.</li>
+                <li><strong>Mobile Wallets:</strong> Apple Pay and Google Pay for quick checkout.</li>
+                <li><strong>E-Wallets:</strong> Skrill.</li>
+                <li><strong>Local Banking:</strong> iDEAL, MyBank, PIX, Blik, and more depending on your region.</li>
+            </ul>
         </div>
 
         <div class="faq-item">
-            <h3>Who handles customer service for my order?</h3>
-            <p>Because all orders are placed through Joyagoo, they handle the logistics, tracking, and direct customer support for your packages. If you need help finding a specific item not listed here, you can contact me directly!</p>
+            <h3>⚙️ 4. App Settings (Language & Currency)</h3>
+            <p>You can browse Joyagoo in your preferred language! Go to your <strong>Profile > Settings</strong> to change the language (English, Français, Español, Deutsch, etc.) and your display currency (USD, EUR, CAD, GBP, AUD, etc.) so you always know exactly what you are paying.</p>
         </div>
     </div>
 
