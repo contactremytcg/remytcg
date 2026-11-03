@@ -108,6 +108,15 @@
         .faq-item li { margin-bottom: 5px; }
         .faq-item strong { color: #fff; }
 
+        /* --- HOW IT WORKS (INFOGRAPHIE CSS) --- */
+        .process-container { display: flex; align-items: center; justify-content: space-between; margin-top: 20px; background: #222; padding: 25px; border-radius: 12px; border: 1px solid #333; gap: 15px; }
+        .process-step { display: flex; flex-direction: column; align-items: center; text-align: center; flex: 1; }
+        .process-icon { width: 55px; height: 55px; background: #1c1c1c; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px; border: 2px solid #FF6A00; color: #FF6A00; }
+        .process-icon svg { width: 26px; height: 26px; stroke: currentColor; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+        .process-step h4 { color: #fff; margin: 0 0 5px 0; font-size: 1.1em; }
+        .process-step p { color: #aaa; font-size: 0.85em; margin: 0; line-height: 1.4; }
+        .process-arrow { color: #FF6A00; font-size: 1.5em; font-weight: bold; }
+
         /* --- TRUST BADGES (PAIEMENT) --- */
         .payment-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
         .payment-badge { background: #fff; width: 65px; height: 42px; border-radius: 6px; display: flex; justify-content: center; align-items: center; padding: 6px; box-sizing: border-box; }
@@ -163,6 +172,10 @@
             
             .pc-qr-codes { display: none; }
             .mobile-download-instruction { display: block; }
+
+            /* Adaptation Mobile de l'infographie */
+            .process-container { flex-direction: column; gap: 20px; }
+            .process-arrow { transform: rotate(90deg); }
         }
     </style>
 </head>
@@ -249,7 +262,7 @@
         <div class="grid" id="catalogue"></div>
     </div>
 
-    <!-- NOUVELLE SECTION WHOLESALE / B2B -->
+    <!-- SECTION WHOLESALE / B2B -->
     <div id="wholesale" class="intro-banner" style="margin-top: 60px; border-color: #FFCB05; scroll-margin-top: 80px;">
         <h2 style="color: #FFCB05;">💼 Wholesale & Card Shops (Orders > $500)</h2>
         <p>Are you a Local Game Store, a breaker, or an investor looking to buy in bulk? Skip the standard proxy process.</p>
@@ -268,6 +281,38 @@
     <div id="guide" class="faq-container">
         <h2 style="text-align: center; color: #FF6A00; font-size: 2em; margin-bottom: 40px;">How to Order & Buyer Guide</h2>
         
+        <!-- NOUVELLE INFOGRAPHIE : WHAT IS A PROXY -->
+        <div class="faq-item" style="border-color: #FF6A00;">
+            <h3>🤔 What is a Proxy Agent (Sugargoo)?</h3>
+            <p>Buying directly from Chinese marketplaces is impossible without a local Chinese address and payment method. Sugargoo acts as your trusted middleman to bridge this gap:</p>
+            
+            <div class="process-container">
+                <div class="process-step">
+                    <div class="process-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    </div>
+                    <h4>1. Buy</h4>
+                    <p>Order through our catalog. Sugargoo buys the item for you at local prices.</p>
+                </div>
+                <div class="process-arrow">➔</div>
+                <div class="process-step">
+                    <div class="process-icon">
+                        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    </div>
+                    <h4>2. Warehouse</h4>
+                    <p>They receive it in China, send you QC photos, and store it securely.</p>
+                </div>
+                <div class="process-arrow">➔</div>
+                <div class="process-step">
+                    <div class="process-icon">
+                        <svg viewBox="0 0 24 24"><path d="M22 2L11 13"></path><path d="M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
+                    </div>
+                    <h4>3. Ship Globally</h4>
+                    <p>Bundle multiple items into one parcel and ship it directly to your door!</p>
+                </div>
+            </div>
+        </div>
+
         <div class="faq-item">
             <h3>📱 1. Seamless App Experience (Mobile)</h3>
             <p>Sugargoo offers a powerful mobile app for your smartphone. Once registered via our link above, simply click <strong>"Copy Link for App"</strong> on any product here, open your Sugargoo App, and it will automatically detect the link and ask if you want to buy it!</p>
