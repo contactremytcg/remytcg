@@ -149,7 +149,7 @@
     </style>
 </head>
 <body>
-    <!-- POP-UP D'INTENTION D'ACHAT (S'affiche uniquement au clic si jamais validée) -->
+    <!-- POP-UP D'INTENTION D'ACHAT -->
     <div id="welcomeModal" class="modal-overlay">
         <div class="modal-content">
             <h2>Before you order... 🛑</h2>
@@ -258,6 +258,12 @@
                 @remytcg
             </a>
         </div>
+        <div class="contact-links">
+            <button onclick="copyEmail(this)" class="contact-btn email-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>contact.remytcg@gmail.com</span>
+            </button>
+        </div>
     </div>
 
     <script>
@@ -304,6 +310,22 @@
             const modal = document.getElementById('welcomeModal');
             modal.style.opacity = '0';
             setTimeout(() => modal.style.display = 'none', 300);
+        }
+
+        function copyEmail(button) {
+            const email = "contact.remytcg@gmail.com";
+            const textSpan = button.querySelector("span");
+            navigator.clipboard.writeText(email).then(() => {
+                const originalText = textSpan.innerText;
+                textSpan.innerText = "Copied! ✓";
+                button.style.borderColor = "#4CAF50";
+                button.style.color = "#4CAF50";
+                setTimeout(() => {
+                    textSpan.innerText = originalText;
+                    button.style.borderColor = "";
+                    button.style.color = "";
+                }, 2500);
+            });
         }
     </script>
 </body>
