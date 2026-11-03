@@ -53,18 +53,20 @@
         .subtitle { font-weight: 700; font-size: 1.1em; opacity: 0.9; max-width: 600px; margin: 5px auto 0 auto; }
         
         /* Banners */
-        .intro-banner { max-width: 900px; width: 90%; margin: -40px auto 40px auto; background: #1c1c1c; border: 2px solid #333; border-radius: 12px; padding: 25px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); position: relative; z-index: 10; scroll-margin-top: 80px; box-sizing: border-box; }
-        .intro-banner h2 { color: #FF6A00; margin-top: 0; font-size: 1.4em; margin-bottom: 10px;}
+        .intro-banner { max-width: 900px; width: 90%; margin: -40px auto 40px auto; background: #1c1c1c; border: 2px solid #333; border-radius: 12px; padding: 25px; text-align: left; box-shadow: 0 10px 30px rgba(0,0,0,0.5); position: relative; z-index: 10; scroll-margin-top: 80px; box-sizing: border-box; }
+        .intro-banner h2 { color: #FF6A00; margin-top: 0; font-size: 1.4em; margin-bottom: 10px; display: flex; align-items: center; gap: 10px;}
         .intro-banner p { color: #ddd; margin-bottom: 20px; font-size: 0.95em; }
+        .intro-banner ul { color: #ddd; padding-left: 20px; margin-bottom: 20px; font-size: 0.95em; }
+        .intro-banner li { margin-bottom: 15px; }
         .intro-banner strong { color: #FF6A00; }
         
-        .btn-main { display: inline-block; background: #FF6A00; color: #fff; padding: 16px 30px; text-decoration: none; font-weight: 900; border-radius: 8px; font-size: 1.1em; transition: transform 0.2s, background 0.2s; width: 100%; max-width: 320px; box-sizing: border-box;}
+        .btn-main { display: inline-block; background: #FF6A00; color: #fff; padding: 16px 30px; text-decoration: none; font-weight: 900; border-radius: 8px; font-size: 1.1em; transition: transform 0.2s, background 0.2s; text-align: center; width: 100%; max-width: 320px; box-sizing: border-box;}
         .btn-main:hover { background: #fff; color: #FF6A00; transform: translateY(-2px); }
 
         /* --- SECTION TÉLÉCHARGEMENT HYBRIDE --- */
-        .download-section { margin-top: 25px; padding-top: 20px; border-top: 1px solid #333; }
+        .download-section { text-align: center; margin-top: 25px; padding-top: 20px; border-top: 1px solid #333; }
         .download-section p.step-title { font-size: 0.85em; color: #aaa; margin-bottom: 15px; }
-        .pc-qr-codes { display: flex; justify-content: center; gap: 30px; }
+        .pc-qr-codes { display: flex; justify-content: center; gap: 30px; margin-top: 10px; }
         .qr-box { display: flex; flex-direction: column; align-items: center; gap: 8px; color: #ddd; font-size: 0.9em; }
         .qr-box img { width: 100px; height: 100px; background: #fff; padding: 5px; border-radius: 8px; border: 1px solid #444; }
         .mobile-download-instruction { display: none; background: #222; border: 1px solid #444; padding: 12px; border-radius: 8px; color: #ddd; font-size: 0.9em; max-width: 350px; margin: 0 auto; }
@@ -147,14 +149,17 @@
             .filters { flex-direction: column; gap: 10px; margin-bottom: 20px; }
             .search-bar, .category-select { padding: 10px 15px; font-size: 0.9em; width: 100%; min-width: unset; box-sizing: border-box;}
 
-            /* Grosse modification ici : 1 seule colonne sur mobile pour lisibilité maximale */
-            .grid { grid-template-columns: 1fr; gap: 15px; }
+            /* 2 COLONNES SUR MOBILE */
+            .grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
             .card { border-radius: 10px; }
-            .card-img { height: 180px; }
-            .card-content { padding: 15px; }
+            .card-img { height: 135px; }
+            .card-content { padding: 10px; }
+            .category { font-size: 0.6em; }
+            .card h3 { font-size: 0.9em; margin: 4px 0 6px 0; line-height: 1.25; }
+            .card p { font-size: 0.75em; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 8px;}
             
             .btn-pc { display: none; }
-            .btn-mobile { display: block; background: #222; color: #FF6A00; border: 2px solid #FF6A00; padding: 10px; font-size: 0.9em; cursor: pointer; }
+            .btn-mobile { display: block; background: #222; color: #FF6A00; border: 2px solid #FF6A00; padding: 8px; font-size: 0.85em; cursor: pointer; }
             .btn-mobile:active { background: #FF6A00; color: #111; }
 
             .faq-item { padding: 15px; margin-bottom: 15px;}
@@ -198,10 +203,15 @@
     
     <div id="setup" class="intro-banner">
         <h2>📦 Step 1: Account Setup</h2>
-        <p>To buy from the Chinese Taobao market at local prices without Western markups, you need a proxy account. Register via our official link to claim your <strong>800 CNY (~$110 USD) Welcome Coupon Bundle</strong> (14 coupons valid for 90 days) and support RemyTCG.</p>
+        <p>To buy from the Chinese Taobao market at local prices, you must first create a proxy account on Sugargoo.</p>
 
+        <ul>
+            <li><strong>Full Transparency - How we earn:</strong> We charge <strong>zero markup</strong> on the products. You pay the exact same local Chinese price as anyone living in Beijing. When you register via our link below, Sugargoo pays us a small affiliate commission (~4%) out of their pocket on the international shipping fee. You get the cheapest cards possible, and we get rewarded by the platform for curating this catalog!</li>
+            <li><strong>Welcome Bonus:</strong> By using our official link, Sugargoo will credit your new account with an <strong>800 CNY (~$110 USD) Coupon Bundle</strong>.</li>
+            <li><strong>Mobile App:</strong> Once registered, download the app. Click "Copy Link for App" on any product here, open Sugargoo, and it will detect it automatically!</li>
+        </ul>
         <div style="text-align: center;">
-            <a href="https://m.sugargoo.com/register?memberId=3894055016867374984" class="btn-main" target="_blank">Register on Sugargoo</a>
+            <a href="https://m.sugargoo.com/register?memberId=3894055016867374984" class="btn-main" target="_blank">Register & Claim 800 CNY Bonus</a>
         </div>
         
         <!-- SECTION DE TÉLÉCHARGEMENT HYBRIDE -->
@@ -243,7 +253,7 @@
     <!-- SECTION WHOLESALE / B2B -->
     <div id="wholesale" class="intro-banner" style="margin-top: 50px; border-color: #FFCB05; scroll-margin-top: 70px;">
         <h2 style="color: #FFCB05; justify-content: center;">💼 Wholesale & Bulk Orders</h2>
-        <p style="margin-bottom: 15px;">Are you a Local Game Store, a breaker, or an investor looking to buy in bulk? We work directly with official local distributors (e.g., Linocheny Manlian International Trade Co., Ltd) to supply you securely.</p>
+        <p style="margin-bottom: 15px;">Are you a Local Game Store, a breaker, or an investor looking to buy in bulk? We work directly with official local distributors to supply you securely.</p>
         <p style="font-size: 0.85em; color: #aaa; margin-bottom: 20px;">* Factory Sealed Cartons (12 to 40 boxes per case). 100% Authentic guarantee. Minimum order value: $500 USD.</p>
         <div style="text-align: center;">
             <a href="#contact" class="btn-main" style="background: #FFCB05; color: #111;">Contact Us for a Bulk Quote</a>
@@ -296,21 +306,22 @@
         </div>
 
         <div class="faq-item">
-            <h3>📦 2. How are my cards packed and stored?</h3>
+            <h3>📦 2. Packing, Storage & Value-Added Services (VAS)</h3>
             <p>Unlike loose packs, you are purchasing <strong>factory-sealed boxes and displays</strong>. Sugargoo receives your sealed products directly in their Shenzhen warehouse.</p>
             <ul>
-                <li><strong>Free Storage:</strong> You can store your items in their warehouse for <strong>100 days for free</strong>, starting from the moment the order status changes to "Has been Stored".</li>
-                <li>You can check QC (Quality Control) pictures of your sealed items directly in your Sugargoo account.</li>
-                <li><strong>⚠️ Important Warning:</strong> If items are stored for more than 100 days and you don't contact customer service to apply for an extension, Sugargoo assumes the items are abandoned and will destroy them without further notification. Ship your items in time!</li>
+                <li><strong>Free Storage:</strong> You can store your items in their warehouse for <strong>100 days for free</strong>, starting from the moment the order status changes to "Has been Stored". (<em>Warning: After 100 days without action, items are considered abandoned</em>).</li>
+                <li><strong>Extra Protection (VAS):</strong> For valuable TCG displays, we highly recommend adding Value-Added Services before shipping. Sugargoo offers EPE Foam Protection (10 CNY), Corner Protectors (8 CNY), and Waterproof Packaging (10 CNY) to ensure your sealed boxes arrive in mint condition.</li>
             </ul>
         </div>
 
         <div class="faq-item">
-            <h3>✈️ 3. Shipping & Customs Fees</h3>
-            <p>Shipping is charged by volumetric weight, which reflects the size of the packed parcel. The minimum shipping charge is usually based on 500g or 1kg.</p>
+            <h3>✈️ 3. Shipping, Tracking & Customs</h3>
+            <p>Shipping is charged by volumetric weight. The first kilo is always the most expensive, so <strong>combining multiple orders into one shipment</strong> will drastically reduce your shipping cost per item.</p>
             <ul>
-                <li><strong>Combine & Save:</strong> The first kilo is the most expensive. Larger parcels cost less per kg, so combining multiple orders into one shipment will drastically reduce your shipping cost per item.</li>
-                <li><strong>Tax-Free Routes:</strong> Sugargoo offers over 2000+ shipping routes globally, including specific "Tax-Free" lines for the US, EU, and UK. When using these lines, Customs duties and VAT are handled by the carrier. You should not need to pay additional import charges on delivery.</li>
+                <li><strong>Tracking your parcel:</strong> Once shipped, you can track it via the "Packing Center -> Shipped" tab on Sugargoo. Logistics nodes will update from "Accepted by Carrier" to "At Departure Airport", "In Transit", and finally "Delivered". Updates may lag behind real-time movements.</li>
+                <li><strong>Customs & Tax-Free Routes:</strong> Sugargoo offers specific "Tax-Free" lines for the US, EU, and UK where Customs duties are handled by the carrier. </li>
+                <li><strong>Duty-Free Thresholds (Reference):</strong> Depending on your route, keeping your declared value below these thresholds helps avoid taxes: USA (~$800 USD), Australia (~$650 USD), UK (~£15 GBP), Canada (~$20 CAD). For the EU, the threshold is €0 (VAT applies), which is why Tax-Free lines are highly recommended.</li>
+                <li><strong>Insurance:</strong> For pricey purchases, we highly recommend purchasing the optional shipping insurance offered by Sugargoo during checkout to protect against loss or transit damage.</li>
             </ul>
         </div>
 
