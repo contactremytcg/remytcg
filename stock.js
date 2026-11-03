@@ -2,10 +2,17 @@ const memberId = "3894055016867374984";
 const registerLink = `https://m.sugargoo.com/register?memberId=${memberId}`;
 const placeholderImg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0PMkOk0FTHAa1QT4_ESpb7qv8fCuF9Y7BK-xsgWgN7HkxM93A9W2eDLT&s=10";
 
-// Moteur de génération automatique des liens affiliés Sugargoo par item
+// Moteur de génération automatique des liens affiliés Sugargoo par item (avec correction mobile)
 const formatSugargooLink = (taobaoId) => {
     const taobaoUrl = encodeURIComponent(`https://item.taobao.com/item.htm?id=${taobaoId}`);
-    return `https://www.sugargoo.com/#/home/productDetail?productLink=${taobaoUrl}&memberId=${memberId}`;
+    
+    // Détecte si l'utilisateur navigue depuis un smartphone ou une tablette
+    const isMobile = /iPhone|Android|iPad|iPod/i.test(navigator.userAgent);
+    
+    // Attribue le sous-domaine direct pour éviter la redirection serveur qui casse le lien
+    const prefix = isMobile ? "m" : "www";
+    
+    return `https://${prefix}.sugargoo.com/#/home/productDetail?productLink=${taobaoUrl}&memberId=${memberId}`;
 };
 
 const produits = [
