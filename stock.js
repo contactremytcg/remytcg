@@ -273,6 +273,14 @@ function afficher(liste) {
     liste.forEach(p => {
         const catBadge = Array.isArray(p.categorie) ? p.categorie.join(" • ") : p.categorie;
 
+        // --- GÉNÉRATION AUTOMATIQUE DU LIEN TAOBAO ---
+        let lienCopie = p.lien; 
+        const idMatch = p.lien.match(/id=([1-9]\d{8,})/); // Cherche le numéro d'ID Taobao
+        if (idMatch && idMatch[1]) {
+            lienCopie = `https://item.taobao.com/item.htm?id=${idMatch[1]}`;
+        }
+        // ---------------------------------------------
+
         container.innerHTML += `
             <div class="card">
                 <img src="${p.image}" alt="${p.nom}" class="card-img" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0PMkOk0FTHAa1QT4_ESpb7qv8fCuF9Y7BK-xsgWgN7HkxM93A9W2eDLT&s=10'">
@@ -282,7 +290,7 @@ function afficher(liste) {
                     <p>${p.description}</p>
                     <div class="button-group">
                         <a href="${p.lien}" class="btn" target="_blank">Order</a>
-                        <button class="btn-copy" onclick="copierLienProduit(this, '${p.lien}')">
+                        <button class="btn-copy" onclick="copierLienProduit(this, '${lienCopie}')">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
                             Copy Link
                         </button>
