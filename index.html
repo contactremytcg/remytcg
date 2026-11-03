@@ -55,12 +55,19 @@
         /* Banners */
         .intro-banner { max-width: 900px; width: 90%; margin: -40px auto 40px auto; background: #1c1c1c; border: 2px solid #333; border-radius: 12px; padding: 25px; text-align: left; box-shadow: 0 10px 30px rgba(0,0,0,0.5); position: relative; z-index: 10; scroll-margin-top: 80px; box-sizing: border-box; }
         .intro-banner h2 { color: #FF6A00; margin-top: 0; font-size: 1.4em; margin-bottom: 10px; display: flex; align-items: center; gap: 10px;}
-        .intro-banner p { color: #ddd; margin-bottom: 20px; font-size: 0.95em; }
-        .intro-banner ul { color: #ddd; padding-left: 20px; margin-bottom: 20px; font-size: 0.95em; }
-        .intro-banner li { margin-bottom: 15px; }
-        .intro-banner strong { color: #FF6A00; }
+        .intro-banner p { color: #ddd; margin-bottom: 15px; font-size: 0.95em; }
         
-        .btn-main { display: inline-block; background: #FF6A00; color: #fff; padding: 16px 30px; text-decoration: none; font-weight: 900; border-radius: 8px; font-size: 1.1em; transition: transform 0.2s, background 0.2s; text-align: center; width: 100%; max-width: 320px; box-sizing: border-box;}
+        /* --- ACCORDÉON POUR ÉPURER LE TEXTE --- */
+        details.info-accordion { background: #222; border: 1px solid #444; border-radius: 8px; padding: 12px 15px; margin-bottom: 20px; cursor: pointer; transition: all 0.3s ease; }
+        details.info-accordion summary { font-weight: 700; color: #FFCB05; outline: none; list-style: none; display: flex; align-items: center; justify-content: space-between; font-size: 0.95em;}
+        details.info-accordion summary::-webkit-details-marker { display: none; }
+        details.info-accordion summary::after { content: '▼'; font-size: 0.8em; color: #aaa; transition: transform 0.3s ease;}
+        details.info-accordion[open] summary::after { transform: rotate(180deg); }
+        details.info-accordion ul { margin-top: 15px; margin-bottom: 5px; padding-left: 20px; font-size: 0.9em; color: #ddd; }
+        details.info-accordion li { margin-bottom: 12px; }
+        details.info-accordion strong { color: #FF6A00; }
+        
+        .btn-main { display: inline-block; background: #FF6A00; color: #fff; padding: 16px 30px; text-decoration: none; font-weight: 900; border-radius: 8px; font-size: 1.1em; transition: transform 0.2s, background 0.2s; text-align: center; width: 100%; box-sizing: border-box;}
         .btn-main:hover { background: #fff; color: #FF6A00; transform: translateY(-2px); }
 
         /* --- SECTION TÉLÉCHARGEMENT HYBRIDE --- */
@@ -127,10 +134,6 @@
         .contact-links { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 15px;}
         .contact-btn { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; border-radius: 6px; text-decoration: none; font-weight: 700; transition: all 0.2s; border: 1px solid #333; color: #fff; background: #1c1c1c; font-size: 0.9em; cursor: pointer; font-family: inherit; }
         .contact-btn:hover { transform: translateY(-2px); }
-        .insta-btn:hover { background: #E1306C; border-color: #E1306C; color: #fff; }
-        .tiktok-btn:hover { background: #00f2fe; border-color: #00f2fe; color: #111; }
-        .youtube-btn:hover { background: #FF0000; border-color: #FF0000; color: #fff; }
-        .email-btn:hover { background: #FF6A00; border-color: #FF6A00; color: #fff; }
 
         /* --- OPTIMISATION MOBILE (< 768px) --- */
         @media (max-width: 768px) {
@@ -147,7 +150,7 @@
 
             .intro-banner { padding: 20px 15px; margin-top: -30px; border-radius: 10px; }
             .intro-banner h2 { font-size: 1.1em; justify-content: center;}
-            .intro-banner p { font-size: 0.85em; margin-bottom: 15px;}
+            .intro-banner p { font-size: 0.85em; margin-bottom: 12px;}
             .btn-main { padding: 12px 15px; font-size: 0.95em; width: 100%;}
 
             .filters { flex-direction: column; gap: 10px; margin-bottom: 20px; }
@@ -206,13 +209,18 @@
     </div>
     
     <div id="setup" class="intro-banner">
-        <h2>📦 Step 1: Account Setup (Browser First)</h2>
+        <h2>📦 Step 1: Account Setup</h2>
         <p>To buy from the Chinese Taobao market at local prices, you must first create a proxy account on Sugargoo.</p>
 
-        <ul>
-            <li><strong>⚠️ Crucial Step for Tracking:</strong> You must register using your <strong>web browser</strong> (Safari, Chrome, PC) via the orange button below <em>before</em> downloading the app. This locks in your <strong>800 CNY Welcome Bundle</strong> and links you to RemyTCG!</li>
-            <li><strong>Full Transparency - How we earn:</strong> We charge <strong>zero markup</strong> on the products. You pay the exact same local Chinese price as anyone living in Beijing. Sugargoo simply pays us a small affiliate commission (~4%) out of their pocket on the international shipping fee. You get the cheapest cards possible, and we get rewarded for curating this catalog!</li>
-        </ul>
+        <!-- NOUVEAU: ACCORDÉON POUR ÉPURER LA VUE MOBILE -->
+        <details class="info-accordion">
+            <summary>⚠️ Read before registering (Rules & Transparency)</summary>
+            <ul>
+                <li><strong>Crucial Step for Tracking:</strong> You must register using your <strong>web browser</strong> (Safari, Chrome, PC) via the orange button below <em>before</em> downloading the app. This locks in your <strong>800 CNY Welcome Bundle</strong> and links you to RemyTCG!</li>
+                <li><strong>Full Transparency - How we earn:</strong> We charge <strong>zero markup</strong> on the products. You pay the exact same local Chinese price as anyone living in Beijing. Sugargoo simply pays us a small affiliate commission (~4%) out of their pocket on the international shipping fee. You get the cheapest cards possible, and we get rewarded for curating this catalog!</li>
+            </ul>
+        </details>
+
         <div style="text-align: center;">
             <a href="https://m.sugargoo.com/register?memberId=3894055016867374984" class="btn-main" target="_blank">Register & Claim 800 CNY Bonus</a>
         </div>
@@ -230,7 +238,7 @@
         <div class="grid" id="catalogue"></div>
     </div>
 
-    <!-- NOUVELLE POSITION : TÉLÉCHARGEMENT DE L'APP SOUS LE CATALOGUE -->
+    <!-- TÉLÉCHARGEMENT DE L'APP SOUS LE CATALOGUE -->
     <div id="app-download" class="intro-banner" style="margin-top: 50px; scroll-margin-top: 70px;">
         <h2 style="justify-content: center;">📱 Step 2: Download the App</h2>
         <p style="text-align: center; margin-bottom: 20px;">For the best shopping experience, download the Sugargoo App <strong>after creating your account</strong> via the browser. Simply click "Copy Link for App" on any product above, open the app, and it will detect it automatically!</p>
