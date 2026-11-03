@@ -1,13 +1,6 @@
 const memberId = "3894055016867374984";
-const placeholderImg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0PMkOk0FTHAa1QT4_ESpb7qv8fCuF9Y7BK-xsgWgN7HkxM93A9W2eDLT&s=10";
 
-// Moteur de génération du lien PC Sugargoo
-const formatSugargooLink = (taobaoId) => {
-    const taobaoUrl = encodeURIComponent(`https://item.taobao.com/item.htm?id=${taobaoId}`);
-    return `https://www.sugargoo.com/#/home/productDetail?productLink=${taobaoUrl}&memberId=${memberId}`;
-};
-
-// Fonction pour copier le lien Taobao source (Mobile)
+// Fonction globale pour copier le lien Taobao source (Mobile)
 window.copyToClipboard = function(text, btn) {
     navigator.clipboard.writeText(text).then(() => {
         const originalText = btn.innerText;
@@ -20,6 +13,13 @@ window.copyToClipboard = function(text, btn) {
             btn.style.color = "";
         }, 2500);
     });
+};
+
+const formatSugargooLink = (taobaoId) => {
+    const taobaoUrl = encodeURIComponent(`https://item.taobao.com/item.htm?id=${taobaoId}`);
+    const isMobile = /iPhone|Android|iPad|iPod/i.test(navigator.userAgent);
+    const prefix = isMobile ? "m" : "www";
+    return `https://${prefix}.sugargoo.com/#/home/productDetail?productLink=${taobaoUrl}&memberId=${memberId}`;
 };
 
 const produits = [
@@ -293,17 +293,17 @@ function afficher(liste) {
         const catBadge = Array.isArray(p.categorie) ? p.categorie.join(" • ") : p.categorie;
         const estManquant = (p.taobaoId === "");
 
-        // Génération des deux types de liens
         const taobaoUrlRaw = estManquant ? "" : `https://item.taobao.com/item.htm?id=${p.taobaoId}`;
         const sugargooUrl = estManquant ? "#" : formatSugargooLink(p.taobaoId);
 
         let boutonsHtml = '';
         if (estManquant) {
-            boutonsHtml = `<a href="#" class="btn-main-card" style="background: #e74c3c; color: #fff; border: 1px solid #c0392b; cursor: not-allowed;">⚠️ ID Taobao Missing</a>`;
+            boutonsHtml = `<button class="btn-main-card" style="background: #e74c3c; color: #fff; border: 1px solid #c0392b; cursor: not-allowed;">⚠️ ID Taobao Missing</button>`;
         } else {
+            // Ici, au lieu d'un lien direct, on appelle notre vérificateur de Pop-up (triggerProductAction)
             boutonsHtml = `
-                <a href="${sugargooUrl}" class="btn-main-card btn-pc" target="_blank">Order on Sugargoo</a>
-                <button onclick="copyToClipboard('${taobaoUrlRaw}', this)" class="btn-main-card btn-mobile">Copy Link for App</button>
+                <button onclick="triggerProductAction('pc', '${sugargooUrl}')" class="btn-main-card btn-pc">Order on Sugargoo</button>
+                <button onclick="triggerProductAction('mobile', '${taobaoUrlRaw}', this)" class="btn-main-card btn-mobile">Copy Link for App</button>
             `;
         }
 
