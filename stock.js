@@ -1,7 +1,7 @@
 const placeholderImg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0PMkOk0FTHAa1QT4_ESpb7qv8fCuF9Y7BK-xsgWgN7HkxM93A9W2eDLT&s=10";
 const defaultLink = "https://joyagoo.com/register/?ref=301118558";
-const gemPacksLink = "https://joyagoo.com/product/?shop_type=taobao&id=932678630102&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.j6NruYWF4FP0eDO%3Ftk%3D39pe6ZLLR1H&ref=301118558";
-const collect151Link = "https://joyagoo.com/product/?shop_type=taobao&id=899608090307&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jg13MY4AuDDL8G6%3Ftk%3DxVdu6ZLJRjU&ref=301118558";
+const gemPacksLink = "https://joyagoo.com/product/?shop_type=taobao&id=932678630102&platform=TAOBAO&ref=301118558";
+const collect151Link = "https://joyagoo.com/product/?shop_type=taobao&id=899608090307&platform=TAOBAO&ref=301118558";
 
 const produits = [
     // ==========================================
@@ -11,7 +11,7 @@ const produits = [
         categorie: "As Seen on My Reels",
         nom: "Greninja Keychain Set",
         description: "As seen in my latest opening video!",
-        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1080814663430&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jTiK1Ov3j7ZePoc%3Ftk%3DFjg46a8Zg0o&ref=301118558",
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1080814663430&platform=TAOBAO&ref=301118558",
         image: "https://x-playground.com/cdn/shop/files/Pokemon_TCG_30th_Celebration_Greninja_ex_Card_Display_Sleeve_Set.jpg?v=1789822489&width=600"
     },
 
@@ -22,14 +22,14 @@ const produits = [
         categorie: "30th Anniversary",
         nom: "30th Anniversary Booster Box (Display)",
         description: "Contains 20 booster packs. The core set for anniversary pulls!",
-        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1062273634908&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jUxToEYvXzkRKZA%3Ftk%3DZkkW6a8TLRV&ref=301118558",
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1062273634908&platform=TAOBAO&ref=301118558",
         image: "https://toy-treasure.com/cdn/shop/files/30th-celebration-chinese.jpg?v=1790767347&width=1445"
     },
     {
         categorie: "30th Anniversary",
         nom: "Charizard Figure Box",
         description: "Premium box featuring an exclusive Charizard figure and special promos.",
-        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1084248931939&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.j6NMYqlW7GBi4OL%3Ftk%3D3pxF6ZLP775&ref=301118558",
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1084248931939&platform=TAOBAO&ref=301118558",
         image: "https://www.tcghobby.com/cdn/shop/files/30thcelebrationcharizardfigurine.webp?v=1787160912"
     },
     {
@@ -43,70 +43,70 @@ const produits = [
         categorie: "30th Anniversary",
         nom: "Umbreon & Espeon UPC Box",
         description: "The ultimate Ultra Premium Collection featuring both iconic Eeveelutions.",
-        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1062273634908&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jUxToEYvXzkRKZA%3Ftk%3DZkkW6a8TLRV&ref=301118558",
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1062273634908&platform=TAOBAO&ref=301118558",
         image: "https://www.yumecards.ca/cdn/shop/files/Product-2026-09-06T091809.798.jpg?v=1788700962"
     },
     {
         categorie: "30th Anniversary",
         nom: "Tri-Packs Blisters",
         description: "Perfect for casual rips, featuring 3 packs and a guaranteed promo card.",
-        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1062273634908&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jUxToEYvXzkRKZA%3Ftk%3DZkkW6a8TLRV&ref=301118558",
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1062273634908&platform=TAOBAO&ref=301118558",
         image: "https://i0.wp.com/katzenworld.shop/wp-content/uploads/2026/10/xCsvB678SEHnQsnJEwA77_b0X5C_j1iK9xxyQceY-t_KUwwLreptpTpXEX0qHQWHPqk9WlhnN2QZ1yrg0YdisjlyQ9IMxV-whH58ShVYumxCmz8a0LPxVc8lOcENGBtWJeNdq1_NZWYt5ucX0s73g5Qbw_W6i7-oGYaptOiANo_JHoO6qQh_dU24ewjlOK8t.jpeg?fit=1080%2C1080&ssl=1"
     },
     {
         categorie: "30th Anniversary",
         nom: "Umbreon Box",
         description: "Dedicated Umbreon collector's box with exclusive accessories and packs.",
-        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1062273634908&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jUxToEYvXzkRKZA%3Ftk%3DZkkW6a8TLRV&ref=301118558",
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1062273634908&platform=TAOBAO&ref=301118558",
         image: "https://www.tcghobby.com/cdn/shop/files/simplifiedchinesedeluxesetumbreon.webp?v=1789224364"
     },
     {
         categorie: "30th Anniversary",
         nom: "Espeon Box",
         description: "Dedicated Espeon collector's box with exclusive accessories and packs.",
-        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1062273634908&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jUxToEYvXzkRKZA%3Ftk%3DZkkW6a8TLRV&ref=301118558",
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1062273634908&platform=TAOBAO&ref=301118558",
         image: "https://x-playground.com/cdn/shop/files/Pokemon_TCG_30th_Celebration_Espeon_ex_Deluxe_Deck_Set_Simplified_Chinese.jpg?v=1789823886&width=600"
     },
     {
         categorie: "30th Anniversary",
         nom: "Greninja Keychain Box",
         description: "Includes an exclusive Greninja keychain and assorted booster packs.",
-        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1080814663430&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jTiK1Ov3j7ZePoc%3Ftk%3DFjg46a8Zg0o&ref=301118558",
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1080814663430&platform=TAOBAO&ref=301118558",
         image: "https://x-playground.com/cdn/shop/files/Pokemon_TCG_30th_Celebration_Greninja_ex_Card_Display_Sleeve_Set.jpg?v=1789822489&width=600"
     },
     {
         categorie: "30th Anniversary",
         nom: "Espeon Keychain Box",
         description: "Includes an exclusive Espeon keychain and assorted booster packs.",
-        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1080814663430&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jTiK1Ov3j7ZePoc%3Ftk%3DFjg46a8Zg0o&ref=301118558",
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1080814663430&platform=TAOBAO&ref=301118558",
         image: "https://spoilsandloot.com/cdn/shop/files/syl_1.jpg?v=1789577455"
     },
     {
         categorie: ["30th Anniversary", "Blind Boxes"],
         nom: "Pikachu Blind Box",
         description: "A fun mystery box featuring Pikachu exclusives and surprise hits.",
-        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1079806548243&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jgYr93VXa9mzOrw%3Ftk%3Dh1Bw6ZL3zW1&ref=301118558",
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1079806548243&platform=TAOBAO&ref=301118558",
         image: "https://collectorstore.com/cdn/shop/files/CollectorStore00002_7207263c-4504-4ee0-ae14-b3d648f6dba7.jpg?v=1790101321&width=1445"
     },
     {
         categorie: "30th Anniversary",
         nom: "Starter Pack Vol. 1",
         description: "Perfect entry point for the 30th-anniversary set.",
-        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1036462263685&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jT3AG1ewBO0H0xq%3Ftk%3D6glA6ZpZ9Aa&ref=301118558",
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1036462263685&platform=TAOBAO&ref=301118558",
         image: "https://www.tcghobby.com/cdn/shop/files/Simplified_Chinese_Pokemon_30th_Anniversary_First_Partner_Special_Illustration_Card_Set_Vol._1_Display_Set.jpg?v=1776401355&width=645"
     },
     {
         categorie: "30th Anniversary",
         nom: "Starter Pack Vol. 2",
         description: "Second wave starter collection for the 30th anniversary.",
-        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1054578164218&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jg1OKZ6xMoWKWfY%3Ftk%3D6kft6ZpYh2U&ref=301118558",
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1054578164218&platform=TAOBAO&ref=301118558",
         image: "https://www.tcghobby.com/cdn/shop/files/SimplifiedChinesePokemon30thAnniversaryFirstPartnerSpecialIllustrationCardSetVol.2.webp?crop=center&height=500&v=1778251789&width=600"
     },
     {
         categorie: "30th Anniversary",
         nom: "Starter Pack Vol. 3",
         description: "Third wave starter collection for the 30th anniversary.",
-        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1067989553110&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jSVIavRKf5WbIn7%3Ftk%3DYONJ6ZpY2m2&ref=301118558",
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1067989553110&platform=TAOBAO&ref=301118558",
         image: "https://www.tcghobby.com/cdn/shop/files/firstpartnerdisplaysetvol.3set.webp?v=1784301375"
     },
 
@@ -117,7 +117,7 @@ const produits = [
         categorie: "Blind Boxes",
         nom: "Ditto Blind Box",
         description: "Ditto Blind Box collection.",
-        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1085294497168&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.j6nTiIwTzQE4iMJ%3Ftk%3DWVQP6Zp50mf&ref=301118558",
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1085294497168&platform=TAOBAO&ref=301118558",
         image: "https://icecreamshopper.com/cdn/shop/files/O1CN01z0YkZYMt2vC1chua__4611686018427385661-0-item_pic.webp?v=1790240505&width=533"
     },
 
@@ -128,7 +128,7 @@ const produits = [
         categorie: "Gem Packs",
         nom: "Gem Pack Vol. 1",
         description: "Classic Jumbo Booster boxes containing expanded packs with guaranteed hits per box.",
-        lien: "https://joyagoo.com/product/?shop_type=taobao&id=979607578715&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jS4bDBKGZJPTvTK%3Ftk%3DUKBM6Zpien6&ref=301118558",
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=979607578715&platform=TAOBAO&ref=301118558",
         image: "https://www.maxgaming.com/bilder/artiklar/zoom/35546_1.jpg?m=1753267142"
     },
     {
@@ -181,14 +181,14 @@ const produits = [
         categorie: "Scarlet & Violet Era",
         nom: "Chasing Glory (CSV10)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
-        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1064632260800&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jT3JnKpQfOuqjz8%3Ftk%3DfOtV6ZLsuv7&ref=301118558",
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1064632260800&platform=TAOBAO&ref=301118558",
         image: "https://collectorstore.com/cdn/shop/files/CollectorStore00001_937038ac-8bb9-4f6e-950b-742363216669.jpg?v=1784582543&width=990"
     },
     {
         categorie: "Scarlet & Violet Era",
         nom: "Crystal Gathering (CSV9.5)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
-        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1058877644488&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.j6ne8gzc9GFXCEZ%3Ftk%3DG2JF6ZpWaP2&ref=301118558",
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1058877644488&platform=TAOBAO&ref=301118558",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStiWS_bFR5gh7QRwgevHWL5Naw-8q9-wlqlLHh-Gwil5rhRVYNoP7wSfI&s=10"
     },
     {
@@ -209,7 +209,7 @@ const produits = [
         categorie: "Scarlet & Violet Era",
         nom: "Blade Awakened (CSV7)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
-        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1036430851914&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jTed3zxXl2qztoM%3Ftk%3DgPWX6ZpWrw8&ref=301118558",
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1036430851914&platform=TAOBAO&ref=301118558",
         image: "https://remicardtrader.ca/cdn/shop/files/PKCNBASBBOX.jpg?v=1792010716"
     },
     {
@@ -223,7 +223,7 @@ const produits = [
         categorie: "Scarlet & Violet Era",
         nom: "Dark Crystal Blaze (CSV5)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
-        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1038938904501&platform=TAOBAO&productPwd=https%3A%2F%2Fe.tb.cn%2Fh.jSVuXhwEqT5nRov%3Ftk%3DebXY6ZpXecg&ref=301118558",
+        lien: "https://joyagoo.com/product/?shop_type=taobao&id=1038938904501&platform=TAOBAO&ref=301118558",
         image: "https://godofcards.com/cdn/shop/files/pokemon-dark-crystal-blaze-csv5c-15er-display-s-chinesisch.jpg?v=1773292564&width=600"
     },
     {
@@ -280,7 +280,14 @@ function afficher(liste) {
                     <span class="category">${catBadge}</span>
                     <h3>${p.nom}</h3>
                     <p>${p.description}</p>
-                    <a href="${p.lien}" class="btn" target="_blank">Order via Joyagoo</a>
+                    <div class="button-group">
+                        <a href="${p.lien}" class="btn" target="_blank">Order</a>
+                        <button class="btn-copy" onclick="copierLienProduit(this, '${p.lien}')">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                            Copy Link
+                        </button>
+                    </div>
+                    <span class="mobile-hint">Paste link in Joyagoo App</span>
                 </div>
             </div>
         `;
