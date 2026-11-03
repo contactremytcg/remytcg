@@ -11,6 +11,35 @@
         html { scroll-behavior: smooth; }
         body { font-family: 'Inter', sans-serif; background: #111111; color: #fff; margin: 0; padding: 0; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
         
+        /* --- POP-UP DE BIENVENUE (GATE) --- */
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(8px);
+            display: flex; justify-content: center; align-items: center;
+            z-index: 9999; opacity: 1; transition: opacity 0.3s ease;
+        }
+        .modal-content {
+            background: #1c1c1c; border: 2px solid #FF6A00; border-radius: 16px;
+            padding: 40px 30px; max-width: 500px; width: 90%; text-align: center;
+            box-shadow: 0 20px 50px rgba(255, 106, 0, 0.2); position: relative;
+            transform: translateY(0); transition: transform 0.3s ease;
+        }
+        .modal-content h2 { color: #FF6A00; margin-top: 0; font-size: 2em; line-height: 1.1; }
+        .modal-content p { color: #ddd; font-size: 1.1em; margin-bottom: 25px; }
+        .modal-content strong { color: #fff; }
+        .btn-modal-main {
+            display: block; width: 100%; background: #FF6A00; color: #fff; padding: 18px 20px;
+            text-decoration: none; font-weight: 900; border-radius: 8px; font-size: 1.2em;
+            margin-bottom: 15px; box-sizing: border-box; border: none; cursor: pointer; transition: 0.2s;
+        }
+        .btn-modal-main:hover { background: #fff; color: #FF6A00; transform: translateY(-2px); }
+        .btn-modal-secondary {
+            display: block; width: 100%; background: transparent; color: #888; padding: 12px;
+            text-decoration: underline; font-weight: 700; border: none; font-size: 0.9em;
+            cursor: pointer; transition: 0.2s; font-family: inherit;
+        }
+        .btn-modal-secondary:hover { color: #fff; }
+
         /* Menu de Navigation Fixe */
         .top-nav { background: rgba(17, 17, 17, 0.95); padding: 15px 20px; text-align: center; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #333; backdrop-filter: blur(5px); }
         .top-nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: 700; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px; transition: color 0.2s; }
@@ -29,7 +58,7 @@
         .intro-banner p { color: #ddd; margin-bottom: 20px; font-size: 0.95em; }
         .intro-banner ul { color: #ddd; padding-left: 20px; margin-bottom: 20px; font-size: 0.95em; }
         .intro-banner li { margin-bottom: 10px; }
-        .intro-banner strong { color: #fff; }
+        .intro-banner strong { color: #FF6A00; }
         
         .btn-main { display: inline-block; background: #FF6A00; color: #fff; padding: 16px 30px; text-decoration: none; font-weight: 900; border-radius: 8px; font-size: 1.1em; transition: transform 0.2s, background 0.2s; text-align: center; width: 100%; max-width: 320px; box-sizing: border-box;}
         .btn-main:hover { background: #fff; color: #FF6A00; transform: translateY(-2px); }
@@ -53,9 +82,13 @@
         .card h3 { margin: 10px 0; font-size: 1.3em; }
         .card p { color: #aaa; font-size: 0.9em; line-height: 1.5; flex-grow: 1; margin-bottom: 15px; }
         
-        /* Bouton Unique Carte */
-        .btn-main-card { display: block; width: 100%; background: #FFCB05; color: #111; padding: 12px 10px; border-radius: 8px; font-weight: 900; font-size: 1em; text-align: center; text-decoration: none; transition: transform 0.2s, background 0.2s; box-sizing: border-box; border: none; }
-        .btn-main-card:hover { background: #fff; transform: translateY(-2px); }
+        /* Boutons d'achat */
+        .btn-main-card { display: block; width: 100%; padding: 12px 10px; border-radius: 8px; font-weight: 900; font-size: 1em; text-align: center; text-decoration: none; transition: transform 0.2s, background 0.2s, color 0.2s; box-sizing: border-box; border: none; font-family: inherit; }
+        
+        /* Styles spécifiques PC / Mobile */
+        .btn-pc { background: #FFCB05; color: #111; }
+        .btn-pc:hover { background: #fff; transform: translateY(-2px); }
+        .btn-mobile { display: none; } /* Caché sur PC par défaut */
 
         /* Guide & FAQ Items */
         .faq-item { background: #1c1c1c; border: 1px solid #333; border-radius: 12px; padding: 25px; margin-bottom: 20px; }
@@ -77,13 +110,17 @@
         .youtube-btn:hover { background: #FF0000; border-color: #FF0000; color: #fff; }
         .email-btn:hover { background: #FF6A00; border-color: #FF6A00; color: #fff; }
 
-        /* --- OPTIMISATION MOBILE (< 600px) --- */
-        @media (max-width: 600px) {
+        /* --- OPTIMISATION MOBILE (< 768px) --- */
+        @media (max-width: 768px) {
             .top-nav { padding: 10px 5px; }
             .top-nav a { margin: 0 6px; font-size: 0.78em; }
             .header { padding: 30px 15px 60px 15px; }
             h1 { font-size: 2.4em; }
             .subtitle { font-size: 0.95em; }
+
+            .modal-content { padding: 30px 20px; }
+            .modal-content h2 { font-size: 1.5em; }
+            .btn-modal-main { font-size: 1em; padding: 15px; }
 
             .intro-banner { padding: 20px 15px; margin-top: -35px; border-radius: 12px; }
             .intro-banner h2 { font-size: 1.2em; }
@@ -102,7 +139,10 @@
             .card h3 { font-size: 0.9em; margin: 4px 0 6px 0; line-height: 1.25; }
             .card p { font-size: 0.75em; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 8px;}
             
-            .btn-main-card { padding: 8px; font-size: 0.85em; }
+            /* Inversion des boutons pour Mobile */
+            .btn-pc { display: none; }
+            .btn-mobile { display: block; background: #222; color: #FF6A00; border: 2px solid #FF6A00; padding: 8px; font-size: 0.85em; cursor: pointer; }
+            .btn-mobile:active { background: #FF6A00; color: #111; }
 
             .faq-item { padding: 16px; }
             .faq-item h3 { font-size: 1.1em; }
@@ -111,6 +151,18 @@
     </style>
 </head>
 <body>
+    <!-- POP-UP OBLIGATOIRE (GATE) -->
+    <div id="welcomeModal" class="modal-overlay">
+        <div class="modal-content">
+            <h2>⚠️ WAIT!</h2>
+            <p>Before you browse the catalog, you <strong>MUST</strong> register your Sugargoo proxy account via our official link below.</p>
+            <p style="font-size: 0.9em; color: #aaa;">If you create an account without using our link, you will <strong>LOSE</strong> access to the $110 Shipping Coupons bundle, and our team won't be able to assist you.</p>
+            
+            <a href="https://m.sugargoo.com/register?memberId=3894055016867374984" target="_blank" class="btn-modal-main" onclick="closeModal()">1. Register Now & Get Coupons</a>
+            <button class="btn-modal-secondary" onclick="closeModal()">2. I already created my account via your link</button>
+        </div>
+    </div>
+
     <nav class="top-nav">
         <a href="#setup">Setup</a>
         <a href="#shop">Catalog</a>
@@ -132,13 +184,12 @@
     </div>
     
     <div id="setup" class="intro-banner">
-        <h2>⚠️ Step 1: Account Setup (Required)</h2>
-        <p>To buy from the Chinese Taobao market at local prices without Western markups, you need a proxy account. <strong>Sugargoo is our official, trusted partner.</strong></p>
+        <h2>⚠️ ACCOUNT WARNING</h2>
+        <p>To buy from the Chinese Taobao market at local prices, you need a proxy account. <strong>Sugargoo is our official partner.</strong></p>
 
         <ul>
-            <li><strong>Exclusive Welcome Gift:</strong> Register via the link below to unlock up to <strong>800 CNY (~$110 USD)</strong> in Welcome Shipping Coupons to drastically reduce your international shipping costs!</li>
-            <li><strong>Local Prices:</strong> You only pay the true item price + transparent international shipping. Consolidate your items into one package to save even more on shipping.</li>
-            <li><strong>Guaranteed Authenticity:</strong> Do not search for products yourself. I personally vet and update every link in this catalog daily.</li>
+            <li><strong>CRITICAL:</strong> You MUST register via the orange button below. If you skip this step or register manually on their app, you will lose your <strong>800 CNY (~$110 USD)</strong> in Welcome Shipping Coupons and we cannot help you with your orders.</li>
+            <li><strong>How to use on Mobile:</strong> Once registered and the app downloaded, simply click "Copy Link for App" on any product here, open your Sugargoo App, and it will read your clipboard automatically!</li>
         </ul>
         <div style="text-align: center;">
             <a href="https://m.sugargoo.com/register?memberId=3894055016867374984" class="btn-main" target="_blank">Register on Sugargoo Now</a>
@@ -162,8 +213,8 @@
         <h2 style="text-align: center; color: #FF6A00; font-size: 2em; margin-bottom: 40px;">How to Order & Buyer Guide</h2>
         
         <div class="faq-item">
-            <h3>📱 1. Seamless App Experience</h3>
-            <p>Sugargoo offers one of the most modern mobile apps in the industry for both iOS and Android. Once your account is created, you can browse this catalog, click any "Order on Sugargoo" button, and checkout directly without any hassle.</p>
+            <h3>📱 1. Seamless App Experience (Mobile)</h3>
+            <p>Sugargoo offers a powerful mobile app. Once registered via our link, download their app. Simply click <strong>"Copy Link for App"</strong> on any product here, open your Sugargoo App, and it will automatically detect the link and ask if you want to buy it!</p>
         </div>
 
         <div class="faq-item">
@@ -218,6 +269,25 @@
     </div>
 
     <script>
+        // Logique de la Pop-up obligatoire
+        function closeModal() {
+            const modal = document.getElementById('welcomeModal');
+            modal.style.opacity = '0';
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 300);
+        }
+
+        // Empêche de fermer la pop-up en cliquant à l'extérieur
+        document.getElementById('welcomeModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                // Fait vibrer/bouger la pop-up pour montrer qu'elle est obligatoire
+                const content = this.querySelector('.modal-content');
+                content.style.transform = 'scale(1.02)';
+                setTimeout(() => content.style.transform = 'scale(1)', 150);
+            }
+        });
+
         function copyEmail(button) {
             const email = "contact.remytcg@gmail.com";
             const textSpan = button.querySelector("span");
