@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RemyTCG - Exclusive Proxy Service</title>
-    <!-- TON LOGO EN FAVICON (ONGLET DU NAVIGATEUR) -->
     <link rel="icon" type="image/jpeg" href="https://scontent-sin11-2.cdninstagram.com/v/t51.82787-19/846528981_18117825301906300_2410003667728457360_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=101&ig_cache_key=GNUBdTJ8AzntEF5AAJDeVyqRDXIhbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=R86uzwtI-38Q7kNvwHw5b96&_nc_oc=AdpjE0JmV25Oje8YXwqyXWLSepl4kTg9pO0uT4962FwCL-1H7v3HtRBW4FKTlXbPN55yXMCN73w_1xvjzhatgyu8&_nc_zt=24&_nc_ht=scontent-sin11-2.cdninstagram.com&_nc_gid=px0MMH314KMRbj77Pq-sog&_nc_ss=7b689&oh=00_AQTSj8vrDPcdgdPKpmJJ49uuphrUfiA7u6JTHdWwr13dXA&oe=6AEFF132">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
@@ -49,14 +48,11 @@
         /* Header & Logo */
         .header { background: linear-gradient(135deg, #FF6A00 0%, #CC5500 100%); padding: 50px 20px 80px 20px; text-align: center; color: #fff; position: relative; }
         .logo-container { display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 10px; }
-        
-        /* DESIGN DU LOGO HERICENDRE */
         .logo-img { width: 55px; height: 55px; border-radius: 50%; object-fit: cover; border: 3px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
-        
         h1 { margin: 0; font-weight: 900; font-size: 3.5em; letter-spacing: -1.5px; text-transform: uppercase; }
         .subtitle { font-weight: 700; font-size: 1.2em; opacity: 0.9; max-width: 600px; margin: 10px auto 0 auto; }
         
-        /* Banners (Setup & Wholesale) */
+        /* Banners */
         .intro-banner { max-width: 1200px; width: 90%; margin: -50px auto 40px auto; background: #1c1c1c; border: 2px solid #333; border-radius: 16px; padding: 30px; text-align: left; box-shadow: 0 10px 30px rgba(0,0,0,0.5); position: relative; z-index: 10; scroll-margin-top: 80px; box-sizing: border-box; }
         .intro-banner h2 { color: #FF6A00; margin-top: 0; font-size: 1.5em; display: flex; align-items: center; gap: 10px; }
         .intro-banner p { color: #ddd; margin-bottom: 20px; font-size: 0.95em; }
@@ -98,8 +94,6 @@
         
         /* Boutons d'achat */
         .btn-main-card { display: block; width: 100%; padding: 12px 10px; border-radius: 8px; font-weight: 900; font-size: 1em; text-align: center; text-decoration: none; transition: transform 0.2s, background 0.2s, color 0.2s; box-sizing: border-box; border: none; font-family: inherit; cursor: pointer; }
-        
-        /* Styles spécifiques PC / Mobile */
         .btn-pc { background: #FFCB05; color: #111; }
         .btn-pc:hover { background: #fff; transform: translateY(-2px); }
         .btn-mobile { display: none; }
@@ -107,9 +101,9 @@
         /* Guide & FAQ Items */
         .faq-item { background: #1c1c1c; border: 1px solid #333; border-radius: 12px; padding: 25px; margin-bottom: 20px; }
         .faq-item h3 { color: #FF6A00; margin-top: 0; font-size: 1.3em;}
-        .faq-item p, .faq-item ul { color: #aaa; margin-bottom: 10px; font-size: 0.95em;}
+        .faq-item p, .faq-item ul { color: #aaa; margin-bottom: 10px; font-size: 0.95em; line-height: 1.6;}
         .faq-item ul { padding-left: 20px; }
-        .faq-item li { margin-bottom: 5px; }
+        .faq-item li { margin-bottom: 8px; }
         .faq-item strong { color: #fff; }
 
         /* --- HOW IT WORKS (INFOGRAPHIE CSS) --- */
@@ -177,8 +171,6 @@
             
             .pc-qr-codes { display: none; }
             .mobile-download-instruction { display: block; }
-
-            /* Adaptation Mobile de l'infographie */
             .process-container { flex-direction: column; gap: 20px; }
             .process-arrow { transform: rotate(90deg); }
         }
@@ -339,19 +331,29 @@
             </div>
         </div>
 
+        <!-- SECTIONS FAQ MISES À JOUR SELON CONCURRENT -->
         <div class="faq-item">
-            <h3>📦 2. Estimating Your Shipping Costs</h3>
-            <p>Sugargoo provides a transparent <strong>Freight Estimate</strong> tool right on their homepage. Here is how it works:</p>
+            <h3>📦 2. How are my cards packed and stored?</h3>
+            <p>Unlike loose packs, you are purchasing <strong>factory-sealed boxes and displays</strong>. Sugargoo receives your sealed products directly in their Shenzhen warehouse.</p>
             <ul>
-                <li>Enter your <strong>Destination Country</strong> (e.g., USA, UK, France).</li>
-                <li>Estimate the <strong>Weight</strong> (e.g., a standard Booster Box is roughly 400g-500g, a Jumbo Gem Pack is around 1000g).</li>
-                <li>The calculator will display all available carriers (like EMS, FedEx, US-Air, etc.) with real-time transit days and costs.</li>
+                <li>Storage in their warehouse is completely free for up to 100 days.</li>
+                <li>Your items are kept safely in your personal vault until you’re ready to ship.</li>
+                <li>You can check QC (Quality Control) pictures of your sealed items directly in your Sugargoo account.</li>
             </ul>
-            <p><strong>Pro Tip:</strong> Shipping 3 or 4 boxes in a single parcel is much cheaper per box than shipping them one by one!</p>
         </div>
 
         <div class="faq-item">
-            <h3>💳 3. Secure Global Payment Methods</h3>
+            <h3>✈️ 3. Shipping & Customs Fees</h3>
+            <p>Shipping is charged by volumetric weight, which reflects the size of the packed parcel. The minimum shipping charge is usually based on 500g or 1kg.</p>
+            <ul>
+                <li><strong>Combine & Save:</strong> The first kilo is the most expensive. Larger parcels cost less per kg, so combining multiple orders into one shipment will drastically reduce your shipping cost per item.</li>
+                <li><strong>Tax-Free Routes:</strong> Sugargoo offers specific "Tax-Free" shipping lines for the US, EU, and UK. When using these lines, Customs duties, VAT, and import charges are handled by the carrier. You should not need to pay additional import charges on delivery.</li>
+                <li>Customs checks can occasionally delay parcels by a week or more, which is normal for international freight.</li>
+            </ul>
+        </div>
+
+        <div class="faq-item">
+            <h3>💳 4. Secure Global Payment Methods</h3>
             <p>Sugargoo offers top-tier payment security and a wide variety of checkout options. You can shop with confidence using your preferred local or international payment method:</p>
             
             <div class="payment-row">
@@ -362,7 +364,6 @@
                 <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg" alt="Apple Pay"></div>
                 <div class="payment-badge"><img src="https://thumb.wikimedia.org/wikipedia/en/thumb/c/c7/Alipay_logo_%282020%29.svg/960px-Alipay_logo_%282020%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="Alipay"></div>
             </div>
-            
         </div>
     </div>
 
