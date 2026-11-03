@@ -127,6 +127,10 @@
         .contact-links { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 15px;}
         .contact-btn { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; border-radius: 6px; text-decoration: none; font-weight: 700; transition: all 0.2s; border: 1px solid #333; color: #fff; background: #1c1c1c; font-size: 0.9em; cursor: pointer; font-family: inherit; }
         .contact-btn:hover { transform: translateY(-2px); }
+        .insta-btn:hover { background: #E1306C; border-color: #E1306C; color: #fff; }
+        .tiktok-btn:hover { background: #00f2fe; border-color: #00f2fe; color: #111; }
+        .youtube-btn:hover { background: #FF0000; border-color: #FF0000; color: #fff; }
+        .email-btn:hover { background: #FF6A00; border-color: #FF6A00; color: #fff; }
 
         /* --- OPTIMISATION MOBILE (< 768px) --- */
         @media (max-width: 768px) {
@@ -202,26 +206,40 @@
     </div>
     
     <div id="setup" class="intro-banner">
-        <h2>📦 Step 1: Account Setup</h2>
+        <h2>📦 Step 1: Account Setup (Browser First)</h2>
         <p>To buy from the Chinese Taobao market at local prices, you must first create a proxy account on Sugargoo.</p>
 
         <ul>
-            <li><strong>Full Transparency - How we earn:</strong> We charge <strong>zero markup</strong> on the products. You pay the exact same local Chinese price as anyone living in Beijing. When you register via our link below, Sugargoo pays us a small affiliate commission (~4%) out of their pocket on the international shipping fee. You get the cheapest cards possible, and we get rewarded by the platform for curating this catalog!</li>
-            <li><strong>Welcome Bonus:</strong> By using our official link, Sugargoo will credit your new account with an <strong>800 CNY (~$110 USD) Coupon Bundle</strong>.</li>
-            <li><strong>Mobile App:</strong> Once registered, download the app. Click "Copy Link for App" on any product here, open Sugargoo, and it will detect it automatically!</li>
+            <li><strong>⚠️ Crucial Step for Tracking:</strong> You must register using your <strong>web browser</strong> (Safari, Chrome, PC) via the orange button below <em>before</em> downloading the app. This locks in your <strong>800 CNY Welcome Bundle</strong> and links you to RemyTCG!</li>
+            <li><strong>Full Transparency - How we earn:</strong> We charge <strong>zero markup</strong> on the products. You pay the exact same local Chinese price as anyone living in Beijing. Sugargoo simply pays us a small affiliate commission (~4%) out of their pocket on the international shipping fee. You get the cheapest cards possible, and we get rewarded for curating this catalog!</li>
         </ul>
         <div style="text-align: center;">
             <a href="https://m.sugargoo.com/register?memberId=3894055016867374984" class="btn-main" target="_blank">Register & Claim 800 CNY Bonus</a>
         </div>
+    </div>
+
+    <!-- Section Catalogue -->
+    <div id="shop" class="container">
+        <div class="filters">
+            <input type="text" id="search" class="search-bar" placeholder="🔍 Search for a booster, a box..." onkeyup="filtrer()">
+            <select id="category-filter" class="category-select" onchange="filtrer()">
+                <option value="">All Categories</option>
+            </select>
+        </div>
         
-        <!-- SECTION DE TÉLÉCHARGEMENT HYBRIDE -->
-        <div class="download-section">
-            <p class="step-title">Step 2: Once registered, download the App to shop seamlessly</p>
-            
+        <div class="grid" id="catalogue"></div>
+    </div>
+
+    <!-- NOUVELLE POSITION : TÉLÉCHARGEMENT DE L'APP SOUS LE CATALOGUE -->
+    <div id="app-download" class="intro-banner" style="margin-top: 50px; scroll-margin-top: 70px;">
+        <h2 style="justify-content: center;">📱 Step 2: Download the App</h2>
+        <p style="text-align: center; margin-bottom: 20px;">For the best shopping experience, download the Sugargoo App <strong>after creating your account</strong> via the browser. Simply click "Copy Link for App" on any product above, open the app, and it will detect it automatically!</p>
+        
+        <div class="download-section" style="border-top: none; margin-top: 0; padding-top: 0;">
             <div class="mobile-download-instruction">
                 <div class="mobile-instruction-content">
                     <img src="https://s3-eu-west-1.amazonaws.com/tpd/logos/6170801cca6e77f38925f66e/0x0.png" alt="Sugargoo Logo" class="sugargoo-logo-mobile">
-                    <span>Search for this app on your App Store or Google Play</span>
+                    <span>Search for <strong>Sugargoo</strong> on your App Store or Google Play</span>
                 </div>
             </div>
 
@@ -236,18 +254,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Section Catalogue -->
-    <div id="shop" class="container">
-        <div class="filters">
-            <input type="text" id="search" class="search-bar" placeholder="🔍 Search for a booster, a box..." onkeyup="filtrer()">
-            <select id="category-filter" class="category-select" onchange="filtrer()">
-                <option value="">All Categories</option>
-            </select>
-        </div>
-        
-        <div class="grid" id="catalogue"></div>
     </div>
 
     <!-- SECTION WHOLESALE / B2B -->
