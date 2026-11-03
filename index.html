@@ -8,9 +8,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
         
-        /* Smooth Scroll pour les ancres du menu */
         html { scroll-behavior: smooth; }
-        
         body { font-family: 'Inter', sans-serif; background: #111111; color: #fff; margin: 0; padding: 0; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
         
         /* Menu de Navigation Fixe */
@@ -29,25 +27,28 @@
         .intro-banner { max-width: 1200px; width: 90%; margin: -50px auto 40px auto; background: #1c1c1c; border: 2px solid #333; border-radius: 16px; padding: 30px; text-align: left; box-shadow: 0 10px 30px rgba(0,0,0,0.5); position: relative; z-index: 10; scroll-margin-top: 80px; box-sizing: border-box; }
         .intro-banner h2 { color: #FFCB05; margin-top: 0; font-size: 1.5em; display: flex; align-items: center; gap: 10px; }
         .intro-banner p { color: #ddd; margin-bottom: 20px; font-size: 0.95em; }
-        .intro-banner ul { color: #ddd; padding-left: 20px; margin-bottom: 25px; font-size: 0.95em; }
+        .intro-banner ul { color: #ddd; padding-left: 20px; margin-bottom: 20px; font-size: 0.95em; }
         .intro-banner li { margin-bottom: 10px; }
         .intro-banner strong { color: #fff; }
+        
+        /* Alerte Mobile */
+        .mobile-alert { background: rgba(255, 203, 5, 0.1); border-left: 4px solid #FFCB05; padding: 15px; border-radius: 4px; margin-bottom: 25px; font-size: 0.95em; }
+        .mobile-alert strong { color: #FFCB05; }
+        
         .btn-main { display: inline-block; background: #FFCB05; color: #111; padding: 16px 30px; text-decoration: none; font-weight: 900; border-radius: 8px; font-size: 1.1em; transition: transform 0.2s, background 0.2s; text-align: center; width: 100%; max-width: 320px; box-sizing: border-box;}
         .btn-main:hover { background: #fff; transform: translateY(-2px); }
 
-        /* Container (Catalog & FAQ) */
+        /* Container & Filters */
         .container { max-width: 1600px; width: 95%; margin: 0 auto; padding: 20px; flex-grow: 1; scroll-margin-top: 80px; box-sizing: border-box; }
         .faq-container { max-width: 1000px; width: 95%; margin: 60px auto 0 auto; padding: 20px; scroll-margin-top: 80px; box-sizing: border-box; }
-        
-        /* Filters */
         .filters { display: flex; gap: 15px; max-width: 800px; margin: 0 auto 40px auto; justify-content: center; flex-wrap: wrap;}
         .search-bar, .category-select { padding: 15px 25px; border-radius: 50px; border: 2px solid #333; background: #222; color: white; font-size: 1.1em; outline: none; transition: border-color 0.3s; }
         .search-bar { flex-grow: 1; min-width: 250px;}
         .category-select { cursor: pointer; appearance: none; padding-right: 45px; background-image: url('data:image/svg+xml;utf8,<svg fill="%23FFCB05" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); background-repeat: no-repeat; background-position: right 15px center; }
         .search-bar:focus, .category-select:focus { border-color: #FFCB05; }
         
-        /* Grid (PC par défaut) */
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 25px; }
+        /* Grid & Cards */
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; }
         .card { background: #1c1c1c; border-radius: 16px; overflow: hidden; border: 1px solid #333; transition: transform 0.2s, border-color 0.2s; display: flex; flex-direction: column; }
         .card:hover { transform: translateY(-5px); border-color: #FFCB05; }
         .card-img { width: 100%; height: 220px; object-fit: cover; border-bottom: 1px solid #333; background: #fff; }
@@ -55,8 +56,17 @@
         .category { font-size: 0.75em; color: #FFCB05; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; }
         .card h3 { margin: 10px 0; font-size: 1.3em; }
         .card p { color: #aaa; font-size: 0.9em; line-height: 1.5; flex-grow: 1; }
-        .btn { background: #333; color: #fff; text-align: center; padding: 12px; text-decoration: none; font-weight: 700; border-radius: 8px; margin-top: 20px; transition: background 0.2s, color 0.2s; }
+        
+        /* Boutons d'action dans la carte */
+        .button-group { display: flex; gap: 10px; margin-top: 15px; }
+        .btn, .btn-copy { flex: 1; padding: 12px 10px; border-radius: 8px; font-weight: 700; font-size: 0.95em; text-align: center; text-decoration: none; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 6px; font-family: inherit; border: none; box-sizing: border-box; }
+        .btn { background: #333; color: #fff; }
         .card:hover .btn { background: #FFCB05; color: #111; }
+        .btn-copy { background: #222; color: #aaa; border: 1px solid #444; }
+        .btn-copy:hover { background: #444; color: #fff; }
+        
+        /* Tiny Mobile Note sous les boutons */
+        .mobile-hint { font-size: 0.7em; color: #777; text-align: center; margin-top: 8px; font-style: italic; display: none; }
 
         /* FAQ Item */
         .faq-item { background: #1c1c1c; border: 1px solid #333; border-radius: 12px; padding: 25px; margin-bottom: 20px; }
@@ -75,11 +85,10 @@
         .youtube-btn:hover { background: #FF0000; border-color: #FF0000; color: #fff; }
         .email-btn:hover { background: #FFCB05; border-color: #FFCB05; color: #111; }
 
-        /* --- OPTIMISATION SPÉCIALE MOBILE (< 600px) --- */
+        /* --- OPTIMISATION MOBILE (< 600px) --- */
         @media (max-width: 600px) {
             .top-nav { padding: 10px 5px; }
             .top-nav a { margin: 0 6px; font-size: 0.78em; }
-            
             .header { padding: 30px 15px 60px 15px; }
             h1 { font-size: 2.4em; }
             .subtitle { font-size: 0.95em; }
@@ -87,6 +96,7 @@
             .intro-banner { padding: 20px 15px; margin-top: -35px; border-radius: 12px; }
             .intro-banner h2 { font-size: 1.2em; }
             .intro-banner p, .intro-banner ul { font-size: 0.85em; }
+            .mobile-alert { font-size: 0.85em; padding: 12px; }
             .btn-main { padding: 12px 20px; font-size: 0.95em; }
 
             .filters { gap: 10px; margin-bottom: 25px; }
@@ -100,23 +110,12 @@
             .category { font-size: 0.6em; }
             .card h3 { font-size: 0.9em; margin: 4px 0 6px 0; line-height: 1.25; }
             
-            /* Description coupée proprement à 2 lignes max */
-            .card p { 
-                font-size: 0.75em; 
-                line-height: 1.3; 
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                margin-bottom: 8px;
-            }
+            .card p { font-size: 0.75em; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 8px;}
             
-            .btn { 
-                padding: 8px 6px; 
-                font-size: 0.75em; 
-                margin-top: auto; 
-                border-radius: 6px; 
-            }
+            /* Boutons superposés sur mobile pour gagner de la place */
+            .button-group { flex-direction: column; gap: 6px; margin-top: auto; }
+            .btn, .btn-copy { padding: 8px; font-size: 0.75em; border-radius: 6px; }
+            .mobile-hint { display: block; } /* Affiché uniquement sur mobile */
 
             .faq-item { padding: 16px; }
             .faq-item h3 { font-size: 1em; }
@@ -125,7 +124,6 @@
     </style>
 </head>
 <body>
-    <!-- Menu Navigation Fixe -->
     <nav class="top-nav">
         <a href="#setup">Setup Guide</a>
         <a href="#shop">Catalog</a>
@@ -148,11 +146,16 @@
     
     <div id="setup" class="intro-banner">
         <h2>⚠️ Step 1: Account Setup (Required)</h2>
-        <p>To buy from the Chinese Taobao market at local prices without Western markups, you need a proxy account[cite: 5]. <strong>Joyagoo is our official and secure partner[cite: 5].</strong></p>
+        <p>To buy from the Chinese Taobao market at local prices without Western markups, you need a proxy account. <strong>Joyagoo is our official and secure partner.</strong></p>
+        
+        <div class="mobile-alert">
+            📱 <strong>Mobile Users:</strong> Joyagoo links may not open in Safari due to browser restrictions. Simply click <strong>"Copy Link"</strong> on any product below and paste it directly into the search bar of your <strong>Joyagoo App</strong>!
+        </div>
+
         <ul>
-            <li><strong>Exclusive Welcome Gift:</strong> Register via the link below to unlock up to <strong>1200 CNY (~$165 USD)</strong> in shipping coupons[cite: 5]!</li>
-            <li><strong>Local Prices:</strong> You only pay the true item price + transparent international shipping[cite: 5].</li>
-            <li><strong>Guaranteed Authenticity:</strong> Do not search for products yourself. I personally vet and update every link in this catalog daily[cite: 5].</li>
+            <li><strong>Exclusive Welcome Gift:</strong> Register via the link below to unlock up to <strong>1200 CNY (~$165 USD)</strong> in shipping coupons!</li>
+            <li><strong>Local Prices:</strong> You only pay the true item price + transparent international shipping.</li>
+            <li><strong>Guaranteed Authenticity:</strong> Do not search for products yourself. I personally vet and update every link in this catalog daily.</li>
         </ul>
         <div style="text-align: center;">
             <a href="https://joyagoo.com/register/?ref=301118558" class="btn-main" target="_blank">Register on Joyagoo Now</a>
@@ -177,22 +180,22 @@
         
         <div class="faq-item">
             <h3>How does the shipping process work?</h3>
-            <p>All orders are processed securely through Joyagoo[cite: 5]. The handling time (for the local supplier to ship to the export warehouse) is typically 1-6 days[cite: 5]. The international shipping time is generally 7-15 business days, depending on your location[cite: 5].</p>
+            <p>All orders are processed securely through Joyagoo. The handling time (for the local supplier to ship to the export warehouse) is typically 1-6 days. The international shipping time is generally 7-15 business days, depending on your location.</p>
         </div>
 
         <div class="faq-item">
             <h3>Will I have to pay custom fees?</h3>
-            <p>Custom and import fees are calculated transparently at checkout based on your specific location[cite: 5]. You will see the full cost before finalizing your purchase on Joyagoo.</p>
+            <p>Custom and import fees are calculated transparently at checkout based on your specific location. You will see the full cost before finalizing your purchase on Joyagoo.</p>
         </div>
 
         <div class="faq-item">
             <h3>What is your return policy?</h3>
-            <p>There is a 10% fee for returns and cancellations[cite: 5]. Please note that cancellations are only accepted before the item leaves the Chinese warehouse[cite: 5].</p>
+            <p>There is a 10% fee for returns and cancellations. Please note that cancellations are only accepted before the item leaves the Chinese warehouse.</p>
         </div>
 
         <div class="faq-item">
             <h3>Who handles customer service for my order?</h3>
-            <p>Because all orders are placed through Joyagoo, they handle the logistics, tracking, and direct customer support for your packages. If you need help finding a specific item not listed here, you can contact me directly[cite: 5]!</p>
+            <p>Because all orders are placed through Joyagoo, they handle the logistics, tracking, and direct customer support for your packages. If you need help finding a specific item not listed here, you can contact me directly!</p>
         </div>
     </div>
 
@@ -206,12 +209,10 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                 @remy.tcg
             </a>
-            
             <a href="https://tiktok.com/@remy_tcg" target="_blank" class="contact-btn tiktok-btn">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path><path d="M15 8a4 4 0 1 0 0-4v16a4 4 0 0 1-4-4"></path><line x1="15" y1="4" x2="19" y2="4"></line></svg>
                 @remy_tcg
             </a>
-
             <a href="https://youtube.com/@remytcg" target="_blank" class="contact-btn youtube-btn">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.16 1 12 1 12s0 3.84.46 5.58a2.78 2.78 0 0 0 1.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.84 23 12 23 12s0-3.84-.46-5.58z"></path><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon></svg>
                 @remytcg
@@ -226,7 +227,7 @@
         </div>
     </div>
 
-    <!-- Script pour copier l'email -->
+    <!-- Scripts de copie de texte -->
     <script>
         function copyEmail(button) {
             const email = "contact.remytcg@gmail.com";
@@ -234,7 +235,7 @@
             
             navigator.clipboard.writeText(email).then(() => {
                 const originalText = textSpan.innerText;
-                textSpan.innerText = "Copied to clipboard! ✓";
+                textSpan.innerText = "Copied! ✓";
                 button.style.borderColor = "#4CAF50";
                 button.style.color = "#4CAF50";
                 
@@ -243,6 +244,21 @@
                     button.style.borderColor = "";
                     button.style.color = "";
                 }, 2500);
+            });
+        }
+        
+        function copierLienProduit(bouton, url) {
+            navigator.clipboard.writeText(url).then(() => {
+                const originalText = bouton.innerHTML;
+                bouton.innerHTML = "Copied! ✓";
+                bouton.style.borderColor = "#4CAF50";
+                bouton.style.color = "#4CAF50";
+                
+                setTimeout(() => {
+                    bouton.innerHTML = originalText;
+                    bouton.style.borderColor = "#444";
+                    bouton.style.color = "#aaa";
+                }, 2000);
             });
         }
     </script>
