@@ -115,7 +115,7 @@
         /* --- TRUST BADGES (PAIEMENT) --- */
         .payment-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
         .payment-badge { background: #fff; width: 65px; height: 42px; border-radius: 6px; display: flex; justify-content: center; align-items: center; padding: 6px; box-sizing: border-box; }
-        .payment-badge img { max-width: 100%; max-height: 100%; object-fit: contain; }
+        .payment-badge img, .payment-badge svg { max-width: 100%; max-height: 100%; object-fit: contain; }
 
         /* Footer & Contact Section */
         .footer-contact { background: #151515; padding: 60px 20px; text-align: center; border-top: 1px solid #333; margin-top: 60px; scroll-margin-top: 50px;}
@@ -297,14 +297,34 @@
             <h3>💳 3. Secure Global Payment Methods</h3>
             <p>Sugargoo offers top-tier payment security and a wide variety of checkout options. You can shop with confidence using your preferred local or international payment method:</p>
             
-            <!-- TRUST BADGES AJOUTÉS ICI AVEC LES 4 QUI MARCHAIENT + NOUVEAUX POUR VISA/ALIPAY -->
+            <!-- 6 TRUST BADGES 100% FONCTIONNELS (SVG INLINE POUR VISA ET ALIPAY) -->
             <div class="payment-row">
-                <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa"></div>
+                <!-- VISA (SVG Vectoriel pur) -->
+                <div class="payment-badge">
+                    <svg viewBox="0 0 100 32" width="50" height="20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M38.8 3.2L25.6 30H17.2L10.5 9.8C10.1 8.2 9.7 7.6 8.4 6.8C6.3 5.4 3 4.2 0 3.6L0.2 3.2H14.2C16 3.2 17.6 4.5 18 6.6L21.4 22.8L29.6 3.2H38.8ZM73.2 21.6C73.2 13.4 61.4 12.9 61.6 9.4C61.6 8.3 62.7 7.2 65.2 6.8C66.4 6.6 69.8 6.4 73.4 8L74.8 1.8C73 1.1 70.4 0.6 67.2 0.6C59 0.6 53.2 4.9 53.2 11C53 15.6 57.2 18.2 60.4 19.8C63.6 21.4 64.6 22.4 64.6 23.8C64.6 26 62 26.9 59.4 26.9C55.4 27 53 26.2 49.6 24.6L48.2 31C50.2 31.9 54.4 32.6 58.8 32.6C67.6 32.6 73.2 28.2 73.2 21.6ZM95 30H100L95.6 3.2H91C89.6 3.2 88.4 4 87.8 5.4L75 30H83.4L85 25.4H94.4L95 30ZM87.4 18.8L91.2 8.4L93.4 18.8H87.4ZM51.8 3.2L45.2 30H37.2L43.8 3.2H51.8Z" fill="#1434CB"/>
+                    </svg>
+                </div>
+
+                <!-- MASTERCARD (SVG Wikimedia stable) -->
                 <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard"></div>
+
+                <!-- DISCOVER (SVG Wikimedia stable) -->
                 <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Discover_Card_logo.svg" alt="Discover"></div>
+
+                <!-- GOOGLE PAY (SVG Wikimedia stable) -->
                 <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Pay_Logo.svg" alt="Google Pay"></div>
+
+                <!-- APPLE PAY (SVG Wikimedia stable) -->
                 <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg" alt="Apple Pay"></div>
-                <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Alipay_logo_2019.svg" alt="Alipay"></div>
+
+                <!-- ALIPAY (SVG Vectoriel pur) -->
+                <div class="payment-badge">
+                    <svg viewBox="0 0 100 34" width="55" height="20" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100" height="34" rx="4" fill="#00A0E9"/>
+                        <path d="M22 6h-7c-.5 0-1 .4-1 1v20c0 .6.5 1 1 1h7c.6 0 1-.4 1-1V7c0-.6-.4-1-1-1zm-1.8 19.5h-3.4V8.5h3.4v17zM42.2 16.2c-.3-.2-.7-.4-1.2-.4h-8.8c.8-1.7 1.8-3.4 2.8-5 .3-.5.1-1.1-.4-1.4-.5-.3-1.1-.1-1.4.4-1.2 1.8-2.3 3.8-3.3 5.9h-3.4c-.6 0-1 .4-1 1s.4 1 1 1h2.5c-.7 2.4-1.8 4.7-3.2 6.8-.4.5-.2 1.2.3 1.5.2.1.4.2.7.2.4 0 .7-.2.9-.5 1.6-2.3 2.9-4.9 3.6-7.7h2.8c-.8 4.3-2.9 8.2-6.1 11.2-.4.4-.5 1-.1 1.5.2.3.6.4.9.4.2 0 .5-.1.7-.3 3.6-3.3 6-7.8 6.9-12.7h5.8c.5 0 1-.4 1-1-.1-.7-.5-1.1-1.1-1.1zM82.5 11h-16c-.6 0-1 .4-1 1v13c0 .6.4 1 1 1h16c.6 0 1-.4 1-1V12c0-.6-.4-1-1-1zm-1.8 12.8H67.7V13.2h13.1v10.6z" fill="#FFFFFF"/>
+                    </svg>
+                </div>
             </div>
             
         </div>
