@@ -12,6 +12,8 @@ window.copyToClipboard = function(text, btn) {
             btn.style.background = "";
             btn.style.color = "";
         }, 2500);
+    }).catch(err => {
+        console.error('Erreur de copie', err);
     });
 };
 
@@ -190,7 +192,7 @@ const produits = [
         nom: "Gem Pack Vol. 7 (Psyduck Cover)",
         description: "The brand new, highly anticipated jumbo set featuring Psyduck and fresh alternate arts.",
         taobaoId: "932678630102",
-        image: placeholderImg
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0PMkOk0FTHAa1QT4_ESpb7qv8fCuF9Y7BK-xsgWgN7HkxM93A9W2eDLT&s=10"
     },
 
     // ==========================================
@@ -289,6 +291,7 @@ const produits = [
 function afficher(liste) {
     const container = document.getElementById('catalogue');
     container.innerHTML = '';
+    
     liste.forEach(p => {
         const catBadge = Array.isArray(p.categorie) ? p.categorie.join(" • ") : p.categorie;
         const estManquant = (p.taobaoId === "");
@@ -300,7 +303,6 @@ function afficher(liste) {
         if (estManquant) {
             boutonsHtml = `<button class="btn-main-card" style="background: #e74c3c; color: #fff; border: 1px solid #c0392b; cursor: not-allowed;">⚠️ ID Taobao Missing</button>`;
         } else {
-            // Ici, au lieu d'un lien direct, on appelle notre vérificateur de Pop-up (triggerProductAction)
             boutonsHtml = `
                 <button onclick="triggerProductAction('pc', '${sugargooUrl}')" class="btn-main-card btn-pc">Order on Sugargoo</button>
                 <button onclick="triggerProductAction('mobile', '${taobaoUrlRaw}', this)" class="btn-main-card btn-mobile">Copy Link for App</button>
@@ -353,5 +355,8 @@ function filtrer() {
     afficher(resultats);
 }
 
-genererCategories();
-afficher(produits);
+// Initialisation au chargement
+document.addEventListener('DOMContentLoaded', () => {
+    genererCategories();
+    afficher(produits);
+});
