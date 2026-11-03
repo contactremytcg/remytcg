@@ -112,6 +112,11 @@
         .faq-item li { margin-bottom: 5px; }
         .faq-item strong { color: #fff; }
 
+        /* --- TRUST BADGES (PAIEMENT) --- */
+        .payment-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
+        .payment-badge { background: #fff; width: 65px; height: 42px; border-radius: 6px; display: flex; justify-content: center; align-items: center; padding: 6px; box-sizing: border-box; }
+        .payment-badge img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
         /* Footer & Contact Section */
         .footer-contact { background: #151515; padding: 60px 20px; text-align: center; border-top: 1px solid #333; margin-top: 60px; scroll-margin-top: 50px;}
         .footer-contact h2 { color: #fff; font-size: 2.2em; margin: 0 0 15px 0; font-weight: 900; }
@@ -290,13 +295,18 @@
 
         <div class="faq-item">
             <h3>💳 3. Secure Global Payment Methods</h3>
-            <p>Sugargoo offers top-tier payment security and a wide variety of checkout options:</p>
-            <ul>
-                <li><strong>PayPal & Stripe:</strong> For ultimate buyer protection.</li>
-                <li><strong>Credit/Debit Cards:</strong> VISA, Mastercard, etc.</li>
-                <li><strong>Mobile Pay:</strong> Apple Pay and Google Pay for instant checkout.</li>
-                <li><strong>Local Methods:</strong> Alipay, WeChat Pay, Giropay, iDEAL, and direct bank transfers depending on your region.</li>
-            </ul>
+            <p>Sugargoo offers top-tier payment security and a wide variety of checkout options. You can shop with confidence using your preferred local or international payment method:</p>
+            
+            <!-- TRUST BADGES AJOUTÉS ICI -->
+            <div class="payment-row">
+                <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo_2014.svg" alt="Visa"></div>
+                <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard"></div>
+                <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Discover_Card_logo.svg" alt="Discover"></div>
+                <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Pay_Logo.svg" alt="Google Pay"></div>
+                <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg" alt="Apple Pay"></div>
+                <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Alipay_logo.svg" alt="Alipay"></div>
+            </div>
+            
         </div>
     </div>
 
