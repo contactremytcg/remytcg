@@ -14,25 +14,25 @@
         /* Menu de Navigation Fixe */
         .top-nav { background: rgba(17, 17, 17, 0.95); padding: 15px 20px; text-align: center; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #333; backdrop-filter: blur(5px); }
         .top-nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: 700; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px; transition: color 0.2s; }
-        .top-nav a:hover { color: #FFCB05; }
+        .top-nav a:hover { color: #0088FF; }
 
         /* Header & Logo */
-        .header { background: linear-gradient(135deg, #FFCB05 0%, #d4a700 100%); padding: 50px 20px 80px 20px; text-align: center; color: #111; position: relative; }
+        .header { background: linear-gradient(135deg, #0088FF 0%, #0055aa 100%); padding: 50px 20px 80px 20px; text-align: center; color: #fff; position: relative; }
         .logo-container { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 10px; }
-        .logo-icon { width: 40px; height: 40px; }
+        .logo-icon { width: 40px; height: 40px; stroke: #fff; }
         h1 { margin: 0; font-weight: 900; font-size: 3.5em; letter-spacing: -1.5px; text-transform: uppercase; }
         .subtitle { font-weight: 700; font-size: 1.2em; opacity: 0.9; max-width: 600px; margin: 10px auto 0 auto; }
         
         /* How it works Banner */
         .intro-banner { max-width: 1200px; width: 90%; margin: -50px auto 40px auto; background: #1c1c1c; border: 2px solid #333; border-radius: 16px; padding: 30px; text-align: left; box-shadow: 0 10px 30px rgba(0,0,0,0.5); position: relative; z-index: 10; scroll-margin-top: 80px; box-sizing: border-box; }
-        .intro-banner h2 { color: #FFCB05; margin-top: 0; font-size: 1.5em; display: flex; align-items: center; gap: 10px; }
+        .intro-banner h2 { color: #0088FF; margin-top: 0; font-size: 1.5em; display: flex; align-items: center; gap: 10px; }
         .intro-banner p { color: #ddd; margin-bottom: 20px; font-size: 0.95em; }
         .intro-banner ul { color: #ddd; padding-left: 20px; margin-bottom: 20px; font-size: 0.95em; }
         .intro-banner li { margin-bottom: 10px; }
         .intro-banner strong { color: #fff; }
         
-        .btn-main { display: inline-block; background: #FFCB05; color: #111; padding: 16px 30px; text-decoration: none; font-weight: 900; border-radius: 8px; font-size: 1.1em; transition: transform 0.2s, background 0.2s; text-align: center; width: 100%; max-width: 320px; box-sizing: border-box;}
-        .btn-main:hover { background: #fff; transform: translateY(-2px); }
+        .btn-main { display: inline-block; background: #0088FF; color: #fff; padding: 16px 30px; text-decoration: none; font-weight: 900; border-radius: 8px; font-size: 1.1em; transition: transform 0.2s, background 0.2s; text-align: center; width: 100%; max-width: 320px; box-sizing: border-box;}
+        .btn-main:hover { background: #fff; color: #0088FF; transform: translateY(-2px); }
 
         /* Container & Filters */
         .container { max-width: 1600px; width: 95%; margin: 0 auto; padding: 20px; flex-grow: 1; scroll-margin-top: 80px; box-sizing: border-box; }
@@ -40,33 +40,26 @@
         .filters { display: flex; gap: 15px; max-width: 800px; margin: 0 auto 40px auto; justify-content: center; flex-wrap: wrap;}
         .search-bar, .category-select { padding: 15px 25px; border-radius: 50px; border: 2px solid #333; background: #222; color: white; font-size: 1.1em; outline: none; transition: border-color 0.3s; }
         .search-bar { flex-grow: 1; min-width: 250px;}
-        .category-select { cursor: pointer; appearance: none; padding-right: 45px; background-image: url('data:image/svg+xml;utf8,<svg fill="%23FFCB05" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); background-repeat: no-repeat; background-position: right 15px center; }
-        .search-bar:focus, .category-select:focus { border-color: #FFCB05; }
+        .category-select { cursor: pointer; appearance: none; padding-right: 45px; background-image: url('data:image/svg+xml;utf8,<svg fill="%230088FF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); background-repeat: no-repeat; background-position: right 15px center; }
+        .search-bar:focus, .category-select:focus { border-color: #0088FF; }
         
         /* Grid & Cards */
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; }
         .card { background: #1c1c1c; border-radius: 16px; overflow: hidden; border: 1px solid #333; transition: transform 0.2s, border-color 0.2s; display: flex; flex-direction: column; }
-        .card:hover { transform: translateY(-5px); border-color: #FFCB05; }
+        .card:hover { transform: translateY(-5px); border-color: #0088FF; }
         .card-img { width: 100%; height: 220px; object-fit: cover; border-bottom: 1px solid #333; background: #fff; }
         .card-content { padding: 20px; display: flex; flex-direction: column; flex-grow: 1; }
-        .category { font-size: 0.75em; color: #FFCB05; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; }
+        .category { font-size: 0.75em; color: #0088FF; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; }
         .card h3 { margin: 10px 0; font-size: 1.3em; }
-        .card p { color: #aaa; font-size: 0.9em; line-height: 1.5; flex-grow: 1; }
+        .card p { color: #aaa; font-size: 0.9em; line-height: 1.5; flex-grow: 1; margin-bottom: 15px; }
         
-        /* Boutons d'action dans la carte */
-        .button-group { display: flex; gap: 10px; margin-top: 15px; }
-        .btn, .btn-copy { flex: 1; padding: 12px 10px; border-radius: 8px; font-weight: 700; font-size: 0.95em; text-align: center; text-decoration: none; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 6px; font-family: inherit; border: none; box-sizing: border-box; }
-        .btn { background: #333; color: #fff; }
-        .card:hover .btn { background: #FFCB05; color: #111; }
-        .btn-copy { background: #222; color: #aaa; border: 1px solid #444; }
-        .btn-copy:hover { background: #444; color: #fff; }
-        
-        /* Tiny Mobile Note sous les boutons */
-        .mobile-hint { font-size: 0.7em; color: #777; text-align: center; margin-top: 8px; font-style: italic; display: none; }
+        /* Bouton Unique Carte */
+        .btn-main-card { display: block; width: 100%; background: #FFCB05; color: #111; padding: 12px 10px; border-radius: 8px; font-weight: 900; font-size: 1em; text-align: center; text-decoration: none; transition: transform 0.2s, background 0.2s; box-sizing: border-box; border: none; }
+        .btn-main-card:hover { background: #fff; transform: translateY(-2px); }
 
         /* Guide & FAQ Items */
         .faq-item { background: #1c1c1c; border: 1px solid #333; border-radius: 12px; padding: 25px; margin-bottom: 20px; }
-        .faq-item h3 { color: #FFCB05; margin-top: 0; font-size: 1.3em;}
+        .faq-item h3 { color: #0088FF; margin-top: 0; font-size: 1.3em;}
         .faq-item p, .faq-item ul { color: #aaa; margin-bottom: 10px; font-size: 0.95em;}
         .faq-item ul { padding-left: 20px; }
         .faq-item li { margin-bottom: 5px; }
@@ -82,7 +75,7 @@
         .insta-btn:hover { background: #E1306C; border-color: #E1306C; color: #fff; }
         .tiktok-btn:hover { background: #00f2fe; border-color: #00f2fe; color: #111; }
         .youtube-btn:hover { background: #FF0000; border-color: #FF0000; color: #fff; }
-        .email-btn:hover { background: #FFCB05; border-color: #FFCB05; color: #111; }
+        .email-btn:hover { background: #0088FF; border-color: #0088FF; color: #fff; }
 
         /* --- OPTIMISATION MOBILE (< 600px) --- */
         @media (max-width: 600px) {
@@ -107,13 +100,9 @@
             .card-content { padding: 10px; }
             .category { font-size: 0.6em; }
             .card h3 { font-size: 0.9em; margin: 4px 0 6px 0; line-height: 1.25; }
-            
             .card p { font-size: 0.75em; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 8px;}
             
-            /* Boutons superposés sur mobile pour gagner de la place */
-            .button-group { flex-direction: column; gap: 6px; margin-top: auto; }
-            .btn, .btn-copy { padding: 8px; font-size: 0.75em; border-radius: 6px; }
-            .mobile-hint { display: block; } /* Affiché uniquement sur mobile */
+            .btn-main-card { padding: 8px; font-size: 0.85em; }
 
             .faq-item { padding: 16px; }
             .faq-item h3 { font-size: 1.1em; }
@@ -131,7 +120,7 @@
 
     <div class="header">
         <div class="logo-container">
-            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"></circle>
                 <circle cx="12" cy="12" r="3"></circle>
                 <line x1="12" y1="9" x2="12" y2="2"></line>
@@ -144,15 +133,15 @@
     
     <div id="setup" class="intro-banner">
         <h2>⚠️ Step 1: Account Setup (Required)</h2>
-        <p>To buy from the Chinese Taobao market at local prices without Western markups, you need a proxy account. <strong>Joyagoo is our official and secure partner.</strong></p>
+        <p>To buy from the Chinese Taobao market at local prices without Western markups, you need a proxy account. <strong>Superbuy is our official, industry-leading partner since 2012.</strong></p>
 
         <ul>
-            <li><strong>Exclusive Welcome Gift:</strong> Register via the link below to unlock up to <strong>1200 CNY (~$165 USD)</strong> in shipping coupons! You can apply these to reduce your international shipping costs.</li>
+            <li><strong>Exclusive Welcome Gift:</strong> Register via the link below to unlock your Welcome Shipping Coupon bundle to reduce your international shipping costs!</li>
             <li><strong>Local Prices:</strong> You only pay the true item price + transparent international shipping. Consolidate your items into one package to save even more on shipping.</li>
             <li><strong>Guaranteed Authenticity:</strong> Do not search for products yourself. I personally vet and update every link in this catalog daily.</li>
         </ul>
         <div style="text-align: center;">
-            <a href="https://joyagoo.com/register/?ref=301118558" class="btn-main" target="_blank">Register on Joyagoo Now</a>
+            <a href="https://m.superbuy.com/en/register/index?partnercode=8Z7UUT" class="btn-main" target="_blank">Register on Superbuy Now</a>
         </div>
     </div>
 
@@ -170,38 +159,33 @@
 
     <!-- Section Guide & FAQ -->
     <div id="guide" class="faq-container">
-        <h2 style="text-align: center; color: #FFCB05; font-size: 2em; margin-bottom: 40px;">How to Order & Buyer Guide</h2>
+        <h2 style="text-align: center; color: #0088FF; font-size: 2em; margin-bottom: 40px;">How to Order & Buyer Guide</h2>
         
         <div class="faq-item">
-            <h3>📦 1. Estimating Your Shipping Costs</h3>
-            <p>Joyagoo offers a transparent <strong>Shipping Estimator</strong> directly in their app or website. Here is how it works:</p>
+            <h3>📱 1. Seamless App Experience</h3>
+            <p>Superbuy offers one of the best and most robust mobile apps in the industry for both iOS and Android. Once your account is created, you can browse this catalog, click any "Order on Superbuy" button, and it will open seamlessly in your app or browser.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>📦 2. Estimating Your Shipping Costs</h3>
+            <p>Superbuy provides a transparent <strong>Shipping Calculator</strong> right on their homepage. Here is how it works:</p>
             <ul>
-                <li>Enter your <strong>Destination Country</strong> (e.g., United States, France, UK).</li>
+                <li>Enter your <strong>Destination Country</strong> (e.g., USA, UK, France).</li>
                 <li>Estimate the <strong>Weight</strong> (e.g., a standard Booster Box is roughly 400g-500g, a Jumbo Gem Pack is around 1000g).</li>
-                <li>Select the category (usually <em>Toys/Popular Merchandise</em>).</li>
+                <li>The calculator will display all available carriers (like EMS, FedEx, US-Air, etc.) with real-time transit days and costs.</li>
             </ul>
-            <p>The estimator will show you multiple carrier options (like US-air, EMS, etc.) with different delivery speeds (usually 8 to 20 days) and prices. <strong>Pro Tip:</strong> The more items you ship together in one parcel, the cheaper the shipping cost per item!</p>
+            <p><strong>Pro Tip:</strong> Shipping 3 or 4 boxes in a single parcel is much cheaper per box than shipping them one by one!</p>
         </div>
 
         <div class="faq-item">
-            <h3>🎟️ 2. Using Your Welcome Coupons</h3>
-            <p>When you register using the <em>Setup Step 1</em> link, you receive a bundle of shipping coupons. When you are ready to ship your items from the Joyagoo warehouse to your home, you can apply these coupons at checkout to significantly reduce your freight cost (e.g., saving €7 to €15+ depending on the package size).</p>
-        </div>
-
-        <div class="faq-item">
-            <h3>💳 3. Secure Payment Methods</h3>
-            <p>Joyagoo provides a highly secure checkout process. They do not store your payment information and offer multiple ways to pay:</p>
+            <h3>💳 3. Secure Global Payment Methods</h3>
+            <p>As the oldest proxy service (founded in 2012), Superbuy offers the highest level of payment security and the widest variety of options:</p>
             <ul>
-                <li><strong>Credit/Debit Cards:</strong> VISA and major cards.</li>
-                <li><strong>Mobile Wallets:</strong> Apple Pay and Google Pay for quick checkout.</li>
-                <li><strong>E-Wallets:</strong> Skrill.</li>
-                <li><strong>Local Banking:</strong> iDEAL, MyBank, PIX, Blik, and more depending on your region.</li>
+                <li><strong>PayPal & Stripe:</strong> For ultimate buyer protection.</li>
+                <li><strong>Credit/Debit Cards:</strong> VISA, Mastercard, etc.</li>
+                <li><strong>Mobile Pay:</strong> Apple Pay and Google Pay for instant checkout.</li>
+                <li><strong>Local Methods:</strong> Alipay, WeChat Pay, Giropay, iDEAL, and direct bank transfers depending on your region.</li>
             </ul>
-        </div>
-
-        <div class="faq-item">
-            <h3>⚙️ 4. App Settings (Language & Currency)</h3>
-            <p>You can browse Joyagoo in your preferred language! Go to your <strong>Profile > Settings</strong> to change the language (English, Français, Español, Deutsch, etc.) and your display currency (USD, EUR, CAD, GBP, AUD, etc.) so you always know exactly what you are paying.</p>
         </div>
     </div>
 
@@ -233,7 +217,6 @@
         </div>
     </div>
 
-    <!-- Scripts de copie de texte -->
     <script>
         function copyEmail(button) {
             const email = "contact.remytcg@gmail.com";
@@ -250,21 +233,6 @@
                     button.style.borderColor = "";
                     button.style.color = "";
                 }, 2500);
-            });
-        }
-        
-        function copierLienProduit(bouton, url) {
-            navigator.clipboard.writeText(url).then(() => {
-                const originalText = bouton.innerHTML;
-                bouton.innerHTML = "Copied! ✓";
-                bouton.style.borderColor = "#4CAF50";
-                bouton.style.color = "#4CAF50";
-                
-                setTimeout(() => {
-                    bouton.innerHTML = originalText;
-                    bouton.style.borderColor = "#444";
-                    bouton.style.color = "#aaa";
-                }, 2000);
             });
         }
     </script>
