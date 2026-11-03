@@ -355,8 +355,6 @@ function filtrer() {
     afficher(resultats);
 }
 
-// Initialisation au chargement
-document.addEventListener('DOMContentLoaded', () => {
-    genererCategories();
-    afficher(produits);
-});
+// Lancement immédiat, sans attendre un événement bloquant
+genererCategories();
+afficher(produits);
