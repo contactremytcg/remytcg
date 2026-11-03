@@ -1,6 +1,5 @@
 const memberId = "3894055016867374984";
 
-// Fonction globale pour copier le lien Taobao source (Mobile)
 window.copyToClipboard = function(text, btn) {
     navigator.clipboard.writeText(text).then(() => {
         const originalText = btn.innerText;
@@ -355,6 +354,5 @@ function filtrer() {
     afficher(resultats);
 }
 
-// Lancement immédiat, sans attendre un événement bloquant
 genererCategories();
 afficher(produits);
