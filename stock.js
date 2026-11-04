@@ -68,8 +68,8 @@ const produits = [
         categorie: "30th Anniversary",
         nom: "Futuristic Box",
         description: "Contains: Premium display case, exclusive futuristic-themed accessories, and highly sought-after booster packs.",
-        taobaoId: "1076581683957", 
-        taobaoId2: "",
+        taobaoId: "1076581683957",
+        taobaoId2: "", 
         images: ["https://monketic.com/cdn/shop/files/002_b0146a55-cf66-42d3-921c-9b62d7c09e3b.png?v=1792512443&width=1445"],
         fournisseur: "Panda"
     },
@@ -536,8 +536,8 @@ function afficher(liste) {
         let boutonsHtml = '';
         if (p.statut === "coming_soon") {
             boutonsHtml = `
-                <a href="#newsletter" class="btn-main-card btn-notify">🔔 Notify Me</a>
-                <a href="#newsletter" class="btn-main-card btn-mobile btn-notify">🔔 Notify Me</a>
+                <a href="https://instagram.com/remy.tcg" target="_blank" class="btn-main-card btn-notify">🔔 Follow IG for Drops</a>
+                <a href="https://instagram.com/remy.tcg" target="_blank" class="btn-main-card btn-mobile btn-notify">🔔 Follow IG for Drops</a>
             `;
         } else if (p.taobaoId === "") {
             boutonsHtml = `<button class="btn-main-card" style="background: #e74c3c; color: #fff; cursor: not-allowed;">⚠️ ID Missing</button>`;
@@ -551,7 +551,6 @@ function afficher(liste) {
             `;
             
             // AFFICHAGE FORCÉ DU BOUTON BACKUP
-            // Si taobaoId2 est vide (""), on utilise un ID factice "000000000" pour que le bouton s'affiche visuellement
             const targetTaobaoId2 = (p.taobaoId2 && p.taobaoId2.trim() !== "") ? p.taobaoId2 : "000000000";
             const taobaoUrlRaw2 = `https://item.taobao.com/item.htm?id=${targetTaobaoId2}`;
             const sugargooUrl2 = formatSugargooLink(targetTaobaoId2);
