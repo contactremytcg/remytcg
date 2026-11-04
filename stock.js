@@ -138,6 +138,66 @@ const produits = [
     },
 
     // ==========================================
+    // PREMIUM COLLECTION BOXES
+    // ==========================================
+    {
+        categorie: "Premium Collection Boxes",
+        nom: "⭐ [BEST SELLER] Master Strategy Milton ex Deck Building Set",
+        description: "Premium 5-pack UPC featuring Milton ex and exclusive collector accessories.",
+        taobaoId: "1008155364462",
+        image: "METTRE_IMAGE_ICI"
+    },
+    {
+        categorie: "Premium Collection Boxes",
+        nom: "⭐ [BEST SELLER] Raging Bolt ex Collection Box",
+        description: "Massive premium box featuring Raging Bolt ex, promos, and packs.",
+        taobaoId: "1065661862776",
+        image: "METTRE_IMAGE_ICI"
+    },
+    {
+        categorie: "Premium Collection Boxes",
+        nom: "⭐ [BEST SELLER] Tycoon Premium Box",
+        description: "Exclusive Tycoon collector box with high-end hits and supplies.",
+        taobaoId: "1065668842312",
+        image: "METTRE_IMAGE_ICI"
+    },
+    {
+        categorie: "Premium Collection Boxes",
+        nom: "⭐ [BEST SELLER] Dragapult ex Collection Box",
+        description: "Premium Dragapult ex collection box loaded with exclusive content.",
+        taobaoId: "1066680325531",
+        image: "METTRE_IMAGE_ICI"
+    },
+    {
+        categorie: "Premium Collection Boxes",
+        nom: "⭐ [BEST SELLER] Ogerpon Wellspring Mask (Blue) Gift Box",
+        description: "Exclusive Ogerpon blue mask premium collection box.",
+        taobaoId: "1049188091485",
+        image: "METTRE_IMAGE_ICI"
+    },
+    {
+        categorie: "Premium Collection Boxes",
+        nom: "⭐ [BEST SELLER] Ogerpon Cornerstone Mask (Brown) Gift Box",
+        description: "Exclusive Ogerpon brown mask premium collection box.",
+        taobaoId: "1050912105033",
+        image: "METTRE_IMAGE_ICI"
+    },
+    {
+        categorie: "Premium Collection Boxes",
+        nom: "⭐ [BEST SELLER] Ogerpon Teal Mask (Green) Gift Box",
+        description: "Exclusive Ogerpon green mask premium collection box.",
+        taobaoId: "1050909737218",
+        image: "METTRE_IMAGE_ICI"
+    },
+    {
+        categorie: "Premium Collection Boxes",
+        nom: "⭐ [BEST SELLER] Ogerpon Hearthflame Mask (Red) Gift Box",
+        description: "Exclusive Ogerpon red mask premium collection box.",
+        taobaoId: "1050912901200",
+        image: "METTRE_IMAGE_ICI"
+    },
+
+    // ==========================================
     // BLIND BOXES
     // ==========================================
     {
