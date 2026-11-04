@@ -31,7 +31,10 @@ const produits = [
         description: "Contains: 20 booster packs (5 cards/pack). The core set to pull classic reprints and exclusive alt arts.",
         taobaoId: "1077424694326",
         taobaoId2: "",
-        images: ["https://toy-treasure.com/cdn/shop/files/30th-celebration-chinese.jpg?v=1790767347&width=1445"],
+        images: [
+            "https://www.japan2uk.com/cdn/shop/files/Pokemon_30th_Celebration_30th_C_Simplified_Chinese_Booster_Box_1024x1024.png?v=1790325855",
+            "https://toy-treasure.com/cdn/shop/files/30th-celebration-chinese.jpg?v=1790767347&width=1445"
+        ],
         badge: { text: "🔥 Best Seller", color: "#e74c3c" },
         fournisseur: "Panda"
     },
@@ -41,7 +44,10 @@ const produits = [
         description: "Contains: Ultimate Premium Collection with Eeveelution ex promos, exclusive playmat, deck boxes, and multiple booster packs.",
         taobaoId: "1081612197981",
         taobaoId2: "",
-        images: ["https://www.yumecards.ca/cdn/shop/files/Product-2026-09-06T091809.798.jpg?v=1788700962"],
+        images: [
+            "https://www.yumecards.ca/cdn/shop/files/Product-2026-09-06T091809.798.jpg?v=1788700962",
+            "https://static.wixstatic.com/media/11a56d_c16d88f83b554e5ca233378f9ca01c95~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11a56d_c16d88f83b554e5ca233378f9ca01c95~mv2.jpg"
+        ],
         badge: { text: "⚠️ Low Stock", color: "#f39c12" },
         fournisseur: "Panda"
     },
@@ -51,7 +57,10 @@ const produits = [
         description: "Contains: 1x Exclusive Charizard Figure, multiple Promo cards (incl. Charizard ex), and assorted Anniversary booster packs.",
         taobaoId: "1078493401671",
         taobaoId2: "",
-        images: ["https://www.tcghobby.com/cdn/shop/files/30thcelebrationcharizardfigurine.webp?v=1787160912"],
+        images: [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ujY7LxSFCuTbsYIDy-nzNPJNsdUKHIzHZcFeUz944A&s=10",
+            "https://www.bescards.com/cdn/shop/files/16017252548952-2c85b35689e1b991472aa902bfcf7cd2d1f8b144.webp?v=1789744309"
+        ],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai"
     },
@@ -79,7 +88,10 @@ const produits = [
         description: "Contains: 1x Umbreon ex Promo, custom Umbreon card sleeves, premium deck box, and 30th Anniversary packs.",
         taobaoId: "1081589285227",
         taobaoId2: "",
-        images: ["https://www.tcghobby.com/cdn/shop/files/simplifiedchinesedeluxesetumbreon.webp?v=1789224364"],
+        images: [
+            "https://www.tcghobby.com/cdn/shop/files/simplifiedchinesedeluxesetumbreon.webp?v=1789224364",
+            "https://www.therange.co.uk/media/0/9/1790203452_5789.jpg"
+        ],
         fournisseur: "Panda"
     },
     {
@@ -88,7 +100,10 @@ const produits = [
         description: "Contains: 1x Espeon ex Promo, custom Espeon card sleeves, premium deck box, and 30th Anniversary packs.",
         taobaoId: "1081585073446",
         taobaoId2: "",
-        images: ["https://x-playground.com/cdn/shop/files/Pokemon_TCG_30th_Celebration_Espeon_ex_Deluxe_Deck_Set_Simplified_Chinese.jpg?v=1789823886&width=600"],
+        images: [
+            "https://x-playground.com/cdn/shop/files/Pokemon_TCG_30th_Celebration_Espeon_ex_Deluxe_Deck_Set_Simplified_Chinese.jpg?v=1789823886&width=600",
+            "https://www.therange.co.uk/media/2/8/1790203411_8925.jpg"
+        ],
         fournisseur: "Panda"
     },
     {
@@ -97,7 +112,10 @@ const produits = [
         description: "Contains: 3x 30th Anniversary booster packs, 1x Greninja ex promo card, 1x Display Keychain.",
         taobaoId: "1080814663430",
         taobaoId2: "",
-        images: ["https://x-playground.com/cdn/shop/files/Pokemon_TCG_30th_Celebration_Greninja_ex_Card_Display_Sleeve_Set.jpg?v=1789822489&width=600"],
+        images: [
+            "https://x-playground.com/cdn/shop/files/Pokemon_TCG_30th_Celebration_Greninja_ex_Card_Display_Sleeve_Set.jpg?v=1789822489&width=600",
+            "https://www.therange.co.uk/media/3/3/1790203353_7893.jpg"
+        ],
         fournisseur: "AmongUs"
     },
     {
@@ -106,7 +124,10 @@ const produits = [
         description: "Contains: 3x 30th Anniversary booster packs, 1x Sylveon ex (Fairy Eevee) promo card, 1x Display Keychain.",
         taobaoId: "1080814663430",
         taobaoId2: "",
-        images: ["https://spoilsandloot.com/cdn/shop/files/syl_1.jpg?v=1789577455"],
+        images: [
+            "https://spoilsandloot.com/cdn/shop/files/syl_1.jpg?v=1789577455",
+            "https://www.therange.co.uk/media/7/6/1790203399_5932.jpg"
+        ],
         fournisseur: "AmongUs"
     },
     {
@@ -115,7 +136,10 @@ const produits = [
         description: "Contains: First Partner Promo cards and a selection of booster packs. Great for beginners.",
         taobaoId: "1036462263685",
         taobaoId2: "",
-        images: ["https://www.tcghobby.com/cdn/shop/files/Simplified_Chinese_Pokemon_30th_Anniversary_First_Partner_Special_Illustration_Card_Set_Vol._1_Display_Set.jpg?v=1776401355&width=645"],
+        images: [
+            "https://www.tcghobby.com/cdn/shop/files/Simplified_Chinese_Pokemon_30th_Anniversary_First_Partner_Special_Illustration_Card_Set_Vol._1_Display_Set.jpg?v=1776401355&width=645",
+            "https://hanabitradingco.ca/cdn/shop/files/IMG-8415.png?v=1774029915"
+        ],
         fournisseur: "AmongUs"
     },
     {
@@ -124,7 +148,10 @@ const produits = [
         description: "Contains: Wave 2 First Partner Promo cards and a selection of booster packs.",
         taobaoId: "1059308989628",
         taobaoId2: "",
-        images: ["https://www.tcghobby.com/cdn/shop/files/SimplifiedChinesePokemon30thAnniversaryFirstPartnerSpecialIllustrationCardSetVol.2.webp?crop=center&height=500&v=1778251789&width=600"],
+        images: [
+            "https://www.tcghobby.com/cdn/shop/files/SimplifiedChinesePokemon30thAnniversaryFirstPartnerSpecialIllustrationCardSetVol.2.webp?crop=center&height=500&v=1778251789&width=600",
+            "https://snornap.com/cdn/shop/files/IMG-8913.jpg?v=1781665119&width=1445"
+        ],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai"
     },
@@ -134,7 +161,10 @@ const produits = [
         description: "Contains: Wave 3 First Partner Promo cards and a selection of booster packs.",
         taobaoId: "1070165751188",
         taobaoId2: "",
-        images: ["https://www.tcghobby.com/cdn/shop/files/firstpartnerdisplaysetvol.3set.webp?v=1784301375"],
+        images: [
+            "https://www.tcghobby.com/cdn/shop/files/firstpartnerdisplaysetvol.3set.webp?v=1784301375",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROegMBxRjhD0vxiYTE75JBj6Q4U3zEvbXPJcsgPMEL5qHhQzryXSfb6tFO&s=10"
+        ],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai"
     },
@@ -148,7 +178,11 @@ const produits = [
         description: "Contains: 1x Exclusive Pikachu-themed merchandise item and assorted booster packs.",
         taobaoId: "1082955160912",
         taobaoId2: "",
-        images: ["https://collectorstore.com/cdn/shop/files/CollectorStore00002_7207263c-4504-4ee0-ae14-b3d648f6dba7.jpg?v=1790101321&width=1445"],
+        images: [
+            "https://collectorstore.com/cdn/shop/files/CollectorStore00002_7207263c-4504-4ee0-ae14-b3d648f6dba7.jpg?v=1790101321&width=1445",
+            "https://card-binder.com/cdn/shop/files/Pokemon-30th-celebration-pikachu-figure-blind-box-simplified-chinese-pikachu-figures.webp?v=1788978615&width=1500",
+            "https://wholesale.hokeypokegames.co.uk/storage/products/2kdPuW06V6Ouk9qSqpGSVNuCwFwYqpNCl56CwQP6.webp"
+        ],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai"
     },
@@ -158,7 +192,11 @@ const produits = [
         description: "Contains: 1x Exclusive Eevee-themed merchandise item and assorted booster packs.",
         taobaoId: "1078195403792",
         taobaoId2: "",
-        images: ["https://collectorstore.com/cdn/shop/files/CollectorStore00001_3c6277d1-2842-417f-a3c6-63f1dcb381ab.jpg?v=1787866920&width=990"],
+        images: [
+            "https://collectorstore.com/cdn/shop/files/CollectorStore00001_3c6277d1-2842-417f-a3c6-63f1dcb381ab.jpg?v=1787866920&width=990",
+            "https://levelupstore.co.za/cdn/shop/files/s-l1600_1_8a319222-0268-4635-9c76-fd417facea77_1200x.png?v=1787129610",
+            "https://www.reformedpokelab.com/cdn/shop/files/PokemonTCG_SimplifiedChinesePokemonDreamPaintingEevee_EvolutionsFigurineSetBlindBox_f7bc5c1c-9acd-49a1-8798-41d015f94e25_1800x1800.webp?v=1787763479"
+        ],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai"
     },
@@ -168,7 +206,10 @@ const produits = [
         description: "Contains: 1x Random Dream Vol. 2 Pokémon figure and selected booster packs.",
         taobaoId: "1044387395690",
         taobaoId2: "",
-        images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdhtsk-Qh_hf6kAgLTwz6v9CAag4wePr0oN9bafujecqKP01j_Q7M5Vjvw&s=10"],
+        images: [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdhtsk-Qh_hf6kAgLTwz6v9CAag4wePr0oN9bafujecqKP01j_Q7M5Vjvw&s=10",
+            "https://hanabitradingco.ca/cdn/shop/files/dreamfigurevol2-2.jpg?v=1777231093"
+        ],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai"
     },
@@ -178,7 +219,10 @@ const produits = [
         description: "Contains: 1x Random Dream Vol. 1 Pokémon figure and selected booster packs.",
         taobaoId: "994367267628",
         taobaoId2: "",
-        images: ["https://www.tcghobby.com/cdn/shop/files/SimplifiedChinesePokemonDreamPaintingCollection151FigureSet.jpg?v=1776398595"],
+        images: [
+            "https://www.tcghobby.com/cdn/shop/files/SimplifiedChinesePokemonDreamPaintingCollection151FigureSet.jpg?v=1776398595",
+            "https://i0.wp.com/katzenworld.shop/wp-content/uploads/2025/12/Dream-Painting-Collection-151-Figurine-Set-Figures-2.webp?fit=800%2C1097&ssl=1"
+        ],
         fournisseur: "Panda"
     },
     {
@@ -187,7 +231,10 @@ const produits = [
         description: "Contains: 1x Random Ditto-themed merchandise item and selected booster packs.",
         taobaoId: "1085294497168",
         taobaoId2: "",
-        images: ["https://funismglobal.com/cdn/shop/files/Pokemon_Palmsize_Wonders_-_Happy_Ditto_1.jpg?v=1792912140"]
+        images: [
+            "https://funismglobal.com/cdn/shop/files/Pokemon_Palmsize_Wonders_-_Happy_Ditto_1.jpg?v=1792912140",
+            "https://pokeunlimited.com/cdn/shop/files/funism-pokemon-palmsize-wonders-happy-ditto-figurine-blind-box-8249829.jpg?v=1790646457"
+        ]
     },
 
     // ==========================================
@@ -199,7 +246,10 @@ const produits = [
         description: "Contains: Exclusive 2026 Mid-Autumn festival promotional items and packs.",
         taobaoId: "1071726804171",
         taobaoId2: "",
-        images: ["https://collectorstore.com/cdn/shop/files/CollectorStore00003_867dd20e-c23a-4eb5-805f-61f317dc99b0.jpg?v=1789052091&width=990"],
+        images: [
+            "https://collectorstore.com/cdn/shop/files/CollectorStore00003_867dd20e-c23a-4eb5-805f-61f317dc99b0.jpg?v=1789052091&width=990",
+            "https://card-binder.com/cdn/shop/files/Pokemon-Mid-Autumn-Festival-Gift-Box-Simplified-Chinese-contents.webp?v=1787913719&width=1500"
+        ],
         fournisseur: "Panda"
     },
     {
@@ -294,6 +344,7 @@ const produits = [
         taobaoId: "1050912901200",
         taobaoId2: "",
         images: [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxa6HqnsRfMAzQN6evqXrYdwe_Fq0syjwNLYsE72-9_w&s=10",
             "https://ae-pic-a1.aliexpress-media.com/kf/S12cb4b8e79af4815936a842786e80018z.jpg",
             "https://www.tcghobby.com/cdn/shop/files/Simplified_Chinese_Pokemon_Ogerpon_Hearthflame_Gift_Box_Set.webp?v=1779209745&width=645"
         ],
@@ -310,7 +361,7 @@ const produits = [
         description: "Contains: 3x Chasing Glory booster packs and 1x Exclusive themed collector badge/coin.",
         taobaoId: "1067353432814",
         taobaoId2: "",
-        images: ["https://img.alicdn.com/bao/uploaded/i4/2214696073021/O1CN01jHlilS1YBffS8LKt0_!!4611686018427385661-0-item_pic.jpg"],
+        images: ["https://images-eu.ssl-images-amazon.com/images/I/71cZJr3YPnL._AC_UL495_SR435,495_.jpg"],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai"
     },
@@ -320,7 +371,7 @@ const produits = [
         description: "Contains: 3x Bright Fantasy booster packs and 1x Exclusive themed collector badge/coin.",
         taobaoId: "1026530979141",
         taobaoId2: "",
-        images: ["https://img.alicdn.com/bao/uploaded/i3/2214696073021/O1CN019hoY241YBfdlxjFsT_!!4611686018427385661-0-item_pic.jpg"],
+        images: ["https://erp-image.sgliteasset.com/_next/image?url=https%3A%2F%2Fcdn1.sgliteasset.com%2Ftcglah%2Fimages%2Fproduct%2Fproduct-7525796%2F34x36X3U69d3424537017_1775452741.jpg&w=3840&q=85"],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai"
     },
@@ -330,7 +381,7 @@ const produits = [
         description: "Contains: 3x Blade Awakening booster packs and 1x Exclusive themed collector badge/coin.",
         taobaoId: "1008157120043",
         taobaoId2: "",
-        images: ["https://img.alicdn.com/bao/uploaded/i4/2214696073021/O1CN01kSJAQC1YBfdF2Y6gT_!!4611686018427385661-0-item_pic.jpg"],
+        images: ["https://main-wordpress-bucket-production.lon1.digitaloceanspaces.com/2026/04/pokemon-simplified-chinese-blade-awakening-csv7c-coin-set.png"],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai"
     },
@@ -630,4 +681,3 @@ function filtrer() {
 
 genererCategories();
 afficher(produits);
-
