@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RemyTCG - Exclusive Proxy Service</title>
     
-    <!-- METADATA POUR LES PARTAGES (LIEN IMGBB POUR DÉBLOQUER L'APERÇU iMESSAGE) -->
+    <!-- METADATA POUR LES PARTAGES (LIEN IMGBB POUR DÉBLOQUER L'APERÇU iMESSAGE/DISCORD) -->
     <meta property="og:title" content="RemyTCG - Exclusive Proxy Service">
     <meta property="og:description" content="Your trusted proxy for 100% Authentic Simplified Chinese Pokémon TCG. Local prices, global shipping.">
     <meta property="og:image" content="https://i.ibb.co/1YZ2ffcS/IMG-9158.jpg">
@@ -109,6 +109,28 @@
         .card h3 { margin: 8px 0; font-size: 1.2em; line-height: 1.3;}
         .card p { color: #aaa; font-size: 0.85em; line-height: 1.4; flex-grow: 1; margin-bottom: 15px; }
         
+        /* --- BADGE OFFICIEL (NOUVEAU) --- */
+        .badge-officiel {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(17, 17, 17, 0.9);
+            color: #4CAF50;
+            padding: 5px 10px;
+            border-radius: 8px;
+            font-size: 0.7em;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            border: 1px solid #4CAF50;
+            backdrop-filter: blur(4px);
+            z-index: 2;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
         /* Boutons d'achat */
         .btn-main-card { display: block; width: 100%; padding: 12px 10px; border-radius: 8px; font-weight: 900; font-size: 0.95em; text-align: center; text-decoration: none; transition: transform 0.2s, background 0.2s, color 0.2s; box-sizing: border-box; border: none; font-family: inherit; cursor: pointer; }
         .btn-pc { background: #FFCB05; color: #111; }
@@ -144,10 +166,6 @@
         .contact-links { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 15px;}
         .contact-btn { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; border-radius: 6px; text-decoration: none; font-weight: 700; transition: all 0.2s; border: 1px solid #333; color: #fff; background: #1c1c1c; font-size: 0.9em; cursor: pointer; font-family: inherit; }
         .contact-btn:hover { transform: translateY(-2px); }
-        .insta-btn:hover { background: #E1306C; border-color: #E1306C; color: #fff; }
-        .tiktok-btn:hover { background: #00f2fe; border-color: #00f2fe; color: #111; }
-        .youtube-btn:hover { background: #FF0000; border-color: #FF0000; color: #fff; }
-        .email-btn:hover { background: #FF6A00; border-color: #FF6A00; color: #fff; }
 
         /* --- OPTIMISATION MOBILE (< 768px) --- */
         @media (max-width: 768px) {
@@ -179,6 +197,8 @@
             .card h3 { font-size: 0.9em; margin: 4px 0 6px 0; line-height: 1.25; }
             .card p { font-size: 0.75em; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 8px;}
             
+            .badge-officiel { font-size: 0.6em; padding: 4px 6px; top: 6px; right: 6px; }
+
             .btn-pc { display: none; }
             .btn-mobile { display: block; background: #222; color: #FF6A00; border: 2px solid #FF6A00; padding: 8px; font-size: 0.85em; cursor: pointer; }
             .btn-mobile:active { background: #FF6A00; color: #111; }
@@ -376,88 +396,4 @@
         
         <div class="contact-links">
             <a href="https://instagram.com/remy.tcg" target="_blank" class="contact-btn insta-btn">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                @remy.tcg
-            </a>
-            <a href="https://tiktok.com/@remy_tcg" target="_blank" class="contact-btn tiktok-btn">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path><path d="M15 8a4 4 0 1 0 0-4v16a4 4 0 0 1-4-4"></path><line x1="15" y1="4" x2="19" y2="4"></line></svg>
-                @remy_tcg
-            </a>
-            <a href="https://youtube.com/@remytcg" target="_blank" class="contact-btn youtube-btn">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.16 1 12 1 12s0 3.84.46 5.58a2.78 2.78 0 0 0 1.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.84 23 12 23 12s0-3.84-.46-5.58z"></path><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon></svg>
-                @remytcg
-            </a>
-        </div>
-        <div class="contact-links">
-            <button onclick="copyEmail(this)" class="contact-btn email-btn">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                <span>contact.remytcg@gmail.com</span>
-            </button>
-        </div>
-    </div>
-
-    <script>
-        // --- GESTION INTELLIGENTE DE LA POP-UP ---
-        let pendingAction = null; 
-
-        function triggerProductAction(type, data, element = null) {
-            const hasSeenPopup = localStorage.getItem('remytcg_setup_done');
-            
-            if (hasSeenPopup === 'true') {
-                executeAction(type, data, element);
-            } else {
-                pendingAction = { type, data, element };
-                const modal = document.getElementById('welcomeModal');
-                modal.style.display = 'flex';
-                setTimeout(() => modal.style.opacity = '1', 10);
-            }
-        }
-
-        function executeAction(type, data, element) {
-            if (type === 'pc') {
-                window.open(data, '_blank');
-            } else if (type === 'mobile') {
-                window.copyToClipboard(data, element);
-            }
-        }
-
-        function registerAndClose() {
-            localStorage.setItem('remytcg_setup_done', 'true'); 
-            window.open('https://m.sugargoo.com/register?memberId=3894055016867374984', '_blank');
-            closeModal();
-        }
-
-        function continueToProduct() {
-            localStorage.setItem('remytcg_setup_done', 'true'); 
-            closeModal();
-            if (pendingAction) {
-                executeAction(pendingAction.type, pendingAction.data, pendingAction.element);
-                pendingAction = null;
-            }
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('welcomeModal');
-            modal.style.opacity = '0';
-            setTimeout(() => modal.style.display = 'none', 300);
-        }
-
-        function copyEmail(button) {
-            const email = "contact.remytcg@gmail.com";
-            const textSpan = button.querySelector("span");
-            navigator.clipboard.writeText(email).then(() => {
-                const originalText = textSpan.innerText;
-                textSpan.innerText = "Copied! ✓";
-                button.style.borderColor = "#4CAF50";
-                button.style.color = "#4CAF50";
-                setTimeout(() => {
-                    textSpan.innerText = originalText;
-                    button.style.borderColor = "";
-                    button.style.color = "";
-                }, 2500);
-            });
-        }
-    </script>
-    <script src="stock.js"></script>
-</body>
-</html>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A
