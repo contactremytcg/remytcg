@@ -142,6 +142,13 @@ const produits = [
     // ==========================================
     {
         categorie: "Blind Boxes",
+        nom: "Dream Figure Vol. 2 Blind Box",
+        description: "Dream Figure Vol. 2 mystery blind box collection.",
+        taobaoId: "1044387395690",
+        image: "https://img.alicdn.com/bao/uploaded/i3/2214696073021/O1CN014iUU9g1YBfeNftS5I_!!4611686018427385661-0-item_pic.jpg"
+    },
+    {
+        categorie: "Blind Boxes",
         nom: "Ditto Blind Box",
         description: "Ditto Blind Box collection.",
         taobaoId: "1085294497168",
