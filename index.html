@@ -50,39 +50,69 @@
         
         .card-badge { position: absolute; top: 10px; left: 10px; padding: 6px 12px; border-radius: 6px; font-size: 0.75em; font-weight: 900; text-transform: uppercase; color: #fff; z-index: 10; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
 
+        /* NOUVEAU CONTENEUR MULTI-IMAGES PROPRE SANS BARRE DE DEFILEMENT */
+        .image-wrapper {
+            position: relative;
+            height: 200px;
+            background: #fff;
+            border-bottom: 1px solid #333;
+            overflow: hidden;
+        }
+
         .card-carousel {
             display: flex;
             overflow-x: auto;
             scroll-snap-type: x mandatory;
             scroll-behavior: smooth;
             -webkit-overflow-scrolling: touch;
-            height: 200px;
-            border-bottom: 1px solid #333;
-            scrollbar-width: thin;
-            scrollbar-color: #FF6A00 #1c1c1c;
-            background: #fff;
+            height: 100%;
+            scrollbar-width: none; /* Cache la barre sur Firefox */
         }
-        .card-carousel::-webkit-scrollbar { height: 6px; }
-        .card-carousel::-webkit-scrollbar-thumb { background: #FF6A00; border-radius: 3px; }
+        .card-carousel::-webkit-scrollbar {
+            display: none; /* Cache la barre sur Chrome, Safari et mobile */
+        }
         
-        /* OPTIMISATION DES IMAGES POUR QU'ELLES RENTRENT ENTIEREMENT */
         .card-carousel .card-img { 
             flex: 0 0 100%; 
             scroll-snap-align: start; 
             border-bottom: none; 
-            object-fit: contain; /* L'image s'adapte sans être coupée */
+            object-fit: contain; 
             background: #fff;
-            padding: 10px; /* Espace autour pour respirer */
+            padding: 10px; 
             box-sizing: border-box;
+            height: 100%;
         }
         .card-img-single { 
             width: 100%; 
             height: 200px; 
-            object-fit: contain; /* L'image s'adapte sans être coupée */
+            object-fit: contain; 
             border-bottom: 1px solid #333; 
             background: #fff; 
-            padding: 10px; /* Espace autour pour respirer */
+            padding: 10px; 
             box-sizing: border-box;
+        }
+
+        /* POINTS INDICATEURS DISCRETS */
+        .carousel-dots {
+            position: absolute;
+            bottom: 6px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            pointer-events: none;
+        }
+        .carousel-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: rgba(0,0,0,0.25);
+            transition: background 0.2s, transform 0.2s;
+        }
+        .carousel-dot.active {
+            background: #FF6A00;
+            transform: scale(1.2);
         }
 
         .card-content { padding: 15px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; }
@@ -360,6 +390,54 @@
             const modal = document.getElementById('welcomeModal');
             modal.style.opacity = '0';
             setTimeout(() => modal.style.display = 'none', 300);
+        }
+
+        // DEFILEMENT AUTOMATIQUE AU SURVOL SUR PC + GESTION DES POINTS
+        function initImageCarousels() {
+            document.querySelectorAll('.image-wrapper').forEach(wrapper => {
+                const carousel = wrapper.querySelector('.card-carousel');
+                if (!carousel) return;
+
+                const dots = wrapper.querySelectorAll('.carousel-dot');
+                const images = carousel.querySelectorAll('.card-img');
+                if (images.length <= 1) return;
+
+                let autoScrollInterval = null;
+                let currentIndex = 0;
+
+                const updateActiveDot = (index) => {
+                    dots.forEach((d, i) => d.classList.toggle('active', i === index));
+                };
+
+                carousel.addEventListener('scroll', () => {
+                    const index = Math.round(carousel.scrollLeft / carousel.clientWidth);
+                    if (index !== currentIndex) {
+                        currentIndex = index;
+                        updateActiveDot(currentIndex);
+                    }
+                });
+
+                wrapper.addEventListener('mouseenter', () => {
+                    autoScrollInterval = setInterval(() => {
+                        currentIndex = (currentIndex + 1) % images.length;
+                        carousel.scrollTo({
+                            left: currentIndex * carousel.clientWidth,
+                            behavior: 'smooth'
+                        });
+                        updateActiveDot(currentIndex);
+                    }, 1400);
+                });
+
+                wrapper.addEventListener('mouseleave', () => {
+                    clearInterval(autoScrollInterval);
+                    currentIndex = 0;
+                    carousel.scrollTo({
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                    updateActiveDot(0);
+                });
+            });
         }
     </script>
 </body>
