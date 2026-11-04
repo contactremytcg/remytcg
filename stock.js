@@ -37,45 +37,51 @@ const produits = [
         categorie: "30th Anniversary",
         nom: "Umbreon & Espeon UPC Box",
         description: "Contains: Ultimate Premium Collection with Eeveelution ex promos, exclusive playmat, deck boxes, and multiple booster packs.",
-        taobaoId: "1062273634908",
+        taobaoId: "1081612197981",
         image: "https://www.yumecards.ca/cdn/shop/files/Product-2026-09-06T091809.798.jpg?v=1788700962",
-        badge: { text: "⚠️ Low Stock", color: "#f39c12" }
+        badge: { text: "⚠️ Low Stock", color: "#f39c12" },
+        fournisseur: "Panda"
     },
     {
         categorie: "30th Anniversary",
         nom: "Charizard Figure Box",
         description: "Contains: 1x Exclusive Charizard Figure, multiple Promo cards (incl. Charizard ex), and assorted Anniversary booster packs.",
-        taobaoId: "1084248931939",
+        taobaoId: "1078493401671",
         image: "https://www.tcghobby.com/cdn/shop/files/30thcelebrationcharizardfigurine.webp?v=1787160912",
-        isOfficial: true
+        isOfficial: true,
+        fournisseur: "Panda"
     },
     {
         categorie: "30th Anniversary",
-        nom: "Tri-Packs Blisters",
+        nom: "30th Anniversary Coin Set",
         description: "Contains: 3x 30th Anniversary booster packs and 1x guaranteed holographic promo card.",
-        taobaoId: "1062273634908",
-        image: "https://i0.wp.com/katzenworld.shop/wp-content/uploads/2026/10/xCsvB678SEHnQsnJEwA77_b0X5C_j1iK9xxyQceY-t_KUwwLreptpTpXEX0qHQWHPqk9WlhnN2QZ1yrg0YdisjlyQ9IMxV-whH58ShVYumxCmz8a0LPxVc8lOcENGBtWJeNdq1_NZWYt5ucX0s73g5Qbw_W6i7-oGYaptOiANo_JHoO6qQh_dU24ewjlOK8t.jpeg?fit=1080%2C1080&ssl=1"
+        taobaoId: "1078477045552",
+        image: "https://i0.wp.com/katzenworld.shop/wp-content/uploads/2026/10/xCsvB678SEHnQsnJEwA77_b0X5C_j1iK9xxyQceY-t_KUwwLreptpTpXEX0qHQWHPqk9WlhnN2QZ1yrg0YdisjlyQ9IMxV-whH58ShVYumxCmz8a0LPxVc8lOcENGBtWJeNdq1_NZWYt5ucX0s73g5Qbw_W6i7-oGYaptOiANo_JHoO6qQh_dU24ewjlOK8t.jpeg?fit=1080%2C1080&ssl=1",
+        fournisseur: "Panda"
     },
     {
         categorie: "30th Anniversary",
         nom: "Futuristic Box",
         description: "Contains: Premium display case, exclusive futuristic-themed accessories, and highly sought-after booster packs.",
-        taobaoId: "", 
-        image: "https://monketic.com/cdn/shop/files/002_b0146a55-cf66-42d3-921c-9b62d7c09e3b.png?v=1792512443&width=1445"
+        taobaoId: "1076581683957", 
+        image: "https://monketic.com/cdn/shop/files/002_b0146a55-cf66-42d3-921c-9b62d7c09e3b.png?v=1792512443&width=1445",
+        fournisseur: "Panda"
     },
     {
         categorie: "30th Anniversary",
         nom: "Umbreon Deluxe Box",
         description: "Contains: 1x Umbreon ex Promo, custom Umbreon card sleeves, premium deck box, and 30th Anniversary packs.",
-        taobaoId: "1062273634908",
-        image: "https://www.tcghobby.com/cdn/shop/files/simplifiedchinesedeluxesetumbreon.webp?v=1789224364"
+        taobaoId: "1081589285227",
+        image: "https://www.tcghobby.com/cdn/shop/files/simplifiedchinesedeluxesetumbreon.webp?v=1789224364",
+        fournisseur: "Panda"
     },
     {
         categorie: "30th Anniversary",
         nom: "Espeon Deluxe Box",
         description: "Contains: 1x Espeon ex Promo, custom Espeon card sleeves, premium deck box, and 30th Anniversary packs.",
-        taobaoId: "1062273634908",
-        image: "https://x-playground.com/cdn/shop/files/Pokemon_TCG_30th_Celebration_Espeon_ex_Deluxe_Deck_Set_Simplified_Chinese.jpg?v=1789823886&width=600"
+        taobaoId: "1081585073446",
+        image: "https://x-playground.com/cdn/shop/files/Pokemon_TCG_30th_Celebration_Espeon_ex_Deluxe_Deck_Set_Simplified_Chinese.jpg?v=1789823886&width=600",
+        fournisseur: "Panda"
     },
     {
         categorie: "30th Anniversary",
@@ -135,6 +141,14 @@ const produits = [
     // ==========================================
     // PREMIUM COLLECTION BOXES
     // ==========================================
+    {
+        categorie: "Premium Collection Boxes",
+        nom: "2026 Mid-Autumn Gift Box",
+        description: "Contains: Exclusive 2026 Mid-Autumn festival promotional items and packs.",
+        taobaoId: "1071726804171",
+        image: "https://placehold.co/600x400/1c1c1c/FF6A00?text=2026+Mid-Autumn+Gift+Box",
+        fournisseur: "Panda"
+    },
     {
         categorie: "Premium Collection Boxes",
         nom: "Master Strategy Milton ex Deck Building Set",
@@ -268,8 +282,9 @@ const produits = [
         categorie: "Gem Packs",
         nom: "Gem Pack Vol. 3",
         description: "Contains: Full factory-sealed display box. Jumbo booster packs with guaranteed holo hits per pack.",
-        taobaoId: "932678630102",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUmoBQZ-Tg4lSqbjGr8VX3w-v8xzRaFsq9_HL5LCq2kFeJpnMO1km0xeoX&s=10"
+        taobaoId: "980697249084",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUmoBQZ-Tg4lSqbjGr8VX3w-v8xzRaFsq9_HL5LCq2kFeJpnMO1km0xeoX&s=10",
+        fournisseur: "Panda"
     },
     {
         categorie: "Gem Packs",
@@ -283,8 +298,9 @@ const produits = [
         categorie: "Gem Packs",
         nom: "Gem Pack Vol. 5",
         description: "Contains: Full factory-sealed display box. Jumbo booster packs with guaranteed holo hits per pack.",
-        taobaoId: "932678630102",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9TLXDOLzUX85KYbOhVhPXGUZuYcuJ5YgnPabKA6OwVNgTR-WnT4xAA3o&s=10"
+        taobaoId: "1041523213480",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9TLXDOLzUX85KYbOhVhPXGUZuYcuJ5YgnPabKA6OwVNgTR-WnT4xAA3o&s=10",
+        fournisseur: "Panda"
     },
     {
         categorie: "Gem Packs",
@@ -298,15 +314,22 @@ const produits = [
         categorie: "Gem Packs",
         nom: "Gem Pack Vol. 7 (Psyduck Cover)",
         description: "Contains: Full factory-sealed display box. Jumbo booster packs featuring the highly anticipated Psyduck set.",
-        taobaoId: "", 
+        taobaoId: "1095191988269", 
         image: "https://www.yumecards.ca/cdn/shop/files/Product-2026-10-17T231241.139.jpg?v=1792293584",
-        badge: { text: "⏳ Coming Soon", color: "#3498db" },
-        statut: "coming_soon"
+        fournisseur: "Panda"
     },
 
     // ==========================================
     // SCARLET & VIOLET ERA
     // ==========================================
+    {
+        categorie: "Scarlet & Violet Era",
+        nom: "Black Bolt & White Flare Display",
+        description: "Contains: Factory sealed display box from the Black Bolt / White Flare set.",
+        taobaoId: "1094128825003",
+        image: "https://placehold.co/600x400/1c1c1c/FF6A00?text=Black+Bolt+%26+White+Flare",
+        fournisseur: "Panda"
+    },
     {
         categorie: "Scarlet & Violet Era",
         nom: "Chasing Glory (CSV10)",
@@ -353,15 +376,17 @@ const produits = [
         categorie: "Scarlet & Violet Era",
         nom: "Dark Crystal Blaze (CSV5)",
         description: "Contains: 30 booster packs (5 cards/pack). Factory sealed display box.",
-        taobaoId: "1038938904501",
-        image: "https://godofcards.com/cdn/shop/files/pokemon-dark-crystal-blaze-csv5c-15er-display-s-chinesisch.jpg?v=1773292564&width=600"
+        taobaoId: "898604193966",
+        image: "https://godofcards.com/cdn/shop/files/pokemon-dark-crystal-blaze-csv5c-15er-display-s-chinesisch.jpg?v=1773292564&width=600",
+        fournisseur: "Panda"
     },
     {
         categorie: "Scarlet & Violet Era",
         nom: "Reward Round (CSV4)",
         description: "Contains: 30 booster packs (5 cards/pack). Factory sealed display box.",
-        taobaoId: "",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSztHore7cjIXIaCEjlnPeenDehZZb9N-jrM2zQrArON31YbNnEW8eUiLA&s=10"
+        taobaoId: "1021280321306",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSztHore7cjIXIaCEjlnPeenDehZZb9N-jrM2zQrArON31YbNnEW8eUiLA&s=10",
+        fournisseur: "Panda"
     },
 
     // ==========================================
@@ -371,8 +396,9 @@ const produits = [
         categorie: "Collect 151 Series",
         nom: "Collect 151 Gathering",
         description: "Contains: 20 booster packs. Factory sealed display box from the highly demanded 151 set.",
-        taobaoId: "899608090307",
-        image: "https://card-binder.com/cdn/shop/files/Pokemon-151C-Collect-151-Gathering-Boosterbox.webp?v=1756631761"
+        taobaoId: "985432609330",
+        image: "https://card-binder.com/cdn/shop/files/Pokemon-151C-Collect-151-Gathering-Boosterbox.webp?v=1756631761",
+        fournisseur: "Panda"
     },
     {
         categorie: "Collect 151 Series",
@@ -409,9 +435,13 @@ function afficher(liste) {
             htmlBadge = `<div class="card-badge" style="background: ${p.badge.color};">${p.badge.text}</div>`;
         }
 
-        // L'icône n'apparaît que si p.isOfficial est true
         let officialHtml = p.isOfficial 
             ? `<svg class="official-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" title="Official Source"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h8m4 0h8"></path><circle cx="12" cy="12" r="2"></circle></svg>` 
+            : '';
+
+        // AJOUT : Texte du fournisseur (discret sous la description)
+        let fournisseurHtml = p.fournisseur 
+            ? `<div style="font-size: 0.7em; color: #777; font-style: italic; margin-bottom: 10px;">Sourceur : ${p.fournisseur}</div>` 
             : '';
 
         let boutonsHtml = '';
@@ -439,6 +469,7 @@ function afficher(liste) {
                     <span class="category">${catBadge} ${officialHtml}</span>
                     <h3>${p.nom}</h3>
                     <p>${p.description}</p>
+                    ${fournisseurHtml}
                     ${boutonsHtml}
                 </div>
             </div>
