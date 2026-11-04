@@ -630,3 +630,4 @@ function filtrer() {
 
 genererCategories();
 afficher(produits);
+
