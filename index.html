@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RemyTCG - Exclusive Proxy Service</title>
     
-    <!-- METADATA POUR LES PARTAGES (LIEN IMGBB POUR DÉBLOQUER L'APERÇU iMESSAGE/DISCORD) -->
+    <!-- METADATA POUR LES PARTAGES -->
     <meta property="og:title" content="RemyTCG - Exclusive Proxy Service">
     <meta property="og:description" content="Your trusted proxy for 100% Authentic Simplified Chinese Pokémon TCG. Local prices, global shipping.">
     <meta property="og:image" content="https://i.ibb.co/1YZ2ffcS/IMG-9158.jpg">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     
-    <!-- TON LOGO EN FAVICON (LIEN INSTAGRAM POUR CONTOURNER LES BLOQUEURS) -->
+    <!-- FAVICON -->
     <link rel="icon" type="image/jpeg" href="https://scontent-sin11-2.cdninstagram.com/v/t51.82787-19/846528981_18117825301906300_2410003667728457360_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=101&ig_cache_key=GNUBdTJ8AzntEF5AAJDeVyqRDXIhbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=R86uzwtI-38Q7kNvwHw5b96&_nc_oc=AdpjE0JmV25Oje8YXwqyXWLSepl4kTg9pO0uT4962FwCL-1H7v3HtRBW4FKTlXbPN55yXMCN73w_1xvjzhatgyu8&_nc_zt=24&_nc_ht=scontent-sin11-2.cdninstagram.com&_nc_gid=px0MMH314KMRbj77Pq-sog&_nc_ss=7b689&oh=00_AQTSj8vrDPcdgdPKpmJJ49uuphrUfiA7u6JTHdWwr13dXA&oe=6AEFF132">
     
     <style>
@@ -21,7 +21,7 @@
         html { scroll-behavior: smooth; }
         body { font-family: 'Inter', sans-serif; background: #111111; color: #fff; margin: 0; padding: 0; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
         
-        /* --- POP-UP CACHÉE PAR DÉFAUT --- */
+        /* --- POP-UP --- */
         .modal-overlay {
             display: none; 
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
@@ -50,12 +50,12 @@
         }
         .btn-modal-secondary:hover { color: #fff; }
 
-        /* Menu de Navigation Fixe */
+        /* Navigation */
         .top-nav { background: rgba(17, 17, 17, 0.95); padding: 15px 20px; text-align: center; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #333; backdrop-filter: blur(5px); display: flex; justify-content: center; gap: 20px;}
         .top-nav a { color: #fff; text-decoration: none; font-weight: 700; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px; transition: color 0.2s; }
         .top-nav a:hover { color: #FF6A00; }
 
-        /* Header & Logo */
+        /* Header */
         .header { background: linear-gradient(135deg, #FF6A00 0%, #CC5500 100%); padding: 40px 20px 70px 20px; text-align: center; color: #fff; position: relative; }
         .logo-container { display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 5px; }
         .logo-img { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 3px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
@@ -67,7 +67,7 @@
         .intro-banner h2 { color: #FF6A00; margin-top: 0; font-size: 1.4em; margin-bottom: 10px; display: flex; align-items: center; gap: 10px;}
         .intro-banner p { color: #ddd; margin-bottom: 15px; font-size: 0.95em; }
         
-        /* --- ACCORDÉON POUR ÉPURER LE TEXTE --- */
+        /* Accordéon */
         details.info-accordion { background: #222; border: 1px solid #444; border-radius: 8px; padding: 12px 15px; margin-bottom: 20px; cursor: pointer; transition: all 0.3s ease; }
         details.info-accordion summary { font-weight: 700; color: #FFCB05; outline: none; list-style: none; display: flex; align-items: center; justify-content: space-between; font-size: 0.95em;}
         details.info-accordion summary::-webkit-details-marker { display: none; }
@@ -80,7 +80,7 @@
         .btn-main { display: inline-block; background: #FF6A00; color: #fff; padding: 16px 30px; text-decoration: none; font-weight: 900; border-radius: 8px; font-size: 1.1em; transition: transform 0.2s, background 0.2s; text-align: center; width: 100%; box-sizing: border-box;}
         .btn-main:hover { background: #fff; color: #FF6A00; transform: translateY(-2px); }
 
-        /* --- SECTION TÉLÉCHARGEMENT HYBRIDE --- */
+        /* Téléchargement hybride */
         .download-section { text-align: center; margin-top: 25px; padding-top: 20px; border-top: 1px solid #333; }
         .download-section p.step-title { font-size: 0.85em; color: #aaa; margin-bottom: 15px; }
         .pc-qr-codes { display: flex; justify-content: center; gap: 30px; margin-top: 10px; }
@@ -90,7 +90,7 @@
         .mobile-instruction-content { display: flex; flex-direction: column; align-items: center; gap: 8px; }
         .sugargoo-logo-mobile { width: 100px; border-radius: 6px; }
 
-        /* Container & Filters */
+        /* Conteneurs & Filtres */
         .container { max-width: 1400px; width: 95%; margin: 0 auto; padding: 10px; flex-grow: 1; scroll-margin-top: 70px; box-sizing: border-box; }
         .faq-container { max-width: 1000px; width: 95%; margin: 60px auto 0 auto; padding: 10px; scroll-margin-top: 70px; box-sizing: border-box; }
         .filters { display: flex; gap: 10px; max-width: 700px; margin: 0 auto 30px auto; justify-content: center; flex-wrap: wrap;}
@@ -99,7 +99,7 @@
         .category-select { cursor: pointer; appearance: none; padding-right: 40px; background-image: url('data:image/svg+xml;utf8,<svg fill="%23FF6A00" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); background-repeat: no-repeat; background-position: right 10px center; }
         .search-bar:focus, .category-select:focus { border-color: #FF6A00; }
         
-        /* Grid & Cards */
+        /* Grille & Cartes */
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
         .card { background: #1c1c1c; border-radius: 12px; overflow: hidden; border: 1px solid #333; transition: transform 0.2s, border-color 0.2s; display: flex; flex-direction: column; }
         .card:hover { transform: translateY(-5px); border-color: #FF6A00; }
@@ -109,35 +109,13 @@
         .card h3 { margin: 8px 0; font-size: 1.2em; line-height: 1.3;}
         .card p { color: #aaa; font-size: 0.85em; line-height: 1.4; flex-grow: 1; margin-bottom: 15px; }
         
-        /* --- BADGE OFFICIEL (NOUVEAU) --- */
-        .badge-officiel {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: rgba(17, 17, 17, 0.9);
-            color: #4CAF50;
-            padding: 5px 10px;
-            border-radius: 8px;
-            font-size: 0.7em;
-            font-weight: 900;
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            border: 1px solid #4CAF50;
-            backdrop-filter: blur(4px);
-            z-index: 2;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-        }
-
-        /* Boutons d'achat */
+        /* Boutons */
         .btn-main-card { display: block; width: 100%; padding: 12px 10px; border-radius: 8px; font-weight: 900; font-size: 0.95em; text-align: center; text-decoration: none; transition: transform 0.2s, background 0.2s, color 0.2s; box-sizing: border-box; border: none; font-family: inherit; cursor: pointer; }
         .btn-pc { background: #FFCB05; color: #111; }
         .btn-pc:hover { background: #fff; transform: translateY(-2px); }
         .btn-mobile { display: none; }
 
-        /* Guide & FAQ Items */
+        /* Guide & FAQ */
         .faq-item { background: #1c1c1c; border: 1px solid #333; border-radius: 12px; padding: 25px; margin-bottom: 20px; }
         .faq-item h3 { color: #FF6A00; margin-top: 0; font-size: 1.2em; margin-bottom: 10px;}
         .faq-item p, .faq-item ul { color: #aaa; margin-bottom: 10px; font-size: 0.9em; line-height: 1.5;}
@@ -145,7 +123,7 @@
         .faq-item li { margin-bottom: 6px; }
         .faq-item strong { color: #fff; }
 
-        /* --- HOW IT WORKS (INFOGRAPHIE CSS) --- */
+        /* Processus */
         .process-container { display: flex; align-items: center; justify-content: space-between; margin-top: 15px; background: #222; padding: 20px; border-radius: 10px; border: 1px solid #333; gap: 10px; }
         .process-step { display: flex; flex-direction: column; align-items: center; text-align: center; flex: 1; }
         .process-icon { width: 45px; height: 45px; background: #1c1c1c; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 10px; border: 2px solid #FF6A00; color: #FF6A00; }
@@ -154,12 +132,12 @@
         .process-step p { color: #aaa; font-size: 0.8em; margin: 0; line-height: 1.3; }
         .process-arrow { color: #FF6A00; font-size: 1.2em; font-weight: bold; }
 
-        /* --- TRUST BADGES (PAIEMENT) --- */
+        /* Badges de paiement */
         .payment-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
         .payment-badge { background: #fff; width: 60px; height: 38px; border-radius: 4px; display: flex; justify-content: center; align-items: center; padding: 4px; box-sizing: border-box; }
         .payment-badge img, .payment-badge svg { max-width: 100%; max-height: 100%; object-fit: contain; }
 
-        /* Footer & Contact Section */
+        /* Footer */
         .footer-contact { background: #151515; padding: 50px 15px; text-align: center; border-top: 1px solid #333; margin-top: 50px; scroll-margin-top: 50px;}
         .footer-contact h2 { color: #fff; font-size: 1.8em; margin: 0 0 10px 0; font-weight: 900; }
         .footer-contact p { color: #aaa; max-width: 600px; margin: 0 auto 25px auto; font-size: 1em; }
@@ -167,7 +145,7 @@
         .contact-btn { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; border-radius: 6px; text-decoration: none; font-weight: 700; transition: all 0.2s; border: 1px solid #333; color: #fff; background: #1c1c1c; font-size: 0.9em; cursor: pointer; font-family: inherit; }
         .contact-btn:hover { transform: translateY(-2px); }
 
-        /* --- OPTIMISATION MOBILE (< 768px) --- */
+        /* Optimisation Mobile */
         @media (max-width: 768px) {
             .top-nav { padding: 10px; gap: 15px;}
             .top-nav a { font-size: 0.75em; }
@@ -188,7 +166,6 @@
             .filters { flex-direction: column; gap: 10px; margin-bottom: 20px; }
             .search-bar, .category-select { padding: 10px 15px; font-size: 0.9em; width: 100%; min-width: unset; box-sizing: border-box;}
 
-            /* 2 COLONNES SUR MOBILE */
             .grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
             .card { border-radius: 10px; }
             .card-img { height: 135px; }
@@ -197,8 +174,6 @@
             .card h3 { font-size: 0.9em; margin: 4px 0 6px 0; line-height: 1.25; }
             .card p { font-size: 0.75em; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 8px;}
             
-            .badge-officiel { font-size: 0.6em; padding: 4px 6px; top: 6px; right: 6px; }
-
             .btn-pc { display: none; }
             .btn-mobile { display: block; background: #222; color: #FF6A00; border: 2px solid #FF6A00; padding: 8px; font-size: 0.85em; cursor: pointer; }
             .btn-mobile:active { background: #FF6A00; color: #111; }
@@ -236,7 +211,6 @@
 
     <div class="header">
         <div class="logo-container">
-            <!-- TON LOGO HÉBERGÉ VIA INSTAGRAM (CONTOURNEMENT DES BLOQUEURS NAVIGATEUR) -->
             <img src="https://scontent-sin11-2.cdninstagram.com/v/t51.82787-19/846528981_18117825301906300_2410003667728457360_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=101&ig_cache_key=GNUBdTJ8AzntEF5AAJDeVyqRDXIhbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=R86uzwtI-38Q7kNvwHw5b96&_nc_oc=AdpjE0JmV25Oje8YXwqyXWLSepl4kTg9pO0uT4962FwCL-1H7v3HtRBW4FKTlXbPN55yXMCN73w_1xvjzhatgyu8&_nc_zt=24&_nc_ht=scontent-sin11-2.cdninstagram.com&_nc_gid=px0MMH314KMRbj77Pq-sog&_nc_ss=7b689&oh=00_AQTSj8vrDPcdgdPKpmJJ49uuphrUfiA7u6JTHdWwr13dXA&oe=6AEFF132" alt="RemyTCG Logo" class="logo-img">
             <h1>RemyTCG</h1>
         </div>
@@ -247,7 +221,6 @@
         <h2>📦 Step 1: Account Setup</h2>
         <p>To buy from the Chinese Taobao market at local prices, you must first create a proxy account on Sugargoo.</p>
 
-        <!-- ACCORDÉON POUR ÉPURER LA VUE MOBILE -->
         <details class="info-accordion">
             <summary>⚠️ Read before registering (Rules & Transparency)</summary>
             <ul>
@@ -273,7 +246,7 @@
         <div class="grid" id="catalogue"></div>
     </div>
 
-    <!-- TÉLÉCHARGEMENT DE L'APP SOUS LE CATALOGUE -->
+    <!-- Section App -->
     <div id="app-download" class="intro-banner" style="margin-top: 50px; scroll-margin-top: 70px;">
         <h2 style="justify-content: center;">📱 Step 2: Download the App</h2>
         <p style="text-align: center; margin-bottom: 20px;">For the best shopping experience, download the Sugargoo App <strong>after creating your account</strong> via the browser. Simply click "Copy Link for App" on any product above, open the app, and it will detect it automatically!</p>
@@ -389,11 +362,94 @@
         </div>
     </div>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <div id="contact" class="footer-contact">
         <h2>Connect With Us!</h2>
         <p>Reach out with any questions, custom orders, or B2B wholesale collaborations. We are here to help you source the best Simplified Chinese products.</p>
         
         <div class="contact-links">
             <a href="https://instagram.com/remy.tcg" target="_blank" class="contact-btn insta-btn">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                @remy.tcg
+            </a>
+            <a href="https://tiktok.com/@remy_tcg" target="_blank" class="contact-btn tiktok-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path><path d="M15 8a4 4 0 1 0 0-4v16a4 4 0 0 1-4-4"></path><line x1="15" y1="4" x2="19" y2="4"></line></svg>
+                @remy_tcg
+            </a>
+            <a href="https://youtube.com/@remytcg" target="_blank" class="contact-btn youtube-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.16 1 12 1 12s0 3.84.46 5.58a2.78 2.78 0 0 0 1.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.84 23 12 23 12s0-3.84-.46-5.58z"></path><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon></svg>
+                @remytcg
+            </a>
+        </div>
+        <div class="contact-links">
+            <button onclick="copyEmail(this)" class="contact-btn email-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>contact.remytcg@gmail.com</span>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        let pendingAction = null; 
+
+        function triggerProductAction(type, data, element = null) {
+            const hasSeenPopup = localStorage.getItem('remytcg_setup_done');
+            
+            if (hasSeenPopup === 'true') {
+                executeAction(type, data, element);
+            } else {
+                pendingAction = { type, data, element };
+                const modal = document.getElementById('welcomeModal');
+                modal.style.display = 'flex';
+                setTimeout(() => modal.style.opacity = '1', 10);
+            }
+        }
+
+        function executeAction(type, data, element) {
+            if (type === 'pc') {
+                window.open(data, '_blank');
+            } else if (type === 'mobile') {
+                window.copyToClipboard(data, element);
+            }
+        }
+
+        function registerAndClose() {
+            localStorage.setItem('remytcg_setup_done', 'true'); 
+            window.open('https://m.sugargoo.com/register?memberId=3894055016867374984', '_blank');
+            closeModal();
+        }
+
+        function continueToProduct() {
+            localStorage.setItem('remytcg_setup_done', 'true'); 
+            closeModal();
+            if (pendingAction) {
+                executeAction(pendingAction.type, pendingAction.data, pendingAction.element);
+                pendingAction = null;
+            }
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('welcomeModal');
+            modal.style.opacity = '0';
+            setTimeout(() => modal.style.display = 'none', 300);
+        }
+
+        function copyEmail(button) {
+            const email = "contact.remytcg@gmail.com";
+            const textSpan = button.querySelector("span");
+            navigator.clipboard.writeText(email).then(() => {
+                const originalText = textSpan.innerText;
+                textSpan.innerText = "Copied! ✓";
+                button.style.borderColor = "#4CAF50";
+                button.style.color = "#4CAF50";
+                setTimeout(() => {
+                    textSpan.innerText = originalText;
+                    button.style.borderColor = "";
+                    button.style.color = "";
+                }, 2500);
+            });
+        }
+    </script>
+    <script src="stock.js"></script>
+</body>
+</html>
