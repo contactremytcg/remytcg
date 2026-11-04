@@ -187,7 +187,7 @@ const produits = [
         description: "Contains: 1x Random Ditto-themed merchandise item and selected booster packs.",
         taobaoId: "1085294497168",
         taobaoId2: "",
-        images: ["https://icecreamshopper.com/cdn/shop/files/O1CN01z0YkZYMt2vC1chua__4611686018427385661-0-item_pic.webp?v=1790240505&width=533"]
+        images: ["https://funismglobal.com/cdn/shop/files/Pokemon_Palmsize_Wonders_-_Happy_Ditto_1.jpg?v=1792912140"]
     },
 
     // ==========================================
@@ -208,27 +208,33 @@ const produits = [
         description: "Contains: Ready-to-play Milton ex deck, premium sleeves, a deck box, and multiple booster packs.",
         taobaoId: "1008155364462",
         taobaoId2: "",
-        images: ["https://img.alicdn.com/bao/uploaded/i1/2214696073021/O1CN01e54xTP1YBfdFtu2Mp_!!4611686018427385661-0-item_pic.jpg"],
+        images: [
+            "https://aquitaz.se/cdn/shop/files/PokemonMegaEvolutionPhantasmalFlamesEliteTrainerBox_ETB_9Pack_43.png?v=1767582465",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs7yVUkTiFImWqOLx-lw9EWpHB-IrWkkrg0bLKbbHUPkK_d3k9LF4On7Fv&s=10"
+        ],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai"
     },
     {
         categorie: "Premium Collection Boxes",
-        nom: "Raging Bolt ex Collection Box",
+        nom: "Thunder Drum Box",
         description: "Contains: 1x Raging Bolt ex Promo, exclusive jumbo card/display, and assorted booster packs.",
         taobaoId: "1065661862776",
         taobaoId2: "",
-        images: ["https://img.alicdn.com/bao/uploaded/i2/2214696073021/O1CN01tdbIcU1YBffShL7uq_!!4611686018427385661-0-item_pic.jpg"],
+        images: [
+            "https://aquitaz.se/cdn/shop/files/BlackBox-2026-06-30T210032.091.png?v=1782825957",
+            "https://aquitaz.se/cdn/shop/files/BlackBox-2026-06-30T211749.540.png?v=1782825957"
+        ],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai"
     },
     {
         categorie: "Premium Collection Boxes",
-        nom: "Tycoon Premium Box",
-        description: "Contains: Tycoon-themed exclusive Promo cards, high-end collector supplies, and booster packs.",
+        nom: "Gholdengo",
+        description: "Contains: Gholdengo-themed exclusive Promo cards, high-end collector supplies, and booster packs.",
         taobaoId: "1065668842312",
         taobaoId2: "",
-        images: ["https://img.alicdn.com/bao/uploaded/i2/2214696073021/O1CN01qus21E1YBffSU1MzU_!!4611686018427385661-0-item_pic.jpg"],
+        images: ["https://www.japan2uk.com/cdn/shop/files/Pokemon_Gholdengo_ex_csvM2c_Simplified_Chinese_Master_Strategy_Deck_Building_Set_1024x1024.png?v=1785495434"],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai"
     },
@@ -238,7 +244,7 @@ const produits = [
         description: "Contains: 1x Dragapult ex Promo, themed TCG accessories, and assorted booster packs.",
         taobaoId: "1066680325531",
         taobaoId2: "",
-        images: ["https://img.alicdn.com/bao/uploaded/i2/2214696073021/O1CN01fBXVFn1YBffSr5GCK_!!4611686018427385661-0-item_pic.jpg"],
+        images: ["https://ueeshop.ly200-cdn.com/u_file/UPBB/UPBB486/2609/08/products/78f7412ea38e8f041677eaecea8f40bb-172101dcce.png?x-oss-process=image/format,webp/quality,q_100"],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai"
     },
@@ -248,7 +254,10 @@ const produits = [
         description: "Contains: Ogerpon ex Blue Mask Promo, custom card sleeves, and booster packs.",
         taobaoId: "1049188091485",
         taobaoId2: "",
-        images: ["https://img.alicdn.com/bao/uploaded/i3/2214696073021/O1CN01vz9zGd1YBfeYpQmRb_!!4611686018427385661-0-item_pic.jpg"],
+        images: [
+            "https://static.wixstatic.com/media/d2c7b0_10f8544592a14adda9162a7a98bc44b8~mv2.png/v1/fit/w_500,h_500,q_90/file.png",
+            "https://www.tcghobby.com/cdn/shop/files/Simplified_Chinese_Pokemon_Ogerpon_Wellspring_Gift_Box_Set.webp?v=1779209947"
+        ],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai"
     },
@@ -258,7 +267,10 @@ const produits = [
         description: "Contains: Ogerpon ex Brown Mask Promo, custom card sleeves, and booster packs.",
         taobaoId: "1050912105033",
         taobaoId2: "",
-        images: ["https://img.alicdn.com/bao/uploaded/i2/2214696073021/O1CN01r7YA2K1YBfedavSi7_!!4611686018427385661-0-item_pic.jpg"],
+        images: [
+            "https://main-wordpress-bucket-production.lon1.digitaloceanspaces.com/2026/05/OgerPon-ETB-Brown.webp",
+            "https://nextleveluk.net/cdn/shop/files/s-l1600-2026-10-01T152323.962.jpg?v=1790864832&width=1024"
+        ],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai"
     },
@@ -268,7 +280,10 @@ const produits = [
         description: "Contains: Ogerpon ex Green Mask Promo, custom card sleeves, and booster packs.",
         taobaoId: "1050909737218",
         taobaoId2: "",
-        images: ["https://img.alicdn.com/bao/uploaded/i1/2214696073021/O1CN01xLUr5O1YBfeezTsrB_!!4611686018427385661-0-item_pic.jpg"],
+        images: [
+            "https://static.wixstatic.com/media/d2c7b0_5749d47b909e44cf987fcadf8686ff9d~mv2.png/v1/fit/w_500,h_500,q_90/file.png",
+            "https://pg-cdn-a2.datacaciques.com/00/Mzc3MTUw/26/04/24/e52cf2k0r62fw4u5/e0062501a7b99b98.jpg"
+        ],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai"
     },
@@ -278,7 +293,10 @@ const produits = [
         description: "Contains: Ogerpon ex Red Mask Promo, custom card sleeves, and booster packs.",
         taobaoId: "1050912901200",
         taobaoId2: "",
-        images: ["https://img.alicdn.com/bao/uploaded/i1/2214696073021/O1CN01ILip0k1YBfedmA85J_!!4611686018427385661-0-item_pic.jpg"],
+        images: [
+            "https://ae-pic-a1.aliexpress-media.com/kf/S12cb4b8e79af4815936a842786e80018z.jpg",
+            "https://www.tcghobby.com/cdn/shop/files/Simplified_Chinese_Pokemon_Ogerpon_Hearthflame_Gift_Box_Set.webp?v=1779209745&width=645"
+        ],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai"
     },
@@ -550,7 +568,6 @@ function afficher(liste) {
                 <button onclick="triggerProductAction('mobile', '${taobaoUrlRaw}', this)" class="btn-main-card btn-mobile">Copy Link for App</button>
             `;
             
-            // AFFICHAGE FORCÉ DU BOUTON BACKUP
             const targetTaobaoId2 = (p.taobaoId2 && p.taobaoId2.trim() !== "") ? p.taobaoId2 : "000000000";
             const taobaoUrlRaw2 = `https://item.taobao.com/item.htm?id=${targetTaobaoId2}`;
             const sugargooUrl2 = formatSugargooLink(targetTaobaoId2);
