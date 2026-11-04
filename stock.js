@@ -113,7 +113,7 @@ const produits = [
         nom: "⭐ [BEST SELLER] Eevee Blind Box",
         description: "Eevee edition mystery box sourced directly from the Official Store.",
         taobaoId: "1078195403792",
-        image: "METTRE_IMAGE_ICI"
+        image: "https://img.alicdn.com/bao/uploaded/i1/2214696073021/O1CN01ddomU8YUWFI1chua_!!4611686018427385661-0-item_pic.jpg"
     },
     {
         categorie: "30th Anniversary",
@@ -145,56 +145,56 @@ const produits = [
         nom: "⭐ [BEST SELLER] Master Strategy Milton ex Deck Building Set",
         description: "Premium 5-pack UPC featuring Milton ex and exclusive collector accessories.",
         taobaoId: "1008155364462",
-        image: "METTRE_IMAGE_ICI"
+        image: "https://img.alicdn.com/bao/uploaded/i1/2214696073021/O1CN01e54xTP1YBfdFtu2Mp_!!4611686018427385661-0-item_pic.jpg"
     },
     {
         categorie: "Premium Collection Boxes",
         nom: "⭐ [BEST SELLER] Raging Bolt ex Collection Box",
         description: "Massive premium box featuring Raging Bolt ex, promos, and packs.",
         taobaoId: "1065661862776",
-        image: "METTRE_IMAGE_ICI"
+        image: "https://img.alicdn.com/bao/uploaded/i2/2214696073021/O1CN01tdbIcU1YBffShL7uq_!!4611686018427385661-0-item_pic.jpg"
     },
     {
         categorie: "Premium Collection Boxes",
         nom: "⭐ [BEST SELLER] Tycoon Premium Box",
         description: "Exclusive Tycoon collector box with high-end hits and supplies.",
         taobaoId: "1065668842312",
-        image: "METTRE_IMAGE_ICI"
+        image: "https://img.alicdn.com/bao/uploaded/i2/2214696073021/O1CN01qus21E1YBffSU1MzU_!!4611686018427385661-0-item_pic.jpg"
     },
     {
         categorie: "Premium Collection Boxes",
         nom: "⭐ [BEST SELLER] Dragapult ex Collection Box",
         description: "Premium Dragapult ex collection box loaded with exclusive content.",
         taobaoId: "1066680325531",
-        image: "METTRE_IMAGE_ICI"
+        image: "https://img.alicdn.com/bao/uploaded/i2/2214696073021/O1CN01fBXVFn1YBffSr5GCK_!!4611686018427385661-0-item_pic.jpg"
     },
     {
         categorie: "Premium Collection Boxes",
         nom: "⭐ [BEST SELLER] Ogerpon Wellspring Mask (Blue) Gift Box",
         description: "Exclusive Ogerpon blue mask premium collection box.",
         taobaoId: "1049188091485",
-        image: "METTRE_IMAGE_ICI"
+        image: "https://img.alicdn.com/bao/uploaded/i3/2214696073021/O1CN01vz9zGd1YBfeYpQmRb_!!4611686018427385661-0-item_pic.jpg"
     },
     {
         categorie: "Premium Collection Boxes",
         nom: "⭐ [BEST SELLER] Ogerpon Cornerstone Mask (Brown) Gift Box",
         description: "Exclusive Ogerpon brown mask premium collection box.",
         taobaoId: "1050912105033",
-        image: "METTRE_IMAGE_ICI"
+        image: "https://img.alicdn.com/bao/uploaded/i2/2214696073021/O1CN01r7YA2K1YBfedavSi7_!!4611686018427385661-0-item_pic.jpg"
     },
     {
         categorie: "Premium Collection Boxes",
         nom: "⭐ [BEST SELLER] Ogerpon Teal Mask (Green) Gift Box",
         description: "Exclusive Ogerpon green mask premium collection box.",
         taobaoId: "1050909737218",
-        image: "METTRE_IMAGE_ICI"
+        image: "https://img.alicdn.com/bao/uploaded/i1/2214696073021/O1CN01xLUr5O1YBfeezTsrB_!!4611686018427385661-0-item_pic.jpg"
     },
     {
         categorie: "Premium Collection Boxes",
         nom: "⭐ [BEST SELLER] Ogerpon Hearthflame Mask (Red) Gift Box",
         description: "Exclusive Ogerpon red mask premium collection box.",
         taobaoId: "1050912901200",
-        image: "METTRE_IMAGE_ICI"
+        image: "https://img.alicdn.com/bao/uploaded/i1/2214696073021/O1CN01ILip0k1YBfedmA85J_!!4611686018427385661-0-item_pic.jpg"
     },
 
     // ==========================================
@@ -223,21 +223,21 @@ const produits = [
         nom: "⭐ [BEST SELLER] Chasing Glory Coin Bag",
         description: "Official coin bag featuring Chasing Glory theme.",
         taobaoId: "1067353432814",
-        image: "METTRE_IMAGE_ICI"
+        image: "https://img.alicdn.com/bao/uploaded/i4/2214696073021/O1CN01jHlilS1YBffS8LKt0_!!4611686018427385661-0-item_pic.jpg"
     },
     {
         categorie: "Accessories",
         nom: "⭐ [BEST SELLER] Bright Fantasy Coin Bag",
         description: "Official coin bag featuring Bright Fantasy theme.",
         taobaoId: "1026530979141",
-        image: "METTRE_IMAGE_ICI"
+        image: "https://img.alicdn.com/bao/uploaded/i3/2214696073021/O1CN019hoY241YBfdlxjFsT_!!4611686018427385661-0-item_pic.jpg"
     },
     {
         categorie: "Accessories",
         nom: "⭐ [BEST SELLER] Blade Awakening Coin Bag",
         description: "Official coin bag featuring Blade Awakening theme.",
         taobaoId: "1008157120043",
-        image: "METTRE_IMAGE_ICI"
+        image: "https://img.alicdn.com/bao/uploaded/i4/2214696073021/O1CN01kSJAQC1YBfdF2Y6gT_!!4611686018427385661-0-item_pic.jpg"
     },
 
     // ==========================================
