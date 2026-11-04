@@ -58,9 +58,28 @@
         .card-badge { position: absolute; top: 10px; left: 10px; padding: 6px 12px; border-radius: 6px; font-size: 0.75em; font-weight: 900; text-transform: uppercase; color: #fff; z-index: 10; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
 
         .card-img { width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #333; background: #fff; }
-        .card-content { padding: 15px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; }
         
-        /* L'ICÔNE SECRÈTE (Pokéball) */
+        /* CARROUSEL D'IMAGES MULTIPLES */
+        .card-carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            height: 200px;
+            border-bottom: 1px solid #333;
+            scrollbar-width: thin;
+            scrollbar-color: #FF6A00 #1c1c1c;
+        }
+        .card-carousel::-webkit-scrollbar { height: 6px; }
+        .card-carousel::-webkit-scrollbar-thumb { background: #FF6A00; border-radius: 3px; }
+        .card-carousel .card-img {
+            flex: 0 0 100%;
+            scroll-snap-align: start;
+            border-bottom: none;
+        }
+
+        .card-content { padding: 15px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; }
         .category { font-size: 0.7em; color: #FF6A00; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; display: flex; align-items: center; }
         .official-icon { width: 11px; height: 11px; margin-left: 6px; opacity: 0.45; transition: opacity 0.2s; }
         .card:hover .official-icon { opacity: 1; }
@@ -165,7 +184,7 @@
         </div>
     </div>
 
-    <!-- BARRE DE NAVIGATION (RESTAURÉE ET COMPLÈTE) -->
+    <!-- BARRE DE NAVIGATION -->
     <nav class="top-nav">
         <a href="#setup">Setup</a>
         <a href="#shop">Catalog</a>
@@ -284,7 +303,7 @@
         <p id="newsletterMsg" style="color: #4CAF50; font-weight: bold; margin-top: 10px; display: none;">Thanks! We will keep you updated. ✓</p>
     </div>
 
-    <!-- FOOTER PRO AVEC LE LOGO -->
+    <!-- FOOTER PRO -->
     <footer id="contact" class="footer-pro">
         <div class="footer-pro-inner">
             <div class="footer-pro-top">
@@ -316,7 +335,6 @@
                 <div class="footer-copyright">
                     © 2026 RemyTCG. All rights reserved.
                 </div>
-                <!-- RESTAURATION DES ANCIENS BADGES DE PAIEMENT -->
                 <div class="payment-row">
                     <div class="payment-badge"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV07yhKXZ1S8pQJ984d281j6woJ0cE8UBN0077uuZaXQ&s=10" alt="Visa"></div>
                     <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard"></div>
