@@ -106,8 +106,9 @@
         .card-img { width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #333; background: #fff; }
         .card-content { padding: 15px; display: flex; flex-direction: column; flex-grow: 1; }
         .category { font-size: 0.7em; color: #FF6A00; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; }
-        .card h3 { margin: 8px 0; font-size: 1.2em; line-height: 1.3;}
-        .card p { color: #aaa; font-size: 0.85em; line-height: 1.4; margin-bottom: 15px; }
+        /* FORCER LA HAUTEUR DU TITRE À 2 LIGNES (1.3 x 2 = 2.6em) */
+        .card h3 { margin: 8px 0; font-size: 1.2em; line-height: 1.3; min-height: 2.6em;}
+        .card p { color: #aaa; font-size: 0.85em; line-height: 1.4; margin-bottom: 15px; flex-grow: 1; }
         
         /* Boutons */
         .btn-main-card { display: block; width: 100%; padding: 12px 10px; border-radius: 8px; font-weight: 900; font-size: 0.95em; text-align: center; text-decoration: none; transition: transform 0.2s, background 0.2s, color 0.2s; box-sizing: border-box; border: none; font-family: inherit; cursor: pointer; margin-top: auto; }
@@ -171,7 +172,8 @@
             .card-img { height: 135px; }
             .card-content { padding: 10px; }
             .category { font-size: 0.6em; }
-            .card h3 { font-size: 0.9em; margin: 4px 0 6px 0; line-height: 1.25; }
+            /* HAUTEUR FIXE POUR MOBILE AUSSI (1.25 x 2 = 2.5em) */
+            .card h3 { font-size: 0.9em; margin: 4px 0 6px 0; line-height: 1.25; min-height: 2.5em;}
             .card p { font-size: 0.75em; line-height: 1.3; margin-bottom: 12px; }
             
             .btn-pc { display: none; }
