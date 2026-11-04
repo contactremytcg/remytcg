@@ -46,7 +46,8 @@ const produits = [
         nom: "Charizard Figure Box",
         description: "Contains: 1x Exclusive Charizard Figure, multiple Promo cards (incl. Charizard ex), and assorted Anniversary booster packs.",
         taobaoId: "1084248931939",
-        image: "https://www.tcghobby.com/cdn/shop/files/30thcelebrationcharizardfigurine.webp?v=1787160912"
+        image: "https://www.tcghobby.com/cdn/shop/files/30thcelebrationcharizardfigurine.webp?v=1787160912",
+        isOfficial: true // <-- EXEMPLE DE TON TAG SECRET
     },
     {
         categorie: "30th Anniversary",
@@ -109,21 +110,24 @@ const produits = [
         nom: "Starter Pack Vol. 1",
         description: "Contains: First Partner Promo cards and a selection of booster packs. Great for beginners.",
         taobaoId: "1036462263685",
-        image: "https://www.tcghobby.com/cdn/shop/files/Simplified_Chinese_Pokemon_30th_Anniversary_First_Partner_Special_Illustration_Card_Set_Vol._1_Display_Set.jpg?v=1776401355&width=645"
+        image: "https://www.tcghobby.com/cdn/shop/files/Simplified_Chinese_Pokemon_30th_Anniversary_First_Partner_Special_Illustration_Card_Set_Vol._1_Display_Set.jpg?v=1776401355&width=645",
+        isOfficial: true // <-- EXEMPLE
     },
     {
         categorie: "30th Anniversary",
         nom: "Starter Pack Vol. 2",
         description: "Contains: Wave 2 First Partner Promo cards and a selection of booster packs.",
         taobaoId: "1059308989628",
-        image: "https://www.tcghobby.com/cdn/shop/files/SimplifiedChinesePokemon30thAnniversaryFirstPartnerSpecialIllustrationCardSetVol.2.webp?crop=center&height=500&v=1778251789&width=600"
+        image: "https://www.tcghobby.com/cdn/shop/files/SimplifiedChinesePokemon30thAnniversaryFirstPartnerSpecialIllustrationCardSetVol.2.webp?crop=center&height=500&v=1778251789&width=600",
+        isOfficial: true // <-- EXEMPLE
     },
     {
         categorie: "30th Anniversary",
         nom: "Starter Pack Vol. 3",
         description: "Contains: Wave 3 First Partner Promo cards and a selection of booster packs.",
         taobaoId: "1070165751188",
-        image: "https://www.tcghobby.com/cdn/shop/files/firstpartnerdisplaysetvol.3set.webp?v=1784301375"
+        image: "https://www.tcghobby.com/cdn/shop/files/firstpartnerdisplaysetvol.3set.webp?v=1784301375",
+        isOfficial: true // <-- EXEMPLE
     },
 
     // ==========================================
@@ -162,28 +166,32 @@ const produits = [
         nom: "Ogerpon Wellspring Mask (Blue) Gift Box",
         description: "Contains: Ogerpon ex Blue Mask Promo, custom card sleeves, and booster packs.",
         taobaoId: "1049188091485",
-        image: "https://img.alicdn.com/bao/uploaded/i3/2214696073021/O1CN01vz9zGd1YBfeYpQmRb_!!4611686018427385661-0-item_pic.jpg"
+        image: "https://img.alicdn.com/bao/uploaded/i3/2214696073021/O1CN01vz9zGd1YBfeYpQmRb_!!4611686018427385661-0-item_pic.jpg",
+        isOfficial: true // <-- EXEMPLE
     },
     {
         categorie: "Premium Collection Boxes",
         nom: "Ogerpon Cornerstone Mask (Brown) Gift Box",
         description: "Contains: Ogerpon ex Brown Mask Promo, custom card sleeves, and booster packs.",
         taobaoId: "1050912105033",
-        image: "https://img.alicdn.com/bao/uploaded/i2/2214696073021/O1CN01r7YA2K1YBfedavSi7_!!4611686018427385661-0-item_pic.jpg"
+        image: "https://img.alicdn.com/bao/uploaded/i2/2214696073021/O1CN01r7YA2K1YBfedavSi7_!!4611686018427385661-0-item_pic.jpg",
+        isOfficial: true // <-- EXEMPLE
     },
     {
         categorie: "Premium Collection Boxes",
         nom: "Ogerpon Teal Mask (Green) Gift Box",
         description: "Contains: Ogerpon ex Green Mask Promo, custom card sleeves, and booster packs.",
         taobaoId: "1050909737218",
-        image: "https://img.alicdn.com/bao/uploaded/i1/2214696073021/O1CN01xLUr5O1YBfeezTsrB_!!4611686018427385661-0-item_pic.jpg"
+        image: "https://img.alicdn.com/bao/uploaded/i1/2214696073021/O1CN01xLUr5O1YBfeezTsrB_!!4611686018427385661-0-item_pic.jpg",
+        isOfficial: true // <-- EXEMPLE
     },
     {
         categorie: "Premium Collection Boxes",
         nom: "Ogerpon Hearthflame Mask (Red) Gift Box",
         description: "Contains: Ogerpon ex Red Mask Promo, custom card sleeves, and booster packs.",
         taobaoId: "1050912901200",
-        image: "https://img.alicdn.com/bao/uploaded/i1/2214696073021/O1CN01ILip0k1YBfedmA85J_!!4611686018427385661-0-item_pic.jpg"
+        image: "https://img.alicdn.com/bao/uploaded/i1/2214696073021/O1CN01ILip0k1YBfedmA85J_!!4611686018427385661-0-item_pic.jpg",
+        isOfficial: true // <-- EXEMPLE
     },
 
     // ==========================================
@@ -389,6 +397,11 @@ function afficher(liste) {
             htmlBadge = `<div class="card-badge" style="background: ${p.badge.color};">${p.badge.text}</div>`;
         }
 
+        // AJOUT DE L'ICÔNE POKÉBALL SECRÈTE POUR TOI
+        let officialHtml = p.isOfficial 
+            ? `<svg class="official-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" title="Official Source"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h8m4 0h8"></path><circle cx="12" cy="12" r="2"></circle></svg>` 
+            : '';
+
         let boutonsHtml = '';
         if (p.statut === "coming_soon") {
             boutonsHtml = `
@@ -411,7 +424,7 @@ function afficher(liste) {
                 ${htmlBadge}
                 <img src="${p.image}" alt="${p.nom}" class="card-img" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0PMkOk0FTHAa1QT4_ESpb7qv8fCuF9Y7BK-xsgWgN7HkxM93A9W2eDLT&s=10'">
                 <div class="card-content">
-                    <span class="category">${catBadge}</span>
+                    <span class="category">${catBadge} ${officialHtml}</span>
                     <h3>${p.nom}</h3>
                     <p>${p.description}</p>
                     ${boutonsHtml}
