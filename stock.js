@@ -232,7 +232,6 @@ const produits = [
         taobaoId: "1085294497168",
         taobaoId2: "",
         images: [
-            "https://funismglobal.com/cdn/shop/files/Pokemon_Palmsize_Wonders_-_Happy_Ditto_1.jpg?v=1792912140",
             "https://pokeunlimited.com/cdn/shop/files/funism-pokemon-palmsize-wonders-happy-ditto-figurine-blind-box-8249829.jpg?v=1790646457"
         ]
     },
@@ -345,7 +344,6 @@ const produits = [
         taobaoId2: "",
         images: [
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxa6HqnsRfMAzQN6evqXrYdwe_Fq0syjwNLYsE72-9_w&s=10",
-            "https://ae-pic-a1.aliexpress-media.com/kf/S12cb4b8e79af4815936a842786e80018z.jpg",
             "https://www.tcghobby.com/cdn/shop/files/Simplified_Chinese_Pokemon_Ogerpon_Hearthflame_Gift_Box_Set.webp?v=1779209745&width=645"
         ],
         isOfficial: true,
@@ -591,23 +589,29 @@ function afficher(liste) {
             : '';
 
         let imagesHtml = '';
+        const fallback = "https://placehold.co/600x400/1c1c1c/FF6A00?text=RemyTCG";
+
         if (p.images && p.images.length > 1) {
             let dotsHtml = `<div class="carousel-dots">`;
             p.images.forEach((_, idx) => {
-                dotsHtml += `<span class="carousel-dot ${idx === 0 ? 'active' : ''}"></span>`;
+                dotsHtml += `<span class="carousel-dot ${idx === 0 ? 'active' : ''}" onclick="jumpToSlide(this, ${idx})"></span>`;
             });
             dotsHtml += `</div>`;
 
             imagesHtml = `
                 <div class="image-wrapper">
-                    <div class="card-carousel">
-                        ${p.images.map(img => `<img src="${img}" alt="${p.nom}" class="card-img" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0PMkOk0FTHAa1QT4_ESpb7qv8fCuF9Y7BK-xsgWgN7HkxM93A9W2eDLT&s=10'">`).join('')}
+                    <button class="carousel-arrow prev" onclick="slideCarousel(this, -1)">‹</button>
+                    <div class="card-carousel" onscroll="updateDotsOnScroll(this)">
+                        ${p.images.map(img => `<img src="${img}" alt="${p.nom}" class="card-img" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='${fallback}'">`).join('')}
                     </div>
+                    <button class="carousel-arrow next" onclick="slideCarousel(this, 1)">›</button>
                     ${dotsHtml}
                 </div>
             `;
         } else if (p.images && p.images.length === 1) {
-            imagesHtml = `<img src="${p.images[0]}" alt="${p.nom}" class="card-img card-img-single" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0PMkOk0FTHAa1QT4_ESpb7qv8fCuF9Y7BK-xsgWgN7HkxM93A9W2eDLT&s=10'">`;
+            const isDitto = p.nom.includes("Ditto");
+            const customClass = isDitto ? "card-img card-img-single crop-bottom" : "card-img card-img-single";
+            imagesHtml = `<img src="${p.images[0]}" alt="${p.nom}" class="${customClass}" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='${fallback}'">`;
         }
 
         let boutonsHtml = '';
@@ -653,10 +657,6 @@ function afficher(liste) {
             </div>
         `;
     });
-
-    if (window.initImageCarousels) {
-        window.initImageCarousels();
-    }
 }
 
 function genererCategories() {
