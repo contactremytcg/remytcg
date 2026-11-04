@@ -318,9 +318,10 @@ const produits = [
         nom: "Gem Pack Vol. 4",
         description: "Contains: Full factory-sealed display box. Jumbo booster packs with guaranteed holo hits per pack.",
         taobaoId: "1019772789105",
+        taobaoId2: "1036462263685", 
         images: ["https://spoilsandloot.com/cdn/shop/files/chinese-gem-pack-vol-4-pokemon-booster-box.webp?v=1774588957"],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai"
+        fournisseur: "Pokemon Store Shanghai (Backup: AmongUs)"
     },
     {
         categorie: "Gem Packs",
@@ -472,7 +473,6 @@ function afficher(liste) {
             ? `<div style="font-size: 0.7em; color: #777; font-style: italic; margin-bottom: 10px;">Sourceur : ${p.fournisseur}</div>` 
             : '';
 
-        // GÉNÉRATION DYNAMIQUE DES IMAGES (Supporte 1 ou plusieurs images)
         let imagesHtml = '';
         if (p.images && p.images.length > 1) {
             imagesHtml = `<div class="card-carousel">`;
@@ -482,7 +482,7 @@ function afficher(liste) {
             imagesHtml += `</div>`;
         } else {
             const fallbackImg = p.images ? p.images[0] : "";
-            imagesHtml = `<img src="${fallbackImg}" alt="${p.nom}" class="card-img" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0PMkOk0FTHAa1QT4_ESpb7qv8fCuF9Y7BK-xsgWgN7HkxM93A9W2eDLT&s=10'">`;
+            imagesHtml = `<img src="${fallbackImg}" alt="${p.nom}" class="card-img card-img-single" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0PMkOk0FTHAa1QT4_ESpb7qv8fCuF9Y7BK-xsgWgN7HkxM93A9W2eDLT&s=10'">`;
         }
 
         let boutonsHtml = '';
@@ -496,10 +496,20 @@ function afficher(liste) {
         } else {
             const taobaoUrlRaw = `https://item.taobao.com/item.htm?id=${p.taobaoId}`;
             const sugargooUrl = formatSugargooLink(p.taobaoId);
+            
             boutonsHtml = `
                 <button onclick="triggerProductAction('pc', '${sugargooUrl}')" class="btn-main-card btn-pc">Order on Sugargoo</button>
                 <button onclick="triggerProductAction('mobile', '${taobaoUrlRaw}', this)" class="btn-main-card btn-mobile">Copy Link for App</button>
             `;
+            
+            if (p.taobaoId2) {
+                const taobaoUrlRaw2 = `https://item.taobao.com/item.htm?id=${p.taobaoId2}`;
+                const sugargooUrl2 = formatSugargooLink(p.taobaoId2);
+                boutonsHtml += `
+                    <button onclick="triggerProductAction('pc', '${sugargooUrl2}')" class="btn-main-card btn-backup btn-pc">Backup Link (If Sold Out)</button>
+                    <button onclick="triggerProductAction('mobile', '${taobaoUrlRaw2}', this)" class="btn-main-card btn-backup btn-mobile">Copy Backup Link</button>
+                `;
+            }
         }
 
         container.innerHTML += `
@@ -511,7 +521,9 @@ function afficher(liste) {
                     <h3>${p.nom}</h3>
                     <p>${p.description}</p>
                     ${fournisseurHtml}
-                    ${boutonsHtml}
+                    <div class="buttons-container">
+                        ${boutonsHtml}
+                    </div>
                 </div>
             </div>
         `;
