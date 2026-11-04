@@ -290,7 +290,7 @@ const produits = [
         nom: "Gem Pack Vol. 7 (Psyduck Cover)",
         description: "The brand new, highly anticipated jumbo set featuring Psyduck and fresh alternate arts.",
         taobaoId: "932678630102",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0PMkOk0FTHAa1QT4_ESpb7qv8fCuF9Y7BK-xsgWgN7HkxM93A9W2eDLT&s=10"
+        image: "https://www.yumecards.ca/cdn/shop/files/Product-2026-10-17T231241.139.jpg?v=1792293584"
     },
 
     // ==========================================
