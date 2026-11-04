@@ -25,39 +25,14 @@ const formatSugargooLink = (taobaoId) => {
 
 const produits = [
     // ==========================================
-    // AS SEEN ON MY REELS
-    // ==========================================
-    {
-        categorie: "As Seen on My Reels",
-        nom: "Greninja Keychain Set",
-        description: "Contains: 3x 30th Anniversary booster packs, 1x Greninja ex promo card, 1x Display Keychain.",
-        taobaoId: "1080814663430",
-        image: "https://x-playground.com/cdn/shop/files/Pokemon_TCG_30th_Celebration_Greninja_ex_Card_Display_Sleeve_Set.jpg?v=1789822489&width=600"
-    },
-
-    // ==========================================
     // 30TH ANNIVERSARY EXCLUSIVE COLLECTION
     // ==========================================
     {
         categorie: "30th Anniversary",
         nom: "30th Anniversary Booster Box (Display)",
         description: "Contains: 20 booster packs (5 cards/pack). The core set to pull classic reprints and exclusive alt arts.",
-        taobaoId: "1062273634908",
+        taobaoId: "1077424694326",
         image: "https://toy-treasure.com/cdn/shop/files/30th-celebration-chinese.jpg?v=1790767347&width=1445"
-    },
-    {
-        categorie: "30th Anniversary",
-        nom: "Charizard Figure Box",
-        description: "Contains: 1x Exclusive Charizard Figure, multiple Promo cards (incl. Charizard ex), and assorted Anniversary booster packs.",
-        taobaoId: "1084248931939",
-        image: "https://www.tcghobby.com/cdn/shop/files/30thcelebrationcharizardfigurine.webp?v=1787160912"
-    },
-    {
-        categorie: "30th Anniversary",
-        nom: "Futuristic Box",
-        description: "Contains: Premium display case, exclusive futuristic-themed accessories, and highly sought-after booster packs.",
-        taobaoId: "", 
-        image: "https://monketic.com/cdn/shop/files/002_b0146a55-cf66-42d3-921c-9b62d7c09e3b.png?v=1792512443&width=1445"
     },
     {
         categorie: "30th Anniversary",
@@ -68,10 +43,24 @@ const produits = [
     },
     {
         categorie: "30th Anniversary",
+        nom: "Charizard Figure Box",
+        description: "Contains: 1x Exclusive Charizard Figure, multiple Promo cards (incl. Charizard ex), and assorted Anniversary booster packs.",
+        taobaoId: "1084248931939",
+        image: "https://www.tcghobby.com/cdn/shop/files/30thcelebrationcharizardfigurine.webp?v=1787160912"
+    },
+    {
+        categorie: "30th Anniversary",
         nom: "Tri-Packs Blisters",
         description: "Contains: 3x 30th Anniversary booster packs and 1x guaranteed holographic promo card.",
         taobaoId: "1062273634908",
         image: "https://i0.wp.com/katzenworld.shop/wp-content/uploads/2026/10/xCsvB678SEHnQsnJEwA77_b0X5C_j1iK9xxyQceY-t_KUwwLreptpTpXEX0qHQWHPqk9WlhnN2QZ1yrg0YdisjlyQ9IMxV-whH58ShVYumxCmz8a0LPxVc8lOcENGBtWJeNdq1_NZWYt5ucX0s73g5Qbw_W6i7-oGYaptOiANo_JHoO6qQh_dU24ewjlOK8t.jpeg?fit=1080%2C1080&ssl=1"
+    },
+    {
+        categorie: "30th Anniversary",
+        nom: "Futuristic Box",
+        description: "Contains: Premium display case, exclusive futuristic-themed accessories, and highly sought-after booster packs.",
+        taobaoId: "", 
+        image: "https://monketic.com/cdn/shop/files/002_b0146a55-cf66-42d3-921c-9b62d7c09e3b.png?v=1792512443&width=1445"
     },
     {
         categorie: "30th Anniversary",
