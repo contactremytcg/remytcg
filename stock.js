@@ -43,7 +43,8 @@ const produits = [
         nom: "30th Anniversary Booster Box (Display)",
         description: "Contains 20 booster packs. The core set for anniversary pulls!",
         taobaoId: "1062273634908",
-        image: "https://toy-treasure.com/cdn/shop/files/30th-celebration-chinese.jpg?v=1790767347&width=1445"
+        image: "https://toy-treasure.com/cdn/shop/files/30th-celebration-chinese.jpg?v=1790767347&width=1445",
+        officiel: true // Exemple : j'ajoute le badge ici
     },
     {
         categorie: "30th Anniversary",
@@ -105,8 +106,9 @@ const produits = [
         categorie: ["30th Anniversary", "Blind Boxes"],
         nom: "Pikachu Blind Box",
         description: "A fun mystery box featuring Pikachu exclusives and surprise hits.",
-        taobaoId: "1079806548243",
-        image: "https://collectorstore.com/cdn/shop/files/CollectorStore00002_7207263c-4504-4ee0-ae14-b3d648f6dba7.jpg?v=1790101321&width=1445"
+        taobaoId: "1082955160912", // <-- TON VRAI ID EST LÀ
+        image: "https://collectorstore.com/cdn/shop/files/CollectorStore00002_7207263c-4504-4ee0-ae14-b3d648f6dba7.jpg?v=1790101321&width=1445",
+        officiel: true // <-- AFFICHE LE BADGE STORE OFFICIEL
     },
     {
         categorie: "30th Anniversary",
@@ -308,8 +310,12 @@ function afficher(liste) {
             `;
         }
 
+        // LOGIQUE D'AFFICHAGE DU BADGE OFFICIEL
+        const badgeOfficiel = p.officiel ? `<div class="badge-officiel"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Official Store</div>` : '';
+
         container.innerHTML += `
-            <div class="card">
+            <div class="card" style="position: relative;">
+                ${badgeOfficiel}
                 <img src="${p.image}" alt="${p.nom}" class="card-img" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0PMkOk0FTHAa1QT4_ESpb7qv8fCuF9Y7BK-xsgWgN7HkxM93A9W2eDLT&s=10'">
                 <div class="card-content">
                     <span class="category">${catBadge}</span>
