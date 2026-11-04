@@ -68,8 +68,8 @@ const produits = [
         categorie: "30th Anniversary",
         nom: "Futuristic Box",
         description: "Contains: Premium display case, exclusive futuristic-themed accessories, and highly sought-after booster packs.",
-        taobaoId: "1076581683957",
-        taobaoId2: "", 
+        taobaoId: "1076581683957", 
+        taobaoId2: "",
         images: ["https://monketic.com/cdn/shop/files/002_b0146a55-cf66-42d3-921c-9b62d7c09e3b.png?v=1792512443&width=1445"],
         fournisseur: "Panda"
     },
@@ -350,10 +350,10 @@ const produits = [
         nom: "Gem Pack Vol. 4",
         description: "Contains: Full factory-sealed display box. Jumbo booster packs with guaranteed holo hits per pack.",
         taobaoId: "1019772789105",
-        taobaoId2: "",
+        taobaoId2: "1036462263685", 
         images: ["https://spoilsandloot.com/cdn/shop/files/chinese-gem-pack-vol-4-pokemon-booster-box.webp?v=1774588957"],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai"
+        fournisseur: "Pokemon Store Shanghai (Backup: AmongUs)"
     },
     {
         categorie: "Gem Packs",
@@ -550,9 +550,9 @@ function afficher(liste) {
                 <button onclick="triggerProductAction('mobile', '${taobaoUrlRaw}', this)" class="btn-main-card btn-mobile">Copy Link for App</button>
             `;
             
-            // AFFICHAGE FORCE DU BOUTON BACKUP POUR VISUALISATION
-            // S'il n'y a pas d'ID renseigné, on met un lien temporaire pour que tu puisses voir le design
-            const targetTaobaoId2 = p.taobaoId2 && p.taobaoId2.trim() !== "" ? p.taobaoId2 : "000000000";
+            // AFFICHAGE FORCÉ DU BOUTON BACKUP
+            // Si taobaoId2 est vide (""), on utilise un ID factice "000000000" pour que le bouton s'affiche visuellement
+            const targetTaobaoId2 = (p.taobaoId2 && p.taobaoId2.trim() !== "") ? p.taobaoId2 : "000000000";
             const taobaoUrlRaw2 = `https://item.taobao.com/item.htm?id=${targetTaobaoId2}`;
             const sugargooUrl2 = formatSugargooLink(targetTaobaoId2);
             
