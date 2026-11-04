@@ -592,14 +592,22 @@ function afficher(liste) {
 
         let imagesHtml = '';
         if (p.images && p.images.length > 1) {
-            imagesHtml = `<div class="card-carousel">`;
-            p.images.forEach(img => {
-                imagesHtml += `<img src="${img}" alt="${p.nom}" class="card-img" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0PMkOk0FTHAa1QT4_ESpb7qv8fCuF9Y7BK-xsgWgN7HkxM93A9W2eDLT&s=10'">`;
+            let dotsHtml = `<div class="carousel-dots">`;
+            p.images.forEach((_, idx) => {
+                dotsHtml += `<span class="carousel-dot ${idx === 0 ? 'active' : ''}"></span>`;
             });
-            imagesHtml += `</div>`;
+            dotsHtml += `</div>`;
+
+            imagesHtml = `
+                <div class="image-wrapper">
+                    <div class="card-carousel">
+                        ${p.images.map(img => `<img src="${img}" alt="${p.nom}" class="card-img" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0PMkOk0FTHAa1QT4_ESpb7qv8fCuF9Y7BK-xsgWgN7HkxM93A9W2eDLT&s=10'">`).join('')}
+                    </div>
+                    ${dotsHtml}
+                </div>
+            `;
         } else if (p.images && p.images.length === 1) {
-            const fallbackImg = p.images[0];
-            imagesHtml = `<img src="${fallbackImg}" alt="${p.nom}" class="card-img card-img-single" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0PMkOk0FTHAa1QT4_ESpb7qv8fCuF9Y7BK-xsgWgN7HkxM93A9W2eDLT&s=10'">`;
+            imagesHtml = `<img src="${p.images[0]}" alt="${p.nom}" class="card-img card-img-single" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0PMkOk0FTHAa1QT4_ESpb7qv8fCuF9Y7BK-xsgWgN7HkxM93A9W2eDLT&s=10'">`;
         }
 
         let boutonsHtml = '';
@@ -645,6 +653,10 @@ function afficher(liste) {
             </div>
         `;
     });
+
+    if (window.initImageCarousels) {
+        window.initImageCarousels();
+    }
 }
 
 function genererCategories() {
