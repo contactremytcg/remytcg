@@ -103,14 +103,14 @@ const produits = [
     },
     {
         categorie: ["30th Anniversary", "Blind Boxes"],
-        nom: "⭐ [OFFICIAL] Pikachu Blind Box",
+        nom: "⭐ [BEST SELLER] Pikachu Blind Box",
         description: "A fun mystery box featuring Pikachu exclusives and surprise hits.",
         taobaoId: "1082955160912",
         image: "https://collectorstore.com/cdn/shop/files/CollectorStore00002_7207263c-4504-4ee0-ae14-b3d648f6dba7.jpg?v=1790101321&width=1445"
     },
     {
         categorie: ["30th Anniversary", "Blind Boxes"],
-        nom: "⭐ [OFFICIAL] Eevee Blind Box",
+        nom: "⭐ [BEST SELLER] Eevee Blind Box",
         description: "Eevee edition mystery box sourced directly from the Official Store.",
         taobaoId: "1078195403792",
         image: "METTRE_IMAGE_ICI"
@@ -124,14 +124,14 @@ const produits = [
     },
     {
         categorie: "30th Anniversary",
-        nom: "⭐ [OFFICIAL] Starter Pack Vol. 2",
+        nom: "⭐ [BEST SELLER] Starter Pack Vol. 2",
         description: "Second wave starter collection for the 30th anniversary.",
         taobaoId: "1059308989628",
         image: "https://www.tcghobby.com/cdn/shop/files/SimplifiedChinesePokemon30thAnniversaryFirstPartnerSpecialIllustrationCardSetVol.2.webp?crop=center&height=500&v=1778251789&width=600"
     },
     {
         categorie: "30th Anniversary",
-        nom: "⭐ [OFFICIAL] Starter Pack Vol. 3",
+        nom: "⭐ [BEST SELLER] Starter Pack Vol. 3",
         description: "Third wave starter collection for the 30th anniversary.",
         taobaoId: "1070165751188",
         image: "https://www.tcghobby.com/cdn/shop/files/firstpartnerdisplaysetvol.3set.webp?v=1784301375"
@@ -160,21 +160,21 @@ const produits = [
     // ==========================================
     {
         categorie: "Accessories",
-        nom: "⭐ [OFFICIAL] Chasing Glory Coin Bag",
+        nom: "⭐ [BEST SELLER] Chasing Glory Coin Bag",
         description: "Official coin bag featuring Chasing Glory theme.",
         taobaoId: "1067353432814",
         image: "METTRE_IMAGE_ICI"
     },
     {
         categorie: "Accessories",
-        nom: "⭐ [OFFICIAL] Bright Fantasy Coin Bag",
+        nom: "⭐ [BEST SELLER] Bright Fantasy Coin Bag",
         description: "Official coin bag featuring Bright Fantasy theme.",
         taobaoId: "1026530979141",
         image: "METTRE_IMAGE_ICI"
     },
     {
         categorie: "Accessories",
-        nom: "⭐ [OFFICIAL] Blade Awakening Coin Bag",
+        nom: "⭐ [BEST SELLER] Blade Awakening Coin Bag",
         description: "Official coin bag featuring Blade Awakening theme.",
         taobaoId: "1008157120043",
         image: "METTRE_IMAGE_ICI"
@@ -206,7 +206,7 @@ const produits = [
     },
     {
         categorie: "Gem Packs",
-        nom: "⭐ [OFFICIAL] Gem Pack Vol. 4",
+        nom: "⭐ [BEST SELLER] Gem Pack Vol. 4",
         description: "Classic Jumbo Booster boxes containing expanded packs with guaranteed hits per box.",
         taobaoId: "1019772789105",
         image: "https://spoilsandloot.com/cdn/shop/files/chinese-gem-pack-vol-4-pokemon-booster-box.webp?v=1774588957"
@@ -220,7 +220,7 @@ const produits = [
     },
     {
         categorie: "Gem Packs",
-        nom: "⭐ [OFFICIAL] Gem Pack Vol. 6",
+        nom: "⭐ [BEST SELLER] Gem Pack Vol. 6",
         description: "Classic Jumbo Booster boxes containing expanded packs with guaranteed hits per box.",
         taobaoId: "1070975018438",
         image: "https://remicardtrader.ca/cdn/shop/files/POKECNGEMPACK6.jpg?v=1786454812"
@@ -238,7 +238,7 @@ const produits = [
     // ==========================================
     {
         categorie: "Scarlet & Violet Era",
-        nom: "⭐ [OFFICIAL] Chasing Glory (CSV10)",
+        nom: "⭐ [BEST SELLER] Chasing Glory (CSV10)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
         taobaoId: "1063240655679",
         image: "https://collectorstore.com/cdn/shop/files/CollectorStore00001_937038ac-8bb9-4f6e-950b-742363216669.jpg?v=1784582543&width=990"
@@ -252,21 +252,21 @@ const produits = [
     },
     {
         categorie: "Scarlet & Violet Era",
-        nom: "⭐ [OFFICIAL] Stellar Crystal (CSV9)",
+        nom: "⭐ [BEST SELLER] Stellar Crystal (CSV9)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
         taobaoId: "1049011746197",
         image: "https://remicardtrader.ca/cdn/shop/files/POKECNSTELCRYSSLIM.jpg?v=1781539002"
     },
     {
         categorie: "Scarlet & Violet Era",
-        nom: "⭐ [OFFICIAL] Bright Fantasy (CSV8)",
+        nom: "⭐ [BEST SELLER] Bright Fantasy (CSV8)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
         taobaoId: "1027188942536",
         image: "https://packflipps.com/cdn/shop/files/IMG_2671.jpg?v=1776975091"
     },
     {
         categorie: "Scarlet & Violet Era",
-        nom: "⭐ [OFFICIAL] Blade Awakened (CSV7)",
+        nom: "⭐ [BEST SELLER] Blade Awakened (CSV7)",
         description: "Standard display boxes for the Scarlet & Violet era sets.",
         taobaoId: "1008153816247",
         image: "https://remicardtrader.ca/cdn/shop/files/PKCNBASBBOX.jpg?v=1792010716"
