@@ -59,7 +59,11 @@
 
         .card-img { width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #333; background: #fff; }
         .card-content { padding: 15px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; }
-        .category { font-size: 0.7em; color: #FF6A00; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; display: block; }
+        
+        /* L'ICÔNE SECRÈTE (Pokéball) */
+        .category { font-size: 0.7em; color: #FF6A00; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; display: flex; align-items: center; }
+        .official-icon { width: 11px; height: 11px; margin-left: 6px; opacity: 0.45; transition: opacity 0.2s; }
+        .card:hover .official-icon { opacity: 1; }
         
         .card h3 { margin: 8px 0; font-size: 1.15em; line-height: 1.3; min-height: 3.9em; display: flex; align-items: flex-start; }
         .card p { color: #aaa; font-size: 0.85em; line-height: 1.4; min-height: 4.2em; margin: 0 0 15px 0; }
@@ -312,7 +316,7 @@
                 <div class="footer-copyright">
                     © 2026 RemyTCG. All rights reserved.
                 </div>
-                <!-- RESTAURATION DES ANCIENS BADGES DE PAIEMENT QUI FONCTIONNAIENT -->
+                <!-- RESTAURATION DES ANCIENS BADGES DE PAIEMENT -->
                 <div class="payment-row">
                     <div class="payment-badge"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV07yhKXZ1S8pQJ984d281j6woJ0cE8UBN0077uuZaXQ&s=10" alt="Visa"></div>
                     <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard"></div>
