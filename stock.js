@@ -149,7 +149,7 @@ const produits = [
         fournisseur: "Pokemon Store Shanghai"
     },
     {
-        categorie: "Blind Boxes",
+        categorie: ["Blind Boxes", "30th Anniversary"],
         nom: "Dream Figure Vol. 2 Blind Box",
         description: "Contains: 1x Random Dream Vol. 2 Pokémon figure and selected booster packs.",
         taobaoId: "1044387395690",
@@ -158,7 +158,7 @@ const produits = [
         fournisseur: "Pokemon Store Shanghai"
     },
     {
-        categorie: "Blind Boxes",
+        categorie: ["Blind Boxes", "30th Anniversary"],
         nom: "Dream Figure Vol. 1 Blind Box",
         description: "Contains: 1x Random Dream Vol. 1 Pokémon figure and selected booster packs.",
         taobaoId: "994367267628",
@@ -318,7 +318,7 @@ const produits = [
         nom: "Gem Pack Vol. 4",
         description: "Contains: Full factory-sealed display box. Jumbo booster packs with guaranteed holo hits per pack.",
         taobaoId: "1019772789105",
-        taobaoId2: "1036462263685", 
+        taobaoId2: "1036462263685", // BACKUP TAOBAO LINK ICI
         images: ["https://spoilsandloot.com/cdn/shop/files/chinese-gem-pack-vol-4-pokemon-booster-box.webp?v=1774588957"],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai (Backup: AmongUs)"
@@ -480,8 +480,8 @@ function afficher(liste) {
                 imagesHtml += `<img src="${img}" alt="${p.nom}" class="card-img" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0PMkOk0FTHAa1QT4_ESpb7qv8fCuF9Y7BK-xsgWgN7HkxM93A9W2eDLT&s=10'">`;
             });
             imagesHtml += `</div>`;
-        } else {
-            const fallbackImg = p.images ? p.images[0] : "";
+        } else if (p.images && p.images.length === 1) {
+            const fallbackImg = p.images[0];
             imagesHtml = `<img src="${fallbackImg}" alt="${p.nom}" class="card-img card-img-single" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0PMkOk0FTHAa1QT4_ESpb7qv8fCuF9Y7BK-xsgWgN7HkxM93A9W2eDLT&s=10'">`;
         }
 
@@ -502,6 +502,7 @@ function afficher(liste) {
                 <button onclick="triggerProductAction('mobile', '${taobaoUrlRaw}', this)" class="btn-main-card btn-mobile">Copy Link for App</button>
             `;
             
+            // GENERATION DU BOUTON BACKUP
             if (p.taobaoId2) {
                 const taobaoUrlRaw2 = `https://item.taobao.com/item.htm?id=${p.taobaoId2}`;
                 const sugargooUrl2 = formatSugargooLink(p.taobaoId2);
