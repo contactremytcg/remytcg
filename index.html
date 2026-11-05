@@ -1,38 +1,437 @@
-<div class="intro-banner" style="border-color: #333; margin-top: 25px;">
-    <h2 style="font-size: 1.25em; color: #fff; margin-bottom: 12px; justify-content: flex-start;">
-        🛡️ Where do your cards come from? (Our Verified Sources)
-    </h2>
-    <p style="text-align: left; font-size: 0.9em; color: #bbb; margin-bottom: 18px;">
-        All products are sourced directly from <strong>Taobao</strong> (the leading official Chinese marketplace, subsidiary of Alibaba Group). To guarantee <strong>100% factory-sealed authenticity</strong> and zero resealed packs, we exclusively curate from 3 strictly vetted sellers:
-    </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- DÉBLOCAGE MOBILE UNIVERSEL DES SERVEURS EXTERNES -->
+    <meta name="referrer" content="no-referrer">
+    <title>RemyTCG - Exclusive Proxy Service</title>
+    
+    <meta property="og:title" content="RemyTCG - Exclusive Proxy Service">
+    <meta property="og:description" content="Your trusted proxy for 100% Authentic Simplified Chinese Pokémon TCG. Local prices, global shipping.">
+    <meta property="og:image" content="https://i.ibb.co/1YZ2ffcS/IMG-9158.jpg">
+    
+    <link rel="icon" type="image/jpeg" href="https://scontent-sin11-2.cdninstagram.com/v/t51.82787-19/846528981_18117825301906300_2410003667728457360_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=101&ig_cache_key=GNUBdTJ8AzntEF5AAJDeVyqRDXIhbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=R86uzwtI-38Q7kNvwHw5b96&_nc_oc=AdpjE0JmV25Oje8YXwqyXWLSepl4kTg9pO0uT4962FwCL-1H7v3HtRBW4FKTlXbPN55yXMCN73w_1xvjzhatgyu8&_nc_zt=24&_nc_ht=scontent-sin11-2.cdninstagram.com&_nc_gid=px0MMH314KMRbj77Pq-sog&_nc_ss=7b689&oh=00_AQTSj8vrDPcdgdPKpmJJ49uuphrUfiA7u6JTHdWwr13dXA&oe=6AEFF132">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background: #111111; color: #fff; margin: 0; padding: 0; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
+        
+        .top-nav { background: rgba(17, 17, 17, 0.95); padding: 15px 20px; text-align: center; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #333; backdrop-filter: blur(5px); display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;}
+        .top-nav a { color: #fff; text-decoration: none; font-weight: 700; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px; transition: color 0.2s; }
+        .top-nav a:hover { color: #FF6A00; }
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-bottom: 15px;">
-        <div style="background: #242424; border: 1px solid #383838; border-radius: 8px; padding: 12px;">
-            <div style="color: #FFCB05; font-weight: 900; font-size: 0.9em; margin-bottom: 4px;">🏛️ Official Flagship Store</div>
-            <div style="color: #fff; font-weight: 700; font-size: 0.85em;">宝可梦官方旗舰店 (Pokémon Shanghai)</div>
-            <p style="color: #888; font-size: 0.78em; margin: 4px 0 0 0; line-height: 1.3;">
-                Direct primary stock from The Pokémon Company Shanghai. 100% genuine retail drops.
-            </p>
-        </div>
+        .header { background: linear-gradient(135deg, #FF6A00 0%, #CC5500 100%); padding: 40px 20px 40px 20px; text-align: center; color: #fff; position: relative; }
+        .logo-container { display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 5px; }
+        .logo-img { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 3px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        h1 { margin: 0; font-weight: 900; font-size: 3em; letter-spacing: -1.5px; text-transform: uppercase; line-height: 1.1;}
+        .subtitle { font-weight: 700; font-size: 1.1em; opacity: 0.9; max-width: 600px; margin: 5px auto 0 auto; }
+        
+        .trust-bar { display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; background: #1c1c1c; padding: 15px 20px; font-size: 0.9em; font-weight: 700; border-bottom: 1px solid #333; }
+        .trust-item { display: flex; align-items: center; gap: 8px; color: #ddd; }
+        .trust-item svg { color: #FFCB05; }
 
-        <div style="background: #242424; border: 1px solid #383838; border-radius: 8px; padding: 12px;">
-            <div style="color: #FF6A00; font-weight: 900; font-size: 0.9em; margin-bottom: 4px;">🐼 Panda (Verified Reseller)</div>
-            <div style="color: #fff; font-weight: 700; font-size: 0.85em;">大熊猫卡牌 (Panda TCG Store)</div>
-            <p style="color: #888; font-size: 0.78em; margin: 4px 0 0 0; line-height: 1.3;">
-                High-volume, top-rated distributor specialized in high-stock collector boxes and fast warehouse dispatch.
-            </p>
-        </div>
+        .intro-banner { max-width: 900px; width: 90%; margin: 30px auto 30px auto; background: #1c1c1c; border: 2px solid #333; border-radius: 12px; padding: 25px; text-align: left; box-shadow: 0 10px 30px rgba(0,0,0,0.5); position: relative; scroll-margin-top: 80px; box-sizing: border-box; }
+        .intro-banner h2 { color: #FF6A00; margin-top: 0; font-size: 1.4em; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; gap: 10px;}
+        .intro-banner p { color: #ddd; margin-bottom: 15px; font-size: 0.95em; text-align: center;}
+        .btn-main { display: inline-block; background: #FF6A00; color: #fff; padding: 16px 30px; text-decoration: none; font-weight: 900; border-radius: 8px; font-size: 1.1em; transition: transform 0.2s; text-align: center; width: 100%; box-sizing: border-box;}
+        .btn-main:hover { background: #fff; color: #FF6A00; transform: translateY(-2px); }
 
-        <div style="background: #242424; border: 1px solid #383838; border-radius: 8px; padding: 12px;">
-            <div style="color: #FF6A00; font-weight: 900; font-size: 0.9em; margin-bottom: 4px;">🚀 AmongUs (Verified Backup)</div>
-            <div style="color: #fff; font-weight: 700; font-size: 0.85em;">太空狼人杀卡牌 (AmongUs TCG)</div>
-            <p style="color: #888; font-size: 0.78em; margin: 4px 0 0 0; line-height: 1.3;">
-                Our premier secondary source to guarantee inventory when the official flagship or Panda sell out.
-            </p>
+        .container { max-width: 1400px; width: 95%; margin: 0 auto; padding: 10px; flex-grow: 1; scroll-margin-top: 70px; box-sizing: border-box; }
+        .faq-container { max-width: 1000px; width: 95%; margin: 60px auto 0 auto; padding: 10px; scroll-margin-top: 70px; box-sizing: border-box; }
+        .filters { display: flex; gap: 10px; max-width: 700px; margin: 0 auto 35px auto; justify-content: center; flex-wrap: wrap;}
+        .search-bar, .category-select { padding: 12px 20px; border-radius: 50px; border: 2px solid #333; background: #222; color: white; font-size: 1em; outline: none; transition: border-color 0.3s; }
+        .search-bar { flex-grow: 1; min-width: 200px;}
+        .category-select { cursor: pointer; appearance: none; padding-right: 40px; background-image: url('data:image/svg+xml;utf8,<svg fill="%23FF6A00" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); background-repeat: no-repeat; background-position: right 10px center; }
+        
+        /* DESIGN ÉPURÉ DES SECTIONS PAR ÈRES */
+        .era-section { margin-bottom: 50px; }
+        .era-header { margin-bottom: 20px; border-bottom: 1px solid #2a2a2a; padding-bottom: 12px; display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+        .era-title { font-size: 1.75em; font-weight: 900; text-transform: uppercase; letter-spacing: -0.5px; margin: 0; color: #fff; }
+        .era-subtitle { font-size: 0.85em; color: #FF6A00; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin: 0; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: #1c1c1c; border-radius: 12px; overflow: hidden; border: 1px solid #333; display: flex; flex-direction: column; position: relative; transition: transform 0.2s, border-color 0.2s;}
+        .card:hover { transform: translateY(-5px); border-color: #FF6A00; }
+        
+        .card-badge { position: absolute; top: 10px; left: 10px; padding: 6px 12px; border-radius: 6px; font-size: 0.75em; font-weight: 900; text-transform: uppercase; color: #fff; z-index: 10; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+
+        .image-wrapper { position: relative; height: 200px; background: #fff; border-bottom: 1px solid #333; overflow: hidden; width: 100%; }
+        .card-carousel { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; height: 100%; width: 100%; scrollbar-width: none; }
+        .card-carousel::-webkit-scrollbar { display: none; }
+        
+        .card-carousel .card-img { flex: 0 0 100%; width: 100%; min-width: 100%; max-width: 100%; scroll-snap-align: start; scroll-snap-stop: always; border-bottom: none; object-fit: contain; background: #fff; padding: 10px; box-sizing: border-box; height: 100%; display: block; }
+        .card-img-single { width: 100%; height: 200px; object-fit: contain; border-bottom: 1px solid #333; background: #fff; padding: 10px; box-sizing: border-box; display: block; }
+
+        .carousel-arrow { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(17, 17, 17, 0.75); color: #FF6A00; border: 1px solid #FF6A00; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 900; cursor: pointer; z-index: 9; user-select: none; transition: all 0.2s ease; }
+        .carousel-arrow:hover { background: #FF6A00; color: #fff; transform: translateY(-50%) scale(1.1); }
+        .carousel-arrow.prev { left: 8px; }
+        .carousel-arrow.next { right: 8px; }
+
+        .carousel-dots { position: absolute; bottom: 8px; left: 0; right: 0; display: flex; justify-content: center; gap: 6px; z-index: 8; }
+        .carousel-dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(0, 0, 0, 0.25); cursor: pointer; transition: all 0.2s ease; }
+        .carousel-dot.active { background: #FF6A00; transform: scale(1.35); }
+        .crop-bottom { object-position: center 10% !important; object-fit: cover !important; transform: scale(1.14) translateY(-5%); }
+
+        .card-content { padding: 15px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; }
+        .category { font-size: 0.7em; color: #FF6A00; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; display: flex; align-items: center; }
+        .official-icon { width: 11px; height: 11px; margin-left: 6px; opacity: 0.45; transition: opacity 0.2s; }
+        .card:hover .official-icon { opacity: 1; }
+        
+        .card h3 { margin: 8px 0; font-size: 1.15em; line-height: 1.3; min-height: 3.9em; display: flex; align-items: flex-start; }
+        .card p { color: #aaa; font-size: 0.85em; line-height: 1.4; min-height: 4.2em; margin: 0 0 15px 0; }
+        
+        .buttons-container { display: flex; flex-direction: column; gap: 8px; margin-top: auto;}
+        .btn-main-card { display: block; width: 100%; padding: 12px 10px; border-radius: 8px; font-weight: 900; font-size: 0.95em; text-align: center; text-decoration: none; transition: transform 0.2s, border-color 0.2s; border: none; font-family: inherit; cursor: pointer; }
+        .btn-pc { background: #FFCB05; color: #111; }
+        .btn-pc:hover { background: #fff; transform: translateY(-2px); }
+        .btn-notify { background: #333; color: #fff; border: 1px solid #555; }
+        .btn-notify:hover { border-color: #FF6A00; color: #FF6A00; }
+        .btn-backup { background: transparent; color: #aaa; border: 1px solid #444; padding: 10px; font-size: 0.85em; }
+        .btn-backup:hover { color: #fff; border-color: #FFCB05; }
+        .btn-mobile { display: none; }
+
+        .faq-item { background: #1c1c1c; border: 1px solid #333; border-radius: 12px; padding: 25px; margin-bottom: 20px; }
+        .faq-item h3 { color: #FF6A00; margin-top: 0; font-size: 1.2em; margin-bottom: 10px;}
+        .faq-item p, .faq-item ul { color: #aaa; margin-bottom: 10px; font-size: 0.9em; line-height: 1.5;}
+        .faq-item ul { padding-left: 20px; }
+        .faq-item li { margin-bottom: 6px; }
+        .faq-item strong { color: #fff; }
+
+        .process-container { display: flex; align-items: center; justify-content: space-between; margin-top: 15px; background: #222; padding: 20px; border-radius: 10px; border: 1px solid #333; gap: 10px; }
+        .process-step { display: flex; flex-direction: column; align-items: center; text-align: center; flex: 1; }
+        .process-icon { width: 45px; height: 45px; background: #1c1c1c; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 10px; border: 2px solid #FF6A00; color: #FF6A00; }
+        .process-icon svg { width: 22px; height: 22px; stroke: currentColor; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+        .process-step h4 { color: #fff; margin: 0 0 5px 0; font-size: 1em; }
+        .process-step p { color: #aaa; font-size: 0.8em; margin: 0; line-height: 1.3; }
+        .process-arrow { color: #FF6A00; font-size: 1.2em; font-weight: bold; }
+
+        .footer-pro { background: #0a0a0a; border-top: 1px solid #222; padding: 50px 20px 20px 20px; font-size: 0.85em; margin-top: auto; scroll-margin-top: 50px;}
+        .footer-pro-inner { max-width: 1400px; margin: 0 auto; }
+        .footer-pro-top { display: flex; flex-direction: column; align-items: center; gap: 15px; margin-bottom: 30px; }
+        .footer-pro-logo-container { display: flex; align-items: center; gap: 12px; }
+        .footer-pro-img { width: 35px; height: 35px; border-radius: 50%; border: 2px solid #FF6A00; object-fit: cover; }
+        .footer-pro-logo { font-size: 1.8em; font-weight: 900; color: #FF6A00; letter-spacing: 1px; margin: 0;}
+        .footer-pro-socials { display: flex; gap: 25px; margin-top: 10px; }
+        .footer-pro-socials a { color: #aaa; text-decoration: none; display: flex; align-items: center; gap: 8px; font-weight: 700; transition: color 0.2s; }
+        .footer-pro-socials a:hover { color: #FF6A00; }
+        .footer-pro-socials svg { width: 18px; height: 18px; }
+        .footer-pro-disclaimer { text-align: center; color: #666; font-size: 0.85em; max-width: 900px; margin: 0 auto 30px auto; line-height: 1.5; }
+        .footer-pro-disclaimer strong { color: #888; }
+        .footer-pro-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; padding-top: 20px; border-top: 1px solid #1c1c1c; }
+        .footer-copyright { color: #666; }
+        .payment-row { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+        .payment-badge { background: #fff; width: 50px; height: 32px; border-radius: 4px; display: flex; justify-content: center; align-items: center; padding: 4px; box-sizing: border-box; }
+        .payment-badge img { max-width: 100%; max-height: 100%; object-fit: contain; }
+        
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(8px); justify-content: center; align-items: center; z-index: 9999; opacity: 0; transition: opacity 0.3s ease; }
+        .modal-content { background: #1c1c1c; border: 2px solid #FF6A00; border-radius: 16px; padding: 40px 30px; max-width: 500px; width: 90%; text-align: center; box-shadow: 0 20px 50px rgba(255, 106, 0, 0.2); }
+        .modal-content h2 { color: #FF6A00; margin-top: 0; font-size: 1.8em; line-height: 1.2; }
+        .modal-content p { color: #ddd; font-size: 1.05em; margin-bottom: 25px; }
+        .modal-content strong { color: #fff; }
+        .btn-modal-main { display: block; width: 100%; background: #FF6A00; color: #fff; padding: 18px 20px; text-decoration: none; font-weight: 900; border-radius: 8px; font-size: 1.1em; margin-bottom: 15px; border: none; cursor: pointer; transition: 0.2s; }
+        .btn-modal-main:hover { background: #fff; color: #FF6A00; transform: translateY(-2px); }
+        .btn-modal-secondary { display: block; width: 100%; background: transparent; color: #888; padding: 12px; text-decoration: underline; font-weight: 700; border: none; font-size: 0.9em; cursor: pointer; font-family: inherit; }
+        .btn-modal-secondary:hover { color: #fff; }
+
+        @media (max-width: 768px) {
+            .top-nav { gap: 10px; padding: 10px; }
+            .top-nav a { font-size: 0.72em; }
+            .trust-bar { flex-direction: column; gap: 10px; padding: 12px; font-size: 0.8em; align-items: flex-start;}
+            .grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+            .card h3 { font-size: 0.85em; min-height: 3.75em; }
+            .card p { font-size: 0.72em; min-height: 4.05em; }
+            .btn-pc { display: none; }
+            .btn-mobile { display: block; background: #222; color: #FF6A00; border: 2px solid #FF6A00; padding: 8px; font-size: 0.85em; }
+            .btn-notify.btn-mobile { display: block; border-color: #555; color: #aaa;}
+            .btn-backup.btn-mobile { display: block; background: transparent; border-color: #444; color: #aaa;}
+            .footer-pro-bottom { flex-direction: column; text-align: center; justify-content: center; }
+            .footer-pro-socials { flex-wrap: wrap; justify-content: center; gap: 15px;}
+            .process-container { flex-direction: column; gap: 15px; padding: 15px;}
+            .process-arrow { transform: rotate(90deg); }
+        }
+    </style>
+</head>
+<body>
+    <div id="welcomeModal" class="modal-overlay">
+        <div class="modal-content">
+            <h2>Before you order... 🛑</h2>
+            <p>To access local Chinese prices, you need a proxy account. <strong>Sugargoo is our official partner.</strong></p>
+            <p style="font-size: 0.9em; color: #aaa;">Creating your account via our link ensures you get your <strong>800 CNY (~$110 USD) Welcome Coupon Bundle</strong>, and it directly supports RemyTCG!</p>
+            <button class="btn-modal-main" onclick="registerAndClose()">1. Support us & Create Account</button>
+            <button class="btn-modal-secondary" onclick="continueToProduct()">2. I already created my account, continue</button>
         </div>
     </div>
 
-    <div style="font-size: 0.75em; color: #777; border-top: 1px solid #282828; padding-top: 10px; line-height: 1.4;">
-        * <em>Disclaimer:</em> RemyTCG operates as an independent curation index. All purchases are executed and QC-inspected by Sugargoo directly through these merchants.
+    <nav class="top-nav">
+        <a href="#setup">Setup</a>
+        <a href="#shop">Catalog</a>
+        <a href="#guide">Buyer Guide</a>
+        <a href="#wholesale">Wholesale</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header">
+        <div class="logo-container">
+            <img src="https://scontent-sin11-2.cdninstagram.com/v/t51.82787-19/846528981_18117825301906300_2410003667728457360_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=101&ig_cache_key=GNUBdTJ8AzntEF5AAJDeVyqRDXIhbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=R86uzwtI-38Q7kNvwHw5b96&_nc_oc=AdpjE0JmV25Oje8YXwqyXWLSepl4kTg9pO0uT4962FwCL-1H7v3HtRBW4FKTlXbPN55yXMCN73w_1xvjzhatgyu8&_nc_zt=24&_nc_ht=scontent-sin11-2.cdninstagram.com&_nc_gid=px0MMH314KMRbj77Pq-sog&_nc_ss=7b689&oh=00_AQTSj8vrDPcdgdPKpmJJ49uuphrUfiA7u6JTHdWwr13dXA&oe=6AEFF132" alt="RemyTCG Logo" class="logo-img">
+            <h1>RemyTCG</h1>
+        </div>
+        <div class="subtitle">Your trusted proxy for Simplified Chinese Pokémon TCG</div>
     </div>
-</div>
+
+    <div class="trust-bar">
+        <div class="trust-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+            100% Authentic Products
+        </div>
+        <div class="trust-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            Global Shipping via Sugargoo
+        </div>
+        <div class="trust-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            Secure Global Payments
+        </div>
+    </div>
+
+    <!-- GUIDE COMMANDE SUGARGOO -->
+    <div id="setup" class="intro-banner">
+        <h2>📦 How to order?</h2>
+        <p>We partner with <strong>Sugargoo</strong> to give you access to local Chinese prices. You must create an account via our link to claim your <strong>800 CNY (~$110 USD) Welcome Coupon</strong> and unlock international shipping.</p>
+        <div style="text-align: center;">
+            <a href="https://m.sugargoo.com/register?memberId=3894055016867374984" class="btn-main" target="_blank">1. Register on Sugargoo Here</a>
+        </div>
+    </div>
+
+    <!-- NOUVEL ENCART : PRÉSENTATION DE TAOBAO & DES SOURCEURS CERTIFIÉS -->
+    <div class="intro-banner" style="border-color: #333; margin-top: 20px;">
+        <h2 style="font-size: 1.25em; color: #fff; margin-bottom: 12px; justify-content: flex-start;">
+            🛡️ Where do your cards come from? (Our Verified Sources)
+        </h2>
+        <p style="text-align: left; font-size: 0.9em; color: #bbb; margin-bottom: 18px;">
+            All catalog items link directly to <strong>Taobao</strong> (the #1 e-commerce marketplace in China, owned by Alibaba Group — essentially the Chinese Amazon). To guarantee <strong>100% factory-sealed authenticity</strong> and avoid tampered or resealed boxes, we exclusively hand-pick items from 3 vetted suppliers:
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-bottom: 15px;">
+            <div style="background: #242424; border: 1px solid #383838; border-radius: 8px; padding: 12px;">
+                <div style="color: #FFCB05; font-weight: 900; font-size: 0.9em; margin-bottom: 4px;">🏛️ Official Flagship Store</div>
+                <div style="color: #fff; font-weight: 700; font-size: 0.85em;">宝可梦官方旗舰店 (Pokémon Shanghai)</div>
+                <p style="color: #888; font-size: 0.78em; margin: 4px 0 0 0; line-height: 1.3;">
+                    Direct retail drops from The Pokémon Company Shanghai. 100% genuine guaranteed.
+                </p>
+            </div>
+
+            <div style="background: #242424; border: 1px solid #383838; border-radius: 8px; padding: 12px;">
+                <div style="color: #FF6A00; font-weight: 900; font-size: 0.9em; margin-bottom: 4px;">🐼 Panda (Verified Reseller)</div>
+                <div style="color: #fff; font-weight: 700; font-size: 0.85em;">大熊猫卡牌 (Panda TCG Store)</div>
+                <p style="color: #888; font-size: 0.78em; margin: 4px 0 0 0; line-height: 1.3;">
+                    High-volume Shanghai distributor specialized in high-stock collector boxes and rapid dispatch.
+                </p>
+            </div>
+
+            <div style="background: #242424; border: 1px solid #383838; border-radius: 8px; padding: 12px;">
+                <div style="color: #FF6A00; font-weight: 900; font-size: 0.9em; margin-bottom: 4px;">🚀 AmongUs (Verified Backup)</div>
+                <div style="color: #fff; font-weight: 700; font-size: 0.85em;">太空狼人杀卡牌 (AmongUs TCG)</div>
+                <p style="color: #888; font-size: 0.78em; margin: 4px 0 0 0; line-height: 1.3;">
+                    Our premier secondary source guaranteeing inventory when official stores or Panda run out of stock.
+                </p>
+            </div>
+        </div>
+
+        <div style="font-size: 0.75em; color: #777; border-top: 1px solid #282828; padding-top: 10px; line-height: 1.4;">
+            * <em>Disclaimer:</em> RemyTCG operates as an independent curation service. Sugargoo inspects each item upon warehouse arrival (providing detailed QC photos) before international shipment.
+        </div>
+    </div>
+
+    <!-- CATALOGUE DES PRODUITS PAR ÈRES -->
+    <div id="shop" class="container">
+        <div class="filters">
+            <input type="text" id="search" class="search-bar" placeholder="🔍 Search for a booster, a box..." onkeyup="filtrer()">
+            <select id="category-filter" class="category-select" onchange="filtrer()">
+                <option value="">All Categories & Eras</option>
+            </select>
+        </div>
+        <div id="catalogue"></div>
+    </div>
+
+    <!-- SECTION WHOLESALE -->
+    <div id="wholesale" class="intro-banner" style="margin-top: 50px; border-color: #FFCB05; scroll-margin-top: 70px;">
+        <h2 style="color: #FFCB05; justify-content: center;">💼 Wholesale & Bulk Orders</h2>
+        <p style="margin-bottom: 15px; text-align: center;">Are you a Local Game Store, a breaker, or an investor looking to buy in bulk? We work directly with official local distributors to supply you securely.</p>
+        <p style="font-size: 0.85em; color: #aaa; margin-bottom: 20px; text-align: center;">* Factory Sealed Cartons (12 to 40 boxes per case). 100% Authentic guarantee. Minimum order value: $500 USD.</p>
+        <div style="text-align: center;">
+            <a href="#contact" class="btn-main" style="background: #FFCB05; color: #111;">Contact Us for a Bulk Quote</a>
+        </div>
+    </div>
+
+    <!-- FAQ & PROCESSUS SUGARGOO -->
+    <div id="guide" class="faq-container">
+        <h2 style="text-align: center; color: #FF6A00; font-size: 1.8em; margin-bottom: 30px;">Buyer Guide & FAQ</h2>
+        
+        <div class="faq-item" style="border-color: #FF6A00;">
+            <h3>🤔 What is a Proxy Agent (Sugargoo)?</h3>
+            <p>Buying directly from Chinese marketplaces is impossible without a local Chinese address and payment method. Sugargoo acts as your trusted middleman to bridge this gap:</p>
+            
+            <div class="process-container">
+                <div class="process-step">
+                    <div class="process-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    </div>
+                    <h4>1. Buy</h4>
+                    <p>Order through our catalog. Sugargoo buys the item for you at local prices within 24 hours.</p>
+                </div>
+                <div class="process-arrow">➔</div>
+                <div class="process-step">
+                    <div class="process-icon">
+                        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    </div>
+                    <h4>2. Warehouse</h4>
+                    <p>They receive it in China, send you QC photos, and store it securely for up to 100 days.</p>
+                </div>
+                <div class="process-arrow">➔</div>
+                <div class="process-step">
+                    <div class="process-icon">
+                        <svg viewBox="0 0 24 24"><path d="M22 2L11 13"></path><path d="M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
+                    </div>
+                    <h4>3. Ship Globally</h4>
+                    <p>Bundle multiple items into one parcel and ship it directly to your door in a few days!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3>🎁 1. How does the 800 CNY Welcome Bonus work?</h3>
+            <p>When you register using our link, Sugargoo credits your account with a welcome bundle worth 800 CNY (approx. $110 USD) to help with your first shipping costs.</p>
+            <ul>
+                <li><strong>14 Coupons Included:</strong> You receive a mix of coupons, ranging from 20 CNY (no minimum) up to 150 CNY off (for large parcels).</li>
+                <li><strong>Validity:</strong> Coupons are valid for exactly <strong>90 days</strong> after receipt. Use them before they expire!</li>
+                <li><strong>Rules:</strong> You can apply one coupon per international shipping package. They apply only to shipping fees, not the items themselves.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- FOOTER PROFESSIONNEL -->
+    <footer id="contact" class="footer-pro">
+        <div class="footer-pro-inner">
+            <div class="footer-pro-top">
+                <div class="footer-pro-logo-container">
+                    <img src="https://scontent-sin11-2.cdninstagram.com/v/t51.82787-19/846528981_18117825301906300_2410003667728457360_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=101&ig_cache_key=GNUBdTJ8AzntEF5AAJDeVyqRDXIhbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=R86uzwtI-38Q7kNvwHw5b96&_nc_oc=AdpjE0JmV25Oje8YXwqyXWLSepl4kTg9pO0uT4962FwCL-1H7v3HtRBW4FKTlXbPN55yXMCN73w_1xvjzhatgyu8&_nc_zt=24&_nc_ht=scontent-sin11-2.cdninstagram.com&_nc_gid=px0MMH314KMRbj77Pq-sog&_nc_ss=7b689&oh=00_AQTSj8vrDPcdgdPKpmJJ49uuphrUfiA7u6JTHdWwr13dXA&oe=6AEFF132" alt="RemyTCG Logo" class="footer-pro-img">
+                    <p class="footer-pro-logo">RemyTCG</p>
+                </div>
+                <div class="footer-pro-socials">
+                    <a href="https://instagram.com/remy.tcg" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        @remy.tcg
+                    </a>
+                    <a href="https://tiktok.com/@remy_tcg" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path><path d="M15 8a4 4 0 1 0 0-4v16a4 4 0 0 1-4-4"></path><line x1="15" y1="4" x2="19" y2="4"></line></svg>
+                        @remy_tcg
+                    </a>
+                    <a href="mailto:contact.remytcg@gmail.com">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        contact.remytcg@gmail.com
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-pro-disclaimer">
+                <strong>Disclaimer:</strong> We act exclusively as an independent proxy curation service bridging international buyers with local Chinese marketplaces. We have no affiliation, sponsorship, or endorsement with any brands or characters mentioned or displayed. All Pokémon trademarks, logos, characters, and artwork are the property of Nintendo, Creatures Inc., and The Pokémon Company International.
+            </div>
+
+            <div class="footer-pro-bottom">
+                <div class="footer-copyright">
+                    © 2026 RemyTCG. All rights reserved.
+                </div>
+                <div class="payment-row">
+                    <div class="payment-badge"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV07yhKXZ1S8pQJ984d281j6woJ0cE8UBN0077uuZaXQ&s=10" alt="Visa"></div>
+                    <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard"></div>
+                    <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Discover_Card_logo.svg" alt="Discover"></div>
+                    <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Pay_Logo.svg" alt="Google Pay"></div>
+                    <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg" alt="Apple Pay"></div>
+                    <div class="payment-badge"><img src="https://thumb.wikimedia.org/wikipedia/en/thumb/c/c7/Alipay_logo_%282020%29.svg/960px-Alipay_logo_%282020%29.svg.png" alt="Alipay"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LOGIQUE JAVASCRIPT -->
+    <script src="stock.js"></script>
+    <script>
+        let pendingAction = null; 
+        function triggerProductAction(type, data, element = null) {
+            const hasSeenPopup = localStorage.getItem('remytcg_setup_done');
+            if (hasSeenPopup === 'true') {
+                executeAction(type, data, element);
+            } else {
+                pendingAction = { type, data, element };
+                const modal = document.getElementById('welcomeModal');
+                modal.style.display = 'flex';
+                setTimeout(() => modal.style.opacity = '1', 10);
+            }
+        }
+        function executeAction(type, data, element) {
+            if (type === 'pc') { window.open(data, '_blank'); } 
+            else if (type === 'mobile') { window.copyToClipboard(data, element); }
+        }
+        function registerAndClose() {
+            localStorage.setItem('remytcg_setup_done', 'true'); 
+            window.open('https://m.sugargoo.com/register?memberId=3894055016867374984', '_blank');
+            closeModal();
+        }
+        function continueToProduct() {
+            localStorage.setItem('remytcg_setup_done', 'true'); 
+            closeModal();
+            if (pendingAction) {
+                executeAction(pendingAction.type, pendingAction.data, pendingAction.element);
+                pendingAction = null;
+            }
+        }
+        function closeModal() {
+            const modal = document.getElementById('welcomeModal');
+            modal.style.opacity = '0';
+            setTimeout(() => modal.style.display = 'none', 300);
+        }
+
+        // CARROUSEL AVEC CENTRAGE STRICT AU PIXEL PRÈS
+        function slideCarousel(btn, direction) {
+            const wrapper = btn.closest('.image-wrapper');
+            const carousel = wrapper.querySelector('.card-carousel');
+            const images = carousel.querySelectorAll('.card-img');
+            const total = images.length;
+            if (total <= 1) return;
+
+            const itemWidth = carousel.getBoundingClientRect().width;
+            let current = Math.round(carousel.scrollLeft / itemWidth);
+            let next = current + direction;
+            if (next < 0) next = total - 1;
+            if (next >= total) next = 0;
+
+            carousel.scrollTo({ left: next * itemWidth, behavior: 'smooth' });
+            
+            const dots = wrapper.querySelectorAll('.carousel-dot');
+            dots.forEach((dot, idx) => dot.classList.toggle('active', idx === next));
+        }
+
+        function jumpToSlide(dot, targetIndex) {
+            const wrapper = dot.closest('.image-wrapper');
+            const carousel = wrapper.querySelector('.card-carousel');
+            const itemWidth = carousel.getBoundingClientRect().width;
+            carousel.scrollTo({ left: targetIndex * itemWidth, behavior: 'smooth' });
+            
+            const dots = wrapper.querySelectorAll('.carousel-dot');
+            dots.forEach((d, idx) => d.classList.toggle('active', idx === targetIndex));
+        }
+
+        function updateDotsOnScroll(carousel) {
+            const wrapper = carousel.closest('.image-wrapper');
+            const dots = wrapper.querySelectorAll('.carousel-dot');
+            const itemWidth = carousel.getBoundingClientRect().width;
+            if (itemWidth === 0) return;
+            const index = Math.round(carousel.scrollLeft / itemWidth);
+            dots.forEach((dot, idx) => dot.classList.toggle('active', idx === index));
+        }
+    </script>
+</body>
+</html>
