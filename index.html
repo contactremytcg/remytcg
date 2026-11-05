@@ -70,15 +70,50 @@
 
         .container { max-width: 1560px; width: 95%; margin: 0 auto; padding: 5px 0; flex-grow: 1; box-sizing: border-box; }
         
-        .filters { display: flex; gap: 12px; max-width: 750px; margin: 0 auto 25px auto; justify-content: center; flex-wrap: wrap;}
-        .search-bar, .category-select { padding: 11px 20px; border-radius: 50px; border: 1px solid rgba(255, 255, 255, 0.12); background: #17181c; color: white; font-size: 0.92em; outline: none; transition: border-color 0.3s; }
-        .search-bar:focus, .category-select:focus { border-color: #FF6A00; }
-        .search-bar { flex-grow: 1; min-width: 240px;}
-        .category-select { cursor: pointer; appearance: none; padding-right: 40px; background-image: url('data:image/svg+xml;utf8,<svg fill="%23FF6A00" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); background-repeat: no-repeat; background-position: right 10px center; }
+        /* SEARCH & QUICK FILTER PILLS */
+        .search-container { max-width: 600px; margin: 0 auto 15px auto; }
+        .search-bar { width: 100%; box-sizing: border-box; padding: 12px 20px; border-radius: 50px; border: 1px solid rgba(255, 255, 255, 0.12); background: #17181c; color: white; font-size: 0.92em; outline: none; transition: border-color 0.3s; }
+        .search-bar:focus { border-color: #FF6A00; }
+
+        .filter-pills { 
+            display: flex; 
+            justify-content: center; 
+            gap: 8px; 
+            flex-wrap: wrap; 
+            margin-bottom: 12px; 
+        }
+        .filter-pill {
+            background: #17181c;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: #888;
+            padding: 7px 16px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            user-select: none;
+        }
+        .filter-pill:hover { color: #fff; border-color: #FF6A00; }
+        .filter-pill.active { background: #FF6A00; color: #fff; border-color: #FF6A00; }
+
+        /* LIVE STATS BADGE */
+        .catalog-stats {
+            text-align: center;
+            font-size: 0.78em;
+            color: #666;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        .catalog-stats span {
+            color: #2ecc71;
+            font-weight: 700;
+        }
         
         .era-section { margin-bottom: 35px; }
-        .era-header { margin-bottom: 14px; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 8px; display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+        .era-header { margin-bottom: 14px; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 8px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
         .era-title { font-size: 1.55em; font-weight: 900; text-transform: uppercase; letter-spacing: -0.5px; margin: 0; color: #fff; }
+        .era-count-badge { background: rgba(255, 255, 255, 0.06); color: #888; font-size: 0.55em; padding: 2px 8px; border-radius: 12px; font-weight: 700; vertical-align: middle; }
         .era-subtitle { font-size: 0.8em; color: #FF6A00; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin: 0; }
 
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(235px, 1fr)); gap: 15px; }
@@ -232,7 +267,6 @@
             background: transparent !important;
         }
 
-        /* BOUTON ÉLÉGANT POUR ÉTENDRE LES OUT OF STOCK */
         .btn-expand-archive {
             grid-column: 1 / -1;
             display: flex;
@@ -296,6 +330,31 @@
         .btn-modal-main { display: block; width: 100%; background: linear-gradient(135deg, #FF6A00 0%, #FF8533 100%); color: #fff; padding: 15px 20px; text-decoration: none; font-weight: 900; border-radius: 8px; font-size: 1.02em; margin-bottom: 10px; border: none; cursor: pointer; }
         .btn-modal-secondary { display: block; width: 100%; background: transparent; color: #888; padding: 8px; text-decoration: underline; font-weight: 700; border: none; font-size: 0.85em; cursor: pointer; font-family: inherit; }
 
+        /* BOUTON FLOTTANT BACK TO TOP */
+        .btn-back-to-top {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: rgba(23, 24, 28, 0.9);
+            border: 1px solid #FF6A00;
+            color: #FF6A00;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            cursor: pointer;
+            z-index: 99;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        .btn-back-to-top.visible { opacity: 1; visibility: visible; }
+        .btn-back-to-top:hover { background: #FF6A00; color: #fff; transform: translateY(-3px); }
+
         @media (max-width: 992px) {
             .faq-grid-3 { grid-template-columns: 1fr; }
         }
@@ -317,7 +376,7 @@
             .btn-pc { display: none; }
             .btn-mobile { display: flex; background: #111215; color: #FF6A00; border: 1.5px solid #FF6A00; padding: 0; font-size: 0.78em; }
             .btn-notify.btn-mobile { display: flex; border-color: #444; color: #aaa;}
-            .btn-backup.btn-mobile { display: block; background: transparent; border-color: #333; color: #888; font-size: 0.74em;}
+            .btn-backup.btn-mobile { display: flex; background: transparent; border-color: #333; color: #888; font-size: 0.74em;}
             .footer-pro-bottom { flex-direction: column; text-align: center; justify-content: center; }
             .footer-pro-socials { gap: 15px;}
             .process-container { flex-direction: column; gap: 10px; padding: 12px;}
@@ -326,6 +385,8 @@
     </style>
 </head>
 <body>
+    <button class="btn-back-to-top" id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Back to top">↑</button>
+
     <div id="welcomeModal" class="modal-overlay">
         <div class="modal-content">
             <h2>Before you order... 🛑</h2>
@@ -382,12 +443,21 @@
     </div>
 
     <div id="shop" class="container">
-        <div class="filters">
-            <input type="text" id="search" class="search-bar" placeholder="🔍 Search for a booster, a box..." onkeyup="filtrer()">
-            <select id="category-filter" class="category-select" onchange="filtrer()">
-                <option value="">All Categories & Eras</option>
-            </select>
+        <div class="search-container">
+            <input type="text" id="search" class="search-bar" placeholder="🔍 Search booster box, 30th UPC, figures..." onkeyup="filtrer()">
         </div>
+        <div class="filter-pills" id="filterPills">
+            <button class="filter-pill active" onclick="selectPill(this, '')">All Releases</button>
+            <button class="filter-pill" onclick="selectPill(this, '30th Anniversary Collection')">30th Anniversary</button>
+            <button class="filter-pill" onclick="selectPill(this, 'Scarlet & Violet Era')">Scarlet & Violet</button>
+            <button class="filter-pill" onclick="selectPill(this, 'Gem Packs')">Gem Packs</button>
+            <button class="filter-pill" onclick="selectPill(this, 'Collect 151 Series')">151 Series</button>
+            <button class="filter-pill" onclick="selectPill(this, 'Sword & Shield Era')">Sword & Shield</button>
+            <button class="filter-pill" onclick="selectPill(this, 'Festival Gift Boxes')">Festival Boxes</button>
+            <button class="filter-pill" onclick="selectPill(this, 'Coin Bags & Accessories')">Coin Bags</button>
+            <button class="filter-pill" onclick="selectPill(this, 'Blind Boxes & Figures')">Figures</button>
+        </div>
+        <div class="catalog-stats" id="catalogStats"></div>
         <div id="catalogue"></div>
     </div>
 
@@ -522,6 +592,8 @@
     <script src="stock.js"></script>
     <script>
         let pendingAction = null; 
+        let activePillCategory = '';
+
         function triggerProductAction(type, data, element = null) {
             const hasSeenPopup = localStorage.getItem('remytcg_setup_done');
             if (hasSeenPopup === 'true') {
@@ -594,7 +666,6 @@
             dots.forEach((dot, idx) => dot.classList.toggle('active', idx === index));
         }
 
-        // ACCORDÉON DES OUT OF STOCK PAR SECTION
         function toggleArchive(btn, secId) {
             const hiddenContainer = document.getElementById(secId);
             const isHidden = hiddenContainer.style.display === 'none' || hiddenContainer.style.display === '';
@@ -607,6 +678,23 @@
                 btn.innerHTML = `📦 View ${count} Archived / Sold Out Item${count > 1 ? 's' : ''} (Click to expand)`;
             }
         }
+
+        function selectPill(btn, cat) {
+            document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+            activePillCategory = cat;
+            filtrer();
+        }
+
+        // BOUTON BACK TO TOP AU DÉFILEMENT
+        window.addEventListener('scroll', () => {
+            const btn = document.getElementById('backToTop');
+            if (window.scrollY > 450) {
+                btn.classList.add('visible');
+            } else {
+                btn.classList.remove('visible');
+            }
+        });
     </script>
 </body>
 </html>
