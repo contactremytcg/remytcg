@@ -341,7 +341,7 @@ const produits = [
     },
 
     // =========================================================================
-    // SECTION 5 : SWORD & SHIELD ERA (DU CS6 AU CS1 SANS DOUBLONS)
+    // SECTION 5 : SWORD & SHIELD ERA (DU CS6 AU CS1)
     // =========================================================================
     {
         section: "Sword & Shield Era",
@@ -351,7 +351,7 @@ const produits = [
         taobaoId: "",
         taobaoId2: "",
         images: ["https://main-wordpress-bucket-production.lon1.digitaloceanspaces.com/2026/04/invictatcg-pokemon-chinese-shadow-of-the-blue-sea-lugia-CS6BC-simplified-chinese-jumbo-booster-box.png"],
-        statut: "coming_soon"
+        statut: "out_of_stock"
     },
     {
         section: "Sword & Shield Era",
@@ -361,67 +361,71 @@ const produits = [
         taobaoId: "",
         taobaoId2: "",
         images: ["https://main-wordpress-bucket-production.lon1.digitaloceanspaces.com/2026/04/invictatcg-pokemon-chinese-shadow-of-the-blue-sea-giratina-CS6BC-simplified-chinese-jumbo-booster-box.png"],
-        statut: "coming_soon"
+        statut: "out_of_stock"
     },
     {
         section: "Sword & Shield Era",
         categorie: "Sword & Shield Era",
         nom: "Brave Stars Display (CS5A - Typhlosion)",
         description: "Factory sealed display box featuring Hisuian Typhlosion artwork.",
-        taobaoId: "",
+        taobaoId: "1077898091295",
         taobaoId2: "",
         images: ["https://lh5.googleusercontent.com/proxy/mKV2hSixeFfM7QOQHyUP9MiUcRcMCQUadu_1rAWx2lAxw2sePmabqRuf3SnwE1b7PXnNME9uL7RcvYnuMnB5WW3pDE8aQroKOYkFCsGHkp-3O_ebCzwCXFFiGNV6CGxbLzkyZ1rBpg0yLdIEoYTsloF9L31bwlfsbwuhtJw"],
-        statut: "coming_soon"
+        fournisseur: "Pingtouge TCG"
     },
     {
         section: "Sword & Shield Era",
         categorie: "Sword & Shield Era",
         nom: "Brave Stars Display (CS5B - Lucario)",
         description: "Factory sealed display box featuring Lucario artwork.",
-        taobaoId: "",
+        taobaoId: "1077898091295",
         taobaoId2: "",
         images: ["https://lh4.googleusercontent.com/proxy/Mh5AMHlVCKUvnc3joPEXDkhtY79z-5yAohzcczgYbbjrBzKWkeGJ_VX4WWwsjDul_qPWfwGEosWZftLTBjdbW0KZfP3TrtRmWouCj6E1-DQlABr5U54IHywOKpzW4pKyZDh9jL4iyYEswSQXNFIbqGifhzbvIV9jiX3iFA6sBmYeClZsXpMxzaWVF4qsag"],
-        statut: "coming_soon"
+        fournisseur: "Pingtouge TCG"
     },
     {
         section: "Sword & Shield Era",
         categorie: "Sword & Shield Era",
         nom: "Nine Colors Gathering (CS4A - Umbreon)",
         description: "Factory sealed display box featuring Eeveelutions and Umbreon.",
-        taobaoId: "",
-        taobaoId2: "",
+        taobaoId: "1038724485132",
+        taobaoId2: "767333963100",
         images: ["https://lh3.googleusercontent.com/proxy/BGbaaxN3iStHvlwH1Au_E8Zj0YnmBaCPWX_4UzlBEekNSz9n7libOy4Jl54qAJaMQsuZ8VafNDAiuHKAnaPnkSF9na_nglyipJHqOnJigtXW9MYazYkZlLDceLPUwgskfC7Jn1KI1XauvKIkjKLEADYI41sXDRcZ9tZzzuyGcA"],
-        statut: "coming_soon"
+        fournisseur: "Pingtouge TCG",
+        fournisseurBackup: "DunDun TCG"
     },
     {
         section: "Sword & Shield Era",
         categorie: "Sword & Shield Era",
         nom: "Nine Colors Gathering (CS4B - Mew)",
         description: "Factory sealed display box featuring Mew and alternate arts.",
-        taobaoId: "",
-        taobaoId2: "",
+        taobaoId: "1038724485132",
+        taobaoId2: "767333963100",
         images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDRDWQkbnJpQwB8N2F7VQs5u6BJIGUT_2Xu9eQv9raaTykMsOJuIMtPZU&s=10"],
-        statut: "coming_soon"
+        fournisseur: "Pingtouge TCG",
+        fournisseurBackup: "DunDun TCG"
     },
     {
         section: "Sword & Shield Era",
         categorie: "Sword & Shield Era",
         nom: "Primordial Arts Display (CS3A - Venusaur)",
         description: "Factory sealed display box featuring Venusaur / Florizarre.",
-        taobaoId: "",
-        taobaoId2: "",
+        taobaoId: "1039871568880",
+        taobaoId2: "759219454349",
         images: ["https://monsterscollectors.com/wp-content/uploads/2025/11/Caja-de-sobres-Pokemon-Primordial-Arts-Overgrow-Chino-1.png"],
-        statut: "coming_soon"
+        fournisseur: "Pingtouge TCG",
+        fournisseurBackup: "DunDun TCG"
     },
     {
         section: "Sword & Shield Era",
         categorie: "Sword & Shield Era",
         nom: "Primordial Arts Display (CS3B - Blastoise)",
         description: "Factory sealed display box featuring Blastoise / Tortank.",
-        taobaoId: "",
-        taobaoId2: "",
+        taobaoId: "1039871568880",
+        taobaoId2: "759219454349",
         images: ["https://pandacollecting.com/wp-content/uploads/2026/05/jumbo.png"],
-        statut: "coming_soon"
+        fournisseur: "Pingtouge TCG",
+        fournisseurBackup: "DunDun TCG"
     },
     {
         section: "Sword & Shield Era",
@@ -431,7 +435,7 @@ const produits = [
         taobaoId: "",
         taobaoId2: "",
         images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8dxljBJH77sHgfqswS7C1eMrT-6i_lIhBRSbPD3wH_Tywxf6PQI9APtWZ&s=10"],
-        statut: "coming_soon"
+        statut: "out_of_stock"
     },
     {
         section: "Sword & Shield Era",
@@ -441,7 +445,7 @@ const produits = [
         taobaoId: "",
         taobaoId2: "",
         images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwACRITnyb1RyvuzvALQgteVdYzvLacz4eIlgJIBRpZR6g_ae9TgozwZQ&s=10"],
-        statut: "coming_soon"
+        statut: "out_of_stock"
     },
     {
         section: "Sword & Shield Era",
@@ -451,7 +455,7 @@ const produits = [
         taobaoId: "",
         taobaoId2: "",
         images: ["https://cpop.ch/1934-large_default/pokemon-simplified-chinese-cs1a-c-jumbo-booster.jpg"],
-        statut: "coming_soon"
+        statut: "out_of_stock"
     },
     {
         section: "Sword & Shield Era",
@@ -461,7 +465,7 @@ const produits = [
         taobaoId: "",
         taobaoId2: "",
         images: ["https://cpop.ch/1937-large_default/pokemon-simplified-chinese-cs1b-c-jumbo-booster.jpg"],
-        statut: "coming_soon"
+        statut: "out_of_stock"
     },
 
     // =========================================================================
