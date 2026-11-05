@@ -43,26 +43,27 @@ const produits = [
         nom: "Umbreon & Espeon UPC Box",
         description: "Contains: Ultimate Premium Collection with Eeveelution ex promos, exclusive playmat, deck boxes, and multiple booster packs.",
         taobaoId: "1081612197981",
-        taobaoId2: "",
+        taobaoId2: "1077143359404",
         images: [
             "https://www.yumecards.ca/cdn/shop/files/Product-2026-09-06T091809.798.jpg?v=1788700962",
             "https://static.wixstatic.com/media/11a56d_c16d88f83b554e5ca233378f9ca01c95~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11a56d_c16d88f83b554e5ca233378f9ca01c95~mv2.jpg"
         ],
         badge: { text: "⚠️ Low Stock", color: "#f39c12" },
-        fournisseur: "Panda"
+        fournisseur: "Panda",
+        fournisseurBackup: "AmongUs"
     },
     {
         categorie: "30th Anniversary",
         nom: "Charizard Figure Box",
         description: "Contains: 1x Exclusive Charizard Figure, multiple Promo cards (incl. Charizard ex), and assorted Anniversary booster packs.",
         taobaoId: "1078493401671",
-        taobaoId2: "",
+        taobaoId2: "1075622019018",
         images: [
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ujY7LxSFCuTbsYIDy-nzNPJNsdUKHIzHZcFeUz944A&s=10",
             "https://www.bescards.com/cdn/shop/files/16017252548952-2c85b35689e1b991472aa902bfcf7cd2d1f8b144.webp?v=1789744309"
         ],
-        isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai"
+        fournisseur: "Panda",
+        fournisseurBackup: "AmongUs"
     },
     {
         categorie: "30th Anniversary",
@@ -244,12 +245,13 @@ const produits = [
         nom: "2026 Mid-Autumn Gift Box",
         description: "Contains: Exclusive 2026 Mid-Autumn festival promotional items and packs.",
         taobaoId: "1071726804171",
-        taobaoId2: "",
+        taobaoId2: "1071680335651",
         images: [
             "https://collectorstore.com/cdn/shop/files/CollectorStore00003_867dd20e-c23a-4eb5-805f-61f317dc99b0.jpg?v=1789052091&width=990",
             "https://card-binder.com/cdn/shop/files/Pokemon-Mid-Autumn-Festival-Gift-Box-Simplified-Chinese-contents.webp?v=1787913719&width=1500"
         ],
-        fournisseur: "Panda"
+        fournisseur: "Panda",
+        fournisseurBackup: "AmongUs"
     },
     {
         categorie: "Premium Collection Boxes",
@@ -344,7 +346,6 @@ const produits = [
         taobaoId2: "",
         images: [
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxa6HqnsRfMAzQN6evqXrYdwe_Fq0syjwNLYsE72-9_w&s=10",
-            "https://ae-pic-a1.aliexpress-media.com/kf/S12cb4b8e79af4815936a842786e80018z.jpg",
             "https://www.tcghobby.com/cdn/shop/files/Simplified_Chinese_Pokemon_Ogerpon_Hearthflame_Gift_Box_Set.webp?v=1779209745&width=645"
         ],
         isOfficial: true,
@@ -354,6 +355,15 @@ const produits = [
     // ==========================================
     // ACCESSORIES & COIN BAGS
     // ==========================================
+    {
+        categorie: "Accessories",
+        nom: "Stellar Crystal Coin Bag",
+        description: "Contains: 3x Stellar Crystal booster packs and 1x Exclusive themed collector badge/coin.",
+        taobaoId: "1053719752963",
+        taobaoId2: "",
+        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Stellar+Crystal+Coin+Bag"],
+        fournisseur: "AmongUs"
+    },
     {
         categorie: "Accessories",
         nom: "Chasing Glory Coin Bag",
@@ -400,28 +410,32 @@ const produits = [
         categorie: "Gem Packs",
         nom: "Gem Pack Vol. 2",
         description: "Contains: Full factory-sealed display box. Jumbo booster packs with guaranteed holo hits per pack.",
-        taobaoId: "932678630102",
-        taobaoId2: "",
-        images: ["https://m.media-amazon.com/images/I/51+kPL0qduL.jpg"]
+        taobaoId: "1038965852696",
+        taobaoId2: "932678630102",
+        images: ["https://m.media-amazon.com/images/I/51+kPL0qduL.jpg"],
+        fournisseur: "AmongUs",
+        fournisseurBackup: "Panda"
     },
     {
         categorie: "Gem Packs",
         nom: "Gem Pack Vol. 3",
         description: "Contains: Full factory-sealed display box. Jumbo booster packs with guaranteed holo hits per pack.",
         taobaoId: "980697249084",
-        taobaoId2: "",
+        taobaoId2: "1039895020099",
         images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUmoBQZ-Tg4lSqbjGr8VX3w-v8xzRaFsq9_HL5LCq2kFeJpnMO1km0xeoX&s=10"],
-        fournisseur: "Panda"
+        fournisseur: "Panda",
+        fournisseurBackup: "AmongUs"
     },
     {
         categorie: "Gem Packs",
         nom: "Gem Pack Vol. 4",
         description: "Contains: Full factory-sealed display box. Jumbo booster packs with guaranteed holo hits per pack.",
         taobaoId: "1019772789105",
-        taobaoId2: "1036462263685", 
+        taobaoId2: "1036427603877", 
         images: ["https://spoilsandloot.com/cdn/shop/files/chinese-gem-pack-vol-4-pokemon-booster-box.webp?v=1774588957"],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai (Backup: AmongUs)"
+        fournisseur: "Pokemon Store Shanghai",
+        fournisseurBackup: "AmongUs"
     },
     {
         categorie: "Gem Packs",
@@ -526,9 +540,10 @@ const produits = [
         nom: "Reward Round (CSV4)",
         description: "Contains: 30 booster packs (5 cards/pack). Factory sealed display box.",
         taobaoId: "1021280321306",
-        taobaoId2: "",
+        taobaoId2: "1036444463449",
         images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSztHore7cjIXIaCEjlnPeenDehZZb9N-jrM2zQrArON31YbNnEW8eUiLA&s=10"],
-        fournisseur: "Panda"
+        fournisseur: "Panda",
+        fournisseurBackup: "AmongUs"
     },
 
     // ==========================================
@@ -564,8 +579,59 @@ const produits = [
         nom: "Collect 151 Journey",
         description: "Contains: 20 booster packs. Factory sealed display box from the highly demanded 151 set.",
         taobaoId: "899608090307",
+        taobaoId2: "1039895020099",
+        images: ["https://lh6.googleusercontent.com/proxy/rDdWYwY6yLcBtTbQbQ5CzcCqmcUCUs-9ebr0zXjK2IisW3SqfJE6PWm99SUGDmKabd7M7HkgGpwog6F0T4g1c19Rov_ZzKlepN3P7rInxo9J39EJt9oRnic-HqVKTw_5mr6D"],
+        fournisseur: "Panda",
+        fournisseurBackup: "AmongUs"
+    },
+
+    // ==========================================
+    // PLACEHOLDERS / UPCOMING RELEASES
+    // ==========================================
+    {
+        categorie: "Upcoming Drops",
+        nom: "Mew Booster Box",
+        description: "Contains: Factory sealed booster box featuring Mew. Coming soon to RemyTCG.",
+        taobaoId: "",
         taobaoId2: "",
-        images: ["https://lh6.googleusercontent.com/proxy/rDdWYwY6yLcBtTbQbQ5CzcCqmcUCUs-9ebr0zXjK2IisW3SqfJE6PWm99SUGDmKabd7M7HkgGpwog6F0T4g1c19Rov_ZzKlepN3P7rInxo9J39EJt9oRnic-HqVKTw_5mr6D"]
+        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Mew+Booster+Box"],
+        statut: "coming_soon"
+    },
+    {
+        categorie: "Upcoming Drops",
+        nom: "Umbreon Booster Box",
+        description: "Contains: Factory sealed booster box featuring Umbreon. Coming soon to RemyTCG.",
+        taobaoId: "",
+        taobaoId2: "",
+        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Umbreon+Booster+Box"],
+        statut: "coming_soon"
+    },
+    {
+        categorie: "Upcoming Drops",
+        nom: "Typhlosion Box",
+        description: "Contains: Factory sealed special collection box featuring Typhlosion.",
+        taobaoId: "",
+        taobaoId2: "",
+        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Typhlosion+Box"],
+        statut: "coming_soon"
+    },
+    {
+        categorie: "Upcoming Drops",
+        nom: "Lugia Box",
+        description: "Contains: Factory sealed special collection box featuring Lugia.",
+        taobaoId: "",
+        taobaoId2: "",
+        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Lugia+Box"],
+        statut: "coming_soon"
+    },
+    {
+        categorie: "Upcoming Drops",
+        nom: "Giratina Box",
+        description: "Contains: Factory sealed special collection box featuring Giratina.",
+        taobaoId: "",
+        taobaoId2: "",
+        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Giratina+Box"],
+        statut: "coming_soon"
     }
 ];
 
@@ -585,8 +651,15 @@ function afficher(liste) {
             ? `<svg class="official-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" title="Official Source"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h8m4 0h8"></path><circle cx="12" cy="12" r="2"></circle></svg>` 
             : '';
 
-        let fournisseurHtml = p.fournisseur 
-            ? `<div style="font-size: 0.7em; color: #777; font-style: italic; margin-bottom: 10px;">Sourceur : ${p.fournisseur}</div>` 
+        let fournisseurTexte = '';
+        if (p.fournisseur && p.fournisseurBackup) {
+            fournisseurTexte = `Source : ${p.fournisseur} | Backup : ${p.fournisseurBackup}`;
+        } else if (p.fournisseur) {
+            fournisseurTexte = `Source : ${p.fournisseur}`;
+        }
+
+        let fournisseurHtml = fournisseurTexte 
+            ? `<div style="font-size: 0.72em; color: #888; font-style: italic; margin-bottom: 10px;">${fournisseurTexte}</div>` 
             : '';
 
         let imagesHtml = '';
@@ -621,7 +694,7 @@ function afficher(liste) {
                 <a href="https://instagram.com/remy.tcg" target="_blank" class="btn-main-card btn-notify">🔔 Follow IG for Drops</a>
                 <a href="https://instagram.com/remy.tcg" target="_blank" class="btn-main-card btn-mobile btn-notify">🔔 Follow IG for Drops</a>
             `;
-        } else if (p.taobaoId === "") {
+        } else if (!p.taobaoId || p.taobaoId.trim() === "") {
             boutonsHtml = `<button class="btn-main-card" style="background: #e74c3c; color: #fff; cursor: not-allowed;">⚠️ ID Missing</button>`;
         } else {
             const taobaoUrlRaw = `https://item.taobao.com/item.htm?id=${p.taobaoId}`;
@@ -632,14 +705,16 @@ function afficher(liste) {
                 <button onclick="triggerProductAction('mobile', '${taobaoUrlRaw}', this)" class="btn-main-card btn-mobile">Copy Link for App</button>
             `;
             
-            const targetTaobaoId2 = (p.taobaoId2 && p.taobaoId2.trim() !== "") ? p.taobaoId2 : "000000000";
-            const taobaoUrlRaw2 = `https://item.taobao.com/item.htm?id=${targetTaobaoId2}`;
-            const sugargooUrl2 = formatSugargooLink(targetTaobaoId2);
-            
-            boutonsHtml += `
-                <button onclick="triggerProductAction('pc', '${sugargooUrl2}')" class="btn-main-card btn-backup btn-pc">Backup Supplier (If Out of Stock)</button>
-                <button onclick="triggerProductAction('mobile', '${taobaoUrlRaw2}', this)" class="btn-main-card btn-backup btn-mobile">Copy Backup Supplier</button>
-            `;
+            // SEULEMENT SI LE BACKUP EXISTE RÉELLEMENT
+            if (p.taobaoId2 && p.taobaoId2.trim() !== "") {
+                const taobaoUrlRaw2 = `https://item.taobao.com/item.htm?id=${p.taobaoId2}`;
+                const sugargooUrl2 = formatSugargooLink(p.taobaoId2);
+                
+                boutonsHtml += `
+                    <button onclick="triggerProductAction('pc', '${sugargooUrl2}')" class="btn-main-card btn-backup btn-pc">Backup Supplier (If Out of Stock)</button>
+                    <button onclick="triggerProductAction('mobile', '${taobaoUrlRaw2}', this)" class="btn-main-card btn-backup btn-mobile">Copy Backup Supplier</button>
+                `;
+            }
         }
 
         container.innerHTML += `
