@@ -18,132 +18,153 @@
         html { scroll-behavior: smooth; }
         body { font-family: 'Inter', sans-serif; background: #111111; color: #fff; margin: 0; padding: 0; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
         
-        .top-nav { background: rgba(17, 17, 17, 0.95); padding: 15px 20px; text-align: center; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #333; backdrop-filter: blur(5px); display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;}
+        .top-nav { background: rgba(17, 17, 17, 0.95); padding: 15px 20px; text-align: center; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #333; backdrop-filter: blur(5px); display: flex; justify-content: center; gap: 25px; flex-wrap: wrap;}
         .top-nav a { color: #fff; text-decoration: none; font-weight: 700; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px; transition: color 0.2s; }
         .top-nav a:hover { color: #FF6A00; }
 
-        .header { background: linear-gradient(135deg, #FF6A00 0%, #CC5500 100%); padding: 40px 20px 40px 20px; text-align: center; color: #fff; position: relative; }
+        .header { background: linear-gradient(135deg, #FF6A00 0%, #CC5500 100%); padding: 35px 20px; text-align: center; color: #fff; position: relative; }
         .logo-container { display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 5px; }
-        .logo-img { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 3px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
-        h1 { margin: 0; font-weight: 900; font-size: 3em; letter-spacing: -1.5px; text-transform: uppercase; line-height: 1.1;}
-        .subtitle { font-weight: 700; font-size: 1.1em; opacity: 0.9; max-width: 600px; margin: 5px auto 0 auto; }
+        .logo-img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 3px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        h1 { margin: 0; font-weight: 900; font-size: 2.8em; letter-spacing: -1.5px; text-transform: uppercase; line-height: 1.1;}
+        .subtitle { font-weight: 700; font-size: 1.05em; opacity: 0.95; max-width: 700px; margin: 5px auto 0 auto; }
         
-        .trust-bar { display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; background: #1c1c1c; padding: 15px 20px; font-size: 0.9em; font-weight: 700; border-bottom: 1px solid #333; }
+        .trust-bar { display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; background: #1c1c1c; padding: 12px 20px; font-size: 0.9em; font-weight: 700; border-bottom: 1px solid #333; }
         .trust-item { display: flex; align-items: center; gap: 8px; color: #ddd; }
         .trust-item svg { color: #FFCB05; }
 
-        .intro-banner { max-width: 900px; width: 90%; margin: 30px auto 30px auto; background: #1c1c1c; border: 2px solid #333; border-radius: 12px; padding: 25px; text-align: left; box-shadow: 0 10px 30px rgba(0,0,0,0.5); position: relative; scroll-margin-top: 80px; box-sizing: border-box; }
-        .intro-banner h2 { color: #FF6A00; margin-top: 0; font-size: 1.4em; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; gap: 10px;}
-        .intro-banner p { color: #ddd; margin-bottom: 15px; font-size: 0.95em; text-align: center;}
-        .btn-main { display: inline-block; background: #FF6A00; color: #fff; padding: 16px 30px; text-decoration: none; font-weight: 900; border-radius: 8px; font-size: 1.1em; transition: transform 0.2s; text-align: center; width: 100%; box-sizing: border-box;}
+        /* BANNIÈRES LARGES & COMPACTES SUR PC */
+        .intro-banner { 
+            max-width: 1560px; 
+            width: 95%; 
+            margin: 25px auto; 
+            background: #1c1c1c; 
+            border: 1px solid #333; 
+            border-radius: 12px; 
+            padding: 20px 30px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            gap: 25px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4); 
+            box-sizing: border-box; 
+        }
+        .intro-banner-text { flex: 1; text-align: left; }
+        .intro-banner-text h2 { color: #FF6A00; margin: 0 0 6px 0; font-size: 1.3em; display: flex; align-items: center; gap: 10px; }
+        .intro-banner-text p { color: #ddd; margin: 0; font-size: 0.95em; }
+        .intro-banner-action { min-width: 280px; flex-shrink: 0; }
+        
+        .btn-main { display: block; background: #FF6A00; color: #fff; padding: 14px 24px; text-decoration: none; font-weight: 900; border-radius: 8px; font-size: 1em; transition: transform 0.2s; text-align: center; box-sizing: border-box; }
         .btn-main:hover { background: #fff; color: #FF6A00; transform: translateY(-2px); }
 
-        .container { max-width: 1400px; width: 95%; margin: 0 auto; padding: 10px; flex-grow: 1; scroll-margin-top: 70px; box-sizing: border-box; }
-        .faq-container { max-width: 1000px; width: 95%; margin: 60px auto 0 auto; padding: 10px; scroll-margin-top: 70px; box-sizing: border-box; }
-        .filters { display: flex; gap: 10px; max-width: 700px; margin: 0 auto 35px auto; justify-content: center; flex-wrap: wrap;}
-        .search-bar, .category-select { padding: 12px 20px; border-radius: 50px; border: 2px solid #333; background: #222; color: white; font-size: 1em; outline: none; transition: border-color 0.3s; }
-        .search-bar { flex-grow: 1; min-width: 200px;}
+        /* CONTENEUR ÉLARGIE POUR REMPLIR L'ÉCRAN */
+        .container { max-width: 1560px; width: 95%; margin: 0 auto; padding: 10px 0; flex-grow: 1; box-sizing: border-box; }
+        
+        .filters { display: flex; gap: 12px; max-width: 750px; margin: 0 auto 35px auto; justify-content: center; flex-wrap: wrap;}
+        .search-bar, .category-select { padding: 12px 20px; border-radius: 50px; border: 2px solid #333; background: #222; color: white; font-size: 0.95em; outline: none; transition: border-color 0.3s; }
+        .search-bar { flex-grow: 1; min-width: 240px;}
         .category-select { cursor: pointer; appearance: none; padding-right: 40px; background-image: url('data:image/svg+xml;utf8,<svg fill="%23FF6A00" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); background-repeat: no-repeat; background-position: right 10px center; }
         
-        .era-section { margin-bottom: 50px; }
-        .era-header { margin-bottom: 20px; border-bottom: 1px solid #2a2a2a; padding-bottom: 12px; display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
-        .era-title { font-size: 1.75em; font-weight: 900; text-transform: uppercase; letter-spacing: -0.5px; margin: 0; color: #fff; }
-        .era-subtitle { font-size: 0.85em; color: #FF6A00; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin: 0; }
+        .era-section { margin-bottom: 45px; }
+        .era-header { margin-bottom: 16px; border-bottom: 1px solid #282828; padding-bottom: 10px; display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+        .era-title { font-size: 1.6em; font-weight: 900; text-transform: uppercase; letter-spacing: -0.5px; margin: 0; color: #fff; }
+        .era-subtitle { font-size: 0.82em; color: #FF6A00; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin: 0; }
 
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
-        .card { background: #1c1c1c; border-radius: 12px; overflow: hidden; border: 1px solid #333; display: flex; flex-direction: column; position: relative; transition: transform 0.2s, border-color 0.2s;}
-        .card:hover { transform: translateY(-5px); border-color: #FF6A00; }
+        /* GRILLE FLUIDE ET DENSE (5-6 ARTICLES PAR LIGNE SUR ÉCRAN ORDINATEUR) */
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(235px, 1fr)); gap: 16px; }
+        .card { background: #1c1c1c; border-radius: 10px; overflow: hidden; border: 1px solid #2d2d2d; display: flex; flex-direction: column; position: relative; transition: transform 0.2s, border-color 0.2s;}
+        .card:hover { transform: translateY(-4px); border-color: #FF6A00; }
         
-        .card-badge { position: absolute; top: 10px; left: 10px; padding: 6px 12px; border-radius: 6px; font-size: 0.75em; font-weight: 900; text-transform: uppercase; color: #fff; z-index: 10; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .card-badge { position: absolute; top: 8px; left: 8px; padding: 5px 10px; border-radius: 6px; font-size: 0.72em; font-weight: 900; text-transform: uppercase; color: #fff; z-index: 10; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
 
-        .image-wrapper { position: relative; height: 200px; background: #fff; border-bottom: 1px solid #333; overflow: hidden; width: 100%; }
+        .image-wrapper { position: relative; height: 190px; background: #fff; border-bottom: 1px solid #282828; overflow: hidden; width: 100%; }
         .card-carousel { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; height: 100%; width: 100%; scrollbar-width: none; }
         .card-carousel::-webkit-scrollbar { display: none; }
         
-        .card-carousel .card-img { flex: 0 0 100%; width: 100%; min-width: 100%; max-width: 100%; scroll-snap-align: start; scroll-snap-stop: always; border-bottom: none; object-fit: contain; background: #fff; padding: 10px; box-sizing: border-box; height: 100%; display: block; }
-        .card-img-single { width: 100%; height: 200px; object-fit: contain; border-bottom: 1px solid #333; background: #fff; padding: 10px; box-sizing: border-box; display: block; }
+        .card-carousel .card-img { flex: 0 0 100%; width: 100%; min-width: 100%; max-width: 100%; scroll-snap-align: start; scroll-snap-stop: always; object-fit: contain; background: #fff; padding: 10px; box-sizing: border-box; height: 100%; display: block; }
+        .card-img-single { width: 100%; height: 190px; object-fit: contain; border-bottom: 1px solid #282828; background: #fff; padding: 10px; box-sizing: border-box; display: block; }
 
-        .carousel-arrow { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(17, 17, 17, 0.75); color: #FF6A00; border: 1px solid #FF6A00; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 900; cursor: pointer; z-index: 9; user-select: none; transition: all 0.2s ease; }
-        .carousel-arrow:hover { background: #FF6A00; color: #fff; transform: translateY(-50%) scale(1.1); }
-        .carousel-arrow.prev { left: 8px; }
-        .carousel-arrow.next { right: 8px; }
+        .carousel-arrow { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(17, 17, 17, 0.75); color: #FF6A00; border: 1px solid #FF6A00; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 900; cursor: pointer; z-index: 9; user-select: none; transition: all 0.2s ease; }
+        .carousel-arrow:hover { background: #FF6A00; color: #fff; }
+        .carousel-arrow.prev { left: 6px; }
+        .carousel-arrow.next { right: 6px; }
 
-        .carousel-dots { position: absolute; bottom: 8px; left: 0; right: 0; display: flex; justify-content: center; gap: 6px; z-index: 8; }
-        .carousel-dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(0, 0, 0, 0.25); cursor: pointer; transition: all 0.2s ease; }
-        .carousel-dot.active { background: #FF6A00; transform: scale(1.35); }
+        .carousel-dots { position: absolute; bottom: 6px; left: 0; right: 0; display: flex; justify-content: center; gap: 5px; z-index: 8; }
+        .carousel-dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(0, 0, 0, 0.25); cursor: pointer; transition: all 0.2s ease; }
+        .carousel-dot.active { background: #FF6A00; transform: scale(1.3); }
 
-        .card-content { padding: 15px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; }
-        .category { font-size: 0.7em; color: #FF6A00; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; display: flex; align-items: center; }
-        .official-icon { width: 11px; height: 11px; margin-left: 6px; opacity: 0.45; transition: opacity 0.2s; }
-        .card:hover .official-icon { opacity: 1; }
+        .card-content { padding: 12px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; }
+        .category { font-size: 0.68em; color: #FF6A00; text-transform: uppercase; font-weight: 700; letter-spacing: 0.8px; display: flex; align-items: center; }
+        .official-icon { width: 11px; height: 11px; margin-left: 6px; opacity: 0.5; }
         
-        .card h3 { margin: 8px 0; font-size: 1.15em; line-height: 1.3; min-height: 3.9em; display: flex; align-items: flex-start; }
-        .card p { color: #aaa; font-size: 0.85em; line-height: 1.4; min-height: 4.2em; margin: 0 0 15px 0; }
+        .card h3 { margin: 6px 0; font-size: 1.05em; line-height: 1.25; min-height: 2.6em; display: flex; align-items: flex-start; }
+        .card p { color: #aaa; font-size: 0.8em; line-height: 1.35; min-height: 2.8em; margin: 0 0 12px 0; }
         
-        .buttons-container { display: flex; flex-direction: column; gap: 8px; margin-top: auto;}
-        .btn-main-card { display: block; width: 100%; padding: 12px 10px; border-radius: 8px; font-weight: 900; font-size: 0.95em; text-align: center; text-decoration: none; transition: transform 0.2s, border-color 0.2s; border: none; font-family: inherit; cursor: pointer; }
+        .buttons-container { display: flex; flex-direction: column; gap: 6px; margin-top: auto;}
+        .btn-main-card { display: block; width: 100%; padding: 10px 8px; border-radius: 6px; font-weight: 900; font-size: 0.88em; text-align: center; text-decoration: none; border: none; font-family: inherit; cursor: pointer; transition: transform 0.2s; }
         .btn-pc { background: #FFCB05; color: #111; }
         .btn-pc:hover { background: #fff; transform: translateY(-2px); }
-        .btn-notify { background: #333; color: #fff; border: 1px solid #555; }
-        .btn-notify:hover { border-color: #FF6A00; color: #FF6A00; }
-        .btn-backup { background: transparent; color: #aaa; border: 1px solid #444; padding: 10px; font-size: 0.85em; }
+        .btn-notify { background: #292929; color: #fff; border: 1px solid #444; }
+        .btn-backup { background: transparent; color: #aaa; border: 1px solid #3a3a3a; padding: 8px; font-size: 0.8em; }
         .btn-backup:hover { color: #fff; border-color: #FFCB05; }
         .btn-mobile { display: none; }
 
-        .faq-item { background: #1c1c1c; border: 1px solid #333; border-radius: 12px; padding: 25px; margin-bottom: 20px; }
-        .faq-item h3 { color: #FF6A00; margin-top: 0; font-size: 1.2em; margin-bottom: 10px;}
-        .faq-item p, .faq-item ul { color: #aaa; margin-bottom: 10px; font-size: 0.9em; line-height: 1.5;}
+        /* FAQ ÉPURÉE SUR GRAND ÉCRAN */
+        .faq-container { max-width: 1560px; width: 95%; margin: 50px auto 0 auto; padding: 10px 0; box-sizing: border-box; }
+        .faq-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap: 20px; }
+        .faq-item { background: #1c1c1c; border: 1px solid #2d2d2d; border-radius: 10px; padding: 22px; margin-bottom: 0; box-sizing: border-box; }
+        .faq-item h3 { color: #FF6A00; margin-top: 0; font-size: 1.15em; margin-bottom: 10px;}
+        .faq-item p, .faq-item ul { color: #aaa; margin-bottom: 8px; font-size: 0.88em; line-height: 1.45;}
         .faq-item ul { padding-left: 20px; }
-        .faq-item li { margin-bottom: 6px; }
-        .faq-item strong { color: #fff; }
+        .faq-item li { margin-bottom: 5px; }
 
-        .process-container { display: flex; align-items: center; justify-content: space-between; margin-top: 15px; background: #222; padding: 20px; border-radius: 10px; border: 1px solid #333; gap: 10px; }
+        .process-container { display: flex; align-items: center; justify-content: space-between; margin-top: 15px; background: #222; padding: 16px; border-radius: 8px; border: 1px solid #333; gap: 10px; }
         .process-step { display: flex; flex-direction: column; align-items: center; text-align: center; flex: 1; }
-        .process-icon { width: 45px; height: 45px; background: #1c1c1c; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 10px; border: 2px solid #FF6A00; color: #FF6A00; }
-        .process-icon svg { width: 22px; height: 22px; stroke: currentColor; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-        .process-step h4 { color: #fff; margin: 0 0 5px 0; font-size: 1em; }
-        .process-step p { color: #aaa; font-size: 0.8em; margin: 0; line-height: 1.3; }
-        .process-arrow { color: #FF6A00; font-size: 1.2em; font-weight: bold; }
+        .process-icon { width: 40px; height: 40px; background: #1c1c1c; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 8px; border: 2px solid #FF6A00; color: #FF6A00; }
+        .process-icon svg { width: 20px; height: 20px; stroke: currentColor; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+        .process-step h4 { color: #fff; margin: 0 0 4px 0; font-size: 0.95em; }
+        .process-step p { color: #aaa; font-size: 0.78em; margin: 0; line-height: 1.3; }
+        .process-arrow { color: #FF6A00; font-size: 1.1em; font-weight: bold; }
 
-        .footer-pro { background: #0a0a0a; border-top: 1px solid #222; padding: 50px 20px 20px 20px; font-size: 0.85em; margin-top: auto; scroll-margin-top: 50px;}
-        .footer-pro-inner { max-width: 1400px; margin: 0 auto; }
-        .footer-pro-top { display: flex; flex-direction: column; align-items: center; gap: 15px; margin-bottom: 30px; }
+        .footer-pro { background: #0a0a0a; border-top: 1px solid #222; padding: 45px 20px 20px 20px; font-size: 0.85em; margin-top: auto; }
+        .footer-pro-inner { max-width: 1560px; margin: 0 auto; }
+        .footer-pro-top { display: flex; flex-direction: column; align-items: center; gap: 12px; margin-bottom: 25px; }
         .footer-pro-logo-container { display: flex; align-items: center; gap: 12px; }
-        .footer-pro-img { width: 35px; height: 35px; border-radius: 50%; border: 2px solid #FF6A00; object-fit: cover; }
-        .footer-pro-logo { font-size: 1.8em; font-weight: 900; color: #FF6A00; letter-spacing: 1px; margin: 0;}
-        .footer-pro-socials { display: flex; gap: 25px; margin-top: 10px; }
-        .footer-pro-socials a { color: #aaa; text-decoration: none; display: flex; align-items: center; gap: 8px; font-weight: 700; transition: color 0.2s; }
+        .footer-pro-img { width: 32px; height: 32px; border-radius: 50%; border: 2px solid #FF6A00; object-fit: cover; }
+        .footer-pro-logo { font-size: 1.6em; font-weight: 900; color: #FF6A00; letter-spacing: 1px; margin: 0;}
+        .footer-pro-socials { display: flex; gap: 25px; }
+        .footer-pro-socials a { color: #aaa; text-decoration: none; display: flex; align-items: center; gap: 8px; font-weight: 700; }
         .footer-pro-socials a:hover { color: #FF6A00; }
-        .footer-pro-socials svg { width: 18px; height: 18px; }
-        .footer-pro-disclaimer { text-align: center; color: #666; font-size: 0.85em; max-width: 900px; margin: 0 auto 30px auto; line-height: 1.5; }
-        .footer-pro-disclaimer strong { color: #888; }
-        .footer-pro-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; padding-top: 20px; border-top: 1px solid #1c1c1c; }
+        .footer-pro-socials svg { width: 17px; height: 17px; }
+        .footer-pro-disclaimer { text-align: center; color: #666; font-size: 0.82em; max-width: 1000px; margin: 0 auto 25px auto; line-height: 1.5; }
+        .footer-pro-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; padding-top: 18px; border-top: 1px solid #1c1c1c; }
         .footer-copyright { color: #666; }
         .payment-row { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
-        .payment-badge { background: #fff; width: 50px; height: 32px; border-radius: 4px; display: flex; justify-content: center; align-items: center; padding: 4px; box-sizing: border-box; }
+        .payment-badge { background: #fff; width: 46px; height: 30px; border-radius: 4px; display: flex; justify-content: center; align-items: center; padding: 3px; box-sizing: border-box; }
         .payment-badge img { max-width: 100%; max-height: 100%; object-fit: contain; }
-        
-        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(8px); justify-content: center; align-items: center; z-index: 9999; opacity: 0; transition: opacity 0.3s ease; }
-        .modal-content { background: #1c1c1c; border: 2px solid #FF6A00; border-radius: 16px; padding: 40px 30px; max-width: 500px; width: 90%; text-align: center; box-shadow: 0 20px 50px rgba(255, 106, 0, 0.2); }
-        .modal-content h2 { color: #FF6A00; margin-top: 0; font-size: 1.8em; line-height: 1.2; }
-        .modal-content p { color: #ddd; font-size: 1.05em; margin-bottom: 25px; }
-        .modal-content strong { color: #fff; }
-        .btn-modal-main { display: block; width: 100%; background: #FF6A00; color: #fff; padding: 18px 20px; text-decoration: none; font-weight: 900; border-radius: 8px; font-size: 1.1em; margin-bottom: 15px; border: none; cursor: pointer; transition: 0.2s; }
-        .btn-modal-main:hover { background: #fff; color: #FF6A00; transform: translateY(-2px); }
-        .btn-modal-secondary { display: block; width: 100%; background: transparent; color: #888; padding: 12px; text-decoration: underline; font-weight: 700; border: none; font-size: 0.9em; cursor: pointer; font-family: inherit; }
-        .btn-modal-secondary:hover { color: #fff; }
 
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(8px); justify-content: center; align-items: center; z-index: 9999; opacity: 0; transition: opacity 0.3s ease; }
+        .modal-content { background: #1c1c1c; border: 2px solid #FF6A00; border-radius: 16px; padding: 35px 25px; max-width: 480px; width: 90%; text-align: center; box-shadow: 0 20px 50px rgba(255, 106, 0, 0.2); }
+        .modal-content h2 { color: #FF6A00; margin-top: 0; font-size: 1.7em; }
+        .modal-content p { color: #ddd; font-size: 1em; margin-bottom: 20px; }
+        .btn-modal-main { display: block; width: 100%; background: #FF6A00; color: #fff; padding: 16px 20px; text-decoration: none; font-weight: 900; border-radius: 8px; font-size: 1.05em; margin-bottom: 12px; border: none; cursor: pointer; }
+        .btn-modal-secondary { display: block; width: 100%; background: transparent; color: #888; padding: 10px; text-decoration: underline; font-weight: 700; border: none; font-size: 0.88em; cursor: pointer; font-family: inherit; }
+
+        /* PRESERVATION STRICTE DE LA VERSION MOBILE */
         @media (max-width: 768px) {
             .top-nav { gap: 10px; padding: 10px; }
             .top-nav a { font-size: 0.72em; }
-            .trust-bar { flex-direction: column; gap: 10px; padding: 12px; font-size: 0.8em; align-items: flex-start;}
-            .grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-            .card h3 { font-size: 0.85em; min-height: 3.75em; }
-            .card p { font-size: 0.72em; min-height: 4.05em; }
+            .trust-bar { flex-direction: column; gap: 8px; padding: 12px; font-size: 0.78em; align-items: flex-start;}
+            .intro-banner { flex-direction: column; text-align: center; padding: 18px; }
+            .intro-banner-text { text-align: center; }
+            .intro-banner-action { width: 100%; }
+            .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+            .card h3 { font-size: 0.82em; min-height: 3.5em; }
+            .card p { font-size: 0.7em; min-height: 3.8em; }
             .btn-pc { display: none; }
-            .btn-mobile { display: block; background: #222; color: #FF6A00; border: 2px solid #FF6A00; padding: 8px; font-size: 0.85em; }
+            .btn-mobile { display: block; background: #222; color: #FF6A00; border: 2px solid #FF6A00; padding: 8px; font-size: 0.82em; }
             .btn-notify.btn-mobile { display: block; border-color: #555; color: #aaa;}
             .btn-backup.btn-mobile { display: block; background: transparent; border-color: #444; color: #aaa;}
+            .faq-grid { grid-template-columns: 1fr; }
             .footer-pro-bottom { flex-direction: column; text-align: center; justify-content: center; }
             .footer-pro-socials { flex-wrap: wrap; justify-content: center; gap: 15px;}
             .process-container { flex-direction: column; gap: 15px; padding: 15px;}
@@ -156,7 +177,7 @@
         <div class="modal-content">
             <h2>Before you order... 🛑</h2>
             <p>To access local Chinese prices, you need a proxy account. <strong>Sugargoo is our official partner.</strong></p>
-            <p style="font-size: 0.9em; color: #aaa;">Creating your account via our link ensures you get your <strong>800 CNY (~$110 USD) Welcome Coupon Bundle</strong>, and it directly supports RemyTCG!</p>
+            <p style="font-size: 0.88em; color: #aaa;">Creating your account via our link ensures you get your <strong>800 CNY (~$110 USD) Welcome Coupon Bundle</strong>, and it directly supports RemyTCG!</p>
             <button class="btn-modal-main" onclick="registerAndClose()">1. Support us & Create Account</button>
             <button class="btn-modal-secondary" onclick="continueToProduct()">2. I already created my account, continue</button>
         </div>
@@ -180,29 +201,31 @@
 
     <div class="trust-bar">
         <div class="trust-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
             100% Authentic Products (Mainland China)
         </div>
         <div class="trust-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
             Global Shipping via Sugargoo
         </div>
         <div class="trust-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
             Secure Global Payments
         </div>
     </div>
 
-    <!-- GUIDE COMMANDE DIRECT : ACCÈS IMMÉDIAT AU CATALOGUE -->
+    <!-- BANNIÈRE SETUP COMPACTE ET ÉLARGIE -->
     <div id="setup" class="intro-banner">
-        <h2>📦 How to order?</h2>
-        <p>We partner with <strong>Sugargoo</strong> to give you access to local Chinese prices. You must create an account via our link to claim your <strong>800 CNY (~$110 USD) Welcome Coupon</strong> and unlock international shipping.</p>
-        <div style="text-align: center;">
+        <div class="intro-banner-text">
+            <h2>📦 How to order with local pricing?</h2>
+            <p>Create a proxy account with <strong>Sugargoo</strong> to unlock direct Chinese retail prices and get your <strong>800 CNY (~$110 USD) Welcome Coupon Bundle</strong> for international shipping.</p>
+        </div>
+        <div class="intro-banner-action">
             <a href="https://m.sugargoo.com/register?memberId=3894055016867374984" class="btn-main" target="_blank">1. Register on Sugargoo Here</a>
         </div>
     </div>
 
-    <!-- CATALOGUE DES PRODUITS PAR ÈRES -->
+    <!-- CATALOGUE DES PRODUITS PLEINE LARGEUR -->
     <div id="shop" class="container">
         <div class="filters">
             <input type="text" id="search" class="search-bar" placeholder="🔍 Search for a booster, a box..." onkeyup="filtrer()">
@@ -213,101 +236,84 @@
         <div id="catalogue"></div>
     </div>
 
-    <!-- SECTION WHOLESALE -->
-    <div id="wholesale" class="intro-banner" style="margin-top: 50px; border-color: #FFCB05; scroll-margin-top: 70px;">
-        <h2 style="color: #FFCB05; justify-content: center;">💼 Wholesale & Bulk Orders</h2>
-        <p style="margin-bottom: 15px; text-align: center;">Are you a Local Game Store, a breaker, or an investor looking to buy in bulk? We work directly with official local distributors in Mainland China to supply you securely.</p>
-        <p style="font-size: 0.85em; color: #aaa; margin-bottom: 20px; text-align: center;">* Factory Sealed Cartons (12 to 40 boxes per case). 100% Authentic guarantee. Minimum order value: $500 USD.</p>
-        <div style="text-align: center;">
-            <a href="#contact" class="btn-main" style="background: #FFCB05; color: #111;">Contact Us for a Bulk Quote</a>
+    <!-- WHOLESALE BANNER -->
+    <div id="wholesale" class="intro-banner" style="border-color: #FFCB05; margin-top: 40px;">
+        <div class="intro-banner-text">
+            <h2 style="color: #FFCB05;">💼 Wholesale & Bulk Orders</h2>
+            <p>Local Game Stores, breakers & bulk investors: we supply factory-sealed cartons (12-40 displays/case) directly from verified Mainland distributors. Minimum order value: $500 USD.</p>
+        </div>
+        <div class="intro-banner-action">
+            <a href="#contact" class="btn-main" style="background: #FFCB05; color: #111;">Contact Us for Bulk Quote</a>
         </div>
     </div>
 
-    <!-- FAQ & PROCESSUS -->
+    <!-- FAQ & SOURCEURS EN GRILLE 2 COLONNES -->
     <div id="guide" class="faq-container">
-        <h2 style="text-align: center; color: #FF6A00; font-size: 1.8em; margin-bottom: 30px;">Buyer Guide & FAQ</h2>
+        <h2 style="text-align: center; color: #FF6A00; font-size: 1.8em; margin-bottom: 25px;">Buyer Guide & FAQ</h2>
         
-        <div class="faq-item" style="border-color: #FF6A00;">
-            <h3>🤔 What is a Proxy Agent (Sugargoo)?</h3>
-            <p>Buying directly from Chinese marketplaces is impossible without a local Chinese address and payment method. Sugargoo acts as your trusted middleman to bridge this gap:</p>
-            
-            <div class="process-container">
-                <div class="process-step">
-                    <div class="process-icon">
-                        <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        <div class="faq-grid">
+            <div class="faq-item" style="border-color: #FF6A00;">
+                <h3>🤔 What is a Proxy Agent (Sugargoo)?</h3>
+                <p>Buying directly from Chinese marketplaces requires a local Chinese address and payment method. Sugargoo acts as your middleman to bridge this gap:</p>
+                <div class="process-container">
+                    <div class="process-step">
+                        <div class="process-icon">
+                            <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                        </div>
+                        <h4>1. Buy</h4>
+                        <p>Order through our catalog. Sugargoo purchases the item at local price within 24h.</p>
                     </div>
-                    <h4>1. Buy</h4>
-                    <p>Order through our catalog. Sugargoo buys the item for you at local prices within 24 hours.</p>
-                </div>
-                <div class="process-arrow">➔</div>
-                <div class="process-step">
-                    <div class="process-icon">
-                        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    <div class="process-arrow">➔</div>
+                    <div class="process-step">
+                        <div class="process-icon">
+                            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                        </div>
+                        <h4>2. Warehouse</h4>
+                        <p>They inspect the box, send you QC photos, and store it for up to 100 days.</p>
                     </div>
-                    <h4>2. Warehouse</h4>
-                    <p>They receive it in China, send you QC photos, and store it securely for up to 100 days.</p>
-                </div>
-                <div class="process-arrow">➔</div>
-                <div class="process-step">
-                    <div class="process-icon">
-                        <svg viewBox="0 0 24 24"><path d="M22 2L11 13"></path><path d="M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
+                    <div class="process-arrow">➔</div>
+                    <div class="process-step">
+                        <div class="process-icon">
+                            <svg viewBox="0 0 24 24"><path d="M22 2L11 13"></path><path d="M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
+                        </div>
+                        <h4>3. Ship</h4>
+                        <p>Bundle items into one parcel and dispatch directly to your home globally.</p>
                     </div>
-                    <h4>3. Ship Globally</h4>
-                    <p>Bundle multiple items into one parcel and ship it directly to your door in a few days!</p>
                 </div>
             </div>
-        </div>
 
-        <!-- ENCART SOURCEURS VÉRIFIÉS DANS LA FAQ -->
-        <div class="faq-item">
-            <h3>🛡️ Where do your products come from? (Our Verified Sources)</h3>
-            <p>
-                All items link directly to <strong>Taobao / Tmall</strong> (the leading official Chinese marketplaces, subsidiaries of Alibaba Group). To ensure <strong>100% factory-sealed authenticity</strong> and eliminate any risk of weighed or resealed boxes, we exclusively curate from 3 strictly vetted, high-reputation sellers:
-            </p>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 15px 0;">
-                <div style="background: #242424; border: 1px solid #383838; border-radius: 8px; padding: 12px;">
-                    <div style="color: #FFCB05; font-weight: 900; font-size: 0.9em; margin-bottom: 4px;">🏛️ Official Flagship Store (Tmall)</div>
-                    <div style="color: #fff; font-weight: 700; font-size: 0.85em;">宝可梦官方旗舰店 (Pokémon Official Store)</div>
-                    <p style="color: #888; font-size: 0.8em; margin: 4px 0 0 0; line-height: 1.3;">
-                        Primary verified flagship on Tmall with 1M+ followers and 2M+ annual sales. 100% authentic retail stock.
-                    </p>
+            <div class="faq-item">
+                <h3>🛡️ Where do your products come from? (Verified Sources)</h3>
+                <p>All catalog links connect to <strong>Taobao / Tmall</strong> (Alibaba Group's official platforms). We curate only from verified suppliers:</p>
+                
+                <div style="display: flex; flex-direction: column; gap: 8px; margin: 12px 0;">
+                    <div style="background: #242424; border: 1px solid #383838; border-radius: 6px; padding: 10px;">
+                        <span style="color: #FFCB05; font-weight: 900; font-size: 0.85em;">🏛️ 宝可梦官方旗舰店 (Pokémon Official Store)</span>
+                        <div style="color: #888; font-size: 0.76em;">Primary official flagship on Tmall (1M+ followers, 2M+ yearly orders).</div>
+                    </div>
+                    <div style="background: #242424; border: 1px solid #383838; border-radius: 6px; padding: 10px;">
+                        <span style="color: #FF6A00; font-weight: 900; font-size: 0.85em;">🐼 DunDun TCG (墩墩卡店)</span>
+                        <div style="color: #888; font-size: 0.76em;">Gold Seller • 5.0/5 Score (Top 1%), 50,000+ sales and fast 16h dispatch.</div>
+                    </div>
+                    <div style="background: #242424; border: 1px solid #383838; border-radius: 6px; padding: 10px;">
+                        <span style="color: #FF6A00; font-weight: 900; font-size: 0.85em;">🚀 Pingtouge TCG (平头哥卡社)</span>
+                        <div style="color: #888; font-size: 0.76em;">Certified Seller • 4.9/5 Score (Top 7%), 98% 88VIP positive rating.</div>
+                    </div>
                 </div>
-
-                <div style="background: #242424; border: 1px solid #383838; border-radius: 8px; padding: 12px;">
-                    <div style="color: #FF6A00; font-weight: 900; font-size: 0.9em; margin-bottom: 4px;">🐼 DunDun TCG (墩墩卡店)</div>
-                    <div style="color: #fff; font-weight: 700; font-size: 0.85em;">Gold Seller • 5.0/5 Score (Top 1%)</div>
-                    <p style="color: #888; font-size: 0.8em; margin: 4px 0 0 0; line-height: 1.3;">
-                        Premier high-volume distributor with 50,000+ yearly sales and ultra-fast 16h dispatch.
-                    </p>
-                </div>
-
-                <div style="background: #242424; border: 1px solid #383838; border-radius: 8px; padding: 12px;">
-                    <div style="color: #FF6A00; font-weight: 900; font-size: 0.9em; margin-bottom: 4px;">🚀 Pingtouge TCG (平头哥卡社)</div>
-                    <div style="color: #fff; font-weight: 700; font-size: 0.85em;">Certified Seller • 4.9/5 Score (Top 7%)</div>
-                    <p style="color: #888; font-size: 0.8em; margin: 4px 0 0 0; line-height: 1.3;">
-                        Top backup merchant with 98% 88VIP positive rating, guaranteeing inventory depth.
-                    </p>
-                </div>
+                <p style="font-size: 0.78em; color: #777;">* RemyTCG is an independent index. Sugargoo handles QC inspections upon warehouse arrival.</p>
             </div>
-            
-            <p style="font-size: 0.8em; color: #777; margin-top: 10px;">
-                * <em>Note:</em> RemyTCG operates as an independent curation index for Simplified Chinese Pokémon TCG cards (Mainland China). Every purchase is inspected upon arrival at Sugargoo's warehouse (with high-res QC photos provided to you) before international shipment.
-            </p>
-        </div>
 
-        <div class="faq-item">
-            <h3>🎁 1. How does the 800 CNY Welcome Bonus work?</h3>
-            <p>When you register using our link, Sugargoo credits your account with a welcome bundle worth 800 CNY (approx. $110 USD) to help with your first shipping costs.</p>
-            <ul>
-                <li><strong>14 Coupons Included:</strong> You receive a mix of coupons, ranging from 20 CNY (no minimum) up to 150 CNY off (for large parcels).</li>
-                <li><strong>Validity:</strong> Coupons are valid for exactly <strong>90 days</strong> after receipt. Use them before they expire!</li>
-                <li><strong>Rules:</strong> You can apply one coupon per international shipping package. They apply only to shipping fees, not the items themselves.</li>
-            </ul>
+            <div class="faq-item" style="grid-column: 1 / -1;">
+                <h3>🎁 1. How does the 800 CNY Welcome Bonus work?</h3>
+                <p>When you register using our link, Sugargoo credits your account with a bundle of 14 discount vouchers worth 800 CNY (~$110 USD) for your international shipping fees.</p>
+                <ul>
+                    <li><strong>Coupons:</strong> Ranging from 20 CNY off (no minimum) to 150 CNY off (large parcels).</li>
+                    <li><strong>Validity:</strong> 90 days after registration. Applicable on international parcel dispatches.</li>
+                </ul>
+            </div>
         </div>
     </div>
 
-    <!-- FOOTER PROFESSIONNEL -->
     <footer id="contact" class="footer-pro">
         <div class="footer-pro-inner">
             <div class="footer-pro-top">
@@ -351,7 +357,6 @@
         </div>
     </footer>
 
-    <!-- LOGIQUE JAVASCRIPT -->
     <script src="stock.js"></script>
     <script>
         let pendingAction = null; 
