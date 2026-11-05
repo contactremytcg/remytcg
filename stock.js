@@ -23,7 +23,7 @@ const formatSugargooLink = (taobaoId) => {
 
 const produits = [
     // =========================================================================
-    // SECTION 1 : 🔥 TRENDING & BEST SELLERS (6 ITEMS VISIBLES UNIQUEMENT SUR 'ALL')
+    // SECTION 1 : 🔥 TRENDING & BEST SELLERS (6 ITEMS VISIBLES SUR 'ALL')
     // =========================================================================
     {
         section: "🔥 Trending & Best Sellers",
@@ -32,6 +32,7 @@ const produits = [
         description: "Official factory-sealed booster box. 20 packs per box (5 cards/pack).",
         taobaoId: "1077424694326",
         taobaoId2: "",
+        videoUrl: "https://www.instagram.com/reel/Dd1GxA9B-H7/",
         images: [
             "https://www.japan2uk.com/cdn/shop/files/Pokemon_30th_Celebration_30th_C_Simplified_Chinese_Booster_Box_1024x1024.png?v=1790325855",
             "https://toy-treasure.com/cdn/shop/files/30th-celebration-chinese.jpg?v=1790767347&width=1445"
@@ -46,6 +47,7 @@ const produits = [
         description: "Ultimate Premium Collection with exclusive Eeveelution promos, accessories & booster packs.",
         taobaoId: "1081612197981",
         taobaoId2: "1077143359404",
+        videoUrl: "https://www.instagram.com/reel/DdWcScShlbf/",
         images: [
             "https://www.yumecards.ca/cdn/shop/files/Product-2026-09-06T091809.798.jpg?v=1788700962",
             "https://static.wixstatic.com/media/11a56d_c16d88f83b554e5ca233378f9ca01c95~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11a56d_c16d88f83b554e5ca233378f9ca01c95~mv2.jpg"
@@ -61,7 +63,7 @@ const produits = [
         description: "Exclusive Charizard collectible figurine, promo cards, and anniversary booster packs.",
         taobaoId: "1078493401671",
         taobaoId2: "1075622019018",
-        videoUrl: "https://www.instagram.com/reel/Ddmb0FsBON1/?rpxt=MXdqNmlkc2FyMXNjZg==",
+        videoUrl: "https://www.instagram.com/reel/Ddmb0FsBON1/",
         images: [
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ujY7LxSFCuTbsYIDy-nzNPJNsdUKHIzHZcFeUz944A&s=10",
             "https://www.bescards.com/cdn/shop/files/16017252548952-2c85b35689e1b991472aa902bfcf7cd2d1f8b144.webp?v=1789744309"
@@ -76,6 +78,7 @@ const produits = [
         description: "Official collectible Pikachu mystery figurine + assorted booster packs.",
         taobaoId: "1082955160912",
         taobaoId2: "1079806548243",
+        videoUrl: "https://www.instagram.com/reel/DdtlypOo0AW/",
         images: [
             "https://collectorstore.com/cdn/shop/files/CollectorStore00002_7207263c-4504-4ee0-ae14-b3d648f6dba7.jpg?v=1790101321&width=1445",
             "https://card-binder.com/cdn/shop/files/Pokemon-30th-celebration-pikachu-figure-blind-box-simplified-chinese-pikachu-figures.webp?v=1788978615&width=1500",
@@ -119,6 +122,7 @@ const produits = [
         description: "Official factory-sealed booster box. 20 packs per box (5 cards/pack).",
         taobaoId: "1077424694326",
         taobaoId2: "",
+        videoUrl: "https://www.instagram.com/reel/Dd1GxA9B-H7/",
         images: [
             "https://www.japan2uk.com/cdn/shop/files/Pokemon_30th_Celebration_30th_C_Simplified_Chinese_Booster_Box_1024x1024.png?v=1790325855",
             "https://toy-treasure.com/cdn/shop/files/30th-celebration-chinese.jpg?v=1790767347&width=1445"
@@ -132,6 +136,7 @@ const produits = [
         description: "Ultimate Premium Collection with exclusive Eeveelution promos, accessories & booster packs.",
         taobaoId: "1081612197981",
         taobaoId2: "1077143359404",
+        videoUrl: "https://www.instagram.com/reel/DdWcScShlbf/",
         images: [
             "https://www.yumecards.ca/cdn/shop/files/Product-2026-09-06T091809.798.jpg?v=1788700962",
             "https://static.wixstatic.com/media/11a56d_c16d88f83b554e5ca233378f9ca01c95~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11a56d_c16d88f83b554e5ca233378f9ca01c95~mv2.jpg"
@@ -146,7 +151,7 @@ const produits = [
         description: "Exclusive Charizard collectible figurine, promo cards, and anniversary booster packs.",
         taobaoId: "1078493401671",
         taobaoId2: "1075622019018",
-        videoUrl: "https://www.instagram.com/reel/Ddmb0FsBON1/?rpxt=MXdqNmlkc2FyMXNjZg==",
+        videoUrl: "https://www.instagram.com/reel/Ddmb0FsBON1/",
         images: [
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ujY7LxSFCuTbsYIDy-nzNPJNsdUKHIzHZcFeUz944A&s=10",
             "https://www.bescards.com/cdn/shop/files/16017252548952-2c85b35689e1b991472aa902bfcf7cd2d1f8b144.webp?v=1789744309"
@@ -161,6 +166,7 @@ const produits = [
         description: "3x 30th Anniversary booster packs + 1x guaranteed holographic promo card & coin.",
         taobaoId: "1078477045552",
         taobaoId2: "",
+        videoUrl: "https://www.instagram.com/reel/DeMfqDRoxUK/",
         images: ["https://i0.wp.com/katzenworld.shop/wp-content/uploads/2026/10/xCsvB678SEHnQsnJEwA77_b0X5C_j1iK9xxyQceY-t_KUwwLreptpTpXEX0qHQWHPqk9WlhnN2QZ1yrg0YdisjlyQ9IMxV-whH58ShVYumxCmz8a0LPxVc8lOcENGBtWJeNdq1_NZWYt5ucX0s73g5Qbw_W6i7-oGYaptOiANo_JHoO6qQh_dU24ewjlOK8t.jpeg?fit=1080%2C1080&ssl=1"],
         fournisseur: "DunDun TCG"
     },
@@ -171,6 +177,7 @@ const produits = [
         description: "Premium display box, exclusive futuristic-themed accessories & booster packs.",
         taobaoId: "1076581683957",
         taobaoId2: "", 
+        videoUrl: "https://www.instagram.com/reel/DdbntgzBAte/",
         images: ["https://monketic.com/cdn/shop/files/002_b0146a55-cf66-42d3-921c-9b62d7c09e3b.png?v=1792512443&width=1445"],
         fournisseur: "DunDun TCG"
     },
@@ -181,6 +188,7 @@ const produits = [
         description: "1x Umbreon ex Promo, custom card sleeves, premium deck box & 30th Anniversary packs.",
         taobaoId: "1081589285227",
         taobaoId2: "1083773308654",
+        videoUrl: "https://www.instagram.com/reel/De7LWM6IYrS/",
         images: [
             "https://www.tcghobby.com/cdn/shop/files/simplifiedchinesedeluxesetumbreon.webp?v=1789224364",
             "https://www.therange.co.uk/media/0/9/1790203452_5789.jpg"
@@ -195,6 +203,7 @@ const produits = [
         description: "1x Espeon ex Promo, custom card sleeves, premium deck box & 30th Anniversary packs.",
         taobaoId: "1081585073446",
         taobaoId2: "1083773308654",
+        videoUrl: "https://www.instagram.com/reel/DfC5r59Icam/",
         images: [
             "https://x-playground.com/cdn/shop/files/Pokemon_TCG_30th_Celebration_Espeon_ex_Deluxe_Deck_Set_Simplified_Chinese.jpg?v=1789823886&width=600",
             "https://www.therange.co.uk/media/2/8/1790203411_8925.jpg"
@@ -209,6 +218,7 @@ const produits = [
         description: "3x 30th Anniversary booster packs, 1x Greninja ex promo card & 1x display keychain.",
         taobaoId: "1080814663430",
         taobaoId2: "",
+        videoUrl: "https://www.instagram.com/reel/DfICQ-UoZip/",
         images: [
             "https://x-playground.com/cdn/shop/files/Pokemon_TCG_30th_Celebration_Greninja_ex_Card_Display_Sleeve_Set.jpg?v=1789822489&width=600",
             "https://www.therange.co.uk/media/3/3/1790203353_7893.jpg"
@@ -222,6 +232,7 @@ const produits = [
         description: "3x 30th Anniversary booster packs, 1x Sylveon ex promo card & 1x display keychain.",
         taobaoId: "1080814663430",
         taobaoId2: "",
+        videoUrl: "https://www.instagram.com/reel/DepLHfNohcd/",
         images: [
             "https://spoilsandloot.com/cdn/shop/files/syl_1.jpg?v=1789577455",
             "https://www.therange.co.uk/media/7/6/1790203399_5932.jpg"
@@ -235,6 +246,7 @@ const produits = [
         description: "First Partner Promo cards and a selection of booster packs. Great for starters.",
         taobaoId: "1036462263685",
         taobaoId2: "",
+        videoUrl: "https://www.instagram.com/reel/DdUW0s5h-uF/",
         images: [
             "https://www.tcghobby.com/cdn/shop/files/Simplified_Chinese_Pokemon_30th_Anniversary_First_Partner_Special_Illustration_Card_Set_Vol._1_Display_Set.jpg?v=1776401355&width=645",
             "https://hanabitradingco.ca/cdn/shop/files/IMG-8415.png?v=1774029915"
@@ -273,7 +285,7 @@ const produits = [
     },
 
     // =========================================================================
-    // SECTION 3 : SCARLET & VIOLET ERA (DU PLUS RÉCENT AU PLUS ANCIEN)
+    // SECTION 3 : SCARLET & VIOLET ERA
     // =========================================================================
     {
         section: "Scarlet & Violet Era",
@@ -757,6 +769,7 @@ const produits = [
         description: "3x 30th Anniversary booster packs + 1x guaranteed holographic promo card & coin.",
         taobaoId: "1078477045552",
         taobaoId2: "",
+        videoUrl: "https://www.instagram.com/reel/DeMfqDRoxUK/",
         images: ["https://i0.wp.com/katzenworld.shop/wp-content/uploads/2026/10/xCsvB678SEHnQsnJEwA77_b0X5C_j1iK9xxyQceY-t_KUwwLreptpTpXEX0qHQWHPqk9WlhnN2QZ1yrg0YdisjlyQ9IMxV-whH58ShVYumxCmz8a0LPxVc8lOcENGBtWJeNdq1_NZWYt5ucX0s73g5Qbw_W6i7-oGYaptOiANo_JHoO6qQh_dU24ewjlOK8t.jpeg?fit=1080%2C1080&ssl=1"],
         fournisseur: "DunDun TCG"
     },
@@ -935,6 +948,7 @@ const produits = [
         description: "Official collectible Pikachu mystery figurine + assorted booster packs.",
         taobaoId: "1082955160912",
         taobaoId2: "1079806548243",
+        videoUrl: "https://www.instagram.com/reel/DdtlypOo0AW/",
         images: [
             "https://collectorstore.com/cdn/shop/files/CollectorStore00002_7207263c-4504-4ee0-ae14-b3d648f6dba7.jpg?v=1790101321&width=1445",
             "https://card-binder.com/cdn/shop/files/Pokemon-30th-celebration-pikachu-figure-blind-box-simplified-chinese-pikachu-figures.webp?v=1788978615&width=1500",
@@ -996,6 +1010,7 @@ const produits = [
         description: "Official Funism Ditto mystery figurine + selected booster packs.",
         taobaoId: "1085294497168",
         taobaoId2: "",
+        videoUrl: "https://www.instagram.com/reel/DexDldIM99E/",
         images: [
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSPnMs7_SAM5ydGsOGMIRnfg32_qAu6G_IsNkMNcpyXW4lSJixcR95DWs&s=10",
             "https://sunnystudio.store/cdn/shop/files/PokemonTinyAdventuresTransform_DittoQ-faceCase.avif?v=1790971171&width=1445",
@@ -1017,7 +1032,7 @@ function genererCarteHtml(p) {
     let videoBadgeHtml = '';
     if (p.videoUrl && p.videoUrl.trim() !== '') {
         videoBadgeHtml = `
-            <a onclick="openInstagramReel('${p.videoUrl}')" class="badge-video" title="Watch unboxing Reel on Instagram">
+            <a href="${p.videoUrl}" target="_blank" rel="noopener noreferrer" class="badge-video" title="Watch unboxing Reel on Instagram">
                 <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
                 <span>Reel</span>
             </a>
@@ -1082,8 +1097,8 @@ function genererCarteHtml(p) {
         `;
     } else if (p.statut === "coming_soon") {
         boutonsHtml = `
-            <a href="https://instagram.com/remy.tcg" target="_blank" class="btn-main-card btn-notify btn-pc">🔔 Follow IG for Drops</a>
-            <a href="https://instagram.com/remy.tcg" target="_blank" class="btn-main-card btn-notify btn-mobile">🔔 Follow IG for Drops</a>
+            <a href="https://instagram.com/remy.tcg" target="_blank" rel="noopener noreferrer" class="btn-main-card btn-notify btn-pc">🔔 Follow IG for Drops</a>
+            <a href="https://instagram.com/remy.tcg" target="_blank" rel="noopener noreferrer" class="btn-main-card btn-notify btn-mobile">🔔 Follow IG for Drops</a>
             <div class="btn-main-card btn-backup btn-backup-placeholder" aria-hidden="true"></div>
         `;
     } else if (!p.taobaoId || p.taobaoId.trim() === "") {
@@ -1154,7 +1169,7 @@ function afficher(liste) {
     let totalArchive = 0;
 
     sectionsOrdre.forEach(secNom => {
-        // RÈGLE E-COMMERCE : La section Trending disparaît si un filtre spécifique est actif
+        // La section Trending disparaît si un filtre par catégorie spécifique est sélectionné
         if (secNom === "🔥 Trending & Best Sellers" && activePillCategory !== '') {
             return;
         }
@@ -1174,7 +1189,6 @@ function afficher(liste) {
         else if (secNom === "Premium Collection Boxes") secSubtitle = "Deluxe ETBs & Specialty Collector Boxes";
         else if (secNom === "Blind Boxes & Figures") secSubtitle = "Official Mystery Figurines & Boosters";
 
-        // CONSERVATION STRICTE DE L'ORDRE INITIAL
         const itemsActifs = itemsSec.filter(p => p.statut !== "out_of_stock");
         const itemsArchive = itemsSec.filter(p => p.statut === "out_of_stock");
 
@@ -1226,13 +1240,20 @@ function filtrer() {
         const correspondTexte = p.nom.toLowerCase().includes(recherche) || 
                                 p.description.toLowerCase().includes(recherche) ||
                                 (p.section && p.section.toLowerCase().includes(recherche));
-        const correspondCategorie = selection === "" || p.section === selection || 
-                                    (Array.isArray(p.categorie) ? p.categorie.includes(selection) : p.categorie === selection);
+        
+        let correspondCategorie = false;
+        if (selection === "") {
+            correspondCategorie = true;
+        } else {
+            correspondCategorie = p.section === selection || 
+                                  (Array.isArray(p.categorie) ? p.categorie.includes(selection) : p.categorie === selection);
+        }
+        
         return correspondTexte && correspondCategorie;
     });
     
     afficher(resultats);
 }
 
-// AFFICHAGE INITIAL
+// Initialisation au chargement
 afficher(produits);
