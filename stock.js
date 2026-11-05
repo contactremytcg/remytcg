@@ -1040,14 +1040,21 @@ function afficher(liste) {
 
             let boutonsHtml = '';
             if (p.statut === "out_of_stock") {
-                boutonsHtml = `<button class="btn-main-card" style="background: #252525; color: #777; border: 1px solid #3d3d3d; cursor: not-allowed;">✕ Out of Stock</button>`;
+                boutonsHtml = `
+                    <button class="btn-main-card" style="background: #222225; color: #666; border: 1px solid #333338; cursor: not-allowed;">✕ Out of Stock</button>
+                    <div class="btn-main-card btn-backup btn-backup-placeholder" aria-hidden="true"></div>
+                `;
             } else if (p.statut === "coming_soon") {
                 boutonsHtml = `
-                    <a href="https://instagram.com/remy.tcg" target="_blank" class="btn-main-card btn-notify">🔔 Follow IG for Drops</a>
-                    <a href="https://instagram.com/remy.tcg" target="_blank" class="btn-main-card btn-mobile btn-notify">🔔 Follow IG for Drops</a>
+                    <a href="https://instagram.com/remy.tcg" target="_blank" class="btn-main-card btn-notify btn-pc">🔔 Follow IG for Drops</a>
+                    <a href="https://instagram.com/remy.tcg" target="_blank" class="btn-main-card btn-notify btn-mobile">🔔 Follow IG for Drops</a>
+                    <div class="btn-main-card btn-backup btn-backup-placeholder" aria-hidden="true"></div>
                 `;
             } else if (!p.taobaoId || p.taobaoId.trim() === "") {
-                boutonsHtml = `<button class="btn-main-card" style="background: #e74c3c; color: #fff; cursor: not-allowed;">⚠️ ID Missing</button>`;
+                boutonsHtml = `
+                    <button class="btn-main-card" style="background: #e74c3c; color: #fff; cursor: not-allowed;">⚠️ ID Missing</button>
+                    <div class="btn-main-card btn-backup btn-backup-placeholder" aria-hidden="true"></div>
+                `;
             } else {
                 const taobaoUrlRaw = `https://item.taobao.com/item.htm?id=${p.taobaoId}`;
                 const sugargooUrl = formatSugargooLink(p.taobaoId);
@@ -1064,6 +1071,10 @@ function afficher(liste) {
                     boutonsHtml += `
                         <button onclick="triggerProductAction('pc', '${sugargooUrl2}')" class="btn-main-card btn-backup btn-pc">Backup Supplier (If Out of Stock)</button>
                         <button onclick="triggerProductAction('mobile', '${taobaoUrlRaw2}', this)" class="btn-main-card btn-backup btn-mobile">Copy Backup Supplier</button>
+                    `;
+                } else {
+                    boutonsHtml += `
+                        <div class="btn-main-card btn-backup btn-backup-placeholder" aria-hidden="true"></div>
                     `;
                 }
             }
