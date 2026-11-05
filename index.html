@@ -79,7 +79,7 @@
             justify-content: center; 
             gap: 8px; 
             flex-wrap: wrap; 
-            margin-bottom: 12px; 
+            margin-bottom: 25px; 
         }
         .filter-pill {
             background: #17181c;
@@ -96,23 +96,42 @@
         .filter-pill:hover { color: #fff; border-color: #FF6A00; }
         .filter-pill.active { background: #FF6A00; color: #fff; border-color: #FF6A00; }
 
-        .catalog-stats {
-            text-align: center;
-            font-size: 0.78em;
-            color: #666;
-            margin-bottom: 25px;
-            font-weight: 600;
-        }
-        .catalog-stats span {
-            color: #2ecc71;
-            font-weight: 700;
-        }
-        
+        /* HEADER D'ÈRE VERROUILLÉ SANS CASSER LE BADGE SUR 2 LIGNES */
         .era-section { margin-bottom: 35px; }
-        .era-header { margin-bottom: 14px; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 8px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
-        .era-title { font-size: 1.55em; font-weight: 900; text-transform: uppercase; letter-spacing: -0.5px; margin: 0; color: #fff; }
-        .era-count-badge { background: rgba(255, 255, 255, 0.06); color: #888; font-size: 0.55em; padding: 2px 8px; border-radius: 12px; font-weight: 700; vertical-align: middle; }
-        .era-subtitle { font-size: 0.8em; color: #FF6A00; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin: 0; }
+        .era-header { 
+            margin-bottom: 14px; 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08); 
+            padding-bottom: 8px; 
+            display: flex; 
+            flex-direction: column;
+            gap: 4px;
+        }
+        .era-title-wrap {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: nowrap;
+        }
+        .era-title { 
+            font-size: 1.45em; 
+            font-weight: 900; 
+            text-transform: uppercase; 
+            letter-spacing: -0.5px; 
+            margin: 0; 
+            color: #fff; 
+            white-space: nowrap;
+        }
+        .era-count-badge { 
+            background: rgba(255, 255, 255, 0.08); 
+            color: #aaa; 
+            font-size: 0.72em; 
+            padding: 2px 8px; 
+            border-radius: 12px; 
+            font-weight: 700; 
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .era-subtitle { font-size: 0.78em; color: #FF6A00; text-transform: uppercase; font-weight: 700; letter-spacing: 0.8px; margin: 0; }
 
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(235px, 1fr)); gap: 15px; }
         .card { 
@@ -128,15 +147,14 @@
         }
         .card:hover { transform: translateY(-4px); border-color: rgba(255, 106, 0, 0.6); box-shadow: 0 8px 24px rgba(255, 106, 0, 0.15); }
         
-        /* BADGE STATUT (GAUCHE) : SÉCURISÉ CONTRE LE CHEVAUCHEMENT */
         .card-badge { 
             position: absolute; 
             top: 8px; 
             left: 8px; 
-            max-width: 58%;
-            padding: 5px 9px; 
+            max-width: 50%;
+            padding: 4px 8px; 
             border-radius: 6px; 
-            font-size: 0.7em; 
+            font-size: 0.68em; 
             font-weight: 900; 
             text-transform: uppercase; 
             color: #fff; 
@@ -148,37 +166,36 @@
             pointer-events: none;
         }
 
-        /* PASTILLE REEL (DROITE) : POSITION ET TAILLE OPTIMISÉES */
+        /* PASTILLE UNBOXING INSTAGRAM OFFICIELLE */
         .badge-video {
             position: absolute;
             top: 8px;
             right: 8px;
-            background: rgba(17, 18, 21, 0.88);
-            border: 1px solid #FF6A00;
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
             color: #fff;
-            padding: 4px 9px;
-            border-radius: 20px;
-            font-size: 0.7em;
+            padding: 4px 8px;
+            border-radius: 14px;
+            font-size: 0.68em;
             font-weight: 800;
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 4px;
             z-index: 10;
-            backdrop-filter: blur(4px);
-            transition: transform 0.2s ease, background 0.2s ease;
+            transition: transform 0.2s ease, filter 0.2s ease;
             cursor: pointer;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+            white-space: nowrap;
         }
         .badge-video:hover {
-            background: #FF6A00;
-            color: #fff;
             transform: scale(1.05);
+            filter: brightness(1.15);
         }
         .badge-video svg {
-            width: 10px;
-            height: 10px;
-            fill: currentColor;
+            width: 11px;
+            height: 11px;
+            fill: #ffffff;
+            flex-shrink: 0;
         }
 
         .image-wrapper { position: relative; height: 190px; background: #ffffff; border-bottom: 1px solid rgba(255, 255, 255, 0.06); overflow: hidden; width: 100%; }
@@ -421,10 +438,9 @@
             .card h3 { font-size: 0.82em; min-height: 2.5em; }
             .card p { font-size: 0.7em; min-height: 2.7em; }
             
-            /* GESTION MOBILE ANTI-CHEVITEMENT DES BADGES */
-            .card-badge { font-size: 0.62em; padding: 4px 7px; max-width: 50%; }
-            .badge-video { font-size: 0.62em; padding: 4px 7px; gap: 3px; }
-            .badge-video svg { width: 8px; height: 8px; }
+            .card-badge { font-size: 0.6em; padding: 3px 6px; max-width: 45%; }
+            .badge-video { font-size: 0.6em; padding: 3px 6px; gap: 3px; }
+            .badge-video svg { width: 9px; height: 9px; }
 
             .supplier-info { height: 28px; padding: 2px 6px; }
             .supplier-text { font-size: 0.65em; }
@@ -527,7 +543,6 @@
             <button class="filter-pill" onclick="selectPill(this, 'Coin Bags & Accessories')">Coin Bags</button>
             <button class="filter-pill" onclick="selectPill(this, 'Blind Boxes & Figures')">Figures</button>
         </div>
-        <div class="catalog-stats" id="catalogStats"></div>
         <div id="catalogue"></div>
     </div>
 
@@ -762,6 +777,13 @@
                 btn.classList.add('visible');
             } else {
                 btn.classList.remove('visible');
+            }
+        });
+
+        // CHARGEMENT GARANTI DU CATALOGUE
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof afficher === 'function' && typeof produits !== 'undefined') {
+                afficher(produits);
             }
         });
     </script>
