@@ -89,7 +89,7 @@ const produits = [
         description: "Contains: 30 booster packs. Factory sealed display box.",
         taobaoId: "1094128825003",
         taobaoId2: "1093554321145",
-        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Black+Bolt+%26+White+Flare+CSV11"],
+        images: ["https://www.yumecards.ca/cdn/shop/files/Product-2026-10-26T010221.441.jpg?v=1792991251"],
         fournisseur: "Panda",
         fournisseurBackup: "AmongUs"
     },
@@ -189,7 +189,7 @@ const produits = [
         description: "Contains: 30 booster packs (5 cards/pack). Factory sealed display box.",
         taobaoId: "",
         taobaoId2: "",
-        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Fearless+Terastal+CSV3"],
+        images: ["https://lh5.googleusercontent.com/proxy/AdgOgKSJ8NPfeVKusdmWI54ZCX8Xlr0dgSuD5xNPq8Kcs3dThF7mci5Vrnb4JwPls73fcASk7vB87sfiCsFnK4P1B4B7AhmfhX1w1-thx7Flaz_-EGQSQxNs2rU2i_nnvnmOuJnfKSCrvFjD4wR6TkqYHUQ"],
         statut: "coming_soon"
     },
     {
@@ -199,7 +199,7 @@ const produits = [
         description: "Contains: 30 booster packs (5 cards/pack). Factory sealed display box featuring Gardevoir.",
         taobaoId: "",
         taobaoId2: "",
-        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Miracle+Journey+CSV2"],
+        images: ["https://image.goat.com/375/attachments/product_template_pictures/images/114/112/186/original/1711842_00.png.png"],
         statut: "coming_soon"
     },
     {
@@ -209,7 +209,7 @@ const produits = [
         description: "Contains: 30 booster packs (5 cards/pack). Factory sealed debut display box of Scarlet & Violet.",
         taobaoId: "",
         taobaoId2: "",
-        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Eternal+Beginnings+CSV1"],
+        images: ["https://lh5.googleusercontent.com/proxy/p1QnLuwELYrAXGb9u5-W4ROfpl4SF9KD4migfobwuR0UFmiv0ti3gpyoZkOaL36CY8If_AnBRi4AO9XGfSxm66ZKQ-t0WCEk7P_U8TTPIC5MDPyCFwgOefaG"],
         statut: "coming_soon"
     },
 
@@ -348,27 +348,27 @@ const produits = [
         description: "Contains: Factory sealed display box featuring Lugia artwork. Sword & Shield series.",
         taobaoId: "",
         taobaoId2: "",
-        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Shadow+Blue+Sea+CS6A+(Lugia)"],
+        images: ["https://main-wordpress-bucket-production.lon1.digitaloceanspaces.com/2026/04/invictatcg-pokemon-chinese-shadow-of-the-blue-sea-lugia-CS6BC-simplified-chinese-jumbo-booster-box.png"],
         statut: "coming_soon"
     },
     {
         section: "Sword & Shield Era",
         categorie: "Sword & Shield Era",
-        nom: "Shadow of the Blue Sea (CS6B - Hisuian Typhlosion)",
-        description: "Contains: Factory sealed display box featuring Hisuian Typhlosion & Darkrai.",
+        nom: "Shadow of the Blue Sea (CS6B - Giratina)",
+        description: "Contains: Factory sealed display box featuring Giratina artwork.",
         taobaoId: "",
         taobaoId2: "",
-        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Shadow+Blue+Sea+CS6B+(Typhlosion)"],
+        images: ["https://main-wordpress-bucket-production.lon1.digitaloceanspaces.com/2026/04/invictatcg-pokemon-chinese-shadow-of-the-blue-sea-giratina-CS6BC-simplified-chinese-jumbo-booster-box.png"],
         statut: "coming_soon"
     },
     {
         section: "Sword & Shield Era",
         categorie: "Sword & Shield Era",
-        nom: "Brave Stars Display (CS5A - Charizard)",
-        description: "Contains: Factory sealed display box featuring Charizard artwork.",
+        nom: "Brave Stars Display (CS5A - Typhlosion)",
+        description: "Contains: Factory sealed display box featuring Hisuian Typhlosion artwork.",
         taobaoId: "",
         taobaoId2: "",
-        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Brave+Stars+CS5A+(Charizard)"],
+        images: ["https://lh5.googleusercontent.com/proxy/mKV2hSixeFfM7QOQHyUP9MiUcRcMCQUadu_1rAWx2lAxw2sePmabqRuf3SnwE1b7PXnNME9uL7RcvYnuMnB5WW3pDE8aQroKOYkFCsGHkp-3O_ebCzwCXFFiGNV6CGxbLzkyZ1rBpg0yLdIEoYTsloF9L31bwlfsbwuhtJw"],
         statut: "coming_soon"
     },
     {
@@ -378,7 +378,7 @@ const produits = [
         description: "Contains: Factory sealed display box featuring Lucario artwork.",
         taobaoId: "",
         taobaoId2: "",
-        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Brave+Stars+CS5B+(Lucario)"],
+        images: ["https://lh4.googleusercontent.com/proxy/Mh5AMHlVCKUvnc3joPEXDkhtY79z-5yAohzcczgYbbjrBzKWkeGJ_VX4WWwsjDul_qPWfwGEosWZftLTBjdbW0KZfP3TrtRmWouCj6E1-DQlABr5U54IHywOKpzW4pKyZDh9jL4iyYEswSQXNFIbqGifhzbvIV9jiX3iFA6sBmYeClZsXpMxzaWVF4qsag"],
         statut: "coming_soon"
     },
     {
@@ -388,7 +388,7 @@ const produits = [
         description: "Contains: Factory sealed display box featuring Eeveelutions and Umbreon.",
         taobaoId: "",
         taobaoId2: "",
-        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Nine+Colors+CS4A+(Umbreon)"],
+        images: ["https://lh3.googleusercontent.com/proxy/BGbaaxN3iStHvlwH1Au_E8Zj0YnmBaCPWX_4UzlBEekNSz9n7libOy4Jl54qAJaMQsuZ8VafNDAiuHKAnaPnkSF9na_nglyipJHqOnJigtXW9MYazYkZlLDceLPUwgskfC7Jn1KI1XauvKIkjKLEADYI41sXDRcZ9tZzzuyGcA"],
         statut: "coming_soon"
     },
     {
@@ -398,7 +398,7 @@ const produits = [
         description: "Contains: Factory sealed display box featuring Mew and alternate arts.",
         taobaoId: "",
         taobaoId2: "",
-        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Nine+Colors+CS4B+(Mew)"],
+        images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDRDWQkbnJpQwB8N2F7VQs5u6BJIGUT_2Xu9eQv9raaTykMsOJuIMtPZU&s=10"],
         statut: "coming_soon"
     },
     {
@@ -408,7 +408,7 @@ const produits = [
         description: "Contains: Factory sealed display box featuring Venusaur / Florizarre.",
         taobaoId: "",
         taobaoId2: "",
-        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Primordial+Arts+CS3A+(Venusaur)"],
+        images: ["https://monsterscollectors.com/wp-content/uploads/2025/11/Caja-de-sobres-Pokemon-Primordial-Arts-Overgrow-Chino-1.png"],
         statut: "coming_soon"
     },
     {
@@ -418,17 +418,17 @@ const produits = [
         description: "Contains: Factory sealed display box featuring Blastoise / Tortank.",
         taobaoId: "",
         taobaoId2: "",
-        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Primordial+Arts+CS3B+(Blastoise)"],
+        images: ["https://pandacollecting.com/wp-content/uploads/2026/05/jumbo.png"],
         statut: "coming_soon"
     },
     {
         section: "Sword & Shield Era",
         categorie: "Sword & Shield Era",
-        nom: "Vivid Portrayals Display (CS2A - Rayquaza)",
-        description: "Contains: Factory sealed display box featuring Rayquaza.",
+        nom: "Vivid Portrayals Display (CS2A - Charizard)",
+        description: "Contains: Factory sealed display box featuring Charizard artwork.",
         taobaoId: "",
         taobaoId2: "",
-        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Vivid+Portrayals+CS2A+(Rayquaza)"],
+        images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8dxljBJH77sHgfqswS7C1eMrT-6i_lIhBRSbPD3wH_Tywxf6PQI9APtWZ&s=10"],
         statut: "coming_soon"
     },
     {
@@ -438,7 +438,7 @@ const produits = [
         description: "Contains: Factory sealed display box featuring Duraludon.",
         taobaoId: "",
         taobaoId2: "",
-        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Vivid+Portrayals+CS2B+(Duraludon)"],
+        images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwACRITnyb1RyvuzvALQgteVdYzvLacz4eIlgJIBRpZR6g_ae9TgozwZQ&s=10"],
         statut: "coming_soon"
     },
     {
@@ -448,7 +448,7 @@ const produits = [
         description: "Contains: Factory sealed display box featuring Pikachu VMAX.",
         taobaoId: "",
         taobaoId2: "",
-        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Dynamax+Clash+CS1A+(Pikachu)"],
+        images: ["https://cpop.ch/1934-large_default/pokemon-simplified-chinese-cs1a-c-jumbo-booster.jpg"],
         statut: "coming_soon"
     },
     {
@@ -458,7 +458,7 @@ const produits = [
         description: "Contains: Factory sealed display box featuring Cinderace VMAX.",
         taobaoId: "",
         taobaoId2: "",
-        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Dynamax+Clash+CS1B+(Cinderace)"],
+        images: ["https://cpop.ch/1937-large_default/pokemon-simplified-chinese-cs1b-c-jumbo-booster.jpg"],
         statut: "coming_soon"
     },
 
@@ -486,7 +486,10 @@ const produits = [
         description: "Contains: Exclusive 2026 Dragon Boat festival promotional items, booster packs, and accessories.",
         taobaoId: "1058523215773",
         taobaoId2: "",
-        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Dragon+Boat+2026+Box"],
+        images: [
+            "https://games-island.eu/media/image/product/1153600/lg/pokemon-tcg-dragon-boat-gift-box-2026-chinesisch.jpg",
+            "https://www.tcghobby.com/cdn/shop/files/SimplifiedChinesePokemon2026DragonBoatFestivalGiftBoxSet.jpg?v=1776680425"
+        ],
         fournisseur: "AmongUs"
     },
 
@@ -500,7 +503,10 @@ const produits = [
         description: "Contains: 3x Stellar Crystal booster packs and 1x Exclusive themed collector badge/coin.",
         taobaoId: "1053719752963",
         taobaoId2: "",
-        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Stellar+Crystal+Coin+Bag"],
+        images: [
+            "https://dzpdbgwih7u1r.cloudfront.net/9fcd2c4e-9f8f-4808-a1f9-bbeb3a6a2a49/a1fce7d5-2d7d-4897-9495-ef7d6e03ed1b/a1fce820-db2a-4418-babd-347c130bd618/w400h400-pokemon-simplified-chinese-stellar-crystal-csv9c-coin-set.jpg",
+            "https://m.media-amazon.com/images/I/61MGcrYNNDL._AC_UF1000,1000_QL80_.jpg"
+        ],
         fournisseur: "AmongUs"
     },
     {
@@ -829,7 +835,9 @@ const produits = [
         taobaoId: "1085294497168",
         taobaoId2: "",
         images: [
-            "https://pokeunlimited.com/cdn/shop/files/funism-pokemon-palmsize-wonders-happy-ditto-figurine-blind-box-8249829.jpg?v=1790646457"
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSPnMs7_SAM5ydGsOGMIRnfg32_qAu6G_IsNkMNcpyXW4lSJixcR95DWs&s=10",
+            "https://sunnystudio.store/cdn/shop/files/PokemonTinyAdventuresTransform_DittoQ-faceCase.avif?v=1790971171&width=1445",
+            "https://sunnystudio.store/cdn/shop/files/PokemonTinyAdventuresTransform_DittoQ-faceSingle.avif?v=1790971171&width=1920"
         ]
     }
 ];
@@ -918,9 +926,7 @@ function afficher(liste) {
                     </div>
                 `;
             } else if (p.images && p.images.length === 1) {
-                const isDitto = p.nom.includes("Ditto");
-                const customClass = isDitto ? "card-img card-img-single crop-bottom" : "card-img card-img-single";
-                imagesHtml = `<img src="${p.images[0]}" alt="${p.nom}" class="${customClass}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='${fallback}'">`;
+                imagesHtml = `<img src="${p.images[0]}" alt="${p.nom}" class="card-img card-img-single" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='${fallback}'">`;
             }
 
             let boutonsHtml = '';
