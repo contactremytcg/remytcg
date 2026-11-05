@@ -61,7 +61,7 @@ const produits = [
         description: "Exclusive Charizard collectible figurine, promo cards, and anniversary booster packs.",
         taobaoId: "1078493401671",
         taobaoId2: "1075622019018",
-        videoUrl: "https://www.instagram.com/reel/remytcg",
+        videoUrl: "https://www.instagram.com/reel/Ddmb0FsBON1/?rpxt=MXdqNmlkc2FyMXNjZg==",
         images: [
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ujY7LxSFCuTbsYIDy-nzNPJNsdUKHIzHZcFeUz944A&s=10",
             "https://www.bescards.com/cdn/shop/files/16017252548952-2c85b35689e1b991472aa902bfcf7cd2d1f8b144.webp?v=1789744309"
@@ -146,7 +146,7 @@ const produits = [
         description: "Exclusive Charizard collectible figurine, promo cards, and anniversary booster packs.",
         taobaoId: "1078493401671",
         taobaoId2: "1075622019018",
-        videoUrl: "https://www.instagram.com/reel/remytcg",
+        videoUrl: "https://www.instagram.com/reel/Ddmb0FsBON1/?rpxt=MXdqNmlkc2FyMXNjZg==",
         images: [
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ujY7LxSFCuTbsYIDy-nzNPJNsdUKHIzHZcFeUz944A&s=10",
             "https://www.bescards.com/cdn/shop/files/16017252548952-2c85b35689e1b991472aa902bfcf7cd2d1f8b144.webp?v=1789744309"
@@ -1017,7 +1017,7 @@ function genererCarteHtml(p) {
     let videoBadgeHtml = '';
     if (p.videoUrl && p.videoUrl.trim() !== '') {
         videoBadgeHtml = `
-            <a href="${p.videoUrl}" target="_blank" class="badge-video" title="Watch unboxing Reel on Instagram">
+            <a onclick="openInstagramReel('${p.videoUrl}')" class="badge-video" title="Watch unboxing Reel on Instagram">
                 <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
                 <span>Reel</span>
             </a>
@@ -1234,4 +1234,5 @@ function filtrer() {
     afficher(resultats);
 }
 
+// AFFICHAGE INITIAL
 afficher(produits);
