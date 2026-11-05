@@ -45,6 +45,12 @@
         .search-bar { flex-grow: 1; min-width: 200px;}
         .category-select { cursor: pointer; appearance: none; padding-right: 40px; background-image: url('data:image/svg+xml;utf8,<svg fill="%23FF6A00" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); background-repeat: no-repeat; background-position: right 10px center; }
         
+        /* DESIGN ÉPURÉ DES SECTIONS D'ÈRES */
+        .era-section { margin-bottom: 50px; }
+        .era-header { margin-bottom: 20px; border-bottom: 1px solid #2a2a2a; padding-bottom: 12px; display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+        .era-title { font-size: 1.8em; font-weight: 900; text-transform: uppercase; letter-spacing: -0.5px; margin: 0; color: #fff; }
+        .era-subtitle { font-size: 0.85em; color: #FF6A00; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin: 0; }
+
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
         .card { background: #1c1c1c; border-radius: 12px; overflow: hidden; border: 1px solid #333; display: flex; flex-direction: column; position: relative; transition: transform 0.2s, border-color 0.2s;}
         .card:hover { transform: translateY(-5px); border-color: #FF6A00; }
@@ -129,10 +135,8 @@
         .btn-modal-secondary:hover { color: #fff; }
 
         @media (max-width: 768px) {
-            /* AJUSTEMENT DU BANDEAU POUR TENIR SUR UNE LIGNE */
             .top-nav { gap: 10px; padding: 10px; }
             .top-nav a { font-size: 0.72em; }
-            
             .trust-bar { flex-direction: column; gap: 10px; padding: 12px; font-size: 0.8em; align-items: flex-start;}
             .grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
             .card h3 { font-size: 0.85em; min-height: 3.75em; }
@@ -202,10 +206,10 @@
         <div class="filters">
             <input type="text" id="search" class="search-bar" placeholder="🔍 Search for a booster, a box..." onkeyup="filtrer()">
             <select id="category-filter" class="category-select" onchange="filtrer()">
-                <option value="">All Categories</option>
+                <option value="">All Categories & Eras</option>
             </select>
         </div>
-        <div class="grid" id="catalogue"></div>
+        <div id="catalogue"></div>
     </div>
 
     <div id="wholesale" class="intro-banner" style="margin-top: 50px; border-color: #FFCB05; scroll-margin-top: 70px;">
