@@ -88,24 +88,26 @@ const produits = [
         nom: "Umbreon Deluxe Box",
         description: "Contains: 1x Umbreon ex Promo, custom Umbreon card sleeves, premium deck box, and 30th Anniversary packs.",
         taobaoId: "1081589285227",
-        taobaoId2: "",
+        taobaoId2: "1083773308654",
         images: [
             "https://www.tcghobby.com/cdn/shop/files/simplifiedchinesedeluxesetumbreon.webp?v=1789224364",
             "https://www.therange.co.uk/media/0/9/1790203452_5789.jpg"
         ],
-        fournisseur: "Panda"
+        fournisseur: "Panda",
+        fournisseurBackup: "AmongUs"
     },
     {
         categorie: "30th Anniversary",
         nom: "Espeon Deluxe Box",
         description: "Contains: 1x Espeon ex Promo, custom Espeon card sleeves, premium deck box, and 30th Anniversary packs.",
         taobaoId: "1081585073446",
-        taobaoId2: "",
+        taobaoId2: "1083773308654",
         images: [
             "https://x-playground.com/cdn/shop/files/Pokemon_TCG_30th_Celebration_Espeon_ex_Deluxe_Deck_Set_Simplified_Chinese.jpg?v=1789823886&width=600",
             "https://www.therange.co.uk/media/2/8/1790203411_8925.jpg"
         ],
-        fournisseur: "Panda"
+        fournisseur: "Panda",
+        fournisseurBackup: "AmongUs"
     },
     {
         categorie: "30th Anniversary",
@@ -178,28 +180,30 @@ const produits = [
         nom: "Dream Figure Vol. 4 (Pikachu Edition)",
         description: "Contains: 1x Exclusive Pikachu-themed merchandise item and assorted booster packs.",
         taobaoId: "1082955160912",
-        taobaoId2: "",
+        taobaoId2: "1079806548243",
         images: [
             "https://collectorstore.com/cdn/shop/files/CollectorStore00002_7207263c-4504-4ee0-ae14-b3d648f6dba7.jpg?v=1790101321&width=1445",
             "https://card-binder.com/cdn/shop/files/Pokemon-30th-celebration-pikachu-figure-blind-box-simplified-chinese-pikachu-figures.webp?v=1788978615&width=1500",
             "https://wholesale.hokeypokegames.co.uk/storage/products/2kdPuW06V6Ouk9qSqpGSVNuCwFwYqpNCl56CwQP6.webp"
         ],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai"
+        fournisseur: "Pokemon Store Shanghai",
+        fournisseurBackup: "AmongUs"
     },
     {
         categorie: ["Blind Boxes", "30th Anniversary"],
         nom: "Dream Figure Vol. 3 (Eevee Edition)",
         description: "Contains: 1x Exclusive Eevee-themed merchandise item and assorted booster packs.",
         taobaoId: "1078195403792",
-        taobaoId2: "",
+        taobaoId2: "1072080775449",
         images: [
             "https://collectorstore.com/cdn/shop/files/CollectorStore00001_3c6277d1-2842-417f-a3c6-63f1dcb381ab.jpg?v=1787866920&width=990",
             "https://levelupstore.co.za/cdn/shop/files/s-l1600_1_8a319222-0268-4635-9c76-fd417facea77_1200x.png?v=1787129610",
             "https://www.reformedpokelab.com/cdn/shop/files/PokemonTCG_SimplifiedChinesePokemonDreamPaintingEevee_EvolutionsFigurineSetBlindBox_f7bc5c1c-9acd-49a1-8798-41d015f94e25_1800x1800.webp?v=1787763479"
         ],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai"
+        fournisseur: "Pokemon Store Shanghai",
+        fournisseurBackup: "AmongUs"
     },
     {
         categorie: "Blind Boxes",
@@ -252,6 +256,15 @@ const produits = [
         ],
         fournisseur: "Panda",
         fournisseurBackup: "AmongUs"
+    },
+    {
+        categorie: "Premium Collection Boxes",
+        nom: "2026 Dragon Boat Festival Box",
+        description: "Contains: Exclusive 2026 Dragon Boat festival promotional items, booster packs, and accessories.",
+        taobaoId: "1058523215773",
+        taobaoId2: "",
+        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Dragon+Boat+2026+Box"],
+        fournisseur: "AmongUs"
     },
     {
         categorie: "Premium Collection Boxes",
@@ -442,28 +455,31 @@ const produits = [
         nom: "Gem Pack Vol. 5",
         description: "Contains: Full factory-sealed display box. Jumbo booster packs with guaranteed holo hits per pack.",
         taobaoId: "1041523213480",
-        taobaoId2: "",
+        taobaoId2: "1038707501926",
         images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9TLXDOLzUX85KYbOhVhPXGUZuYcuJ5YgnPabKA6OwVNgTR-WnT4xAA3o&s=10"],
-        fournisseur: "Panda"
+        fournisseur: "Panda",
+        fournisseurBackup: "AmongUs"
     },
     {
         categorie: "Gem Packs",
         nom: "Gem Pack Vol. 6",
         description: "Contains: Full factory-sealed display box. Jumbo booster packs with guaranteed holo hits per pack.",
         taobaoId: "1070975018438",
-        taobaoId2: "",
+        taobaoId2: "1083773308654",
         images: ["https://remicardtrader.ca/cdn/shop/files/POKECNGEMPACK6.jpg?v=1786454812"],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai"
+        fournisseur: "Pokemon Store Shanghai",
+        fournisseurBackup: "AmongUs"
     },
     {
         categorie: "Gem Packs",
         nom: "Gem Pack Vol. 7 (Psyduck Cover)",
         description: "Contains: Full factory-sealed display box. Jumbo booster packs featuring the highly anticipated Psyduck set.",
         taobaoId: "1095191988269", 
-        taobaoId2: "",
+        taobaoId2: "1093308561553",
         images: ["https://www.yumecards.ca/cdn/shop/files/Product-2026-10-17T231241.139.jpg?v=1792293584"],
-        fournisseur: "Panda"
+        fournisseur: "Panda",
+        fournisseurBackup: "AmongUs"
     },
 
     // ==========================================
@@ -474,17 +490,21 @@ const produits = [
         nom: "Black Bolt & White Flare Display",
         description: "Contains: Factory sealed display box from the Black Bolt / White Flare set.",
         taobaoId: "1094128825003",
-        taobaoId2: "",
+        taobaoId2: "1093554321145",
         images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Black+Bolt+%26+White+Flare"],
-        fournisseur: "Panda"
+        fournisseur: "Panda",
+        fournisseurBackup: "AmongUs"
     },
     {
         categorie: "Scarlet & Violet Era",
         nom: "Chasing Glory (CSV10)",
         description: "Contains: 30 booster packs (5 cards/pack). Factory sealed display box.",
         taobaoId: "1063240655679",
-        taobaoId2: "",
-        images: ["https://collectorstore.com/cdn/shop/files/CollectorStore00001_937038ac-8bb9-4f6e-950b-742363216669.jpg?v=1784582543&width=990"]
+        taobaoId2: "1061450639137",
+        images: ["https://collectorstore.com/cdn/shop/files/CollectorStore00001_937038ac-8bb9-4f6e-950b-742363216669.jpg?v=1784582543&width=990"],
+        isOfficial: true,
+        fournisseur: "Pokemon Store Shanghai",
+        fournisseurBackup: "AmongUs"
     },
     {
         categorie: "Scarlet & Violet Era",
@@ -499,16 +519,22 @@ const produits = [
         nom: "Stellar Crystal (CSV9)",
         description: "Contains: 30 booster packs (5 cards/pack). Factory sealed display box.",
         taobaoId: "1049011746197",
-        taobaoId2: "",
-        images: ["https://remicardtrader.ca/cdn/shop/files/POKECNSTELCRYSSLIM.jpg?v=1781539002"]
+        taobaoId2: "1043568611401",
+        images: ["https://remicardtrader.ca/cdn/shop/files/POKECNSTELCRYSSLIM.jpg?v=1781539002"],
+        isOfficial: true,
+        fournisseur: "Pokemon Store Shanghai",
+        fournisseurBackup: "AmongUs"
     },
     {
         categorie: "Scarlet & Violet Era",
         nom: "Bright Fantasy (CSV8)",
         description: "Contains: 30 booster packs (5 cards/pack). Factory sealed display box.",
         taobaoId: "1027188942536",
-        taobaoId2: "",
-        images: ["https://packflipps.com/cdn/shop/files/IMG_2671.jpg?v=1776975091"]
+        taobaoId2: "1038081281304",
+        images: ["https://packflipps.com/cdn/shop/files/IMG_2671.jpg?v=1776975091"],
+        isOfficial: true,
+        fournisseur: "Pokemon Store Shanghai",
+        fournisseurBackup: "AmongUs"
     },
     {
         categorie: "Scarlet & Violet Era",
@@ -522,18 +548,20 @@ const produits = [
         categorie: "Scarlet & Violet Era",
         nom: "Paradox Veil (CSV6)",
         description: "Contains: 30 booster packs (5 cards/pack). Factory sealed display box.",
-        taobaoId: "",
+        taobaoId: "1036438775767",
         taobaoId2: "",
-        images: ["https://galactictoys.com/cdn/shop/files/6977321128086_1.jpg?v=1787884173"]
+        images: ["https://galactictoys.com/cdn/shop/files/6977321128086_1.jpg?v=1787884173"],
+        fournisseur: "AmongUs"
     },
     {
         categorie: "Scarlet & Violet Era",
         nom: "Dark Crystal Blaze (CSV5)",
         description: "Contains: 30 booster packs (5 cards/pack). Factory sealed display box.",
         taobaoId: "898604193966",
-        taobaoId2: "",
+        taobaoId2: "1038938904501",
         images: ["https://godofcards.com/cdn/shop/files/pokemon-dark-crystal-blaze-csv5c-15er-display-s-chinesisch.jpg?v=1773292564&width=600"],
-        fournisseur: "Panda"
+        fournisseur: "Panda",
+        fournisseurBackup: "AmongUs"
     },
     {
         categorie: "Scarlet & Violet Era",
@@ -588,6 +616,33 @@ const produits = [
     // ==========================================
     // PLACEHOLDERS / UPCOMING RELEASES
     // ==========================================
+    {
+        categorie: "Upcoming Drops",
+        nom: "Lucario Booster Box",
+        description: "Contains: Factory sealed booster box featuring Lucario. Coming soon to RemyTCG.",
+        taobaoId: "",
+        taobaoId2: "",
+        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Lucario+Booster+Box"],
+        statut: "coming_soon"
+    },
+    {
+        categorie: "Upcoming Drops",
+        nom: "Tortank (Blastoise) Box",
+        description: "Contains: Factory sealed special collection box featuring Tortank / Blastoise.",
+        taobaoId: "",
+        taobaoId2: "",
+        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Tortank+Box"],
+        statut: "coming_soon"
+    },
+    {
+        categorie: "Upcoming Drops",
+        nom: "Herbizarre (Ivysaur) Box",
+        description: "Contains: Factory sealed special collection box featuring Herbizarre / Ivysaur.",
+        taobaoId: "",
+        taobaoId2: "",
+        images: ["https://placehold.co/600x400/1c1c1c/FF6A00?text=Herbizarre+Box"],
+        statut: "coming_soon"
+    },
     {
         categorie: "Upcoming Drops",
         nom: "Mew Booster Box",
@@ -705,7 +760,6 @@ function afficher(liste) {
                 <button onclick="triggerProductAction('mobile', '${taobaoUrlRaw}', this)" class="btn-main-card btn-mobile">Copy Link for App</button>
             `;
             
-            // SEULEMENT SI LE BACKUP EXISTE RÉELLEMENT
             if (p.taobaoId2 && p.taobaoId2.trim() !== "") {
                 const taobaoUrlRaw2 = `https://item.taobao.com/item.htm?id=${p.taobaoId2}`;
                 const sugargooUrl2 = formatSugargooLink(p.taobaoId2);
