@@ -232,6 +232,30 @@
             background: transparent !important;
         }
 
+        /* BOUTON ÉLÉGANT POUR ÉTENDRE LES OUT OF STOCK */
+        .btn-expand-archive {
+            grid-column: 1 / -1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px dashed rgba(255, 255, 255, 0.15);
+            color: #888;
+            padding: 12px 18px;
+            border-radius: 8px;
+            font-size: 0.85em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-top: 10px;
+        }
+        .btn-expand-archive:hover {
+            border-color: #FF6A00;
+            color: #FF6A00;
+            background: rgba(255, 106, 0, 0.04);
+        }
+
         .faq-container { max-width: 1560px; width: 95%; margin: 30px auto 0 auto; padding: 0; box-sizing: border-box; }
         .faq-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
         .faq-item { background: #17181c; border: 1px solid rgba(255, 255, 255, 0.07); border-radius: 12px; padding: 20px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-start; }
@@ -293,7 +317,7 @@
             .btn-pc { display: none; }
             .btn-mobile { display: flex; background: #111215; color: #FF6A00; border: 1.5px solid #FF6A00; padding: 0; font-size: 0.78em; }
             .btn-notify.btn-mobile { display: flex; border-color: #444; color: #aaa;}
-            .btn-backup.btn-mobile { display: flex; background: transparent; border-color: #333; color: #888; font-size: 0.74em;}
+            .btn-backup.btn-mobile { display: block; background: transparent; border-color: #333; color: #888; font-size: 0.74em;}
             .footer-pro-bottom { flex-direction: column; text-align: center; justify-content: center; }
             .footer-pro-socials { gap: 15px;}
             .process-container { flex-direction: column; gap: 10px; padding: 12px;}
@@ -568,6 +592,20 @@
             if (itemWidth === 0) return;
             const index = Math.round(carousel.scrollLeft / itemWidth);
             dots.forEach((dot, idx) => dot.classList.toggle('active', idx === index));
+        }
+
+        // ACCORDÉON DES OUT OF STOCK PAR SECTION
+        function toggleArchive(btn, secId) {
+            const hiddenContainer = document.getElementById(secId);
+            const isHidden = hiddenContainer.style.display === 'none' || hiddenContainer.style.display === '';
+            if (isHidden) {
+                hiddenContainer.style.display = 'contents';
+                btn.innerHTML = '▲ Hide Archived / Sold Out Items';
+            } else {
+                hiddenContainer.style.display = 'none';
+                const count = hiddenContainer.querySelectorAll('.card').length;
+                btn.innerHTML = `📦 View ${count} Archived / Sold Out Item${count > 1 ? 's' : ''} (Click to expand)`;
+            }
         }
     </script>
 </body>
