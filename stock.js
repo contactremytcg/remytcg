@@ -23,7 +23,7 @@ const formatSugargooLink = (taobaoId) => {
 
 const produits = [
     // =========================================================================
-    // SECTION 1 : 🔥 TRENDING & BEST SELLERS (6 ITEMS VISIBLES SUR 'ALL')
+    // SECTION 1 : 🔥 TRENDING & BEST SELLERS (SANS BADGES PARASITES)
     // =========================================================================
     {
         section: "🔥 Trending & Best Sellers",
@@ -37,7 +37,6 @@ const produits = [
             "https://www.japan2uk.com/cdn/shop/files/Pokemon_30th_Celebration_30th_C_Simplified_Chinese_Booster_Box_1024x1024.png?v=1790325855",
             "https://toy-treasure.com/cdn/shop/files/30th-celebration-chinese.jpg?v=1790767347&width=1445"
         ],
-        badge: { text: "🔥 Best Seller", color: "#e74c3c" },
         fournisseur: "DunDun TCG"
     },
     {
@@ -84,7 +83,6 @@ const produits = [
             "https://card-binder.com/cdn/shop/files/Pokemon-30th-celebration-pikachu-figure-blind-box-simplified-chinese-pikachu-figures.webp?v=1788978615&width=1500",
             "https://wholesale.hokeypokegames.co.uk/storage/products/2kdPuW06V6Ouk9qSqpGSVNuCwFwYqpNCl56CwQP6.webp"
         ],
-        badge: { text: "⚡ Hot Drop", color: "#f1c40f" },
         isOfficial: true,
         fournisseur: "Pokémon Official Store",
         fournisseurBackup: "Pingtouge TCG"
@@ -141,6 +139,7 @@ const produits = [
             "https://www.yumecards.ca/cdn/shop/files/Product-2026-09-06T091809.798.jpg?v=1788700962",
             "https://static.wixstatic.com/media/11a56d_c16d88f83b554e5ca233378f9ca01c95~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11a56d_c16d88f83b554e5ca233378f9ca01c95~mv2.jpg"
         ],
+        badge: { text: "⚠️ Low Stock", color: "#f39c12" },
         fournisseur: "DunDun TCG",
         fournisseurBackup: "Pingtouge TCG"
     },
@@ -1033,8 +1032,8 @@ function genererCarteHtml(p) {
     if (p.videoUrl && p.videoUrl.trim() !== '') {
         videoBadgeHtml = `
             <a href="${p.videoUrl}" target="_blank" rel="noopener noreferrer" class="badge-video" title="Watch unboxing Reel on Instagram">
-                <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                <span>Reel</span>
+                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                <span>Unboxing</span>
             </a>
         `;
     }
@@ -1149,6 +1148,7 @@ function genererCarteHtml(p) {
 
 function afficher(liste) {
     const container = document.getElementById('catalogue');
+    if (!container) return;
     container.innerHTML = '';
 
     const sectionsOrdre = [
@@ -1165,11 +1165,8 @@ function afficher(liste) {
     ];
 
     let globalArchiveIndex = 0;
-    let totalInStock = 0;
-    let totalArchive = 0;
 
     sectionsOrdre.forEach(secNom => {
-        // La section Trending disparaît si un filtre par catégorie spécifique est sélectionné
         if (secNom === "🔥 Trending & Best Sellers" && activePillCategory !== '') {
             return;
         }
@@ -1192,13 +1189,13 @@ function afficher(liste) {
         const itemsActifs = itemsSec.filter(p => p.statut !== "out_of_stock");
         const itemsArchive = itemsSec.filter(p => p.statut === "out_of_stock");
 
-        totalInStock += itemsActifs.length;
-        totalArchive += itemsArchive.length;
-
         let sectionHtml = `
             <div class="era-section">
                 <div class="era-header">
-                    <h2 class="era-title">${secNom} <span class="era-count-badge">${itemsSec.length} items</span></h2>
+                    <div class="era-title-wrap">
+                        <h2 class="era-title">${secNom}</h2>
+                        <span class="era-count-badge">${itemsSec.length} items</span>
+                    </div>
                     <span class="era-subtitle">${secSubtitle}</span>
                 </div>
                 <div class="grid">
@@ -1225,15 +1222,11 @@ function afficher(liste) {
         sectionHtml += `</div></div>`;
         container.innerHTML += sectionHtml;
     });
-
-    const statsContainer = document.getElementById('catalogStats');
-    if (statsContainer) {
-        statsContainer.innerHTML = `🟢 <span>${totalInStock} Available Sets & Drops</span> &nbsp;•&nbsp; 📦 <span>${totalArchive} Historical Reference Archives</span>`;
-    }
 }
 
 function filtrer() {
-    const recherche = document.getElementById('search').value.toLowerCase();
+    const searchInput = document.getElementById('search');
+    const recherche = searchInput ? searchInput.value.toLowerCase() : '';
     const selection = activePillCategory;
 
     const resultats = produits.filter(p => {
@@ -1255,5 +1248,5 @@ function filtrer() {
     afficher(resultats);
 }
 
-// Initialisation au chargement
+// Initialisation immédiate
 afficher(produits);
