@@ -150,26 +150,28 @@ const produits = [
         nom: "Starter Pack Vol. 2",
         description: "Contains: Wave 2 First Partner Promo cards and a selection of booster packs.",
         taobaoId: "1059308989628",
-        taobaoId2: "",
+        taobaoId2: "1054578164218",
         images: [
             "https://www.tcghobby.com/cdn/shop/files/SimplifiedChinesePokemon30thAnniversaryFirstPartnerSpecialIllustrationCardSetVol.2.webp?crop=center&height=500&v=1778251789&width=600",
             "https://snornap.com/cdn/shop/files/IMG-8913.jpg?v=1781665119&width=1445"
         ],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai"
+        fournisseur: "Pokemon Store Shanghai",
+        fournisseurBackup: "AmongUs"
     },
     {
         categorie: "30th Anniversary",
         nom: "Starter Pack Vol. 3",
         description: "Contains: Wave 3 First Partner Promo cards and a selection of booster packs.",
         taobaoId: "1070165751188",
-        taobaoId2: "",
+        taobaoId2: "1067989553110",
         images: [
             "https://www.tcghobby.com/cdn/shop/files/firstpartnerdisplaysetvol.3set.webp?v=1784301375",
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROegMBxRjhD0vxiYTE75JBj6Q4U3zEvbXPJcsgPMEL5qHhQzryXSfb6tFO&s=10"
         ],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai"
+        fournisseur: "Pokemon Store Shanghai",
+        fournisseurBackup: "AmongUs"
     },
 
     // ==========================================
@@ -210,13 +212,14 @@ const produits = [
         nom: "Dream Figure Vol. 2 Blind Box",
         description: "Contains: 1x Random Dream Vol. 2 Pokémon figure and selected booster packs.",
         taobaoId: "1044387395690",
-        taobaoId2: "",
+        taobaoId2: "1045033219070",
         images: [
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdhtsk-Qh_hf6kAgLTwz6v9CAag4wePr0oN9bafujecqKP01j_Q7M5Vjvw&s=10",
             "https://hanabitradingco.ca/cdn/shop/files/dreamfigurevol2-2.jpg?v=1777231093"
         ],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai"
+        fournisseur: "Pokemon Store Shanghai",
+        fournisseurBackup: "AmongUs"
     },
     {
         categorie: "Blind Boxes",
@@ -359,6 +362,7 @@ const produits = [
         taobaoId2: "",
         images: [
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxa6HqnsRfMAzQN6evqXrYdwe_Fq0syjwNLYsE72-9_w&s=10",
+            "https://ae-pic-a1.aliexpress-media.com/kf/S12cb4b8e79af4815936a842786e80018z.jpg",
             "https://www.tcghobby.com/cdn/shop/files/Simplified_Chinese_Pokemon_Ogerpon_Hearthflame_Gift_Box_Set.webp?v=1779209745&width=645"
         ],
         isOfficial: true,
@@ -382,30 +386,33 @@ const produits = [
         nom: "Chasing Glory Coin Bag",
         description: "Contains: 3x Chasing Glory booster packs and 1x Exclusive themed collector badge/coin.",
         taobaoId: "1067353432814",
-        taobaoId2: "",
+        taobaoId2: "1088794189729",
         images: ["https://images-eu.ssl-images-amazon.com/images/I/71cZJr3YPnL._AC_UL495_SR435,495_.jpg"],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai"
+        fournisseur: "Pokemon Store Shanghai",
+        fournisseurBackup: "AmongUs"
     },
     {
         categorie: "Accessories",
         nom: "Bright Fantasy Coin Bag",
         description: "Contains: 3x Bright Fantasy booster packs and 1x Exclusive themed collector badge/coin.",
         taobaoId: "1026530979141",
-        taobaoId2: "",
+        taobaoId2: "1038882806803",
         images: ["https://erp-image.sgliteasset.com/_next/image?url=https%3A%2F%2Fcdn1.sgliteasset.com%2Ftcglah%2Fimages%2Fproduct%2Fproduct-7525796%2F34x36X3U69d3424537017_1775452741.jpg&w=3840&q=85"],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai"
+        fournisseur: "Pokemon Store Shanghai",
+        fournisseurBackup: "AmongUs"
     },
     {
         categorie: "Accessories",
         nom: "Blade Awakening Coin Bag",
         description: "Contains: 3x Blade Awakening booster packs and 1x Exclusive themed collector badge/coin.",
         taobaoId: "1008157120043",
-        taobaoId2: "",
+        taobaoId2: "1095040159008",
         images: ["https://main-wordpress-bucket-production.lon1.digitaloceanspaces.com/2026/04/pokemon-simplified-chinese-blade-awakening-csv7c-coin-set.png"],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai"
+        fournisseur: "Pokemon Store Shanghai",
+        fournisseurBackup: "AmongUs"
     },
 
     // ==========================================
@@ -541,8 +548,11 @@ const produits = [
         nom: "Blade Awakened (CSV7)",
         description: "Contains: 30 booster packs (5 cards/pack). Factory sealed display box.",
         taobaoId: "1008153816247",
-        taobaoId2: "",
-        images: ["https://remicardtrader.ca/cdn/shop/files/PKCNBASBBOX.jpg?v=1792010716"]
+        taobaoId2: "1036430851914",
+        images: ["https://remicardtrader.ca/cdn/shop/files/PKCNBASBBOX.jpg?v=1792010716"],
+        isOfficial: true,
+        fournisseur: "Pokemon Store Shanghai",
+        fournisseurBackup: "AmongUs"
     },
     {
         categorie: "Scarlet & Violet Era",
@@ -582,9 +592,10 @@ const produits = [
         nom: "Collect 151 Gathering",
         description: "Contains: 20 booster packs. Factory sealed display box from the highly demanded 151 set.",
         taobaoId: "985432609330",
-        taobaoId2: "",
+        taobaoId2: "1060819098263",
         images: ["https://card-binder.com/cdn/shop/files/Pokemon-151C-Collect-151-Gathering-Boosterbox.webp?v=1756631761"],
-        fournisseur: "Panda"
+        fournisseur: "Panda",
+        fournisseurBackup: "AmongUs"
     },
     {
         categorie: "Collect 151 Series",
