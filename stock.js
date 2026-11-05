@@ -23,7 +23,7 @@ const formatSugargooLink = (taobaoId) => {
 
 const produits = [
     // =========================================================================
-    // SECTION 1 : BEST SELLERS & FEATURED DROPS (LIGNE 1 EN VEDETTE)
+    // SECTION 1 : 🔥 TRENDING & BEST SELLERS (SWEET SPOT EXACT DE 6 ARTICLES)
     // =========================================================================
     {
         section: "🔥 Trending & Best Sellers",
@@ -70,7 +70,91 @@ const produits = [
     },
     {
         section: "🔥 Trending & Best Sellers",
-        categorie: ["Coin Bags & Accessories", "30th Anniversary"],
+        categorie: ["Blind Boxes", "30th Anniversary"],
+        nom: "Dream Figure Vol. 4 (Pikachu Edition)",
+        description: "Official collectible Pikachu mystery figurine + assorted booster packs.",
+        taobaoId: "1082955160912",
+        taobaoId2: "1079806548243",
+        images: [
+            "https://collectorstore.com/cdn/shop/files/CollectorStore00002_7207263c-4504-4ee0-ae14-b3d648f6dba7.jpg?v=1790101321&width=1445",
+            "https://card-binder.com/cdn/shop/files/Pokemon-30th-celebration-pikachu-figure-blind-box-simplified-chinese-pikachu-figures.webp?v=1788978615&width=1500",
+            "https://wholesale.hokeypokegames.co.uk/storage/products/2kdPuW06V6Ouk9qSqpGSVNuCwFwYqpNCl56CwQP6.webp"
+        ],
+        badge: { text: "⚡ Hot Drop", color: "#f1c40f" },
+        isOfficial: true,
+        fournisseur: "Pokémon Official Store",
+        fournisseurBackup: "Pingtouge TCG"
+    },
+    {
+        section: "🔥 Trending & Best Sellers",
+        categorie: "Scarlet & Violet Era",
+        nom: "Black Bolt & White Flare Display (CSV10.5)",
+        description: "Factory sealed display box. Standard Chinese retail format.",
+        taobaoId: "1094128825003",
+        taobaoId2: "1093554321145",
+        images: ["https://www.yumecards.ca/cdn/shop/files/Product-2026-10-26T010221.441.jpg?v=1792991251"],
+        fournisseur: "DunDun TCG",
+        fournisseurBackup: "Pingtouge TCG"
+    },
+    {
+        section: "🔥 Trending & Best Sellers",
+        categorie: "Collect 151 Series",
+        nom: "Collect 151 Journey",
+        description: "20 booster packs. Factory sealed display box from the 151 collection.",
+        taobaoId: "899608090307",
+        taobaoId2: "1039895020099",
+        images: ["https://lh6.googleusercontent.com/proxy/rDdWYwY6yLcBtTbQbQ5CzcCqmcUCUs-9ebr0zXjK2IisW3SqfJE6PWm99SUGDmKabd7M7HkgGpwog6F0T4g1c19Rov_ZzKlepN3P7rInxo9J39EJt9oRnic-HqVKTw_5mr6D"],
+        fournisseur: "DunDun TCG",
+        fournisseurBackup: "Pingtouge TCG"
+    },
+
+    // =========================================================================
+    // SECTION 2 : 🏆 30TH ANNIVERSARY COLLECTION (TOUS RÉUNIS ICI AUSSI)
+    // =========================================================================
+    {
+        section: "30th Anniversary Collection",
+        categorie: "30th Anniversary",
+        nom: "30th Anniversary Booster Box (30thC)",
+        description: "Official factory-sealed booster box. 20 packs per box (5 cards/pack).",
+        taobaoId: "1077424694326",
+        taobaoId2: "",
+        images: [
+            "https://www.japan2uk.com/cdn/shop/files/Pokemon_30th_Celebration_30th_C_Simplified_Chinese_Booster_Box_1024x1024.png?v=1790325855",
+            "https://toy-treasure.com/cdn/shop/files/30th-celebration-chinese.jpg?v=1790767347&width=1445"
+        ],
+        fournisseur: "DunDun TCG"
+    },
+    {
+        section: "30th Anniversary Collection",
+        categorie: "30th Anniversary",
+        nom: "Umbreon & Espeon UPC Box",
+        description: "Ultimate Premium Collection with exclusive Eeveelution promos, accessories & booster packs.",
+        taobaoId: "1081612197981",
+        taobaoId2: "1077143359404",
+        images: [
+            "https://www.yumecards.ca/cdn/shop/files/Product-2026-09-06T091809.798.jpg?v=1788700962",
+            "https://static.wixstatic.com/media/11a56d_c16d88f83b554e5ca233378f9ca01c95~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11a56d_c16d88f83b554e5ca233378f9ca01c95~mv2.jpg"
+        ],
+        fournisseur: "DunDun TCG",
+        fournisseurBackup: "Pingtouge TCG"
+    },
+    {
+        section: "30th Anniversary Collection",
+        categorie: "30th Anniversary",
+        nom: "Charizard Figure Box",
+        description: "Exclusive Charizard collectible figurine, promo cards, and anniversary booster packs.",
+        taobaoId: "1078493401671",
+        taobaoId2: "1075622019018",
+        images: [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ujY7LxSFCuTbsYIDy-nzNPJNsdUKHIzHZcFeUz944A&s=10",
+            "https://www.bescards.com/cdn/shop/files/16017252548952-2c85b35689e1b991472aa902bfcf7cd2d1f8b144.webp?v=1789744309"
+        ],
+        fournisseur: "DunDun TCG",
+        fournisseurBackup: "Pingtouge TCG"
+    },
+    {
+        section: "30th Anniversary Collection",
+        categorie: "30th Anniversary",
         nom: "30th Anniversary Coin Bag",
         description: "3x 30th Anniversary booster packs + 1x guaranteed holographic promo card & coin.",
         taobaoId: "1078477045552",
@@ -78,9 +162,116 @@ const produits = [
         images: ["https://i0.wp.com/katzenworld.shop/wp-content/uploads/2026/10/xCsvB678SEHnQsnJEwA77_b0X5C_j1iK9xxyQceY-t_KUwwLreptpTpXEX0qHQWHPqk9WlhnN2QZ1yrg0YdisjlyQ9IMxV-whH58ShVYumxCmz8a0LPxVc8lOcENGBtWJeNdq1_NZWYt5ucX0s73g5Qbw_W6i7-oGYaptOiANo_JHoO6qQh_dU24ewjlOK8t.jpeg?fit=1080%2C1080&ssl=1"],
         fournisseur: "DunDun TCG"
     },
+    {
+        section: "30th Anniversary Collection",
+        categorie: "30th Anniversary",
+        nom: "Futuristic Box",
+        description: "Premium display box, exclusive futuristic-themed accessories & booster packs.",
+        taobaoId: "1076581683957",
+        taobaoId2: "", 
+        images: ["https://monketic.com/cdn/shop/files/002_b0146a55-cf66-42d3-921c-9b62d7c09e3b.png?v=1792512443&width=1445"],
+        fournisseur: "DunDun TCG"
+    },
+    {
+        section: "30th Anniversary Collection",
+        categorie: "30th Anniversary",
+        nom: "Umbreon Deluxe Box",
+        description: "1x Umbreon ex Promo, custom card sleeves, premium deck box & 30th Anniversary packs.",
+        taobaoId: "1081589285227",
+        taobaoId2: "1083773308654",
+        images: [
+            "https://www.tcghobby.com/cdn/shop/files/simplifiedchinesedeluxesetumbreon.webp?v=1789224364",
+            "https://www.therange.co.uk/media/0/9/1790203452_5789.jpg"
+        ],
+        fournisseur: "DunDun TCG",
+        fournisseurBackup: "Pingtouge TCG"
+    },
+    {
+        section: "30th Anniversary Collection",
+        categorie: "30th Anniversary",
+        nom: "Espeon Deluxe Box",
+        description: "1x Espeon ex Promo, custom card sleeves, premium deck box & 30th Anniversary packs.",
+        taobaoId: "1081585073446",
+        taobaoId2: "1083773308654",
+        images: [
+            "https://x-playground.com/cdn/shop/files/Pokemon_TCG_30th_Celebration_Espeon_ex_Deluxe_Deck_Set_Simplified_Chinese.jpg?v=1789823886&width=600",
+            "https://www.therange.co.uk/media/2/8/1790203411_8925.jpg"
+        ],
+        fournisseur: "DunDun TCG",
+        fournisseurBackup: "Pingtouge TCG"
+    },
+    {
+        section: "30th Anniversary Collection",
+        categorie: "30th Anniversary",
+        nom: "Greninja Keychain Box",
+        description: "3x 30th Anniversary booster packs, 1x Greninja ex promo card & 1x display keychain.",
+        taobaoId: "1080814663430",
+        taobaoId2: "",
+        images: [
+            "https://x-playground.com/cdn/shop/files/Pokemon_TCG_30th_Celebration_Greninja_ex_Card_Display_Sleeve_Set.jpg?v=1789822489&width=600",
+            "https://www.therange.co.uk/media/3/3/1790203353_7893.jpg"
+        ],
+        fournisseur: "Pingtouge TCG"
+    },
+    {
+        section: "30th Anniversary Collection",
+        categorie: "30th Anniversary",
+        nom: "Sylveon Keychain Box",
+        description: "3x 30th Anniversary booster packs, 1x Sylveon ex promo card & 1x display keychain.",
+        taobaoId: "1080814663430",
+        taobaoId2: "",
+        images: [
+            "https://spoilsandloot.com/cdn/shop/files/syl_1.jpg?v=1789577455",
+            "https://www.therange.co.uk/media/7/6/1790203399_5932.jpg"
+        ],
+        fournisseur: "Pingtouge TCG"
+    },
+    {
+        section: "30th Anniversary Collection",
+        categorie: "30th Anniversary",
+        nom: "Starter Pack Vol. 1",
+        description: "First Partner Promo cards and a selection of booster packs. Great for starters.",
+        taobaoId: "1036462263685",
+        taobaoId2: "",
+        images: [
+            "https://www.tcghobby.com/cdn/shop/files/Simplified_Chinese_Pokemon_30th_Anniversary_First_Partner_Special_Illustration_Card_Set_Vol._1_Display_Set.jpg?v=1776401355&width=645",
+            "https://hanabitradingco.ca/cdn/shop/files/IMG-8415.png?v=1774029915"
+        ],
+        fournisseur: "Pingtouge TCG"
+    },
+    {
+        section: "30th Anniversary Collection",
+        categorie: "30th Anniversary",
+        nom: "Starter Pack Vol. 2",
+        description: "Wave 2 First Partner Promo cards and a curated selection of booster packs.",
+        taobaoId: "1059308989628",
+        taobaoId2: "1054578164218",
+        images: [
+            "https://www.tcghobby.com/cdn/shop/files/SimplifiedChinesePokemon30thAnniversaryFirstPartnerSpecialIllustrationCardSetVol.2.webp?crop=center&height=500&v=1778251789&width=600",
+            "https://snornap.com/cdn/shop/files/IMG-8913.jpg?v=1781665119&width=1445"
+        ],
+        isOfficial: true,
+        fournisseur: "Pokémon Official Store",
+        fournisseurBackup: "Pingtouge TCG"
+    },
+    {
+        section: "30th Anniversary Collection",
+        categorie: "30th Anniversary",
+        nom: "Starter Pack Vol. 3",
+        description: "Wave 3 First Partner Promo cards and a curated selection of booster packs.",
+        taobaoId: "1070165751188",
+        taobaoId2: "1067989553110",
+        images: [
+            "https://www.tcghobby.com/cdn/shop/files/firstpartnerdisplaysetvol.3set.webp?v=1784301375",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROegMBxRjhD0vxiYTE75JBj6Q4U3zEvbXPJcsgPMEL5qHhQzryXSfb6tFO&s=10"
+        ],
+        isOfficial: true,
+        fournisseur: "Pokémon Official Store",
+        fournisseurBackup: "Pingtouge TCG"
+    },
 
     // =========================================================================
-    // SECTION 2 : SCARLET & VIOLET ERA (DU PLUS RÉCENT AU PLUS ANCIEN)
+    // SECTION 3 : SCARLET & VIOLET ERA (DU PLUS RÉCENT AU PLUS ANCIEN)
     // =========================================================================
     {
         section: "Scarlet & Violet Era",
@@ -215,7 +406,7 @@ const produits = [
     },
 
     // =========================================================================
-    // SECTION 3 : GEM PACKS (DU VOL. 7 AU VOL. 1)
+    // SECTION 4 : GEM PACKS (DU VOL. 7 AU VOL. 1)
     // =========================================================================
     {
         section: "Gem Packs",
@@ -297,7 +488,7 @@ const produits = [
     },
 
     // =========================================================================
-    // SECTION 4 : COLLECT 151 SERIES (CHRONOLOGIQUE)
+    // SECTION 5 : COLLECT 151 SERIES (CHRONOLOGIQUE)
     // =========================================================================
     {
         section: "Collect 151 Series",
@@ -341,7 +532,7 @@ const produits = [
     },
 
     // =========================================================================
-    // SECTION 5 : SWORD & SHIELD ERA (DU CS6 AU CS1)
+    // SECTION 6 : SWORD & SHIELD ERA (DU CS6 AU CS1)
     // =========================================================================
     {
         section: "Sword & Shield Era",
@@ -469,7 +660,7 @@ const produits = [
     },
 
     // =========================================================================
-    // SECTION 6 : FESTIVAL GIFT BOXES
+    // SECTION 7 : FESTIVAL GIFT BOXES
     // =========================================================================
     {
         section: "Festival Gift Boxes",
@@ -500,8 +691,18 @@ const produits = [
     },
 
     // =========================================================================
-    // SECTION 7 : COIN BAGS & ACCESSORIES (TOUS ENSEMBLE)
+    // SECTION 8 : COIN BAGS & ACCESSORIES (TOUS ENSEMBLE)
     // =========================================================================
+    {
+        section: "Coin Bags & Accessories",
+        categorie: "Coin Bags & Accessories",
+        nom: "30th Anniversary Coin Bag",
+        description: "3x 30th Anniversary booster packs + 1x guaranteed holographic promo card & coin.",
+        taobaoId: "1078477045552",
+        taobaoId2: "",
+        images: ["https://i0.wp.com/katzenworld.shop/wp-content/uploads/2026/10/xCsvB678SEHnQsnJEwA77_b0X5C_j1iK9xxyQceY-t_KUwwLreptpTpXEX0qHQWHPqk9WlhnN2QZ1yrg0YdisjlyQ9IMxV-whH58ShVYumxCmz8a0LPxVc8lOcENGBtWJeNdq1_NZWYt5ucX0s73g5Qbw_W6i7-oGYaptOiANo_JHoO6qQh_dU24ewjlOK8t.jpeg?fit=1080%2C1080&ssl=1"],
+        fournisseur: "DunDun TCG"
+    },
     {
         section: "Coin Bags & Accessories",
         categorie: "Coin Bags & Accessories",
@@ -553,115 +754,8 @@ const produits = [
     },
 
     // =========================================================================
-    // SECTION 8 : PREMIUM COLLECTION & 30TH BOXES
+    // SECTION 9 : PREMIUM COLLECTION BOXES
     // =========================================================================
-    {
-        section: "Premium Collection Boxes",
-        categorie: "30th Anniversary",
-        nom: "Futuristic Box",
-        description: "Premium display box, exclusive futuristic-themed accessories & booster packs.",
-        taobaoId: "1076581683957",
-        taobaoId2: "", 
-        images: ["https://monketic.com/cdn/shop/files/002_b0146a55-cf66-42d3-921c-9b62d7c09e3b.png?v=1792512443&width=1445"],
-        fournisseur: "DunDun TCG"
-    },
-    {
-        section: "Premium Collection Boxes",
-        categorie: "30th Anniversary",
-        nom: "Umbreon Deluxe Box",
-        description: "1x Umbreon ex Promo, custom card sleeves, premium deck box & 30th Anniversary packs.",
-        taobaoId: "1081589285227",
-        taobaoId2: "1083773308654",
-        images: [
-            "https://www.tcghobby.com/cdn/shop/files/simplifiedchinesedeluxesetumbreon.webp?v=1789224364",
-            "https://www.therange.co.uk/media/0/9/1790203452_5789.jpg"
-        ],
-        fournisseur: "DunDun TCG",
-        fournisseurBackup: "Pingtouge TCG"
-    },
-    {
-        section: "Premium Collection Boxes",
-        categorie: "30th Anniversary",
-        nom: "Espeon Deluxe Box",
-        description: "1x Espeon ex Promo, custom card sleeves, premium deck box & 30th Anniversary packs.",
-        taobaoId: "1081585073446",
-        taobaoId2: "1083773308654",
-        images: [
-            "https://x-playground.com/cdn/shop/files/Pokemon_TCG_30th_Celebration_Espeon_ex_Deluxe_Deck_Set_Simplified_Chinese.jpg?v=1789823886&width=600",
-            "https://www.therange.co.uk/media/2/8/1790203411_8925.jpg"
-        ],
-        fournisseur: "DunDun TCG",
-        fournisseurBackup: "Pingtouge TCG"
-    },
-    {
-        section: "Premium Collection Boxes",
-        categorie: "30th Anniversary",
-        nom: "Greninja Keychain Box",
-        description: "3x 30th Anniversary booster packs, 1x Greninja ex promo card & 1x display keychain.",
-        taobaoId: "1080814663430",
-        taobaoId2: "",
-        images: [
-            "https://x-playground.com/cdn/shop/files/Pokemon_TCG_30th_Celebration_Greninja_ex_Card_Display_Sleeve_Set.jpg?v=1789822489&width=600",
-            "https://www.therange.co.uk/media/3/3/1790203353_7893.jpg"
-        ],
-        fournisseur: "Pingtouge TCG"
-    },
-    {
-        section: "Premium Collection Boxes",
-        categorie: "30th Anniversary",
-        nom: "Sylveon Keychain Box",
-        description: "3x 30th Anniversary booster packs, 1x Sylveon ex promo card & 1x display keychain.",
-        taobaoId: "1080814663430",
-        taobaoId2: "",
-        images: [
-            "https://spoilsandloot.com/cdn/shop/files/syl_1.jpg?v=1789577455",
-            "https://www.therange.co.uk/media/7/6/1790203399_5932.jpg"
-        ],
-        fournisseur: "Pingtouge TCG"
-    },
-    {
-        section: "Premium Collection Boxes",
-        categorie: "30th Anniversary",
-        nom: "Starter Pack Vol. 1",
-        description: "First Partner Promo cards and a selection of booster packs. Great for starters.",
-        taobaoId: "1036462263685",
-        taobaoId2: "",
-        images: [
-            "https://www.tcghobby.com/cdn/shop/files/Simplified_Chinese_Pokemon_30th_Anniversary_First_Partner_Special_Illustration_Card_Set_Vol._1_Display_Set.jpg?v=1776401355&width=645",
-            "https://hanabitradingco.ca/cdn/shop/files/IMG-8415.png?v=1774029915"
-        ],
-        fournisseur: "Pingtouge TCG"
-    },
-    {
-        section: "Premium Collection Boxes",
-        categorie: "30th Anniversary",
-        nom: "Starter Pack Vol. 2",
-        description: "Wave 2 First Partner Promo cards and a curated selection of booster packs.",
-        taobaoId: "1059308989628",
-        taobaoId2: "1054578164218",
-        images: [
-            "https://www.tcghobby.com/cdn/shop/files/SimplifiedChinesePokemon30thAnniversaryFirstPartnerSpecialIllustrationCardSetVol.2.webp?crop=center&height=500&v=1778251789&width=600",
-            "https://snornap.com/cdn/shop/files/IMG-8913.jpg?v=1781665119&width=1445"
-        ],
-        isOfficial: true,
-        fournisseur: "Pokémon Official Store",
-        fournisseurBackup: "Pingtouge TCG"
-    },
-    {
-        section: "Premium Collection Boxes",
-        categorie: "30th Anniversary",
-        nom: "Starter Pack Vol. 3",
-        description: "Wave 3 First Partner Promo cards and a curated selection of booster packs.",
-        taobaoId: "1070165751188",
-        taobaoId2: "1067989553110",
-        images: [
-            "https://www.tcghobby.com/cdn/shop/files/firstpartnerdisplaysetvol.3set.webp?v=1784301375",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROegMBxRjhD0vxiYTE75JBj6Q4U3zEvbXPJcsgPMEL5qHhQzryXSfb6tFO&s=10"
-        ],
-        isOfficial: true,
-        fournisseur: "Pokémon Official Store",
-        fournisseurBackup: "Pingtouge TCG"
-    },
     {
         section: "Premium Collection Boxes",
         categorie: "Premium Collection Boxes",
@@ -775,11 +869,11 @@ const produits = [
     },
 
     // =========================================================================
-    // SECTION 9 : BLIND BOXES & FIGURES
+    // SECTION 10 : BLIND BOXES & FIGURES
     // =========================================================================
     {
         section: "Blind Boxes & Figures",
-        categorie: ["Blind Boxes", "30th Anniversary"],
+        categorie: "Blind Boxes",
         nom: "Dream Figure Vol. 4 (Pikachu Edition)",
         description: "Official collectible Pikachu mystery figurine + assorted booster packs.",
         taobaoId: "1082955160912",
@@ -859,6 +953,7 @@ function afficher(liste) {
 
     const sectionsOrdre = [
         "🔥 Trending & Best Sellers",
+        "30th Anniversary Collection",
         "Scarlet & Violet Era",
         "Gem Packs",
         "Collect 151 Series",
@@ -875,6 +970,7 @@ function afficher(liste) {
 
         let secSubtitle = "";
         if (secNom === "🔥 Trending & Best Sellers") secSubtitle = "Curated Top Picks for Immediate Dispatch";
+        else if (secNom === "30th Anniversary Collection") secSubtitle = "Complete 30th Anniversary Release Lineup";
         else if (secNom === "Scarlet & Violet Era") secSubtitle = "CSV10.5 through CSV1 Main Sets";
         else if (secNom === "Gem Packs") secSubtitle = "Vol. 7 through Vol. 1 Jumbo Boosters";
         else if (secNom === "Collect 151 Series") secSubtitle = "The Definitive Kanto 151 Archive";
