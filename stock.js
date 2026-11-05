@@ -532,7 +532,7 @@ const produits = [
     },
 
     // =========================================================================
-    // SECTION 6 : SWORD & SHIELD ERA (AVEC POKÉ BALL & SUPER BALL CS3)
+    // SECTION 6 : SWORD & SHIELD ERA (AVEC POKÉ BALL, SUPER BALL & ULTRA BALL)
     // =========================================================================
     {
         section: "Sword & Shield Era",
@@ -621,19 +621,6 @@ const produits = [
     {
         section: "Sword & Shield Era",
         categorie: "Sword & Shield Era",
-        nom: "Great Ball Gift Set (CS3A)",
-        description: "Official CS3A collection set featuring Great Ball (Super Ball) accessories & booster packs.",
-        taobaoId: "",
-        taobaoId2: "",
-        images: [
-            "https://godofcards.com/cdn/shop/files/PokemonPTCG5.0SuperballS-ChinesischKomprimiert.jpg?v=1749731192&width=2048",
-            "https://kanika.lv/wp-content/uploads/group-86-1.png"
-        ],
-        statut: "coming_soon"
-    },
-    {
-        section: "Sword & Shield Era",
-        categorie: "Sword & Shield Era",
         nom: "Poké Ball Gift Set (CS3B)",
         description: "Official CS3B collection set featuring Poké Ball accessories & booster packs.",
         taobaoId: "1038982704292",
@@ -644,6 +631,19 @@ const produits = [
         ],
         fournisseur: "Pingtouge TCG",
         fournisseurBackup: "DunDun TCG"
+    },
+    {
+        section: "Sword & Shield Era",
+        categorie: "Sword & Shield Era",
+        nom: "Great Ball Gift Set (CS3A)",
+        description: "Official CS3A collection set featuring Great Ball (Super Ball) accessories & booster packs.",
+        taobaoId: "",
+        taobaoId2: "",
+        images: [
+            "https://godofcards.com/cdn/shop/files/PokemonPTCG5.0SuperballS-ChinesischKomprimiert.jpg?v=1749731192&width=2048",
+            "https://kanika.lv/wp-content/uploads/group-86-1.png"
+        ],
+        statut: "coming_soon"
     },
     {
         section: "Sword & Shield Era",
@@ -1132,6 +1132,8 @@ function afficher(liste) {
     ];
 
     let globalArchiveIndex = 0;
+    let totalInStock = 0;
+    let totalArchive = 0;
 
     sectionsOrdre.forEach(secNom => {
         const itemsSec = liste.filter(p => p.section === secNom);
@@ -1149,25 +1151,26 @@ function afficher(liste) {
         else if (secNom === "Premium Collection Boxes") secSubtitle = "Deluxe ETBs & Specialty Collector Boxes";
         else if (secNom === "Blind Boxes & Figures") secSubtitle = "Official Mystery Figurines & Boosters";
 
-        // SÉPARATION DES ARTICLES DISPONIBLES ET DES SOLD OUT
+        // SÉPARATION DES ARTICLES DISPONIBLES ET DES SOLD OUT DANS LEUR ORDRE STRICT
         const itemsActifs = itemsSec.filter(p => p.statut !== "out_of_stock");
         const itemsArchive = itemsSec.filter(p => p.statut === "out_of_stock");
+
+        totalInStock += itemsActifs.length;
+        totalArchive += itemsArchive.length;
 
         let sectionHtml = `
             <div class="era-section">
                 <div class="era-header">
-                    <h2 class="era-title">${secNom}</h2>
+                    <h2 class="era-title">${secNom} <span class="era-count-badge">${itemsSec.length} items</span></h2>
                     <span class="era-subtitle">${secSubtitle}</span>
                 </div>
                 <div class="grid">
         `;
 
-        // AFFICHE D'ABORD TOUS LES ARTICLES COMMANDABLES
         itemsActifs.forEach(p => {
             sectionHtml += genererCarteHtml(p);
         });
 
-        // SI LA SECTION A DES SOLD OUT : TIROIR ÉLÉGANT PLIABLE
         if (itemsArchive.length > 0) {
             globalArchiveIndex++;
             const archiveId = `archive-sec-${globalArchiveIndex}`;
@@ -1185,19 +1188,16 @@ function afficher(liste) {
         sectionHtml += `</div></div>`;
         container.innerHTML += sectionHtml;
     });
-}
 
-function genererCategories() {
-    const select = document.getElementById('category-filter');
-    const allSections = [...new Set(produits.map(p => p.section))];
-    allSections.forEach(sec => {
-        select.innerHTML += `<option value="${sec}">${sec}</option>`;
-    });
+    const statsContainer = document.getElementById('catalogStats');
+    if (statsContainer) {
+        statsContainer.innerHTML = `🟢 <span>${totalInStock} Available Sets & Drops</span> &nbsp;•&nbsp; 📦 <span>${totalArchive} Historical Reference Archives</span>`;
+    }
 }
 
 function filtrer() {
     const recherche = document.getElementById('search').value.toLowerCase();
-    const selection = document.getElementById('category-filter').value;
+    const selection = activePillCategory;
 
     const resultats = produits.filter(p => {
         const correspondTexte = p.nom.toLowerCase().includes(recherche) || 
@@ -1211,5 +1211,4 @@ function filtrer() {
     afficher(resultats);
 }
 
-genererCategories();
 afficher(produits);
