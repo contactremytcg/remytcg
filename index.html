@@ -39,7 +39,7 @@
         .logo-container { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 2px; }
         .logo-img { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
         h1 { margin: 0; font-weight: 900; font-size: 2.2em; letter-spacing: -1.2px; text-transform: uppercase; line-height: 1.1;}
-        .subtitle { font-weight: 700; font-size: 0.92em; opacity: 0.95; max-width: 650px; margin: 3px auto 0 auto; }
+        .subtitle { font-weight: 700; font-size: 0.92em; opacity: 0.95; max-width: 650px; margin: 3px auto 0 auto; letter-spacing: 0.3px; }
         
         .trust-bar { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; background: #16171b; padding: 8px 15px; font-size: 0.8em; font-weight: 700; border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
         .trust-item { display: flex; align-items: center; gap: 6px; color: #ccc; }
@@ -74,15 +74,41 @@
         .search-bar { width: 100%; box-sizing: border-box; padding: 10px 18px; border-radius: 50px; border: 1px solid rgba(255, 255, 255, 0.12); background: #17181c; color: white; font-size: 0.88em; outline: none; transition: border-color 0.3s; }
         .search-bar:focus { border-color: #FF6A00; }
 
+        /* CONTENEUR DE FILTRES AVEC TOUCHES GAUCHE/DROITE */
         .filter-wrapper {
             position: relative;
             margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .filter-nav-btn {
+            background: #17181c;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #FF6A00;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 900;
+            user-select: none;
+            flex-shrink: 0;
+            z-index: 3;
+            transition: all 0.2s ease;
+        }
+        .filter-nav-btn:hover {
+            background: #FF6A00;
+            color: #fff;
         }
         .filter-pills { 
             display: flex; 
             justify-content: center; 
             gap: 8px; 
             flex-wrap: wrap; 
+            flex-grow: 1;
         }
         .filter-pill {
             background: #17181c;
@@ -434,10 +460,10 @@
             .top-nav { gap: 8px; padding: 8px 6px; flex-wrap: nowrap; overflow-x: auto; justify-content: center; }
             .top-nav a { font-size: 0.72em; letter-spacing: 0.5px; white-space: nowrap; }
             .nav-sep { font-size: 0.6em; }
-            .header { padding: 10px 12px; }
+            .header { padding: 12px 14px; }
             .logo-img { width: 28px; height: 28px; border-width: 1.5px; }
             h1 { font-size: 1.6em; }
-            .subtitle { font-size: 0.72em; margin-top: 1px; }
+            .subtitle { font-size: 0.72em; margin-top: 2px; }
             
             .trust-bar { padding: 4px 8px; font-size: 0.68em; gap: 8px; justify-content: center; }
             
@@ -456,28 +482,21 @@
             .search-container { margin-bottom: 6px; }
             .search-bar { padding: 7px 12px; font-size: 0.78em; }
 
-            /* DÉFILEMENT AVEC PEEK EFFECT */
             .filter-wrapper {
                 margin-bottom: 12px;
-                position: relative;
+                gap: 4px;
             }
-            .filter-wrapper::after {
-                content: '';
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                width: 48px;
-                background: linear-gradient(to right, rgba(17, 18, 21, 0) 0%, rgba(17, 18, 21, 0.95) 100%);
-                pointer-events: none;
-                z-index: 2;
+            .filter-nav-btn {
+                width: 24px;
+                height: 24px;
+                font-size: 11px;
             }
             .filter-pills { 
                 display: flex;
                 flex-wrap: nowrap; 
                 overflow-x: auto; 
                 justify-content: flex-start; 
-                padding: 2px 42px 8px 4px; 
+                padding: 2px 4px 6px 4px; 
                 -webkit-overflow-scrolling: touch;
                 scrollbar-width: none;
             }
@@ -539,6 +558,7 @@
         </div>
     </div>
 
+    <!-- BANDEAU DE NAVIGATION ALIGNÉ SUR LE SCROLL -->
     <nav class="top-nav">
         <a href="#setup">Start</a>
         <span class="nav-sep">•</span>
@@ -551,12 +571,13 @@
         <a href="#contact">Contact</a>
     </nav>
 
+    <!-- HEADER PRO STYLE RPT SANS EMOJI SUR 1 LIGNE -->
     <div class="header">
         <div class="logo-container">
             <img src="https://scontent-sin11-2.cdninstagram.com/v/t51.82787-19/846528981_18117825301906300_2410003667728457360_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=101&ig_cache_key=GNUBdTJ8AzntEF5AAJDeVyqRDXIhbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=R86uzwtI-38Q7kNvwHw5b96&_nc_oc=AdpjE0JmV25Oje8YXwqyXWLSepl4kTg9pO0uT4962FwCL-1H7v3HtRBW4FKTlXbPN55yXMCN73w_1xvjzhatgyu8&_nc_zt=24&_nc_ht=scontent-sin11-2.cdninstagram.com&_nc_gid=px0MMH314KMRbj77Pq-sog&_nc_ss=7b689&oh=00_AQTSj8vrDPcdgdPKpmJJ49uuphrUfiA7u6JTHdWwr13dXA&oe=6AEFF132" alt="RemyTCG Logo" class="logo-img">
             <h1>RemyTCG</h1>
         </div>
-        <div class="subtitle">🇨🇳 Your trusted proxy for 100% Authentic Simplified Chinese Pokémon TCG</div>
+        <div class="subtitle">Simplified Chinese Pokémon TCG • Direct Proxy Service</div>
     </div>
 
     <!-- BANDEAU DE RÉASSURANCE SUR 1 LIGNE -->
@@ -592,6 +613,7 @@
             <input type="text" id="search" class="search-bar" placeholder="🔍 Search booster box, UPC, blind boxes..." onkeyup="filtrer()">
         </div>
         <div class="filter-wrapper">
+            <button class="filter-nav-btn" onclick="scrollFilters(-180)" title="Scroll categories left">‹</button>
             <div class="filter-pills" id="filterPills">
                 <button class="filter-pill active" onclick="selectPill(this, '')">All Releases</button>
                 <button class="filter-pill" onclick="selectPill(this, '30th Anniversary')">30th Anniversary</button>
@@ -603,21 +625,12 @@
                 <button class="filter-pill" onclick="selectPill(this, 'Coin Bags')">Coin Bags</button>
                 <button class="filter-pill" onclick="selectPill(this, 'Blind Boxes')">Blind Boxes</button>
             </div>
+            <button class="filter-nav-btn" onclick="scrollFilters(180)" title="Scroll categories right">›</button>
         </div>
         <div id="catalogue"></div>
     </div>
 
-    <!-- WHOLESALE AVEC MAILTO DIRECT -->
-    <div id="wholesale" class="intro-banner" style="border-color: #FFCB05; margin-top: 25px;">
-        <div class="intro-banner-text">
-            <h2 style="color: #FFCB05;">💼 Wholesale & Bulk Orders</h2>
-            <p>Factory-sealed cartons directly from Mainland distributors. Minimum order value: $500 USD.</p>
-        </div>
-        <div class="intro-banner-action">
-            <a href="mailto:contact.remytcg@gmail.com?subject=Wholesale%20Bulk%20Order%20Inquiry" class="btn-main" style="background: #FFCB05; color: #111;">Contact Us for Bulk Quote</a>
-        </div>
-    </div>
-
+    <!-- GUIDE D'ACHAT & FAQ -->
     <div id="guide" class="faq-container">
         <h2 style="text-align: center; color: #FF6A00; font-size: 1.5em; margin: 0 0 16px 0;">Buyer Guide & FAQ</h2>
         
@@ -684,6 +697,17 @@
                     <li><strong>Application:</strong> Usable on your international shipping checkout.</li>
                 </ul>
             </div>
+        </div>
+    </div>
+
+    <!-- WHOLESALE / B2B PLACE APRES LA FAQ -->
+    <div id="wholesale" class="intro-banner" style="border-color: #FFCB05; margin-top: 25px;">
+        <div class="intro-banner-text">
+            <h2 style="color: #FFCB05;">💼 Wholesale & Bulk Orders</h2>
+            <p>Factory-sealed cartons directly from Mainland distributors. Minimum order value: $500 USD.</p>
+        </div>
+        <div class="intro-banner-action">
+            <a href="mailto:contact.remytcg@gmail.com?subject=Wholesale%20Bulk%20Order%20Inquiry" class="btn-main" style="background: #FFCB05; color: #111;">Contact Us for Bulk Quote</a>
         </div>
     </div>
 
@@ -769,6 +793,11 @@
             const modal = document.getElementById('welcomeModal');
             modal.style.opacity = '0';
             setTimeout(() => modal.style.display = 'none', 300);
+        }
+
+        function scrollFilters(offset) {
+            const pillsContainer = document.getElementById('filterPills');
+            pillsContainer.scrollBy({ left: offset, behavior: 'smooth' });
         }
 
         function slideCarousel(btn, direction) {
