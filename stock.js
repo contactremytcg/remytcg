@@ -102,7 +102,7 @@ const produits = [
         taobaoId2: "1061450639137",
         images: ["https://collectorstore.com/cdn/shop/files/CollectorStore00001_937038ac-8bb9-4f6e-950b-742363216669.jpg?v=1784582543&width=990"],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai",
+        fournisseur: "Pokémon Official Store",
         fournisseurBackup: "Pingtouge TCG"
     },
     {
@@ -124,7 +124,7 @@ const produits = [
         taobaoId2: "1043568611401",
         images: ["https://remicardtrader.ca/cdn/shop/files/POKECNSTELCRYSSLIM.jpg?v=1781539002"],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai",
+        fournisseur: "Pokémon Official Store",
         fournisseurBackup: "Pingtouge TCG"
     },
     {
@@ -136,7 +136,7 @@ const produits = [
         taobaoId2: "1038081281304",
         images: ["https://packflipps.com/cdn/shop/files/IMG_2671.jpg?v=1776975091"],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai",
+        fournisseur: "Pokémon Official Store",
         fournisseurBackup: "Pingtouge TCG"
     },
     {
@@ -148,7 +148,7 @@ const produits = [
         taobaoId2: "1036430851914",
         images: ["https://remicardtrader.ca/cdn/shop/files/PKCNBASBBOX.jpg?v=1792010716"],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai",
+        fournisseur: "Pokémon Official Store",
         fournisseurBackup: "Pingtouge TCG"
     },
     {
@@ -237,7 +237,7 @@ const produits = [
         taobaoId2: "1083773308654",
         images: ["https://remicardtrader.ca/cdn/shop/files/POKECNGEMPACK6.jpg?v=1786454812"],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai",
+        fournisseur: "Pokémon Official Store",
         fournisseurBackup: "Pingtouge TCG"
     },
     {
@@ -260,7 +260,7 @@ const produits = [
         taobaoId2: "1036427603877", 
         images: ["https://spoilsandloot.com/cdn/shop/files/chinese-gem-pack-vol-4-pokemon-booster-box.webp?v=1774588957"],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai",
+        fournisseur: "Pokémon Official Store",
         fournisseurBackup: "Pingtouge TCG"
     },
     {
@@ -520,7 +520,7 @@ const produits = [
         taobaoId2: "1088794189729",
         images: ["https://images-eu.ssl-images-amazon.com/images/I/71cZJr3YPnL._AC_UL495_SR435,495_.jpg"],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai",
+        fournisseur: "Pokémon Official Store",
         fournisseurBackup: "Pingtouge TCG"
     },
     {
@@ -532,7 +532,7 @@ const produits = [
         taobaoId2: "1038882806803",
         images: ["https://erp-image.sgliteasset.com/_next/image?url=https%3A%2F%2Fcdn1.sgliteasset.com%2Ftcglah%2Fimages%2Fproduct%2Fproduct-7525796%2F34x36X3U69d3424537017_1775452741.jpg&w=3840&q=85"],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai",
+        fournisseur: "Pokémon Official Store",
         fournisseurBackup: "Pingtouge TCG"
     },
     {
@@ -544,7 +544,7 @@ const produits = [
         taobaoId2: "1095040159008",
         images: ["https://main-wordpress-bucket-production.lon1.digitaloceanspaces.com/2026/04/pokemon-simplified-chinese-blade-awakening-csv7c-coin-set.png"],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai",
+        fournisseur: "Pokémon Official Store",
         fournisseurBackup: "Pingtouge TCG"
     },
 
@@ -640,7 +640,7 @@ const produits = [
             "https://snornap.com/cdn/shop/files/IMG-8913.jpg?v=1781665119&width=1445"
         ],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai",
+        fournisseur: "Pokémon Official Store",
         fournisseurBackup: "Pingtouge TCG"
     },
     {
@@ -655,7 +655,7 @@ const produits = [
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROegMBxRjhD0vxiYTE75JBj6Q4U3zEvbXPJcsgPMEL5qHhQzryXSfb6tFO&s=10"
         ],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai",
+        fournisseur: "Pokémon Official Store",
         fournisseurBackup: "Pingtouge TCG"
     },
     {
@@ -670,7 +670,7 @@ const produits = [
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs7yVUkTiFImWqOLx-lw9EWpHB-IrWkkrg0bLKbbHUPkK_d3k9LF4On7Fv&s=10"
         ],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai"
+        fournisseur: "Pokémon Official Store"
     },
     {
         section: "Premium Collection Boxes",
@@ -684,7 +684,7 @@ const produits = [
             "https://aquitaz.se/cdn/shop/files/BlackBox-2026-06-30T211749.540.png?v=1782825957"
         ],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai"
+        fournisseur: "Pokémon Official Store"
     },
     {
         section: "Premium Collection Boxes",
@@ -695,7 +695,7 @@ const produits = [
         taobaoId2: "",
         images: ["https://www.japan2uk.com/cdn/shop/files/Pokemon_Gholdengo_ex_csvM2c_Simplified_Chinese_Master_Strategy_Deck_Building_Set_1024x1024.png?v=1785495434"],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai"
+        fournisseur: "Pokémon Official Store"
     },
     {
         section: "Premium Collection Boxes",
@@ -706,7 +706,7 @@ const produits = [
         taobaoId2: "",
         images: ["https://ueeshop.ly200-cdn.com/u_file/UPBB/UPBB486/2609/08/products/78f7412ea38e8f041677eaecea8f40bb-172101dcce.png?x-oss-process=image/format,webp/quality,q_100"],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai"
+        fournisseur: "Pokémon Official Store"
     },
     {
         section: "Premium Collection Boxes",
@@ -720,7 +720,7 @@ const produits = [
             "https://www.tcghobby.com/cdn/shop/files/Simplified_Chinese_Pokemon_Ogerpon_Wellspring_Gift_Box_Set.webp?v=1779209947"
         ],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai",
+        fournisseur: "Pokémon Official Store",
         fournisseurBackup: "DunDun TCG"
     },
     {
@@ -735,7 +735,7 @@ const produits = [
             "https://nextleveluk.net/cdn/shop/files/s-l1600-2026-10-01T152323.962.jpg?v=1790864832&width=1024"
         ],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai",
+        fournisseur: "Pokémon Official Store",
         fournisseurBackup: "DunDun TCG"
     },
     {
@@ -750,7 +750,7 @@ const produits = [
             "https://pg-cdn-a2.datacaciques.com/00/Mzc3MTUw/26/04/24/e52cf2k0r62fw4u5/e0062501a7b99b98.jpg"
         ],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai",
+        fournisseur: "Pokémon Official Store",
         fournisseurBackup: "DunDun TCG"
     },
     {
@@ -766,7 +766,7 @@ const produits = [
             "https://www.tcghobby.com/cdn/shop/files/Simplified_Chinese_Pokemon_Ogerpon_Hearthflame_Gift_Box_Set.webp?v=1779209745&width=645"
         ],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai",
+        fournisseur: "Pokémon Official Store",
         fournisseurBackup: "DunDun TCG"
     },
 
@@ -786,7 +786,7 @@ const produits = [
             "https://wholesale.hokeypokegames.co.uk/storage/products/2kdPuW06V6Ouk9qSqpGSVNuCwFwYqpNCl56CwQP6.webp"
         ],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai",
+        fournisseur: "Pokémon Official Store",
         fournisseurBackup: "Pingtouge TCG"
     },
     {
@@ -802,7 +802,7 @@ const produits = [
             "https://levelupstore.co.za/cdn/shop/files/s-l1600_1_8a319222-0268-4635-9c76-fd417facea77_1200x.png?v=1787129610"
         ],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai",
+        fournisseur: "Pokémon Official Store",
         fournisseurBackup: "Pingtouge TCG"
     },
     {
@@ -817,7 +817,7 @@ const produits = [
             "https://hanabitradingco.ca/cdn/shop/files/dreamfigurevol2-2.jpg?v=1777231093"
         ],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai",
+        fournisseur: "Pokémon Official Store",
         fournisseurBackup: "Pingtouge TCG"
     },
     {
@@ -875,7 +875,7 @@ function afficher(liste) {
         else if (secNom === "Gem Packs") secSubtitle = "Vol. 7 through Vol. 1 Jumbo Boosters";
         else if (secNom === "Collect 151 Series") secSubtitle = "The Definitive Kanto 151 Archive";
         else if (secNom === "Sword & Shield Era") secSubtitle = "CS6 through CS1 Classic Eras";
-        else if (secNom === "Festival Gift Boxes") secSubtitle = "Limited Traditional Chinese Festival Sets";
+        else if (secNom === "Festival Gift Boxes") secSubtitle = "Limited Chinese Festival Editions (Simplified Chinese)";
         else if (secNom === "Coin Bags & Accessories") secSubtitle = "Official Collector Coin & Pack Bundles";
         else if (secNom === "Premium Collection Boxes") secSubtitle = "Deluxe ETBs & Specialty Collector Boxes";
         else if (secNom === "Blind Boxes & Figures") secSubtitle = "Official Mystery Figurines & Boosters";
