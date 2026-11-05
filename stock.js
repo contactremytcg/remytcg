@@ -23,7 +23,7 @@ const formatSugargooLink = (taobaoId) => {
 
 const produits = [
     // =========================================================================
-    // SECTION 1 : 🔥 TRENDING & BEST SELLERS (6 ARTICLES EXACTEMENT)
+    // SECTION 1 : 🔥 TRENDING & BEST SELLERS (6 ITEMS VISIBLES UNIQUEMENT SUR 'ALL')
     // =========================================================================
     {
         section: "🔥 Trending & Best Sellers",
@@ -61,6 +61,7 @@ const produits = [
         description: "Exclusive Charizard collectible figurine, promo cards, and anniversary booster packs.",
         taobaoId: "1078493401671",
         taobaoId2: "1075622019018",
+        videoUrl: "https://www.instagram.com/reel/remytcg",
         images: [
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ujY7LxSFCuTbsYIDy-nzNPJNsdUKHIzHZcFeUz944A&s=10",
             "https://www.bescards.com/cdn/shop/files/16017252548952-2c85b35689e1b991472aa902bfcf7cd2d1f8b144.webp?v=1789744309"
@@ -109,7 +110,7 @@ const produits = [
     },
 
     // =========================================================================
-    // SECTION 2 : 🏆 30TH ANNIVERSARY COLLECTION (TOUS RÉUNIS ICI AUSSI)
+    // SECTION 2 : 🏆 30TH ANNIVERSARY COLLECTION
     // =========================================================================
     {
         section: "30th Anniversary Collection",
@@ -145,6 +146,7 @@ const produits = [
         description: "Exclusive Charizard collectible figurine, promo cards, and anniversary booster packs.",
         taobaoId: "1078493401671",
         taobaoId2: "1075622019018",
+        videoUrl: "https://www.instagram.com/reel/remytcg",
         images: [
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ujY7LxSFCuTbsYIDy-nzNPJNsdUKHIzHZcFeUz944A&s=10",
             "https://www.bescards.com/cdn/shop/files/16017252548952-2c85b35689e1b991472aa902bfcf7cd2d1f8b144.webp?v=1789744309"
@@ -532,7 +534,7 @@ const produits = [
     },
 
     // =========================================================================
-    // SECTION 6 : SWORD & SHIELD ERA (AVEC POKÉ BALL, SUPER BALL & ULTRA BALL)
+    // SECTION 6 : SWORD & SHIELD ERA (AVEC LES 3 BALLS ET LES CS)
     // =========================================================================
     {
         section: "Sword & Shield Era",
@@ -701,7 +703,7 @@ const produits = [
     },
 
     // =========================================================================
-    // SECTION 7 : FESTIVAL GIFT BOXES (AVEC LA NEW YEAR BOX 2026 DE WANPI)
+    // SECTION 7 : FESTIVAL GIFT BOXES
     // =========================================================================
     {
         section: "Festival Gift Boxes",
@@ -746,7 +748,7 @@ const produits = [
     },
 
     // =========================================================================
-    // SECTION 8 : COIN BAGS & ACCESSORIES (TOUS ENSEMBLE)
+    // SECTION 8 : COIN BAGS & ACCESSORIES
     // =========================================================================
     {
         section: "Coin Bags & Accessories",
@@ -1012,6 +1014,16 @@ function genererCarteHtml(p) {
         htmlBadge = `<div class="card-badge" style="background: ${p.badge.color};">${p.badge.text}</div>`;
     }
 
+    let videoBadgeHtml = '';
+    if (p.videoUrl && p.videoUrl.trim() !== '') {
+        videoBadgeHtml = `
+            <a href="${p.videoUrl}" target="_blank" class="badge-video" title="Watch unboxing Reel on Instagram">
+                <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <span>Reel</span>
+            </a>
+        `;
+    }
+
     let supplierContent = '';
     if (p.fournisseur && p.fournisseurBackup) {
         supplierContent = `<span>Supplier: <strong>${p.fournisseur}</strong> • Backup: <strong>${p.fournisseurBackup}</strong></span>`;
@@ -1044,6 +1056,7 @@ function genererCarteHtml(p) {
 
         imagesHtml = `
             <div class="image-wrapper">
+                ${videoBadgeHtml}
                 <button class="carousel-arrow prev" onclick="slideCarousel(this, -1)">‹</button>
                 <div class="card-carousel" onscroll="updateDotsOnScroll(this)">
                     ${p.images.map(img => `<img src="${img}" alt="${p.nom}" class="card-img" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='${fallback}'">`).join('')}
@@ -1053,7 +1066,12 @@ function genererCarteHtml(p) {
             </div>
         `;
     } else if (p.images && p.images.length === 1) {
-        imagesHtml = `<img src="${p.images[0]}" alt="${p.nom}" class="card-img card-img-single" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='${fallback}'">`;
+        imagesHtml = `
+            <div class="image-wrapper">
+                ${videoBadgeHtml}
+                <img src="${p.images[0]}" alt="${p.nom}" class="card-img card-img-single" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='${fallback}'">
+            </div>
+        `;
     }
 
     let boutonsHtml = '';
@@ -1136,6 +1154,11 @@ function afficher(liste) {
     let totalArchive = 0;
 
     sectionsOrdre.forEach(secNom => {
+        // RÈGLE E-COMMERCE : La section Trending disparaît si un filtre spécifique est actif
+        if (secNom === "🔥 Trending & Best Sellers" && activePillCategory !== '') {
+            return;
+        }
+
         const itemsSec = liste.filter(p => p.section === secNom);
         if (itemsSec.length === 0) return;
 
@@ -1151,7 +1174,7 @@ function afficher(liste) {
         else if (secNom === "Premium Collection Boxes") secSubtitle = "Deluxe ETBs & Specialty Collector Boxes";
         else if (secNom === "Blind Boxes & Figures") secSubtitle = "Official Mystery Figurines & Boosters";
 
-        // SÉPARATION DES ARTICLES DISPONIBLES ET DES SOLD OUT DANS LEUR ORDRE STRICT
+        // CONSERVATION STRICTE DE L'ORDRE INITIAL
         const itemsActifs = itemsSec.filter(p => p.statut !== "out_of_stock");
         const itemsArchive = itemsSec.filter(p => p.statut === "out_of_stock");
 
