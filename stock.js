@@ -1,22 +1,14 @@
 const memberId = "3894055016867374984";
-
-window.copyToClipboard = function(text, btn) {
-    navigator.clipboard.writeText(text).then(() => {
-        const originalText = btn.innerText;
-        btn.innerText = "Copied! Open Sugargoo ✓";
-        btn.style.background = "#fff";
-        btn.style.color = "#111";
-        setTimeout(() => {
-            btn.innerText = originalText;
-            btn.style.background = "";
-            btn.style.color = "";
-        }, 2500);
-    });
-};
+window.activePillCategory = '';
 
 const formatSugargooLink = (taobaoId) => {
     const taobaoUrl = encodeURIComponent(`https://item.taobao.com/item.htm?id=${taobaoId}`);
-    return `https://www.sugargoo.com/#/home/productDetail?productLink=${taobaoUrl}&memberId=${memberId}`;
+    const isMobile = /iPhone|Android|iPad|iPod|Mobile/i.test(navigator.userAgent);
+    if (isMobile) {
+        return `https://m.sugargoo.com/products?productLink=${taobaoUrl}&memberId=${memberId}`;
+    } else {
+        return `https://www.sugargoo.com/#/home/productDetail?productLink=${taobaoUrl}&memberId=${memberId}`;
+    }
 };
 
 const produits = [
@@ -594,7 +586,6 @@ const produits = [
         taobaoId2: "767333963100",
         images: ["https://lh3.googleusercontent.com/proxy/BGbaaxN3iStHvlwH1Au_E8Zj0YnmBaCPWX_4UzlBEekNSz9n7libOy4Jl54qAJaMQsuZ8VafNDAiuHKAnaPnkSF9na_nglyipJHqOnJigtXW9MYazYkZlLDceLPUwgskfC7Jn1KI1XauvKIkjKLEADYI41sXDRcZ9tZzzuyGcA"],
         fournisseur: "Pingtouge TCG"
-        // Backup supplier available: DunDun TCG
     },
     {
         section: "Sword & Shield Era",
@@ -1090,8 +1081,7 @@ function genererCarteHtml(p) {
         `;
     } else if (p.statut === "coming_soon") {
         boutonsHtml = `
-            <a href="https://instagram.com/remy.tcg" target="_blank" rel="noopener noreferrer" class="btn-main-card btn-notify btn-pc">🔔 Follow IG for Drops</a>
-            <a href="https://instagram.com/remy.tcg" target="_blank" rel="noopener noreferrer" class="btn-main-card btn-notify btn-mobile">🔔 Follow IG for Drops</a>
+            <a href="https://instagram.com/remy.tcg" target="_blank" rel="noopener noreferrer" class="btn-main-card btn-notify">🔔 Follow IG for Drops</a>
             <div class="btn-main-card btn-backup btn-backup-placeholder" aria-hidden="true"></div>
         `;
     } else if (!p.taobaoId || p.taobaoId.trim() === "") {
@@ -1100,21 +1090,16 @@ function genererCarteHtml(p) {
             <div class="btn-main-card btn-backup btn-backup-placeholder" aria-hidden="true"></div>
         `;
     } else {
-        const taobaoUrlRaw = `https://item.taobao.com/item.htm?id=${p.taobaoId}`;
         const sugargooUrl = formatSugargooLink(p.taobaoId);
         
         boutonsHtml = `
-            <button onclick="triggerProductAction('pc', '${sugargooUrl}')" class="btn-main-card btn-pc">Order on Sugargoo</button>
-            <button onclick="triggerProductAction('mobile', '${taobaoUrlRaw}', this)" class="btn-main-card btn-mobile">Copy Link for App</button>
+            <button onclick="triggerProductAction('${sugargooUrl}')" class="btn-main-card btn-order">Order on Sugargoo</button>
         `;
         
         if (p.taobaoId2 && p.taobaoId2.trim() !== "") {
-            const taobaoUrlRaw2 = `https://item.taobao.com/item.htm?id=${p.taobaoId2}`;
             const sugargooUrl2 = formatSugargooLink(p.taobaoId2);
-            
             boutonsHtml += `
-                <button onclick="triggerProductAction('pc', '${sugargooUrl2}')" class="btn-main-card btn-backup btn-pc">Backup Supplier</button>
-                <button onclick="triggerProductAction('mobile', '${taobaoUrlRaw2}', this)" class="btn-main-card btn-backup btn-mobile">Copy Backup Supplier</button>
+                <button onclick="triggerProductAction('${sugargooUrl2}')" class="btn-main-card btn-backup">Backup Supplier</button>
             `;
         } else {
             boutonsHtml += `
@@ -1161,7 +1146,7 @@ function afficher(liste) {
     let globalArchiveIndex = 0;
 
     sectionsOrdre.forEach(secNom => {
-        if (secNom === "🔥 Trending & Best Sellers" && activePillCategory !== '') {
+        if (secNom === "🔥 Trending & Best Sellers" && window.activePillCategory !== '') {
             return;
         }
 
@@ -1208,7 +1193,7 @@ function afficher(liste) {
 function filtrer() {
     const searchInput = document.getElementById('search');
     const recherche = searchInput ? searchInput.value.toLowerCase() : '';
-    const selection = activePillCategory;
+    const selection = window.activePillCategory || '';
 
     const resultats = produits.filter(p => {
         const correspondTexte = p.nom.toLowerCase().includes(recherche) || 
@@ -1230,7 +1215,7 @@ function filtrer() {
     afficher(resultats);
 }
 
-// Initialisation sécurisée dès que le DOM est disponible
+// Initialisation garantie dès que le DOM est prêt
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => afficher(produits));
 } else {
