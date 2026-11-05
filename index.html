@@ -32,7 +32,6 @@
         .trust-item { display: flex; align-items: center; gap: 8px; color: #ddd; }
         .trust-item svg { color: #FFCB05; }
 
-        /* BANNIÈRES LARGES & COMPACTES SUR PC */
         .intro-banner { 
             max-width: 1560px; 
             width: 95%; 
@@ -56,7 +55,6 @@
         .btn-main { display: block; background: #FF6A00; color: #fff; padding: 14px 24px; text-decoration: none; font-weight: 900; border-radius: 8px; font-size: 1em; transition: transform 0.2s; text-align: center; box-sizing: border-box; }
         .btn-main:hover { background: #fff; color: #FF6A00; transform: translateY(-2px); }
 
-        /* CONTENEUR ÉLARGIE POUR REMPLIR L'ÉCRAN */
         .container { max-width: 1560px; width: 95%; margin: 0 auto; padding: 10px 0; flex-grow: 1; box-sizing: border-box; }
         
         .filters { display: flex; gap: 12px; max-width: 750px; margin: 0 auto 35px auto; justify-content: center; flex-wrap: wrap;}
@@ -69,7 +67,6 @@
         .era-title { font-size: 1.6em; font-weight: 900; text-transform: uppercase; letter-spacing: -0.5px; margin: 0; color: #fff; }
         .era-subtitle { font-size: 0.82em; color: #FF6A00; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin: 0; }
 
-        /* GRILLE FLUIDE ET DENSE (5-6 ARTICLES PAR LIGNE SUR ÉCRAN ORDINATEUR) */
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(235px, 1fr)); gap: 16px; }
         .card { background: #1c1c1c; border-radius: 10px; overflow: hidden; border: 1px solid #2d2d2d; display: flex; flex-direction: column; position: relative; transition: transform 0.2s, border-color 0.2s;}
         .card:hover { transform: translateY(-4px); border-color: #FF6A00; }
@@ -108,22 +105,22 @@
         .btn-backup:hover { color: #fff; border-color: #FFCB05; }
         .btn-mobile { display: none; }
 
-        /* FAQ ÉPURÉE SUR GRAND ÉCRAN */
+        /* FAQ ÉPURÉE EN 3 PILIERS SUR PC POUR ÉVITER LE SCROLL */
         .faq-container { max-width: 1560px; width: 95%; margin: 50px auto 0 auto; padding: 10px 0; box-sizing: border-box; }
-        .faq-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap: 20px; }
-        .faq-item { background: #1c1c1c; border: 1px solid #2d2d2d; border-radius: 10px; padding: 22px; margin-bottom: 0; box-sizing: border-box; }
-        .faq-item h3 { color: #FF6A00; margin-top: 0; font-size: 1.15em; margin-bottom: 10px;}
+        .faq-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .faq-item { background: #1c1c1c; border: 1px solid #2d2d2d; border-radius: 10px; padding: 22px; margin-bottom: 0; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-start; }
+        .faq-item h3 { color: #FF6A00; margin-top: 0; font-size: 1.15em; margin-bottom: 12px;}
         .faq-item p, .faq-item ul { color: #aaa; margin-bottom: 8px; font-size: 0.88em; line-height: 1.45;}
-        .faq-item ul { padding-left: 20px; }
-        .faq-item li { margin-bottom: 5px; }
+        .faq-item ul { padding-left: 20px; margin-top: 6px; }
+        .faq-item li { margin-bottom: 6px; }
 
-        .process-container { display: flex; align-items: center; justify-content: space-between; margin-top: 15px; background: #222; padding: 16px; border-radius: 8px; border: 1px solid #333; gap: 10px; }
+        .process-container { display: flex; align-items: center; justify-content: space-between; margin-top: 15px; background: #222; padding: 14px 10px; border-radius: 8px; border: 1px solid #333; gap: 6px; }
         .process-step { display: flex; flex-direction: column; align-items: center; text-align: center; flex: 1; }
-        .process-icon { width: 40px; height: 40px; background: #1c1c1c; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 8px; border: 2px solid #FF6A00; color: #FF6A00; }
-        .process-icon svg { width: 20px; height: 20px; stroke: currentColor; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-        .process-step h4 { color: #fff; margin: 0 0 4px 0; font-size: 0.95em; }
-        .process-step p { color: #aaa; font-size: 0.78em; margin: 0; line-height: 1.3; }
-        .process-arrow { color: #FF6A00; font-size: 1.1em; font-weight: bold; }
+        .process-icon { width: 36px; height: 36px; background: #1c1c1c; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 6px; border: 2px solid #FF6A00; color: #FF6A00; }
+        .process-icon svg { width: 18px; height: 18px; stroke: currentColor; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+        .process-step h4 { color: #fff; margin: 0 0 3px 0; font-size: 0.88em; }
+        .process-step p { color: #aaa; font-size: 0.74em; margin: 0; line-height: 1.25; }
+        .process-arrow { color: #FF6A00; font-size: 1em; font-weight: bold; }
 
         .footer-pro { background: #0a0a0a; border-top: 1px solid #222; padding: 45px 20px 20px 20px; font-size: 0.85em; margin-top: auto; }
         .footer-pro-inner { max-width: 1560px; margin: 0 auto; }
@@ -131,10 +128,10 @@
         .footer-pro-logo-container { display: flex; align-items: center; gap: 12px; }
         .footer-pro-img { width: 32px; height: 32px; border-radius: 50%; border: 2px solid #FF6A00; object-fit: cover; }
         .footer-pro-logo { font-size: 1.6em; font-weight: 900; color: #FF6A00; letter-spacing: 1px; margin: 0;}
-        .footer-pro-socials { display: flex; gap: 25px; }
-        .footer-pro-socials a { color: #aaa; text-decoration: none; display: flex; align-items: center; gap: 8px; font-weight: 700; }
+        .footer-pro-socials { display: flex; gap: 25px; flex-wrap: wrap; justify-content: center; }
+        .footer-pro-socials a { color: #aaa; text-decoration: none; display: flex; align-items: center; gap: 8px; font-weight: 700; transition: color 0.2s; }
         .footer-pro-socials a:hover { color: #FF6A00; }
-        .footer-pro-socials svg { width: 17px; height: 17px; }
+        .footer-pro-socials svg { width: 18px; height: 18px; fill: currentColor; }
         .footer-pro-disclaimer { text-align: center; color: #666; font-size: 0.82em; max-width: 1000px; margin: 0 auto 25px auto; line-height: 1.5; }
         .footer-pro-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; padding-top: 18px; border-top: 1px solid #1c1c1c; }
         .footer-copyright { color: #666; }
@@ -149,7 +146,10 @@
         .btn-modal-main { display: block; width: 100%; background: #FF6A00; color: #fff; padding: 16px 20px; text-decoration: none; font-weight: 900; border-radius: 8px; font-size: 1.05em; margin-bottom: 12px; border: none; cursor: pointer; }
         .btn-modal-secondary { display: block; width: 100%; background: transparent; color: #888; padding: 10px; text-decoration: underline; font-weight: 700; border: none; font-size: 0.88em; cursor: pointer; font-family: inherit; }
 
-        /* PRESERVATION STRICTE DE LA VERSION MOBILE */
+        /* PRÉSERVATION RIGOUREUSE DU FORMAT 2 COLONNES SMARTPHONE */
+        @media (max-width: 992px) {
+            .faq-grid-3 { grid-template-columns: 1fr; }
+        }
         @media (max-width: 768px) {
             .top-nav { gap: 10px; padding: 10px; }
             .top-nav a { font-size: 0.72em; }
@@ -164,10 +164,9 @@
             .btn-mobile { display: block; background: #222; color: #FF6A00; border: 2px solid #FF6A00; padding: 8px; font-size: 0.82em; }
             .btn-notify.btn-mobile { display: block; border-color: #555; color: #aaa;}
             .btn-backup.btn-mobile { display: block; background: transparent; border-color: #444; color: #aaa;}
-            .faq-grid { grid-template-columns: 1fr; }
             .footer-pro-bottom { flex-direction: column; text-align: center; justify-content: center; }
             .footer-pro-socials { flex-wrap: wrap; justify-content: center; gap: 15px;}
-            .process-container { flex-direction: column; gap: 15px; padding: 15px;}
+            .process-container { flex-direction: column; gap: 12px; padding: 15px;}
             .process-arrow { transform: rotate(90deg); }
         }
     </style>
@@ -214,7 +213,7 @@
         </div>
     </div>
 
-    <!-- BANNIÈRE SETUP COMPACTE ET ÉLARGIE -->
+    <!-- BANNIÈRE COMPACTE -->
     <div id="setup" class="intro-banner">
         <div class="intro-banner-text">
             <h2>📦 How to order with local pricing?</h2>
@@ -225,7 +224,7 @@
         </div>
     </div>
 
-    <!-- CATALOGUE DES PRODUITS PLEINE LARGEUR -->
+    <!-- CATALOGUE -->
     <div id="shop" class="container">
         <div class="filters">
             <input type="text" id="search" class="search-bar" placeholder="🔍 Search for a booster, a box..." onkeyup="filtrer()">
@@ -236,7 +235,7 @@
         <div id="catalogue"></div>
     </div>
 
-    <!-- WHOLESALE BANNER -->
+    <!-- WHOLESALE -->
     <div id="wholesale" class="intro-banner" style="border-color: #FFCB05; margin-top: 40px;">
         <div class="intro-banner-text">
             <h2 style="color: #FFCB05;">💼 Wholesale & Bulk Orders</h2>
@@ -247,29 +246,29 @@
         </div>
     </div>
 
-    <!-- FAQ & SOURCEURS EN GRILLE 2 COLONNES -->
+    <!-- FAQ EN 3 PILIERS DIRECTS CÔTE À CÔTE -->
     <div id="guide" class="faq-container">
         <h2 style="text-align: center; color: #FF6A00; font-size: 1.8em; margin-bottom: 25px;">Buyer Guide & FAQ</h2>
         
-        <div class="faq-grid">
+        <div class="faq-grid-3">
             <div class="faq-item" style="border-color: #FF6A00;">
-                <h3>🤔 What is a Proxy Agent (Sugargoo)?</h3>
-                <p>Buying directly from Chinese marketplaces requires a local Chinese address and payment method. Sugargoo acts as your middleman to bridge this gap:</p>
+                <h3>🤔 1. What is a Proxy Agent?</h3>
+                <p>Buying from Chinese marketplaces requires a local address & Chinese payment. Sugargoo acts as your middleman[cite: 25]:</p>
                 <div class="process-container">
                     <div class="process-step">
                         <div class="process-icon">
                             <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
                         </div>
                         <h4>1. Buy</h4>
-                        <p>Order through our catalog. Sugargoo purchases the item at local price within 24h.</p>
+                        <p>Order via our links at local prices[cite: 25].</p>
                     </div>
                     <div class="process-arrow">➔</div>
                     <div class="process-step">
                         <div class="process-icon">
                             <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
                         </div>
-                        <h4>2. Warehouse</h4>
-                        <p>They inspect the box, send you QC photos, and store it for up to 100 days.</p>
+                        <h4>2. QC</h4>
+                        <p>They store & send HD photos[cite: 25].</p>
                     </div>
                     <div class="process-arrow">➔</div>
                     <div class="process-step">
@@ -277,43 +276,45 @@
                             <svg viewBox="0 0 24 24"><path d="M22 2L11 13"></path><path d="M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
                         </div>
                         <h4>3. Ship</h4>
-                        <p>Bundle items into one parcel and dispatch directly to your home globally.</p>
+                        <p>Dispatch globally to your door[cite: 25].</p>
                     </div>
                 </div>
             </div>
 
             <div class="faq-item">
-                <h3>🛡️ Where do your products come from? (Verified Sources)</h3>
-                <p>All catalog links connect to <strong>Taobao / Tmall</strong> (Alibaba Group's official platforms). We curate only from verified suppliers:</p>
-                
-                <div style="display: flex; flex-direction: column; gap: 8px; margin: 12px 0;">
-                    <div style="background: #242424; border: 1px solid #383838; border-radius: 6px; padding: 10px;">
-                        <span style="color: #FFCB05; font-weight: 900; font-size: 0.85em;">🏛️ 宝可梦官方旗舰店 (Pokémon Official Store)</span>
-                        <div style="color: #888; font-size: 0.76em;">Primary official flagship on Tmall (1M+ followers, 2M+ yearly orders).</div>
+                <h3>🛡️ 2. Our Verified Sources</h3>
+                <p>All catalog links connect to <strong>Taobao / Tmall</strong>[cite: 25]. We curate exclusively from verified suppliers[cite: 25]:</p>
+                <div style="display: flex; flex-direction: column; gap: 8px; margin: 10px 0;">
+                    <div style="background: #242424; border: 1px solid #383838; border-radius: 6px; padding: 8px 10px;">
+                        <span style="color: #FFCB05; font-weight: 900; font-size: 0.85em;">🏛️ 宝可梦官方旗舰店 (Pokémon Store)[cite: 25]</span>
+                        <div style="color: #888; font-size: 0.74em;">Primary official flagship on Tmall (1M+ followers)[cite: 25].</div>
                     </div>
-                    <div style="background: #242424; border: 1px solid #383838; border-radius: 6px; padding: 10px;">
-                        <span style="color: #FF6A00; font-weight: 900; font-size: 0.85em;">🐼 DunDun TCG (墩墩卡店)</span>
-                        <div style="color: #888; font-size: 0.76em;">Gold Seller • 5.0/5 Score (Top 1%), 50,000+ sales and fast 16h dispatch.</div>
+                    <div style="background: #242424; border: 1px solid #383838; border-radius: 6px; padding: 8px 10px;">
+                        <span style="color: #FF6A00; font-weight: 900; font-size: 0.85em;">🐼 DunDun TCG (墩墩卡店)[cite: 25]</span>
+                        <div style="color: #888; font-size: 0.74em;">Gold Seller • 5.0/5 Score (Top 1%), 50k+ sales[cite: 25].</div>
                     </div>
-                    <div style="background: #242424; border: 1px solid #383838; border-radius: 6px; padding: 10px;">
-                        <span style="color: #FF6A00; font-weight: 900; font-size: 0.85em;">🚀 Pingtouge TCG (平头哥卡社)</span>
-                        <div style="color: #888; font-size: 0.76em;">Certified Seller • 4.9/5 Score (Top 7%), 98% 88VIP positive rating.</div>
+                    <div style="background: #242424; border: 1px solid #383838; border-radius: 6px; padding: 8px 10px;">
+                        <span style="color: #FF6A00; font-weight: 900; font-size: 0.85em;">🚀 Pingtouge TCG (平头哥卡社)[cite: 25]</span>
+                        <div style="color: #888; font-size: 0.74em;">Certified Seller • 4.9/5 Score (Top 7%)[cite: 25].</div>
                     </div>
                 </div>
-                <p style="font-size: 0.78em; color: #777;">* RemyTCG is an independent index. Sugargoo handles QC inspections upon warehouse arrival.</p>
+                <p style="font-size: 0.76em; color: #777; margin: 0;">* RemyTCG is an independent index. Sugargoo handles QC inspections upon warehouse arrival[cite: 25].</p>
             </div>
 
-            <div class="faq-item" style="grid-column: 1 / -1;">
-                <h3>🎁 1. How does the 800 CNY Welcome Bonus work?</h3>
-                <p>When you register using our link, Sugargoo credits your account with a bundle of 14 discount vouchers worth 800 CNY (~$110 USD) for your international shipping fees.</p>
+            <div class="faq-item">
+                <h3>🎁 3. 800 CNY Welcome Bonus</h3>
+                <p>Registering via our link credits your account with <strong>14 discount vouchers</strong> worth 800 CNY (~$110 USD)[cite: 25]:</p>
                 <ul>
-                    <li><strong>Coupons:</strong> Ranging from 20 CNY off (no minimum) to 150 CNY off (large parcels).</li>
-                    <li><strong>Validity:</strong> 90 days after registration. Applicable on international parcel dispatches.</li>
+                    <li><strong>Shipping Discounts:</strong> Coupons range from 20 CNY off (no minimum) to 150 CNY off (for large parcels)[cite: 25].</li>
+                    <li><strong>Validity:</strong> 90 days after registration[cite: 25].</li>
+                    <li><strong>Application:</strong> Usable on your international shipping parcels[cite: 25].</li>
                 </ul>
+                <p style="font-size: 0.76em; color: #888; margin-top: auto;">* Coupons apply directly at the international shipping checkout stage[cite: 25].</p>
             </div>
         </div>
     </div>
 
+    <!-- FOOTER PROFESSIONNEL AVEC TIKTOK CORRIGÉ ET YOUTUBE AJOUTÉ -->
     <footer id="contact" class="footer-pro">
         <div class="footer-pro-inner">
             <div class="footer-pro-top">
@@ -323,12 +324,18 @@
                 </div>
                 <div class="footer-pro-socials">
                     <a href="https://instagram.com/remy.tcg" target="_blank">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                         @remy.tcg
                     </a>
+                    <!-- SVG TIKTOK OFFICIEL COMPLET -->
                     <a href="https://tiktok.com/@remy_tcg" target="_blank">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path><path d="M15 8a4 4 0 1 0 0-4v16a4 4 0 0 1-4-4"></path><line x1="15" y1="4" x2="19" y2="4"></line></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
                         @remy_tcg
+                    </a>
+                    <!-- SVG YOUTUBE OFFICIEL -->
+                    <a href="https://youtube.com/@remytcg" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        @remytcg
                     </a>
                     <a href="mailto:contact.remytcg@gmail.com">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
