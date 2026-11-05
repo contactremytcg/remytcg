@@ -37,7 +37,7 @@ const produits = [
             "https://toy-treasure.com/cdn/shop/files/30th-celebration-chinese.jpg?v=1790767347&width=1445"
         ],
         badge: { text: "🔥 Best Seller", color: "#e74c3c" },
-        fournisseur: "Panda"
+        fournisseur: "DunDun TCG"
     },
     {
         section: "🔥 Trending & Best Sellers",
@@ -51,8 +51,8 @@ const produits = [
             "https://static.wixstatic.com/media/11a56d_c16d88f83b554e5ca233378f9ca01c95~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11a56d_c16d88f83b554e5ca233378f9ca01c95~mv2.jpg"
         ],
         badge: { text: "⚠️ Low Stock", color: "#f39c12" },
-        fournisseur: "Panda",
-        fournisseurBackup: "AmongUs"
+        fournisseur: "DunDun TCG",
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "🔥 Trending & Best Sellers",
@@ -65,8 +65,8 @@ const produits = [
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ujY7LxSFCuTbsYIDy-nzNPJNsdUKHIzHZcFeUz944A&s=10",
             "https://www.bescards.com/cdn/shop/files/16017252548952-2c85b35689e1b991472aa902bfcf7cd2d1f8b144.webp?v=1789744309"
         ],
-        fournisseur: "Panda",
-        fournisseurBackup: "AmongUs"
+        fournisseur: "DunDun TCG",
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "🔥 Trending & Best Sellers",
@@ -76,7 +76,7 @@ const produits = [
         taobaoId: "1078477045552",
         taobaoId2: "",
         images: ["https://i0.wp.com/katzenworld.shop/wp-content/uploads/2026/10/xCsvB678SEHnQsnJEwA77_b0X5C_j1iK9xxyQceY-t_KUwwLreptpTpXEX0qHQWHPqk9WlhnN2QZ1yrg0YdisjlyQ9IMxV-whH58ShVYumxCmz8a0LPxVc8lOcENGBtWJeNdq1_NZWYt5ucX0s73g5Qbw_W6i7-oGYaptOiANo_JHoO6qQh_dU24ewjlOK8t.jpeg?fit=1080%2C1080&ssl=1"],
-        fournisseur: "Panda"
+        fournisseur: "DunDun TCG"
     },
 
     // =========================================================================
@@ -90,8 +90,8 @@ const produits = [
         taobaoId: "1094128825003",
         taobaoId2: "1093554321145",
         images: ["https://www.yumecards.ca/cdn/shop/files/Product-2026-10-26T010221.441.jpg?v=1792991251"],
-        fournisseur: "Panda",
-        fournisseurBackup: "AmongUs"
+        fournisseur: "DunDun TCG",
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Scarlet & Violet Era",
@@ -103,7 +103,7 @@ const produits = [
         images: ["https://collectorstore.com/cdn/shop/files/CollectorStore00001_937038ac-8bb9-4f6e-950b-742363216669.jpg?v=1784582543&width=990"],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai",
-        fournisseurBackup: "AmongUs"
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Scarlet & Violet Era",
@@ -113,7 +113,7 @@ const produits = [
         taobaoId: "1058877644488",
         taobaoId2: "",
         images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStiWS_bFR5gh7QRwgevHWL5Naw-8q9-wlqlLHh-Gwil5rhRVYNoP7wSfI&s=10"],
-        fournisseur: "AmongUs"
+        fournisseur: "Pingtouge TCG"
     },
     {
         section: "Scarlet & Violet Era",
@@ -125,7 +125,7 @@ const produits = [
         images: ["https://remicardtrader.ca/cdn/shop/files/POKECNSTELCRYSSLIM.jpg?v=1781539002"],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai",
-        fournisseurBackup: "AmongUs"
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Scarlet & Violet Era",
@@ -137,7 +137,7 @@ const produits = [
         images: ["https://packflipps.com/cdn/shop/files/IMG_2671.jpg?v=1776975091"],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai",
-        fournisseurBackup: "AmongUs"
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Scarlet & Violet Era",
@@ -149,7 +149,7 @@ const produits = [
         images: ["https://remicardtrader.ca/cdn/shop/files/PKCNBASBBOX.jpg?v=1792010716"],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai",
-        fournisseurBackup: "AmongUs"
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Scarlet & Violet Era",
@@ -159,7 +159,7 @@ const produits = [
         taobaoId: "1036438775767",
         taobaoId2: "",
         images: ["https://galactictoys.com/cdn/shop/files/6977321128086_1.jpg?v=1787884173"],
-        fournisseur: "AmongUs"
+        fournisseur: "Pingtouge TCG"
     },
     {
         section: "Scarlet & Violet Era",
@@ -169,8 +169,8 @@ const produits = [
         taobaoId: "898604193966",
         taobaoId2: "1038938904501",
         images: ["https://godofcards.com/cdn/shop/files/pokemon-dark-crystal-blaze-csv5c-15er-display-s-chinesisch.jpg?v=1773292564&width=600"],
-        fournisseur: "Panda",
-        fournisseurBackup: "AmongUs"
+        fournisseur: "DunDun TCG",
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Scarlet & Violet Era",
@@ -180,8 +180,8 @@ const produits = [
         taobaoId: "1021280321306",
         taobaoId2: "1036444463449",
         images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSztHore7cjIXIaCEjlnPeenDehZZb9N-jrM2zQrArON31YbNnEW8eUiLA&s=10"],
-        fournisseur: "Panda",
-        fournisseurBackup: "AmongUs"
+        fournisseur: "DunDun TCG",
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Scarlet & Violet Era",
@@ -225,8 +225,8 @@ const produits = [
         taobaoId: "1095191988269", 
         taobaoId2: "1093308561553",
         images: ["https://www.yumecards.ca/cdn/shop/files/Product-2026-10-17T231241.139.jpg?v=1792293584"],
-        fournisseur: "Panda",
-        fournisseurBackup: "AmongUs"
+        fournisseur: "DunDun TCG",
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Gem Packs",
@@ -238,7 +238,7 @@ const produits = [
         images: ["https://remicardtrader.ca/cdn/shop/files/POKECNGEMPACK6.jpg?v=1786454812"],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai",
-        fournisseurBackup: "AmongUs"
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Gem Packs",
@@ -248,8 +248,8 @@ const produits = [
         taobaoId: "1041523213480",
         taobaoId2: "1038707501926",
         images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9TLXDOLzUX85KYbOhVhPXGUZuYcuJ5YgnPabKA6OwVNgTR-WnT4xAA3o&s=10"],
-        fournisseur: "Panda",
-        fournisseurBackup: "AmongUs"
+        fournisseur: "DunDun TCG",
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Gem Packs",
@@ -261,7 +261,7 @@ const produits = [
         images: ["https://spoilsandloot.com/cdn/shop/files/chinese-gem-pack-vol-4-pokemon-booster-box.webp?v=1774588957"],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai",
-        fournisseurBackup: "AmongUs"
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Gem Packs",
@@ -271,8 +271,8 @@ const produits = [
         taobaoId: "980697249084",
         taobaoId2: "1039895020099",
         images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUmoBQZ-Tg4lSqbjGr8VX3w-v8xzRaFsq9_HL5LCq2kFeJpnMO1km0xeoX&s=10"],
-        fournisseur: "Panda",
-        fournisseurBackup: "AmongUs"
+        fournisseur: "DunDun TCG",
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Gem Packs",
@@ -282,8 +282,8 @@ const produits = [
         taobaoId: "1038965852696",
         taobaoId2: "932678630102",
         images: ["https://m.media-amazon.com/images/I/51+kPL0qduL.jpg"],
-        fournisseur: "AmongUs",
-        fournisseurBackup: "Panda"
+        fournisseur: "Pingtouge TCG",
+        fournisseurBackup: "DunDun TCG"
     },
     {
         section: "Gem Packs",
@@ -291,7 +291,7 @@ const produits = [
         nom: "Gem Pack Vol. 1",
         description: "Full factory-sealed display box. Jumbo booster packs.",
         taobaoId: "979607578715",
-        taobaoId2: "",
+        taobaoId2: "1096711400657",
         images: ["https://www.maxgaming.com/bilder/artiklar/zoom/35546_1.jpg?m=1753267142"],
         statut: "out_of_stock"
     },
@@ -307,8 +307,8 @@ const produits = [
         taobaoId: "985432609330",
         taobaoId2: "1060819098263",
         images: ["https://card-binder.com/cdn/shop/files/Pokemon-151C-Collect-151-Gathering-Boosterbox.webp?v=1756631761"],
-        fournisseur: "Panda",
-        fournisseurBackup: "AmongUs"
+        fournisseur: "DunDun TCG",
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Collect 151 Series",
@@ -336,8 +336,8 @@ const produits = [
         taobaoId: "899608090307",
         taobaoId2: "1039895020099",
         images: ["https://lh6.googleusercontent.com/proxy/rDdWYwY6yLcBtTbQbQ5CzcCqmcUCUs-9ebr0zXjK2IisW3SqfJE6PWm99SUGDmKabd7M7HkgGpwog6F0T4g1c19Rov_ZzKlepN3P7rInxo9J39EJt9oRnic-HqVKTw_5mr6D"],
-        fournisseur: "Panda",
-        fournisseurBackup: "AmongUs"
+        fournisseur: "DunDun TCG",
+        fournisseurBackup: "Pingtouge TCG"
     },
 
     // =========================================================================
@@ -478,8 +478,8 @@ const produits = [
             "https://collectorstore.com/cdn/shop/files/CollectorStore00003_867dd20e-c23a-4eb5-805f-61f317dc99b0.jpg?v=1789052091&width=990",
             "https://card-binder.com/cdn/shop/files/Pokemon-Mid-Autumn-Festival-Gift-Box-Simplified-Chinese-contents.webp?v=1787913719&width=1500"
         ],
-        fournisseur: "Panda",
-        fournisseurBackup: "AmongUs"
+        fournisseur: "DunDun TCG",
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Festival Gift Boxes",
@@ -492,7 +492,7 @@ const produits = [
             "https://games-island.eu/media/image/product/1153600/lg/pokemon-tcg-dragon-boat-gift-box-2026-chinesisch.jpg",
             "https://www.tcghobby.com/cdn/shop/files/SimplifiedChinesePokemon2026DragonBoatFestivalGiftBoxSet.jpg?v=1776680425"
         ],
-        fournisseur: "AmongUs"
+        fournisseur: "Pingtouge TCG"
     },
 
     // =========================================================================
@@ -509,7 +509,7 @@ const produits = [
             "https://dzpdbgwih7u1r.cloudfront.net/9fcd2c4e-9f8f-4808-a1f9-bbeb3a6a2a49/a1fce7d5-2d7d-4897-9495-ef7d6e03ed1b/a1fce820-db2a-4418-babd-347c130bd618/w400h400-pokemon-simplified-chinese-stellar-crystal-csv9c-coin-set.jpg",
             "https://m.media-amazon.com/images/I/61MGcrYNNDL._AC_UF1000,1000_QL80_.jpg"
         ],
-        fournisseur: "AmongUs"
+        fournisseur: "Pingtouge TCG"
     },
     {
         section: "Coin Bags & Accessories",
@@ -521,7 +521,7 @@ const produits = [
         images: ["https://images-eu.ssl-images-amazon.com/images/I/71cZJr3YPnL._AC_UL495_SR435,495_.jpg"],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai",
-        fournisseurBackup: "AmongUs"
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Coin Bags & Accessories",
@@ -533,7 +533,7 @@ const produits = [
         images: ["https://erp-image.sgliteasset.com/_next/image?url=https%3A%2F%2Fcdn1.sgliteasset.com%2Ftcglah%2Fimages%2Fproduct%2Fproduct-7525796%2F34x36X3U69d3424537017_1775452741.jpg&w=3840&q=85"],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai",
-        fournisseurBackup: "AmongUs"
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Coin Bags & Accessories",
@@ -545,7 +545,7 @@ const produits = [
         images: ["https://main-wordpress-bucket-production.lon1.digitaloceanspaces.com/2026/04/pokemon-simplified-chinese-blade-awakening-csv7c-coin-set.png"],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai",
-        fournisseurBackup: "AmongUs"
+        fournisseurBackup: "Pingtouge TCG"
     },
 
     // =========================================================================
@@ -559,7 +559,7 @@ const produits = [
         taobaoId: "1076581683957",
         taobaoId2: "", 
         images: ["https://monketic.com/cdn/shop/files/002_b0146a55-cf66-42d3-921c-9b62d7c09e3b.png?v=1792512443&width=1445"],
-        fournisseur: "Panda"
+        fournisseur: "DunDun TCG"
     },
     {
         section: "Premium Collection Boxes",
@@ -572,8 +572,8 @@ const produits = [
             "https://www.tcghobby.com/cdn/shop/files/simplifiedchinesedeluxesetumbreon.webp?v=1789224364",
             "https://www.therange.co.uk/media/0/9/1790203452_5789.jpg"
         ],
-        fournisseur: "Panda",
-        fournisseurBackup: "AmongUs"
+        fournisseur: "DunDun TCG",
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Premium Collection Boxes",
@@ -586,8 +586,8 @@ const produits = [
             "https://x-playground.com/cdn/shop/files/Pokemon_TCG_30th_Celebration_Espeon_ex_Deluxe_Deck_Set_Simplified_Chinese.jpg?v=1789823886&width=600",
             "https://www.therange.co.uk/media/2/8/1790203411_8925.jpg"
         ],
-        fournisseur: "Panda",
-        fournisseurBackup: "AmongUs"
+        fournisseur: "DunDun TCG",
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Premium Collection Boxes",
@@ -600,7 +600,7 @@ const produits = [
             "https://x-playground.com/cdn/shop/files/Pokemon_TCG_30th_Celebration_Greninja_ex_Card_Display_Sleeve_Set.jpg?v=1789822489&width=600",
             "https://www.therange.co.uk/media/3/3/1790203353_7893.jpg"
         ],
-        fournisseur: "AmongUs"
+        fournisseur: "Pingtouge TCG"
     },
     {
         section: "Premium Collection Boxes",
@@ -613,7 +613,7 @@ const produits = [
             "https://spoilsandloot.com/cdn/shop/files/syl_1.jpg?v=1789577455",
             "https://www.therange.co.uk/media/7/6/1790203399_5932.jpg"
         ],
-        fournisseur: "AmongUs"
+        fournisseur: "Pingtouge TCG"
     },
     {
         section: "Premium Collection Boxes",
@@ -626,7 +626,7 @@ const produits = [
             "https://www.tcghobby.com/cdn/shop/files/Simplified_Chinese_Pokemon_30th_Anniversary_First_Partner_Special_Illustration_Card_Set_Vol._1_Display_Set.jpg?v=1776401355&width=645",
             "https://hanabitradingco.ca/cdn/shop/files/IMG-8415.png?v=1774029915"
         ],
-        fournisseur: "AmongUs"
+        fournisseur: "Pingtouge TCG"
     },
     {
         section: "Premium Collection Boxes",
@@ -641,7 +641,7 @@ const produits = [
         ],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai",
-        fournisseurBackup: "AmongUs"
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Premium Collection Boxes",
@@ -656,7 +656,7 @@ const produits = [
         ],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai",
-        fournisseurBackup: "AmongUs"
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Premium Collection Boxes",
@@ -721,7 +721,7 @@ const produits = [
         ],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai",
-        fournisseurBackup: "Panda"
+        fournisseurBackup: "DunDun TCG"
     },
     {
         section: "Premium Collection Boxes",
@@ -736,7 +736,7 @@ const produits = [
         ],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai",
-        fournisseurBackup: "Panda"
+        fournisseurBackup: "DunDun TCG"
     },
     {
         section: "Premium Collection Boxes",
@@ -751,7 +751,7 @@ const produits = [
         ],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai",
-        fournisseurBackup: "Panda"
+        fournisseurBackup: "DunDun TCG"
     },
     {
         section: "Premium Collection Boxes",
@@ -767,7 +767,7 @@ const produits = [
         ],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai",
-        fournisseurBackup: "Panda"
+        fournisseurBackup: "DunDun TCG"
     },
 
     // =========================================================================
@@ -787,7 +787,7 @@ const produits = [
         ],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai",
-        fournisseurBackup: "AmongUs"
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Blind Boxes & Figures",
@@ -797,13 +797,13 @@ const produits = [
         taobaoId: "1078195403792",
         taobaoId2: "1072080775449",
         images: [
+            "https://escollectible.com/cdn/shop/files/rn-image_picker_lib_temp_675bb14b-9a5a-4ccb-bbdd-2b265b98e2f1.jpg?v=1786389068",
             "https://collectorstore.com/cdn/shop/files/CollectorStore00001_3c6277d1-2842-417f-a3c6-63f1dcb381ab.jpg?v=1787866920&width=990",
-            "https://levelupstore.co.za/cdn/shop/files/s-l1600_1_8a319222-0268-4635-9c76-fd417facea77_1200x.png?v=1787129610",
-            "https://www.reformedpokelab.com/cdn/shop/files/PokemonTCG_SimplifiedChinesePokemonDreamPaintingEevee_EvolutionsFigurineSetBlindBox_f7bc5c1c-9acd-49a1-8798-41d015f94e25_1800x1800.webp?v=1787763479"
+            "https://levelupstore.co.za/cdn/shop/files/s-l1600_1_8a319222-0268-4635-9c76-fd417facea77_1200x.png?v=1787129610"
         ],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai",
-        fournisseurBackup: "AmongUs"
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Blind Boxes & Figures",
@@ -818,7 +818,7 @@ const produits = [
         ],
         isOfficial: true,
         fournisseur: "Pokemon Store Shanghai",
-        fournisseurBackup: "AmongUs"
+        fournisseurBackup: "Pingtouge TCG"
     },
     {
         section: "Blind Boxes & Figures",
@@ -831,8 +831,8 @@ const produits = [
             "https://www.tcghobby.com/cdn/shop/files/SimplifiedChinesePokemonDreamPaintingCollection151FigureSet.jpg?v=1776398595",
             "https://i0.wp.com/katzenworld.shop/wp-content/uploads/2025/12/Dream-Painting-Collection-151-Figurine-Set-Figures-2.webp?fit=800%2C1097&ssl=1"
         ],
-        fournisseur: "Panda",
-        fournisseurBackup: "Panda"
+        fournisseur: "DunDun TCG",
+        fournisseurBackup: "DunDun TCG"
     },
     {
         section: "Blind Boxes & Figures",
