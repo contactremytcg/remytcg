@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- DÉBLOCAGE MOBILE UNIVERSEL DES SERVEURS EXTERNES -->
     <meta name="referrer" content="no-referrer">
     <title>RemyTCG - Exclusive Proxy Service</title>
     
@@ -52,112 +51,22 @@
         
         .card-badge { position: absolute; top: 10px; left: 10px; padding: 6px 12px; border-radius: 6px; font-size: 0.75em; font-weight: 900; text-transform: uppercase; color: #fff; z-index: 10; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
 
-        /* CADRE CARROUSEL AVEC VERROUILLAGE DU CENTRAGE AU PIXEL PRÈS */
-        .image-wrapper {
-            position: relative;
-            height: 200px;
-            background: #fff;
-            border-bottom: 1px solid #333;
-            overflow: hidden;
-            width: 100%;
-        }
-
-        .card-carousel {
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            scroll-behavior: smooth;
-            -webkit-overflow-scrolling: touch;
-            height: 100%;
-            width: 100%;
-            scrollbar-width: none;
-        }
+        .image-wrapper { position: relative; height: 200px; background: #fff; border-bottom: 1px solid #333; overflow: hidden; width: 100%; }
+        .card-carousel { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; height: 100%; width: 100%; scrollbar-width: none; }
         .card-carousel::-webkit-scrollbar { display: none; }
         
-        .card-carousel .card-img { 
-            flex: 0 0 100%;
-            width: 100%;
-            min-width: 100%;
-            max-width: 100%;
-            scroll-snap-align: start;
-            scroll-snap-stop: always; /* Empêche de s'arrêter à cheval entre 2 images */
-            border-bottom: none; 
-            object-fit: contain; 
-            background: #fff;
-            padding: 10px; 
-            box-sizing: border-box;
-            height: 100%;
-            display: block;
-        }
-        .card-img-single { 
-            width: 100%; 
-            height: 200px; 
-            object-fit: contain; 
-            border-bottom: 1px solid #333; 
-            background: #fff; 
-            padding: 10px; 
-            box-sizing: border-box;
-            display: block;
-        }
+        .card-carousel .card-img { flex: 0 0 100%; width: 100%; min-width: 100%; max-width: 100%; scroll-snap-align: start; scroll-snap-stop: always; border-bottom: none; object-fit: contain; background: #fff; padding: 10px; box-sizing: border-box; height: 100%; display: block; }
+        .card-img-single { width: 100%; height: 200px; object-fit: contain; border-bottom: 1px solid #333; background: #fff; padding: 10px; box-sizing: border-box; display: block; }
 
-        /* FLÈCHES ORANGES */
-        .carousel-arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(17, 17, 17, 0.75);
-            color: #FF6A00;
-            border: 1px solid #FF6A00;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 16px;
-            font-weight: 900;
-            cursor: pointer;
-            z-index: 9;
-            user-select: none;
-            transition: all 0.2s ease;
-        }
-        .carousel-arrow:hover {
-            background: #FF6A00;
-            color: #fff;
-            transform: translateY(-50%) scale(1.1);
-        }
+        .carousel-arrow { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(17, 17, 17, 0.75); color: #FF6A00; border: 1px solid #FF6A00; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 900; cursor: pointer; z-index: 9; user-select: none; transition: all 0.2s ease; }
+        .carousel-arrow:hover { background: #FF6A00; color: #fff; transform: translateY(-50%) scale(1.1); }
         .carousel-arrow.prev { left: 8px; }
         .carousel-arrow.next { right: 8px; }
 
-        /* POINTS INDICATEURS */
-        .carousel-dots {
-            position: absolute;
-            bottom: 8px;
-            left: 0;
-            right: 0;
-            display: flex;
-            justify-content: center;
-            gap: 6px;
-            z-index: 8;
-        }
-        .carousel-dot {
-            width: 7px;
-            height: 7px;
-            border-radius: 50%;
-            background: rgba(0, 0, 0, 0.25);
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-        .carousel-dot.active {
-            background: #FF6A00;
-            transform: scale(1.35);
-        }
-
-        .crop-bottom {
-            object-position: center 10% !important;
-            object-fit: cover !important;
-            transform: scale(1.14) translateY(-5%);
-        }
+        .carousel-dots { position: absolute; bottom: 8px; left: 0; right: 0; display: flex; justify-content: center; gap: 6px; z-index: 8; }
+        .carousel-dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(0, 0, 0, 0.25); cursor: pointer; transition: all 0.2s ease; }
+        .carousel-dot.active { background: #FF6A00; transform: scale(1.35); }
+        .crop-bottom { object-position: center 10% !important; object-fit: cover !important; transform: scale(1.14) translateY(-5%); }
 
         .card-content { padding: 15px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; }
         .category { font-size: 0.7em; color: #FF6A00; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; display: flex; align-items: center; }
@@ -194,27 +103,21 @@
 
         .footer-pro { background: #0a0a0a; border-top: 1px solid #222; padding: 50px 20px 20px 20px; font-size: 0.85em; margin-top: auto; scroll-margin-top: 50px;}
         .footer-pro-inner { max-width: 1400px; margin: 0 auto; }
-        
         .footer-pro-top { display: flex; flex-direction: column; align-items: center; gap: 15px; margin-bottom: 30px; }
         .footer-pro-logo-container { display: flex; align-items: center; gap: 12px; }
         .footer-pro-img { width: 35px; height: 35px; border-radius: 50%; border: 2px solid #FF6A00; object-fit: cover; }
         .footer-pro-logo { font-size: 1.8em; font-weight: 900; color: #FF6A00; letter-spacing: 1px; margin: 0;}
-        
         .footer-pro-socials { display: flex; gap: 25px; margin-top: 10px; }
         .footer-pro-socials a { color: #aaa; text-decoration: none; display: flex; align-items: center; gap: 8px; font-weight: 700; transition: color 0.2s; }
         .footer-pro-socials a:hover { color: #FF6A00; }
         .footer-pro-socials svg { width: 18px; height: 18px; }
-
         .footer-pro-disclaimer { text-align: center; color: #666; font-size: 0.85em; max-width: 900px; margin: 0 auto 30px auto; line-height: 1.5; }
         .footer-pro-disclaimer strong { color: #888; }
-
         .footer-pro-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; padding-top: 20px; border-top: 1px solid #1c1c1c; }
         .footer-copyright { color: #666; }
-        
         .payment-row { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
         .payment-badge { background: #fff; width: 50px; height: 32px; border-radius: 4px; display: flex; justify-content: center; align-items: center; padding: 4px; box-sizing: border-box; }
         .payment-badge img { max-width: 100%; max-height: 100%; object-fit: contain; }
-
         .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(8px); justify-content: center; align-items: center; z-index: 9999; opacity: 0; transition: opacity 0.3s ease; }
         .modal-content { background: #1c1c1c; border: 2px solid #FF6A00; border-radius: 16px; padding: 40px 30px; max-width: 500px; width: 90%; text-align: center; box-shadow: 0 20px 50px rgba(255, 106, 0, 0.2); }
         .modal-content h2 { color: #FF6A00; margin-top: 0; font-size: 1.8em; line-height: 1.2; }
@@ -226,6 +129,10 @@
         .btn-modal-secondary:hover { color: #fff; }
 
         @media (max-width: 768px) {
+            /* AJUSTEMENT DU BANDEAU POUR TENIR SUR UNE LIGNE */
+            .top-nav { gap: 10px; padding: 10px; }
+            .top-nav a { font-size: 0.72em; }
+            
             .trust-bar { flex-direction: column; gap: 10px; padding: 12px; font-size: 0.8em; align-items: flex-start;}
             .grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
             .card h3 { font-size: 0.85em; min-height: 3.75em; }
@@ -234,7 +141,6 @@
             .btn-mobile { display: block; background: #222; color: #FF6A00; border: 2px solid #FF6A00; padding: 8px; font-size: 0.85em; }
             .btn-notify.btn-mobile { display: block; border-color: #555; color: #aaa;}
             .btn-backup.btn-mobile { display: block; background: transparent; border-color: #444; color: #aaa;}
-            
             .footer-pro-bottom { flex-direction: column; text-align: center; justify-content: center; }
             .footer-pro-socials { flex-wrap: wrap; justify-content: center; gap: 15px;}
             .process-container { flex-direction: column; gap: 15px; padding: 15px;}
@@ -436,7 +342,6 @@
             setTimeout(() => modal.style.display = 'none', 300);
         }
 
-        // NAVIGATION FLUIDE ET CENTRAGE PRÉCIS AU PIXEL PRÈS
         function slideCarousel(btn, direction) {
             const wrapper = btn.closest('.image-wrapper');
             const carousel = wrapper.querySelector('.card-carousel');
