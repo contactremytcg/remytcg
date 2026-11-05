@@ -639,27 +639,27 @@ const produits = [
         badgeCat: "CS3A",
         nom: "Great Ball Gift Set",
         description: "Official CS3A collection set featuring Great Ball accessories & booster packs.",
-        taobaoId: "",
-        taobaoId2: "",
+        taobaoId: "1038982704292",
+        taobaoId2: "761115139755",
         images: [
             "https://godofcards.com/cdn/shop/files/PokemonPTCG5.0SuperballS-ChinesischKomprimiert.jpg?v=1749731192&width=2048",
             "https://kanika.lv/wp-content/uploads/group-86-1.png"
         ],
-        statut: "coming_soon"
+        fournisseur: "Pingtouge TCG",
+        fournisseurBackup: "DunDun TCG"
     },
     {
         section: "Sword & Shield Era",
         badgeCat: "Special",
         nom: "Ultra Ball Gift Set",
         description: "Official collection set featuring Ultra Ball themed accessories & collector booster packs.",
-        taobaoId: "1038982704292",
-        taobaoId2: "761115139755",
+        taobaoId: "",
+        taobaoId2: "",
         images: [
             "https://ueeshop.ly200-cdn.com/u_file/UPBB/UPBB486/2406/17/products/4aebee170a.jpg?x-oss-process=image/format,webp/quality,q_100",
             "https://www.miaocollectables.com/cdn/shop/files/1e14a46bbfb8b00889688bd698dd8086.jpg?v=1748299856"
         ],
-        fournisseur: "Pingtouge TCG",
-        fournisseurBackup: "DunDun TCG"
+        statut: "out_of_stock"
     },
     {
         section: "Sword & Shield Era",
