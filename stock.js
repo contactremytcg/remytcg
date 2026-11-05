@@ -344,6 +344,7 @@ const produits = [
         taobaoId2: "",
         images: [
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxa6HqnsRfMAzQN6evqXrYdwe_Fq0syjwNLYsE72-9_w&s=10",
+            "https://ae-pic-a1.aliexpress-media.com/kf/S12cb4b8e79af4815936a842786e80018z.jpg",
             "https://www.tcghobby.com/cdn/shop/files/Simplified_Chinese_Pokemon_Ogerpon_Hearthflame_Gift_Box_Set.webp?v=1779209745&width=645"
         ],
         isOfficial: true,
@@ -602,7 +603,7 @@ function afficher(liste) {
                 <div class="image-wrapper">
                     <button class="carousel-arrow prev" onclick="slideCarousel(this, -1)">‹</button>
                     <div class="card-carousel" onscroll="updateDotsOnScroll(this)">
-                        ${p.images.map(img => `<img src="${img}" alt="${p.nom}" class="card-img" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='${fallback}'">`).join('')}
+                        ${p.images.map(img => `<img src="${img}" alt="${p.nom}" class="card-img" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='${fallback}'">`).join('')}
                     </div>
                     <button class="carousel-arrow next" onclick="slideCarousel(this, 1)">›</button>
                     ${dotsHtml}
@@ -611,7 +612,7 @@ function afficher(liste) {
         } else if (p.images && p.images.length === 1) {
             const isDitto = p.nom.includes("Ditto");
             const customClass = isDitto ? "card-img card-img-single crop-bottom" : "card-img card-img-single";
-            imagesHtml = `<img src="${p.images[0]}" alt="${p.nom}" class="${customClass}" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='${fallback}'">`;
+            imagesHtml = `<img src="${p.images[0]}" alt="${p.nom}" class="${customClass}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='${fallback}'">`;
         }
 
         let boutonsHtml = '';
@@ -636,8 +637,8 @@ function afficher(liste) {
             const sugargooUrl2 = formatSugargooLink(targetTaobaoId2);
             
             boutonsHtml += `
-                <button onclick="triggerProductAction('pc', '${sugargooUrl2}')" class="btn-main-card btn-backup btn-pc">Backup Link (If Sold Out)</button>
-                <button onclick="triggerProductAction('mobile', '${taobaoUrlRaw2}', this)" class="btn-main-card btn-backup btn-mobile">Copy Backup Link</button>
+                <button onclick="triggerProductAction('pc', '${sugargooUrl2}')" class="btn-main-card btn-backup btn-pc">Backup Supplier (If Out of Stock)</button>
+                <button onclick="triggerProductAction('mobile', '${taobaoUrlRaw2}', this)" class="btn-main-card btn-backup btn-mobile">Copy Backup Supplier</button>
             `;
         }
 
