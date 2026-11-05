@@ -13,19 +13,18 @@
     <link rel="icon" type="image/jpeg" href="https://scontent-sin11-2.cdninstagram.com/v/t51.82787-19/846528981_18117825301906300_2410003667728457360_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=101&ig_cache_key=GNUBdTJ8AzntEF5AAJDeVyqRDXIhbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=R86uzwtI-38Q7kNvwHw5b96&_nc_oc=AdpjE0JmV25Oje8YXwqyXWLSepl4kTg9pO0uT4962FwCL-1H7v3HtRBW4FKTlXbPN55yXMCN73w_1xvjzhatgyu8&_nc_zt=24&_nc_ht=scontent-sin11-2.cdninstagram.com&_nc_gid=px0MMH314KMRbj77Pq-sog&_nc_ss=7b689&oh=00_AQTSj8vrDPcdgdPKpmJJ49uuphrUfiA7u6JTHdWwr13dXA&oe=6AEFF132">
     
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
         
         html { scroll-behavior: smooth; }
         body { 
             font-family: 'Inter', sans-serif; 
             background-color: #111215; 
-            /* FOND PRO SANS QUADRILLAGE AGRESSIF : DÉGRADÉ SUBTIL AMBRÉ */
             background-image: radial-gradient(circle at 50% -100px, rgba(255, 106, 0, 0.12) 0%, rgba(17, 18, 21, 0) 70%);
             background-repeat: no-repeat;
             color: #fff; 
             margin: 0; 
             padding: 0; 
-            line-height: 1.6; 
+            line-height: 1.5; 
             display: flex; 
             flex-direction: column; 
             min-height: 100vh; 
@@ -115,13 +114,84 @@
         .carousel-dot.active { background: #FF6A00; transform: scale(1.3); }
 
         .card-content { padding: 14px; display: flex; flex-direction: column; flex-grow: 1; }
-        .category { font-size: 0.68em; color: #FF6A00; text-transform: uppercase; font-weight: 700; letter-spacing: 0.8px; display: flex; align-items: center; }
-        .official-icon { width: 11px; height: 11px; margin-left: 6px; opacity: 0.6; }
         
-        .card h3 { margin: 6px 0; font-size: 1.05em; line-height: 1.25; min-height: 2.6em; display: flex; align-items: flex-start; }
-        .card p { color: #8e8e93; font-size: 0.8em; line-height: 1.35; min-height: 2.8em; margin: 0 0 12px 0; }
+        /* 1. CATÉGORIE VERROUILLÉE SUR 1 LIGNE */
+        .category { 
+            font-size: 0.68em; 
+            color: #FF6A00; 
+            text-transform: uppercase; 
+            font-weight: 700; 
+            letter-spacing: 0.8px; 
+            height: 16px; 
+            line-height: 16px; 
+            margin-bottom: 4px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
         
-        /* CADRE VERROUILLÉ EN HAUTEUR : ALIGNEMENT PARFAIT DES BOUTONS */
+        /* 2. TITRE VERROUILLÉ SUR EXACTEMENT 2 LIGNES */
+        .card h3 { 
+            margin: 0 0 6px 0; 
+            font-size: 1.02em; 
+            line-height: 1.25; 
+            height: 2.5em; 
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        /* 3. DESCRIPTION VERROUILLÉE SUR EXACTEMENT 2 LIGNES */
+        .card p { 
+            color: #8e8e93; 
+            font-size: 0.8em; 
+            line-height: 1.35; 
+            height: 2.7em; 
+            margin: 0 0 10px 0; 
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        /* 4. BLOC SUPPLIER ENRICHI D'UNE ICÔNE BOX ET HAUTEUR FIXE ABSOLUE */
+        .supplier-info {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            height: 32px;
+            margin-bottom: 12px;
+            padding: 4px 8px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+        .supplier-icon {
+            width: 14px;
+            height: 14px;
+            flex-shrink: 0;
+            color: #FF6A00;
+        }
+        .supplier-text {
+            font-size: 0.72em;
+            color: #888;
+            line-height: 1.2;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .supplier-text strong {
+            color: #bbb;
+            font-weight: 600;
+        }
+
+        /* 5. CADRE DES BOUTONS VERROUILLÉ EN HAUTEUR : ALIGNEMENT PARFAIT */
         .buttons-container { 
             display: grid; 
             grid-template-rows: 38px 34px; 
@@ -158,6 +228,15 @@
         .btn-backup { background: rgba(255, 255, 255, 0.03); color: #777; border: 1px solid rgba(255, 255, 255, 0.1); font-size: 0.78em; }
         .btn-backup:hover { color: #fff; border-color: #FF6A00; background: rgba(255, 106, 0, 0.05); }
         .btn-mobile { display: none; }
+
+        /* SPACER INVISIBLE PROTÉGÉ */
+        .btn-backup-placeholder {
+            visibility: hidden !important;
+            pointer-events: none !important;
+            user-select: none !important;
+            border-color: transparent !important;
+            background: transparent !important;
+        }
 
         .faq-container { max-width: 1560px; width: 95%; margin: 30px auto 0 auto; padding: 0; box-sizing: border-box; }
         .faq-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
@@ -212,9 +291,11 @@
             .intro-banner-text { text-align: center; }
             .intro-banner-action { width: 100%; }
             .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-            .card h3 { font-size: 0.82em; min-height: 3.5em; }
-            .card p { font-size: 0.7em; min-height: 3.8em; }
-            .buttons-container { grid-template-rows: 32px 28px; height: 66px; gap: 4px; }
+            .card h3 { font-size: 0.82em; min-height: 2.5em; }
+            .card p { font-size: 0.7em; min-height: 2.7em; }
+            .supplier-info { height: 28px; padding: 2px 6px; }
+            .supplier-text { font-size: 0.65em; }
+            .buttons-container { grid-template-rows: 32px 28px; height: 64px; gap: 4px; }
             .btn-pc { display: none; }
             .btn-mobile { display: flex; background: #111215; color: #FF6A00; border: 1.5px solid #FF6A00; padding: 0; font-size: 0.78em; }
             .btn-notify.btn-mobile { display: flex; border-color: #444; color: #aaa;}
