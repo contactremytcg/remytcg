@@ -85,7 +85,7 @@ const produits = [
     {
         section: "Scarlet & Violet Era",
         categorie: "Scarlet & Violet Era",
-        nom: "Black Bolt & White Flare Display (CSV11)",
+        nom: "Black Bolt & White Flare Display (CSV10.5)",
         description: "Contains: 30 booster packs. Factory sealed display box.",
         taobaoId: "1094128825003",
         taobaoId2: "1093554321145",
@@ -112,7 +112,8 @@ const produits = [
         description: "Contains: 30 booster packs (5 cards/pack). Factory sealed display box.",
         taobaoId: "1058877644488",
         taobaoId2: "",
-        images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStiWS_bFR5gh7QRwgevHWL5Naw-8q9-wlqlLHh-Gwil5rhRVYNoP7wSfI&s=10"]
+        images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStiWS_bFR5gh7QRwgevHWL5Naw-8q9-wlqlLHh-Gwil5rhRVYNoP7wSfI&s=10"],
+        fournisseur: "AmongUs"
     },
     {
         section: "Scarlet & Violet Era",
@@ -712,13 +713,14 @@ const produits = [
         nom: "Ogerpon Wellspring Mask (Blue) Gift Box",
         description: "Contains: Ogerpon ex Blue Mask Promo, custom card sleeves, and booster packs.",
         taobaoId: "1049188091485",
-        taobaoId2: "",
+        taobaoId2: "1051982944741",
         images: [
             "https://static.wixstatic.com/media/d2c7b0_10f8544592a14adda9162a7a98bc44b8~mv2.png/v1/fit/w_500,h_500,q_90/file.png",
             "https://www.tcghobby.com/cdn/shop/files/Simplified_Chinese_Pokemon_Ogerpon_Wellspring_Gift_Box_Set.webp?v=1779209947"
         ],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai"
+        fournisseur: "Pokemon Store Shanghai",
+        fournisseurBackup: "Panda"
     },
     {
         section: "Premium Collection Boxes",
@@ -726,13 +728,14 @@ const produits = [
         nom: "Ogerpon Cornerstone Mask (Brown) Gift Box",
         description: "Contains: Ogerpon ex Brown Mask Promo, custom card sleeves, and booster packs.",
         taobaoId: "1050912105033",
-        taobaoId2: "",
+        taobaoId2: "1051982944741",
         images: [
             "https://main-wordpress-bucket-production.lon1.digitaloceanspaces.com/2026/05/OgerPon-ETB-Brown.webp",
             "https://nextleveluk.net/cdn/shop/files/s-l1600-2026-10-01T152323.962.jpg?v=1790864832&width=1024"
         ],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai"
+        fournisseur: "Pokemon Store Shanghai",
+        fournisseurBackup: "Panda"
     },
     {
         section: "Premium Collection Boxes",
@@ -740,13 +743,14 @@ const produits = [
         nom: "Ogerpon Teal Mask (Green) Gift Box",
         description: "Contains: Ogerpon ex Green Mask Promo, custom card sleeves, and booster packs.",
         taobaoId: "1050909737218",
-        taobaoId2: "",
+        taobaoId2: "1051982944741",
         images: [
             "https://static.wixstatic.com/media/d2c7b0_5749d47b909e44cf987fcadf8686ff9d~mv2.png/v1/fit/w_500,h_500,q_90/file.png",
             "https://pg-cdn-a2.datacaciques.com/00/Mzc3MTUw/26/04/24/e52cf2k0r62fw4u5/e0062501a7b99b98.jpg"
         ],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai"
+        fournisseur: "Pokemon Store Shanghai",
+        fournisseurBackup: "Panda"
     },
     {
         section: "Premium Collection Boxes",
@@ -754,14 +758,15 @@ const produits = [
         nom: "Ogerpon Hearthflame Mask (Red) Gift Box",
         description: "Contains: Ogerpon ex Red Mask Promo, custom card sleeves, and booster packs.",
         taobaoId: "1050912901200",
-        taobaoId2: "",
+        taobaoId2: "1051982944741",
         images: [
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxa6HqnsRfMAzQN6evqXrYdwe_Fq0syjwNLYsE72-9_w&s=10",
             "https://ae-pic-a1.aliexpress-media.com/kf/S12cb4b8e79af4815936a842786e80018z.jpg",
             "https://www.tcghobby.com/cdn/shop/files/Simplified_Chinese_Pokemon_Ogerpon_Hearthflame_Gift_Box_Set.webp?v=1779209745&width=645"
         ],
         isOfficial: true,
-        fournisseur: "Pokemon Store Shanghai"
+        fournisseur: "Pokemon Store Shanghai",
+        fournisseurBackup: "Panda"
     },
 
     // =========================================================================
@@ -820,12 +825,13 @@ const produits = [
         nom: "Dream Figure Vol. 1 Blind Box",
         description: "Contains: 1x Random Dream Vol. 1 Pokémon figure and selected booster packs.",
         taobaoId: "994367267628",
-        taobaoId2: "",
+        taobaoId2: "1096711400657",
         images: [
             "https://www.tcghobby.com/cdn/shop/files/SimplifiedChinesePokemonDreamPaintingCollection151FigureSet.jpg?v=1776398595",
             "https://i0.wp.com/katzenworld.shop/wp-content/uploads/2025/12/Dream-Painting-Collection-151-Figurine-Set-Figures-2.webp?fit=800%2C1097&ssl=1"
         ],
-        fournisseur: "Panda"
+        fournisseur: "Panda",
+        fournisseurBackup: "Panda"
     },
     {
         section: "Blind Boxes & Figures",
@@ -864,7 +870,7 @@ function afficher(liste) {
 
         let secSubtitle = "";
         if (secNom === "🔥 Trending & Best Sellers") secSubtitle = "Curated Top Picks for Immediate Dispatch";
-        else if (secNom === "Scarlet & Violet Era") secSubtitle = "CSV11 through CSV1 Main Sets";
+        else if (secNom === "Scarlet & Violet Era") secSubtitle = "CSV10.5 through CSV1 Main Sets";
         else if (secNom === "Gem Packs") secSubtitle = "Vol. 7 through Vol. 1 Jumbo Boosters";
         else if (secNom === "Collect 151 Series") secSubtitle = "The Definitive Kanto 151 Archive";
         else if (secNom === "Sword & Shield Era") secSubtitle = "CS6 through CS1 Classic Eras";
