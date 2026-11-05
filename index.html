@@ -130,7 +130,6 @@
         
         .card-badge { position: absolute; top: 8px; left: 8px; padding: 5px 10px; border-radius: 6px; font-size: 0.72em; font-weight: 900; text-transform: uppercase; color: #fff; z-index: 10; box-shadow: 0 4px 10px rgba(0,0,0,0.4); }
 
-        /* BADGE REEL INSTAGRAM COMPACT ET CLASSE */
         .badge-video {
             position: absolute;
             top: 8px;
@@ -149,6 +148,7 @@
             z-index: 10;
             backdrop-filter: blur(4px);
             transition: all 0.2s ease;
+            cursor: pointer;
         }
         .badge-video:hover {
             background: #FF6A00;
@@ -359,7 +359,6 @@
         .btn-modal-main { display: block; width: 100%; background: linear-gradient(135deg, #FF6A00 0%, #FF8533 100%); color: #fff; padding: 15px 20px; text-decoration: none; font-weight: 900; border-radius: 8px; font-size: 1.02em; margin-bottom: 10px; border: none; cursor: pointer; }
         .btn-modal-secondary { display: block; width: 100%; background: transparent; color: #888; padding: 8px; text-decoration: underline; font-weight: 700; border: none; font-size: 0.85em; cursor: pointer; font-family: inherit; }
 
-        /* BOUTON FLOTTANT PC ENRICHI AVEC TEXTE */
         .btn-back-to-top {
             position: fixed;
             bottom: 25px;
@@ -412,7 +411,6 @@
             .footer-pro-socials { gap: 15px;}
             .process-container { flex-direction: column; gap: 10px; padding: 12px;}
             .process-arrow { transform: rotate(90deg); }
-            /* CERCLE COMPACT SUR MOBILE */
             .btn-back-to-top {
                 padding: 0;
                 width: 40px;
@@ -671,6 +669,20 @@
             const modal = document.getElementById('welcomeModal');
             modal.style.opacity = '0';
             setTimeout(() => modal.style.display = 'none', 300);
+        }
+
+        // REDIRECTION DEEP LINK VERS L'APP INSTAGRAM AVEC FALLBACK WEB
+        function openInstagramReel(url) {
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+                // Tente d'ouvrir directement l'application Instagram
+                window.location.href = "instagram://app";
+                setTimeout(() => {
+                    window.open(url, '_blank');
+                }, 500);
+            } else {
+                window.open(url, '_blank');
+            }
         }
 
         function slideCarousel(btn, direction) {
