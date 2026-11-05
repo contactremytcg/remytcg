@@ -16,9 +16,7 @@ window.copyToClipboard = function(text, btn) {
 
 const formatSugargooLink = (taobaoId) => {
     const taobaoUrl = encodeURIComponent(`https://item.taobao.com/item.htm?id=${taobaoId}`);
-    const isMobile = /iPhone|Android|iPad|iPod/i.test(navigator.userAgent);
-    const prefix = isMobile ? "m" : "www";
-    return `https://${prefix}.sugargoo.com/#/home/productDetail?productLink=${taobaoUrl}&memberId=${memberId}`;
+    return `https://www.sugargoo.com/#/home/productDetail?productLink=${taobaoUrl}&memberId=${memberId}`;
 };
 
 const produits = [
@@ -595,8 +593,8 @@ const produits = [
         taobaoId: "1038724485132",
         taobaoId2: "767333963100",
         images: ["https://lh3.googleusercontent.com/proxy/BGbaaxN3iStHvlwH1Au_E8Zj0YnmBaCPWX_4UzlBEekNSz9n7libOy4Jl54qAJaMQsuZ8VafNDAiuHKAnaPnkSF9na_nglyipJHqOnJigtXW9MYazYkZlLDceLPUwgskfC7Jn1KI1XauvKIkjKLEADYI41sXDRcZ9tZzzuyGcA"],
-        fournisseur: "Pingtouge TCG",
-        fournisseurBackup: "DunDun TCG"
+        fournisseur: "Pingtouge TCG"
+        // Backup supplier available: DunDun TCG
     },
     {
         section: "Sword & Shield Era",
@@ -1232,5 +1230,9 @@ function filtrer() {
     afficher(resultats);
 }
 
-// Initialisation synchrone garantie
-afficher(produits);
+// Initialisation sécurisée dès que le DOM est disponible
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => afficher(produits));
+} else {
+    afficher(produits);
+}
