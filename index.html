@@ -74,7 +74,6 @@
         .search-bar { width: 100%; box-sizing: border-box; padding: 10px 18px; border-radius: 50px; border: 1px solid rgba(255, 255, 255, 0.12); background: #17181c; color: white; font-size: 0.88em; outline: none; transition: border-color 0.3s; }
         .search-bar:focus { border-color: #FF6A00; }
 
-        /* CONTENEUR DE FILTRES AVEC FADE INDICATEUR DE DÉFILEMENT */
         .filter-wrapper {
             position: relative;
             margin-bottom: 20px;
@@ -318,16 +317,15 @@
             transition: transform 0.2s ease, filter 0.2s ease; 
             box-sizing: border-box; 
         }
-        .btn-pc { 
+        .btn-order { 
             background: linear-gradient(135deg, #FF6A00 0%, #FF7F24 100%); 
             color: #ffffff; 
             box-shadow: 0 3px 10px rgba(255, 106, 0, 0.25);
         }
-        .btn-pc:hover { transform: translateY(-2px); filter: brightness(1.12); box-shadow: 0 5px 14px rgba(255, 106, 0, 0.4); }
+        .btn-order:hover { transform: translateY(-2px); filter: brightness(1.12); box-shadow: 0 5px 14px rgba(255, 106, 0, 0.4); }
         .btn-notify { background: #222327; color: #aaa; border: 1px solid #38383c; }
         .btn-backup { background: rgba(255, 255, 255, 0.03); color: #777; border: 1px solid rgba(255, 255, 255, 0.1); font-size: 0.76em; }
         .btn-backup:hover { color: #fff; border-color: #FF6A00; background: rgba(255, 106, 0, 0.05); }
-        .btn-mobile { display: none; }
 
         .btn-backup-placeholder {
             visibility: hidden !important;
@@ -430,7 +428,7 @@
             .faq-grid-3 { grid-template-columns: 1fr; }
         }
         
-        /* ADAPTATION MOBILE ÉPURÉE AVEC ACCÈS DIRECT AUX ARTICLES */
+        /* ADAPTATION MOBILE */
         @media (max-width: 768px) {
             body { background-image: none; background-color: #111215; }
             .top-nav { gap: 10px; padding: 8px 10px; }
@@ -443,7 +441,6 @@
             
             .trust-bar { padding: 4px 8px; font-size: 0.68em; gap: 8px; justify-content: center; }
             
-            /* BANNIÈRE COMPACTE GARANTISSANT LA COMPRÉHENSION DE L'AFFILIATION */
             .intro-banner { 
                 padding: 10px 12px; 
                 margin: 8px auto; 
@@ -459,7 +456,7 @@
             .search-container { margin-bottom: 6px; }
             .search-bar { padding: 7px 12px; font-size: 0.78em; }
 
-            /* SCROLL HORIZONTAL AVEC DÉGRADÉ INDICATEUR VISIBLE & PEEK EFFECT */
+            /* DÉFILEMENT AVEC PEEK EFFECT */
             .filter-wrapper {
                 margin-bottom: 12px;
                 position: relative;
@@ -507,10 +504,9 @@
             .supplier-text { font-size: 0.62em; line-height: 1.15; }
 
             .buttons-container { grid-template-rows: 28px 24px; height: 56px; gap: 4px; }
-            .btn-pc { display: none; }
-            .btn-mobile { display: flex; background: #111215; color: #FF6A00; border: 1.5px solid #FF6A00; padding: 0; font-size: 0.72em; border-radius: 5px; }
-            .btn-notify.btn-mobile { display: flex; border-color: #444; color: #aaa;}
-            .btn-backup.btn-mobile { display: block; background: transparent; border-color: #333; color: #888; font-size: 0.66em; line-height: 22px;}
+            .btn-order { font-size: 0.72em; }
+            .btn-backup { font-size: 0.66em; }
+            .btn-notify { font-size: 0.72em; }
             
             .btn-back-to-top {
                 padding: 0;
@@ -735,36 +731,34 @@
     <script src="stock.js"></script>
     <script>
         let pendingAction = null; 
-        let activePillCategory = '';
 
-        function triggerProductAction(type, data, element = null) {
+        function triggerProductAction(url) {
             const hasSeenPopup = localStorage.getItem('remytcg_setup_done');
             if (hasSeenPopup === 'true') {
-                executeAction(type, data, element);
+                window.open(url, '_blank');
             } else {
-                pendingAction = { type, data, element };
+                pendingAction = url;
                 const modal = document.getElementById('welcomeModal');
                 modal.style.display = 'flex';
                 setTimeout(() => modal.style.opacity = '1', 10);
             }
         }
-        function executeAction(type, data, element) {
-            if (type === 'pc') { window.open(data, '_blank'); } 
-            else if (type === 'mobile') { window.copyToClipboard(data, element); }
-        }
+
         function registerAndClose() {
             localStorage.setItem('remytcg_setup_done', 'true'); 
             window.open('https://m.sugargoo.com/register?memberId=3894055016867374984', '_blank');
             closeModal();
         }
+
         function continueToProduct() {
             localStorage.setItem('remytcg_setup_done', 'true'); 
             closeModal();
             if (pendingAction) {
-                executeAction(pendingAction.type, pendingAction.data, pendingAction.element);
+                window.open(pendingAction, '_blank');
                 pendingAction = null;
             }
         }
+
         function closeModal() {
             const modal = document.getElementById('welcomeModal');
             modal.style.opacity = '0';
@@ -825,7 +819,7 @@
         function selectPill(btn, cat) {
             document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
             btn.classList.add('active');
-            activePillCategory = cat;
+            window.activePillCategory = cat;
             filtrer();
         }
 
