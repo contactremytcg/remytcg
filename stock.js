@@ -16,7 +16,7 @@ const produits = [
     // SECTION 1 : TRENDING & BEST SELLERS
     // =========================================================================
     {
-        section: "🔥 Trending & Best Sellers",
+        section: "Trending & Best Sellers",
         badgeCat: "30th-C",
         nom: "30th Anniversary Booster Box",
         description: "Official booster box.",
@@ -30,7 +30,7 @@ const produits = [
         fournisseur: "DunDun TCG"
     },
     {
-        section: "🔥 Trending & Best Sellers",
+        section: "Trending & Best Sellers",
         badgeCat: "CBB7C",
         nom: "Gem Pack Vol. 7",
         description: "Official booster box.",
@@ -41,7 +41,7 @@ const produits = [
         fournisseurBackup: "Pingtouge TCG"
     },
     {
-        section: "🔥 Trending & Best Sellers",
+        section: "Trending & Best Sellers",
         badgeCat: "30th-UPC",
         nom: "Espeon & Umbreon EX Collector Display Box",
         description: "Exclusive Eeveelution promos & packs.",
@@ -57,7 +57,7 @@ const produits = [
         fournisseurBackup: "Pingtouge TCG"
     },
     {
-        section: "🔥 Trending & Best Sellers",
+        section: "Trending & Best Sellers",
         badgeCat: "Figure Vol. 4",
         nom: "Dream Figure Vol. 4 (Pikachu Edition)",
         description: "Pikachu mystery figurine + packs.",
@@ -74,7 +74,7 @@ const produits = [
         fournisseurBackup: "Pingtouge TCG"
     },
     {
-        section: "🔥 Trending & Best Sellers",
+        section: "Trending & Best Sellers",
         badgeCat: "Figure Box",
         nom: "Charizard Figure Box",
         description: "Charizard figurine, promos & packs.",
@@ -89,7 +89,7 @@ const produits = [
         fournisseurBackup: "Pingtouge TCG"
     },
     {
-        section: "🔥 Trending & Best Sellers",
+        section: "Trending & Best Sellers",
         badgeCat: "CSV10.5",
         nom: "Black Bolt & White Flare",
         description: "Official booster box.",
@@ -1079,9 +1079,12 @@ function genererCarteHtml(p) {
         
         backupLinkHtml = `
             <a href="javascript:void(0)" onclick="triggerProductAction('${sugargooUrl2}')" class="card-backup-link" title="Order from alternate seller">
-                Backup: ${backupNom} ↗
+                <span>Backup: ${backupNom}</span>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
             </a>
         `;
+    } else {
+        backupLinkHtml = `<span class="card-backup-link card-backup-placeholder" aria-hidden="true">&nbsp;</span>`;
     }
 
     let boutonsHtml = '';
@@ -1127,7 +1130,7 @@ function afficher(liste) {
     container.innerHTML = '';
 
     const sectionsOrdre = [
-        "🔥 Trending & Best Sellers",
+        "Trending & Best Sellers",
         "30th Anniversary",
         "Scarlet & Violet Era",
         "Gem Packs",
@@ -1142,11 +1145,11 @@ function afficher(liste) {
     let globalArchiveIndex = 0;
 
     sectionsOrdre.forEach(secNom => {
-        if (secNom === "🔥 Trending & Best Sellers" && window.activePillCategory !== '') {
+        if (secNom === "Trending & Best Sellers" && window.activePillCategory !== '') {
             return;
         }
 
-        const itemsSec = liste.filter(p => p.section === secNom);
+        const itemsSec = liste.filter(p => p.section === secNom || (secNom === "Trending & Best Sellers" && p.section.includes("Trending")));
         if (itemsSec.length === 0) return;
 
         const itemsActifs = itemsSec.filter(p => p.statut !== "out_of_stock");
