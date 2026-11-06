@@ -239,36 +239,40 @@
 
         .card-content { padding: 12px; display: flex; flex-direction: column; flex-grow: 1; }
         
-        /* NOUVELLE LIGNE META : CATEGORIE + FOURNISSEUR SUR 1 LIGNE */
+        /* LIGNE META : ANTI-CANNIBALISME GARANTI */
         .card-meta-row {
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
             gap: 6px;
             margin-bottom: 4px;
+            min-width: 0;
         }
         .category { 
-            font-size: 0.65em; 
+            font-size: 0.68em; 
             color: #FF6A00; 
             text-transform: uppercase; 
             font-weight: 800; 
-            letter-spacing: 0.8px; 
+            letter-spacing: 0.6px; 
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            flex-shrink: 0;
+            max-width: 65%;
         }
         .supplier-tag {
             font-size: 0.62em;
-            color: #888;
+            color: #aaa;
             font-weight: 600;
             background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.08);
             padding: 2px 6px;
             border-radius: 4px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            max-width: 55%;
+            flex-shrink: 1;
+            text-align: right;
         }
         
         .card h3 { 
@@ -296,7 +300,7 @@
             text-overflow: ellipsis;
         }
         
-        /* ZONE BASSE BOUTON UNIQUE & BACKUP DISCRET */
+        /* ZONE BASSE BOUTON UNIQUE & LIEN DE SECOURS CLICABLE NET */
         .card-footer-action {
             margin-top: auto;
             display: flex;
@@ -304,19 +308,26 @@
             gap: 6px;
         }
         .card-backup-link {
-            font-size: 0.68em;
-            color: #777;
+            font-size: 0.7em;
+            font-weight: 700;
+            color: #ff944d;
+            background: rgba(255, 106, 0, 0.06);
+            border: 1px solid rgba(255, 106, 0, 0.2);
+            border-radius: 4px;
+            padding: 3px 6px;
             text-decoration: none;
             text-align: center;
-            transition: color 0.2s;
             display: block;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            transition: all 0.2s ease;
         }
-        .card-backup-link strong { color: #aaa; }
-        .card-backup-link:hover { color: #FF6A00; }
-        .card-backup-link:hover strong { color: #FF6A00; }
+        .card-backup-link:hover {
+            color: #ffffff;
+            background: #FF6A00;
+            border-color: #FF6A00;
+        }
 
         .btn-main-card { 
             display: flex;
@@ -382,7 +393,7 @@
         .process-step p { color: #777; font-size: 0.7em; margin: 0; line-height: 1.2; }
         .process-arrow { color: #FF6A00; font-size: 0.85em; font-weight: bold; }
 
-        /* BADGES SOURCES PRO */
+        /* BADGES SOURCES PRO SANS EMOJI */
         .source-card {
             background: #111215;
             border: 1px solid rgba(255, 255, 255, 0.08);
@@ -521,15 +532,15 @@
             .badge-video svg { width: 8px; height: 8px; }
 
             .card-content { padding: 8px; }
-            .card-meta-row { margin-bottom: 3px; }
-            .category { font-size: 0.58em; }
+            .card-meta-row { margin-bottom: 2px; }
+            .category { font-size: 0.62em; max-width: 60%; }
             .supplier-tag { font-size: 0.56em; padding: 1px 4px; }
-            .card h3 { font-size: 0.76em; height: 2.5em; line-height: 1.25; margin-bottom: 4px; }
-            .card p { font-size: 0.66em; height: 2.6em; line-height: 1.3; margin-bottom: 6px; }
+            .card h3 { font-size: 0.76em; height: 2.5em; line-height: 1.25; margin-bottom: 3px; }
+            .card p { font-size: 0.66em; height: 2.6em; line-height: 1.3; margin-bottom: 4px; }
 
             .card-footer-action { gap: 4px; }
-            .card-backup-link { font-size: 0.6em; }
-            .btn-main-card { height: 30px; font-size: 0.74em; border-radius: 5px; }
+            .card-backup-link { font-size: 0.62em; padding: 2px 4px; }
+            .btn-main-card { height: 32px; font-size: 0.76em; border-radius: 5px; }
             
             .btn-back-to-top {
                 padding: 0;
@@ -553,7 +564,7 @@
     <div id="welcomeModal" class="modal-overlay">
         <div class="modal-content">
             <h2>Before you order... 🛑</h2>
-            <p>To access local Chinese prices with <strong>0 markup</strong>, you need a free proxy account on Sugargoo.</p>
+            <p>To access local Chinese prices with <strong>0 markup</strong>, you need a free proxy account on Sugargoo[cite: 8].</p>
             <p style="font-size: 0.85em; color: #aaa; line-height: 1.4; margin-bottom: 14px;">
                 ⚠️ <strong>Important:</strong> Sign up directly in your browser. Sugargoo has no manual referral code in the app. Using our browser link locks in your <strong>800 CNY (~$110 USD) Shipping Coupons</strong> and lets RemyTCG assist with your parcels!
             </p>
@@ -600,10 +611,10 @@
     <div id="setup" class="intro-banner">
         <div class="intro-banner-text">
             <h2>How Buying Direct from China Works (Proxy Service)</h2>
-            <p style="margin-bottom: 8px;">Sugargoo acts as your verified agent in China: buy authentic Pokémon cards at local retail price (0% markup from RemyTCG), receive HD warehouse inspection photos, and ship safely to your door.</p>
+            <p style="margin-bottom: 8px;">Sugargoo acts as your verified agent in China: buy authentic Pokémon cards at local retail price (0% markup from RemyTCG)[cite: 8], receive HD warehouse inspection photos, and ship safely to your door[cite: 7].</p>
             <div style="font-size: 0.82em; color: #aaa; line-height: 1.45; display: flex; flex-direction: column; gap: 4px;">
                 <div>• <strong style="color: #FF6A00;">Browser Registration Required:</strong> Sugargoo tracks affiliate referral via browser cookies, not app codes. Sign up in Safari/Chrome via our link so we can assist with your parcels.</div>
-                <div>• <strong style="color: #FF6A00;">800 CNY Bonus:</strong> Unlocks 14 international shipping discount vouchers automatically upon sign up.</div>
+                <div>• <strong style="color: #FF6A00;">800 CNY Bonus:</strong> Unlocks 14 international shipping discount vouchers automatically upon sign up[cite: 7, 8].</div>
             </div>
         </div>
         <div class="intro-banner-action">
@@ -641,14 +652,14 @@
         <div class="faq-grid-3">
             <div class="faq-item" style="border-color: #FF6A00;">
                 <h3>🤔 1. What is a Proxy Agent?</h3>
-                <p>Buying from Chinese marketplaces requires a local address & Chinese payment. Sugargoo acts as your middleman:</p>
+                <p>Buying from Chinese marketplaces requires a local address & Chinese payment[cite: 7]. Sugargoo acts as your middleman[cite: 7]:</p>
                 <div class="process-container">
                     <div class="process-step">
                         <div class="process-icon">
                             <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
                         </div>
                         <h4>1. Buy</h4>
-                        <p>Direct local retail price.</p>
+                        <p>Direct local retail price[cite: 7].</p>
                     </div>
                     <div class="process-arrow">➔</div>
                     <div class="process-step">
@@ -656,7 +667,7 @@
                             <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
                         </div>
                         <h4>2. Warehouse</h4>
-                        <p>Quality Check (QC) & 100d storage.</p>
+                        <p>Quality Check (QC) & 100d storage[cite: 7].</p>
                     </div>
                     <div class="process-arrow">➔</div>
                     <div class="process-step">
@@ -664,24 +675,24 @@
                             <svg viewBox="0 0 24 24"><path d="M22 2L11 13"></path><path d="M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
                         </div>
                         <h4>3. Ship</h4>
-                        <p>Direct to your door.</p>
+                        <p>Direct to your door[cite: 7].</p>
                     </div>
                 </div>
             </div>
 
             <div class="faq-item">
                 <h3>🛡️ 2. Verified Sources</h3>
-                <p>We curate exclusively from 4 verified Taobao/Tmall suppliers:</p>
+                <p>We curate exclusively from 4 verified Taobao/Tmall suppliers[cite: 7]:</p>
                 <div style="display: flex; flex-direction: column; gap: 6px; margin: 6px 0;">
                     <div class="source-card">
                         <span class="source-tag source-tag-official">Official Flagship</span>
                         <span style="color: #FFCB05; font-weight: 800; font-size: 0.8em;">宝可梦官方旗舰店 (Pokémon Store)</span>
-                        <div style="color: #888; font-size: 0.68em;">Primary official flagship on Tmall. 1M+ followers.</div>
+                        <div style="color: #888; font-size: 0.68em;">Primary official flagship on Tmall[cite: 7]. 1M+ followers[cite: 7].</div>
                     </div>
                     <div class="source-card">
                         <span class="source-tag source-tag-gold">Gold Seller 5.0</span>
                         <span style="color: #FF6A00; font-weight: 800; font-size: 0.8em;">DunDun TCG (墩墩卡店)</span>
-                        <div style="color: #888; font-size: 0.68em;">Top 1% seller • 50,000+ completed sales.</div>
+                        <div style="color: #888; font-size: 0.68em;">Top 1% seller • 50,000+ completed sales[cite: 7].</div>
                     </div>
                     <div class="source-card">
                         <span class="source-tag source-tag-cert">Certified Seller</span>
@@ -698,11 +709,11 @@
 
             <div class="faq-item">
                 <h3>🎁 3. 800 CNY Welcome Bonus</h3>
-                <p>Registering via our link credits your account with <strong>14 discount vouchers</strong> worth 800 CNY (~$110 USD):</p>
+                <p>Registering via our link credits your account with <strong>14 discount vouchers</strong> worth 800 CNY (~$110 USD)[cite: 7]:</p>
                 <ul>
-                    <li><strong>Discounts:</strong> From 20 CNY off to 150 CNY off per parcel.</li>
-                    <li><strong>Validity:</strong> 90 days after registration.</li>
-                    <li><strong>Application:</strong> Usable on your international shipping checkout.</li>
+                    <li><strong>Discounts:</strong> From 20 CNY off to 150 CNY off per parcel[cite: 7].</li>
+                    <li><strong>Validity:</strong> 90 days after registration[cite: 7].</li>
+                    <li><strong>Application:</strong> Usable on your international shipping checkout[cite: 7].</li>
                 </ul>
             </div>
         </div>
