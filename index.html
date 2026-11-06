@@ -124,16 +124,24 @@
         .btn-main { display: inline-block; background: linear-gradient(135deg, #FF6A00 0%, #FF8533 100%); color: #fff; padding: 14px 28px; text-decoration: none; font-weight: 900; border-radius: 50px; font-size: 1em; transition: all 0.2s; text-align: center; box-shadow: 0 6px 20px rgba(255, 106, 0, 0.3); border: none; cursor: pointer; box-sizing: border-box; }
         .btn-main:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(255, 106, 0, 0.4); filter: brightness(1.1); }
         
-        /* PHRASE DE TRANSPARENCE AFFILIATION (1 COULEUR) */
+        /* PHRASE DE TRANSPARENCE AFFILIATION AVEC ICONE LINK ORANGE */
         .hero-affiliate-note {
-            font-size: 0.72em;
-            color: #888;
-            margin-top: 14px;
-            font-weight: 500;
-            line-height: 1.4;
-            max-width: 400px;
-            margin-left: auto;
-            margin-right: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            font-size: 0.74em;
+            color: #999;
+            margin: 14px auto 0 auto;
+            line-height: 1.45;
+            max-width: 520px;
+            text-align: center;
+        }
+        .hero-affiliate-note svg {
+            color: #FF6A00;
+            flex-shrink: 0;
+            width: 14px;
+            height: 14px;
         }
 
         .container { max-width: 1560px; width: 95%; margin: 0 auto; padding: 0; flex-grow: 1; box-sizing: border-box; }
@@ -346,6 +354,8 @@
             .hero-features { flex-direction: column; gap: 8px; font-size: 0.8em; margin-bottom: 20px; align-items: center; }
             .hero-section .btn-main { width: 92%; max-width: 360px; margin: 0 auto; display: block; font-size: 0.9em; padding: 14px 15px; }
 
+            .hero-affiliate-note { font-size: 0.7em; max-width: 320px; }
+
             .search-container { margin-bottom: 6px; }
             .search-bar { padding: 8px 14px; font-size: 0.78em; }
 
@@ -441,8 +451,10 @@
 
         <a href="https://m.sugargoo.com/register?memberId=3894055016867374984" class="btn-main" target="_blank">Claim 800 CNY Coupons & Sign Up</a>
         
+        <!-- PHRASE DE TRANSPARENCE AFFILIATION -->
         <div class="hero-affiliate-note">
-            0% item markup. Using this link unlocks your coupons and supports our site via a shipping commission at no extra cost.
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+            <span><strong>0% product markup.</strong> I make nothing on items — I'm solely supported through Sugargoo's shipping referral when you sign up in your browser using my link.</span>
         </div>
     </section>
 
