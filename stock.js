@@ -1131,7 +1131,7 @@ function afficher(liste) {
     container.innerHTML = '';
 
     const sectionsOrdre = [
-        "🔥 Trending & Best Sellers",
+        "Trending & Best Sellers",
         "30th Anniversary",
         "Scarlet & Violet Era",
         "Gem Packs",
@@ -1146,11 +1146,11 @@ function afficher(liste) {
     let globalArchiveIndex = 0;
 
     sectionsOrdre.forEach(secNom => {
-        if (secNom === "🔥 Trending & Best Sellers" && window.activePillCategory !== '') {
+        if (secNom === "Trending & Best Sellers" && window.activePillCategory !== '') {
             return;
         }
 
-        const itemsSec = liste.filter(p => p.section === secNom);
+        const itemsSec = liste.filter(p => p.section === secNom || (secNom === "Trending & Best Sellers" && p.section.includes("Trending")));
         if (itemsSec.length === 0) return;
 
         const itemsActifs = itemsSec.filter(p => p.statut !== "out_of_stock");
