@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
-    <title>RemyTCG - Exclusive Proxy Service</title>
+    <title>RemyTCG - Simplified Chinese Pokémon TCG Proxy</title>
     
     <meta property="og:title" content="RemyTCG - Exclusive Proxy Service">
     <meta property="og:description" content="Your trusted proxy for 100% Authentic Simplified Chinese Pokémon TCG. Local prices, global shipping.">
@@ -18,9 +18,7 @@
         html { scroll-behavior: smooth; }
         body { 
             font-family: 'Inter', sans-serif; 
-            background-color: #111215; 
-            background-image: radial-gradient(circle at 50% -100px, rgba(255, 106, 0, 0.12) 0%, rgba(17, 18, 21, 0) 70%);
-            background-repeat: no-repeat;
+            background-color: #0c0d10; 
             color: #fff; 
             margin: 0; 
             padding: 0; 
@@ -29,40 +27,102 @@
             flex-direction: column; 
             min-height: 100vh; 
         }
+
+        /* HEADER BRANDING MASTODONTE */
+        .brand-header {
+            background: #0c0d10;
+            padding: 30px 20px 25px 20px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 106, 0, 0.15);
+        }
+        .logo-container { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 12px; 
+            margin-bottom: 8px; 
+        }
+        .logo-img { 
+            width: 44px; 
+            height: 44px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            border: 2px solid #FF6A00; 
+            box-shadow: 0 0 15px rgba(255, 106, 0, 0.3); 
+        }
+        h1 { 
+            margin: 0; 
+            font-weight: 900; 
+            font-size: 2.5em; 
+            letter-spacing: -1.5px; 
+            text-transform: uppercase; 
+            line-height: 1.1;
+        }
+        .subtitle { 
+            font-weight: 600; 
+            font-size: 0.9em; 
+            color: #bbb;
+            letter-spacing: 0.5px; 
+            text-transform: uppercase;
+        }
         
-        .top-nav { background: rgba(17, 18, 21, 0.95); padding: 12px 20px; text-align: center; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(255, 255, 255, 0.07); backdrop-filter: blur(10px); display: flex; justify-content: center; align-items: center; gap: 18px; flex-wrap: wrap;}
+        .top-nav { 
+            background: rgba(12, 13, 16, 0.95); 
+            padding: 12px 20px; 
+            text-align: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 100; 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+            backdrop-filter: blur(12px); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            gap: 18px; 
+            flex-wrap: wrap;
+        }
         .top-nav a { color: #ccc; text-decoration: none; font-weight: 700; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1.5px; transition: color 0.2s; }
         .top-nav a:hover { color: #FF6A00; }
         .nav-sep { color: #333; font-size: 0.8em; user-select: none; }
 
-        .header { background: linear-gradient(135deg, #FF6A00 0%, #D84F00 100%); padding: 22px 20px; text-align: center; color: #fff; position: relative; box-shadow: 0 4px 25px rgba(255, 106, 0, 0.2); }
-        .logo-container { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 2px; }
-        .logo-img { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-        h1 { margin: 0; font-weight: 900; font-size: 2.2em; letter-spacing: -1.2px; text-transform: uppercase; line-height: 1.1;}
-        .subtitle { font-weight: 700; font-size: 0.92em; opacity: 0.95; max-width: 650px; margin: 3px auto 0 auto; letter-spacing: 0.3px; }
-
-        .intro-banner { 
-            max-width: 1560px; 
-            width: 95%; 
-            margin: 15px auto; 
-            background: #17181c; 
-            border: 1px solid rgba(255, 106, 0, 0.25); 
-            border-radius: 10px; 
-            padding: 14px 20px; 
-            display: flex; 
-            align-items: center; 
-            justify-content: space-between; 
-            gap: 20px; 
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3); 
-            box-sizing: border-box; 
+        /* HERO SECTION EPUREE */
+        .hero-section {
+            max-width: 900px;
+            margin: 40px auto 30px auto;
+            text-align: center;
+            padding: 0 20px;
         }
-        .intro-banner-text { flex: 1; text-align: left; }
-        .intro-banner-text h2 { color: #FF6A00; margin: 0 0 6px 0; font-size: 1.15em; font-weight: 800; display: flex; align-items: center; gap: 8px; }
-        .intro-banner-text p { color: #bbb; margin: 0; font-size: 0.88em; line-height: 1.45; }
-        .intro-banner-action { min-width: 260px; flex-shrink: 0; }
+        .hero-title {
+            font-size: 2.5em;
+            font-weight: 900;
+            line-height: 1.15;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+            margin: 0 0 16px 0;
+        }
+        .hero-title .highlight { color: #FF6A00; }
+        .hero-desc {
+            font-size: 1.05em;
+            color: #aaa;
+            line-height: 1.6;
+            margin: 0 auto 25px auto;
+            max-width: 750px;
+        }
+        .hero-features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+            font-size: 0.85em;
+            font-weight: 600;
+            color: #888;
+        }
+        .hero-features div { display: flex; align-items: center; gap: 6px; }
+        .hero-features svg { color: #FF6A00; }
         
-        .btn-main { display: block; background: linear-gradient(135deg, #FF6A00 0%, #FF8533 100%); color: #fff; padding: 12px 20px; text-decoration: none; font-weight: 900; border-radius: 7px; font-size: 0.92em; transition: all 0.2s; text-align: center; box-sizing: border-box; box-shadow: 0 4px 15px rgba(255, 106, 0, 0.3); border: none; }
-        .btn-main:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255, 106, 0, 0.5); filter: brightness(1.1); }
+        .btn-main { display: inline-block; background: linear-gradient(135deg, #FF6A00 0%, #FF8533 100%); color: #fff; padding: 14px 28px; text-decoration: none; font-weight: 900; border-radius: 50px; font-size: 1em; transition: all 0.2s; text-align: center; box-shadow: 0 6px 20px rgba(255, 106, 0, 0.3); border: none; cursor: pointer; }
+        .btn-main:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(255, 106, 0, 0.4); filter: brightness(1.1); }
 
         .container { max-width: 1560px; width: 95%; margin: 0 auto; padding: 0; flex-grow: 1; box-sizing: border-box; }
         
@@ -94,10 +154,7 @@
             z-index: 3;
             transition: all 0.2s ease;
         }
-        .filter-nav-btn:hover {
-            background: #FF6A00;
-            color: #fff;
-        }
+        .filter-nav-btn:hover { background: #FF6A00; color: #fff; }
         .filter-pills { 
             display: flex; 
             justify-content: center; 
@@ -155,17 +212,17 @@
 
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(235px, 1fr)); gap: 15px; }
         .card { 
-            background: #17181c; 
-            border-radius: 12px; 
+            background: #16171a; 
+            border-radius: 14px; 
             overflow: hidden; 
-            border: 1px solid rgba(255, 255, 255, 0.07); 
+            border: 1px solid rgba(255, 255, 255, 0.04); 
             display: flex; 
             flex-direction: column; 
             position: relative; 
-            transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
-        .card:hover { transform: translateY(-4px); border-color: rgba(255, 106, 0, 0.6); box-shadow: 0 8px 24px rgba(255, 106, 0, 0.15); }
+        .card:hover { transform: translateY(-4px); border-color: rgba(255, 106, 0, 0.4); box-shadow: 0 10px 30px rgba(0,0,0,0.4); }
         
         .card-badge { 
             position: absolute; 
@@ -206,23 +263,16 @@
             box-shadow: 0 3px 8px rgba(0,0,0,0.4);
             white-space: nowrap;
         }
-        .badge-video:hover {
-            transform: scale(1.05);
-            filter: brightness(1.15);
-        }
-        .badge-video svg {
-            width: 11px;
-            height: 11px;
-            fill: #ffffff;
-            flex-shrink: 0;
-        }
+        .badge-video:hover { transform: scale(1.05); filter: brightness(1.15); }
+        .badge-video svg { width: 11px; height: 11px; fill: #ffffff; flex-shrink: 0; }
 
-        .image-wrapper { position: relative; height: 185px; background: #ffffff; border-bottom: 1px solid rgba(255, 255, 255, 0.06); overflow: hidden; width: 100%; }
+        .image-wrapper { position: relative; height: 185px; background: #ffffff; border-bottom: 1px solid rgba(255, 255, 255, 0.03); overflow: hidden; width: 100%; }
         .card-carousel { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; height: 100%; width: 100%; scrollbar-width: none; }
         .card-carousel::-webkit-scrollbar { display: none; }
         
-        .card-carousel .card-img { flex: 0 0 100%; width: 100%; min-width: 100%; max-width: 100%; scroll-snap-align: start; scroll-snap-stop: always; object-fit: contain; background: #fff; padding: 8px; box-sizing: border-box; height: 100%; display: block; }
-        .card-img-single { width: 100%; height: 185px; object-fit: contain; border-bottom: 1px solid rgba(255, 255, 255, 0.06); background: #fff; padding: 8px; box-sizing: border-box; display: block; }
+        .card-carousel .card-img { flex: 0 0 100%; width: 100%; min-width: 100%; max-width: 100%; scroll-snap-align: start; scroll-snap-stop: always; object-fit: contain; background: #fff; padding: 12px; box-sizing: border-box; height: 100%; display: block; transition: transform 0.3s ease; }
+        .card-img-single { width: 100%; height: 185px; object-fit: contain; border-bottom: 1px solid rgba(255, 255, 255, 0.03); background: #fff; padding: 12px; box-sizing: border-box; display: block; transition: transform 0.3s ease; }
+        .card:hover .card-img, .card:hover .card-img-single { transform: scale(1.04); }
 
         .carousel-arrow { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(18, 18, 20, 0.85); color: #FF6A00; border: 1px solid rgba(255, 106, 0, 0.4); width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 900; cursor: pointer; z-index: 9; user-select: none; transition: all 0.2s ease; }
         .carousel-arrow:hover { background: #FF6A00; color: #fff; }
@@ -233,222 +283,87 @@
         .carousel-dot { width: 5px; height: 5px; border-radius: 50%; background: rgba(0, 0, 0, 0.25); cursor: pointer; transition: all 0.2s ease; }
         .carousel-dot.active { background: #FF6A00; transform: scale(1.3); }
 
-        .card-content { padding: 12px; display: flex; flex-direction: column; flex-grow: 1; }
+        .card-content { padding: 14px 12px; display: flex; flex-direction: column; flex-grow: 1; }
         
-        /* LIGNE META : ANTI-CANNIBALISME GARANTI */
-        .card-meta-row {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 6px;
-            margin-bottom: 4px;
-            min-width: 0;
-        }
-        .category { 
-            font-size: 0.68em; 
-            color: #FF6A00; 
-            text-transform: uppercase; 
-            font-weight: 800; 
-            letter-spacing: 0.6px; 
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            flex-shrink: 0;
-            max-width: 65%;
-        }
-        .supplier-tag {
-            font-size: 0.62em;
-            color: #aaa;
-            font-weight: 600;
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            padding: 2px 6px;
-            border-radius: 4px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            flex-shrink: 1;
-            text-align: right;
-        }
+        .card-meta-row { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 6px; min-width: 0; }
+        .category { font-size: 0.68em; color: #FF6A00; text-transform: uppercase; font-weight: 800; letter-spacing: 0.6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex-shrink: 0; max-width: 65%; }
+        .supplier-tag { font-size: 0.62em; color: #aaa; font-weight: 600; background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.05); padding: 2px 6px; border-radius: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex-shrink: 1; text-align: right; }
         
-        .card h3 { 
-            margin: 0 0 5px 0; 
-            font-size: 0.98em; 
-            line-height: 1.25; 
-            height: 2.5em; 
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
+        .card h3 { margin: 0 0 5px 0; font-size: 0.98em; line-height: 1.25; height: 2.5em; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; }
+        .card p { color: #8e8e93; font-size: 0.78em; line-height: 1.4; height: 1.4em; margin: 0 0 12px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         
-        /* DESCRIPTION COURTE EN 1 LIGNE STRICTE (JAMAIS DE CANNIBALISME) */
-        .card p { 
-            color: #8e8e93; 
-            font-size: 0.78em; 
-            line-height: 1.4; 
-            height: 1.4em; 
-            margin: 0 0 10px 0; 
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        
-        /* FOOTER DE CARTE : ALIGNEMENT PARFAIT AU PIXEL PRÈS */
-        .card-footer-action {
-            margin-top: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-        }
-        .card-backup-link {
-            font-size: 0.68em;
-            font-weight: 600;
-            color: #888;
-            text-decoration: none;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 4px;
-            height: 18px;
-            line-height: 18px;
-            padding: 0;
-            box-sizing: border-box;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            transition: color 0.2s ease;
-        }
-        .card-backup-link:hover {
-            color: #FF6A00;
-        }
-        .card-backup-placeholder {
-            visibility: hidden !important;
-            pointer-events: none !important;
-            user-select: none !important;
-        }
+        .card-footer-action { margin-top: auto; display: flex; flex-direction: column; gap: 4px; }
+        .card-backup-link { font-size: 0.68em; font-weight: 600; color: #777; text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center; gap: 4px; height: 18px; line-height: 18px; padding: 0; box-sizing: border-box; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; transition: color 0.2s ease; }
+        .card-backup-link:hover { color: #FF6A00; }
+        .card-backup-link svg { transition: stroke 0.2s ease; stroke: #777; }
+        .card-backup-link:hover svg { stroke: #FF6A00; }
+        .card-backup-placeholder { visibility: hidden !important; pointer-events: none !important; user-select: none !important; }
 
-        .btn-main-card { 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%; 
-            height: 38px;
-            border-radius: 6px; 
-            font-weight: 800; 
-            font-size: 0.86em; 
-            text-align: center; 
-            text-decoration: none; 
-            border: none; 
-            font-family: inherit; 
-            cursor: pointer; 
-            transition: transform 0.2s ease, filter 0.2s ease; 
-            box-sizing: border-box; 
-        }
-        .btn-order { 
-            background: linear-gradient(135deg, #FF6A00 0%, #FF7F24 100%); 
-            color: #ffffff; 
-            box-shadow: 0 3px 10px rgba(255, 106, 0, 0.25);
-        }
+        .btn-main-card { display: flex; align-items: center; justify-content: center; width: 100%; height: 38px; border-radius: 6px; font-weight: 800; font-size: 0.86em; text-align: center; text-decoration: none; border: none; font-family: inherit; cursor: pointer; transition: transform 0.2s ease, filter 0.2s ease; box-sizing: border-box; }
+        .btn-order { background: linear-gradient(135deg, #FF6A00 0%, #FF7F24 100%); color: #ffffff; box-shadow: 0 3px 10px rgba(255, 106, 0, 0.25); }
         .btn-order:hover { transform: translateY(-2px); filter: brightness(1.12); box-shadow: 0 5px 14px rgba(255, 106, 0, 0.4); }
         .btn-notify { background: #222327; color: #aaa; border: 1px solid #38383c; }
 
-        .btn-expand-archive {
-            grid-column: 1 / -1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px dashed rgba(255, 255, 255, 0.15);
-            color: #888;
-            padding: 10px 16px;
-            border-radius: 8px;
-            font-size: 0.82em;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            margin-top: 8px;
-        }
-        .btn-expand-archive:hover {
-            border-color: #FF6A00;
-            color: #FF6A00;
-            background: rgba(255, 106, 0, 0.04);
-        }
+        .btn-expand-archive { grid-column: 1 / -1; display: flex; align-items: center; justify-content: center; gap: 8px; background: rgba(255, 255, 255, 0.02); border: 1px dashed rgba(255, 255, 255, 0.1); color: #888; padding: 10px 16px; border-radius: 8px; font-size: 0.82em; font-weight: 700; cursor: pointer; transition: all 0.2s ease; margin-top: 8px; }
+        .btn-expand-archive:hover { border-color: #FF6A00; color: #FF6A00; background: rgba(255, 106, 0, 0.04); }
 
-        .faq-container { max-width: 1560px; width: 95%; margin: 30px auto 0 auto; padding: 0; box-sizing: border-box; }
+        .faq-container { max-width: 1560px; width: 95%; margin: 40px auto 0 auto; padding: 0; box-sizing: border-box; }
         .faq-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-        .faq-item { background: #17181c; border: 1px solid rgba(255, 255, 255, 0.07); border-radius: 10px; padding: 18px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-start; }
-        .faq-item h3 { color: #FF6A00; margin-top: 0; font-size: 1.08em; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
-        .faq-item p, .faq-item ul { color: #aaa; margin-bottom: 6px; font-size: 0.84em; line-height: 1.45;}
+        .faq-item { background: #16171a; border: 1px solid rgba(255, 255, 255, 0.04); border-radius: 12px; padding: 22px 18px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-start; }
+        .faq-item h3 { color: #fff; margin-top: 0; font-size: 1.08em; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; font-weight: 800; }
+        .faq-item h3 svg { color: #FF6A00; }
+        .faq-item p, .faq-item ul { color: #999; margin-bottom: 6px; font-size: 0.86em; line-height: 1.5;}
         .faq-item ul { padding-left: 16px; margin-top: 4px; }
-        .faq-item li { margin-bottom: 4px; }
+        .faq-item li { margin-bottom: 6px; }
 
-        .process-container { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; background: #111215; padding: 10px 6px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.06); gap: 5px; }
+        .process-container { display: flex; align-items: center; justify-content: space-between; margin-top: 12px; background: #0c0d10; padding: 12px 8px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.03); gap: 5px; }
         .process-step { display: flex; flex-direction: column; align-items: center; text-align: center; flex: 1; }
-        .process-icon { width: 30px; height: 30px; background: #17181c; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 4px; border: 1.5px solid #FF6A00; color: #FF6A00; }
+        .process-icon { width: 32px; height: 32px; background: #16171a; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 6px; border: 1px solid rgba(255,106,0,0.3); color: #FF6A00; }
         .process-icon svg { width: 15px; height: 15px; stroke: currentColor; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-        .process-step h4 { color: #fff; margin: 0 0 2px 0; font-size: 0.82em; }
-        .process-step p { color: #777; font-size: 0.7em; margin: 0; line-height: 1.2; }
-        .process-arrow { color: #FF6A00; font-size: 0.85em; font-weight: bold; }
+        .process-step h4 { color: #fff; margin: 0 0 2px 0; font-size: 0.82em; font-weight: 700; }
+        .process-step p { color: #777; font-size: 0.7em; margin: 0; line-height: 1.25; }
+        .process-arrow { color: #FF6A00; font-size: 0.85em; font-weight: bold; opacity: 0.5; }
 
-        /* BADGES SOURCES PRO SANS EMOJI */
-        .source-card {
-            background: #111215;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 6px;
-            padding: 6px 10px;
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
-        }
-        .source-tag {
-            font-size: 0.62em;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            display: inline-block;
-            width: fit-content;
-            padding: 1px 5px;
-            border-radius: 3px;
-            margin-bottom: 2px;
-        }
-        .source-tag-official { background: rgba(255, 203, 5, 0.15); color: #FFCB05; border: 1px solid rgba(255, 203, 5, 0.3); }
-        .source-tag-gold { background: rgba(255, 106, 0, 0.15); color: #FF6A00; border: 1px solid rgba(255, 106, 0, 0.3); }
-        .source-tag-cert { background: rgba(255, 255, 255, 0.08); color: #ccc; border: 1px solid rgba(255, 255, 255, 0.15); }
+        .source-card { background: #0c0d10; border: 1px solid rgba(255, 255, 255, 0.04); border-radius: 8px; padding: 8px 12px; display: flex; flex-direction: column; gap: 4px; }
+        .source-tag { font-size: 0.62em; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; display: inline-block; width: fit-content; padding: 2px 6px; border-radius: 4px; margin-bottom: 2px; }
+        .source-tag-official { background: rgba(255, 203, 5, 0.1); color: #FFCB05; border: 1px solid rgba(255, 203, 5, 0.2); }
+        .source-tag-gold { background: rgba(255, 106, 0, 0.1); color: #FF6A00; border: 1px solid rgba(255, 106, 0, 0.2); }
+        .source-tag-cert { background: rgba(255, 255, 255, 0.05); color: #ccc; border: 1px solid rgba(255, 255, 255, 0.1); }
 
-        .footer-pro { background: #0c0d0f; border-top: 1px solid rgba(255, 255, 255, 0.07); padding: 30px 20px 20px 20px; font-size: 0.82em; margin-top: 30px; }
+        .wholesale-section { max-width: 900px; margin: 40px auto 20px auto; padding: 30px 20px; text-align: center; background: #16171a; border-radius: 12px; border: 1px solid rgba(255, 203, 5, 0.15); box-sizing: border-box; }
+        .wholesale-title { font-size: 1.4em; font-weight: 900; color: #FFCB05; margin: 0 0 10px 0; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        .wholesale-section p { color: #aaa; font-size: 0.9em; margin: 0 0 20px 0; line-height: 1.4; }
+
+        .footer-pro { background: #0c0d10; border-top: 1px solid rgba(255, 255, 255, 0.05); padding: 40px 20px 25px 20px; font-size: 0.82em; margin-top: 40px; }
         .footer-pro-inner { max-width: 1560px; margin: 0 auto; }
-        .footer-pro-top { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-bottom: 18px; }
-        .footer-pro-logo-container { display: flex; align-items: center; gap: 8px; }
-        .footer-pro-img { width: 28px; height: 28px; border-radius: 50%; border: 2px solid #FF6A00; object-fit: cover; }
-        .footer-pro-logo { font-size: 1.4em; font-weight: 900; color: #FF6A00; letter-spacing: 1px; margin: 0;}
-        .footer-pro-socials { display: flex; gap: 18px; flex-wrap: wrap; justify-content: center; }
+        .footer-pro-top { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 22px; }
+        .footer-pro-logo-container { display: flex; align-items: center; gap: 10px; }
+        .footer-pro-img { width: 32px; height: 32px; border-radius: 50%; border: 2px solid #FF6A00; object-fit: cover; }
+        .footer-pro-logo { font-size: 1.5em; font-weight: 900; color: #FF6A00; letter-spacing: 1px; margin: 0;}
+        .footer-pro-socials { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
         .footer-pro-socials a { color: #aaa; text-decoration: none; display: flex; align-items: center; gap: 6px; font-weight: 700; font-size: 0.88em; transition: color 0.2s; }
         .footer-pro-socials a:hover { color: #FF6A00; }
         .footer-pro-socials svg { width: 16px; height: 16px; fill: currentColor; }
-        .footer-pro-disclaimer { text-align: center; color: #555; font-size: 0.78em; max-width: 1000px; margin: 0 auto 16px auto; line-height: 1.4; }
-        .footer-pro-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; padding-top: 14px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+        .footer-pro-disclaimer { text-align: center; color: #555; font-size: 0.78em; max-width: 1000px; margin: 0 auto 16px auto; line-height: 1.45; }
+        .footer-pro-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; padding-top: 16px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
         .footer-copyright { color: #555; font-size: 0.82em; }
-        .payment-row { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
-        .payment-badge { background: #fff; width: 42px; height: 26px; border-radius: 3px; display: flex; justify-content: center; align-items: center; padding: 2px; box-sizing: border-box; }
+        .payment-row { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+        .payment-badge { background: #fff; width: 44px; height: 28px; border-radius: 4px; display: flex; justify-content: center; align-items: center; padding: 3px; box-sizing: border-box; }
         .payment-badge img { max-width: 100%; max-height: 100%; object-fit: contain; }
 
         .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(8px); justify-content: center; align-items: center; z-index: 9999; opacity: 0; transition: opacity 0.3s ease; }
-        .modal-content { background: #17181c; border: 2px solid #FF6A00; border-radius: 12px; padding: 25px 18px; max-width: 450px; width: 90%; text-align: center; box-shadow: 0 20px 50px rgba(255, 106, 0, 0.2); }
-        .modal-content h2 { color: #FF6A00; margin-top: 0; font-size: 1.5em; }
-        .modal-content p { color: #ddd; font-size: 0.9em; margin-bottom: 16px; }
-        .btn-modal-main { display: block; width: 100%; background: linear-gradient(135deg, #FF6A00 0%, #FF8533 100%); color: #fff; padding: 14px 18px; text-decoration: none; font-weight: 900; border-radius: 7px; font-size: 0.98em; margin-bottom: 8px; border: none; cursor: pointer; }
+        .modal-content { background: #16171a; border: 1px solid rgba(255,106,0,0.3); border-radius: 16px; padding: 30px 22px; max-width: 450px; width: 90%; text-align: center; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+        .modal-content h2 { color: #FF6A00; margin-top: 0; font-size: 1.5em; font-weight: 900; }
+        .modal-content p { color: #ddd; font-size: 0.9em; margin-bottom: 16px; line-height: 1.45; }
+        .btn-modal-main { display: block; width: 100%; background: linear-gradient(135deg, #FF6A00 0%, #FF8533 100%); color: #fff; padding: 14px 18px; text-decoration: none; font-weight: 900; border-radius: 50px; font-size: 0.98em; margin-bottom: 10px; border: none; cursor: pointer; }
         .btn-modal-secondary { display: block; width: 100%; background: transparent; color: #888; padding: 6px; text-decoration: underline; font-weight: 700; border: none; font-size: 0.82em; cursor: pointer; font-family: inherit; }
 
         .btn-back-to-top {
             position: fixed;
             bottom: 22px;
             right: 22px;
-            background: rgba(23, 24, 28, 0.92);
-            border: 1px solid #FF6A00;
+            background: rgba(12, 13, 16, 0.92);
+            border: 1px solid rgba(255,106,0,0.3);
             color: #FF6A00;
             padding: 8px 14px;
             border-radius: 50px;
@@ -473,73 +388,56 @@
             .faq-grid-3 { grid-template-columns: 1fr; }
         }
         
-        /* ADAPTATION MOBILE */
+        /* ADAPTATION MOBILE MASTODONTE */
         @media (max-width: 768px) {
-            body { background-image: none; background-color: #111215; }
-            .top-nav { gap: 8px; padding: 8px 6px; flex-wrap: nowrap; overflow-x: auto; justify-content: center; }
+            .brand-header { padding: 20px 15px 15px 15px; }
+            .logo-img { width: 34px; height: 34px; }
+            h1 { font-size: 2em; }
+            .subtitle { font-size: 0.72em; letter-spacing: 0; margin-top: 2px; }
+            
+            .top-nav { gap: 8px; padding: 8px 6px; flex-wrap: nowrap; overflow-x: auto; justify-content: center; border-bottom: 1px solid rgba(255, 106, 0, 0.15); }
             .top-nav a { font-size: 0.72em; letter-spacing: 0.5px; white-space: nowrap; }
             .nav-sep { font-size: 0.6em; }
-            .header { padding: 12px 14px; }
-            .logo-img { width: 28px; height: 28px; border-width: 1.5px; }
-            h1 { font-size: 1.6em; }
-            .subtitle { font-size: 0.72em; margin-top: 2px; }
             
-            .intro-banner { 
-                padding: 10px 12px; 
-                margin: 8px auto; 
-                flex-direction: column; 
-                gap: 6px;
-                border-radius: 8px;
-            }
-            .intro-banner-text h2 { font-size: 0.88em; margin-bottom: 2px; }
-            .intro-banner-text p { font-size: 0.74em; line-height: 1.35; }
-            .intro-banner-action { width: 100%; min-width: auto; }
-            .intro-banner-action .btn-main { padding: 8px 10px; font-size: 0.78em; width: 100%; }
+            .hero-section { padding: 30px 15px 25px; margin-top: 10px; }
+            .hero-title { font-size: 1.8em; margin-bottom: 12px; }
+            .hero-desc { font-size: 0.9em; margin-bottom: 20px; }
+            .hero-features { flex-direction: column; gap: 8px; font-size: 0.8em; margin-bottom: 20px; align-items: center; }
+            .btn-main { width: 100%; font-size: 0.9em; padding: 14px 15px; }
 
             .search-container { margin-bottom: 6px; }
-            .search-bar { padding: 7px 12px; font-size: 0.78em; }
+            .search-bar { padding: 8px 14px; font-size: 0.78em; }
 
-            .filter-wrapper {
-                margin-bottom: 12px;
-                gap: 4px;
-            }
-            .filter-nav-btn {
-                width: 24px;
-                height: 24px;
-                font-size: 11px;
-            }
-            .filter-pills { 
-                display: flex;
-                flex-wrap: nowrap; 
-                overflow-x: auto; 
-                justify-content: flex-start; 
-                padding: 2px 4px 6px 4px; 
-                -webkit-overflow-scrolling: touch;
-                scrollbar-width: none;
-            }
+            .filter-wrapper { margin-bottom: 12px; gap: 4px; }
+            .filter-nav-btn { width: 24px; height: 24px; font-size: 11px; }
+            .filter-pills { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; padding: 2px 4px 6px 4px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
             .filter-pills::-webkit-scrollbar { display: none; }
-            .filter-pill { font-size: 0.72em; padding: 5px 12px; flex-shrink: 0; }
+            .filter-pill { font-size: 0.72em; padding: 6px 12px; flex-shrink: 0; }
 
             .era-header { margin-bottom: 6px; padding-bottom: 3px; }
-            .era-title { font-size: 1.1em; }
+            .era-title { font-size: 1.15em; }
 
-            .grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+            .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
             .image-wrapper, .card-img-single { height: 150px; }
             
             .card-badge { font-size: 0.58em; padding: 3px 5px; max-width: 45%; }
             .badge-video { font-size: 0.58em; padding: 3px 6px; gap: 3px; }
             .badge-video svg { width: 8px; height: 8px; }
 
-            .card-content { padding: 8px; }
-            .card-meta-row { margin-bottom: 2px; }
+            .card-content { padding: 10px 8px; }
+            .card-meta-row { margin-bottom: 4px; }
             .category { font-size: 0.62em; max-width: 60%; }
             .supplier-tag { font-size: 0.56em; padding: 1px 4px; }
-            .card h3 { font-size: 0.76em; height: 2.5em; line-height: 1.25; margin-bottom: 3px; }
-            .card p { font-size: 0.66em; height: 1.4em; line-height: 1.4; margin-bottom: 6px; }
+            .card h3 { font-size: 0.8em; height: 2.5em; line-height: 1.25; margin-bottom: 4px; }
+            .card p { font-size: 0.66em; height: 1.4em; line-height: 1.4; margin-bottom: 8px; }
 
             .card-footer-action { gap: 4px; }
-            .card-backup-link { font-size: 0.62em; height: 16px; line-height: 16px; }
+            .card-backup-link { font-size: 0.62em; height: 16px; line-height: 16px; gap: 2px; }
+            .card-backup-link svg { width: 8px; height: 8px; stroke-width: 3; }
             .btn-main-card { height: 32px; font-size: 0.76em; border-radius: 5px; }
+            
+            .wholesale-section { margin: 30px 15px 15px; padding: 20px 15px; }
+            .wholesale-title { font-size: 1.2em; }
             
             .btn-back-to-top {
                 padding: 0;
@@ -567,15 +465,22 @@
             <p style="font-size: 0.85em; color: #aaa; line-height: 1.4; margin-bottom: 14px;">
                 <strong>Important:</strong> Sign up directly in your browser. Sugargoo has no manual referral code in the app. Using our browser link locks in your <strong>800 CNY (~$110 USD) Shipping Coupons</strong> and lets RemyTCG assist with your parcels!
             </p>
-            <button class="btn-modal-main" onclick="registerAndClose()">Create Sugargoo Account</button>
+            <button class="btn-modal-main" onclick="registerAndClose()">Claim 800 CNY Coupons & Sign Up</button>
             <button class="btn-modal-secondary" onclick="continueToProduct()">I already created my account, continue</button>
         </div>
     </div>
 
-    <!-- BANDEAU DE NAVIGATION ALIGNÉ SUR LE SCROLL -->
+    <!-- HEADER PRO BRAND -->
+    <header class="brand-header">
+        <div class="logo-container">
+            <img src="https://scontent-sin11-2.cdninstagram.com/v/t51.82787-19/846528981_18117825301906300_2410003667728457360_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=101&ig_cache_key=GNUBdTJ8AzntEF5AAJDeVyqRDXIhbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=R86uzwtI-38Q7kNvwHw5b96&_nc_oc=AdpjE0JmV25Oje8YXwqyXWLSepl4kTg9pO0uT4962FwCL-1H7v3HtRBW4FKTlXbPN55yXMCN73w_1xvjzhatgyu8&_nc_zt=24&_nc_ht=scontent-sin11-2.cdninstagram.com&_nc_gid=px0MMH314KMRbj77Pq-sog&_nc_ss=7b689&oh=00_AQTSj8vrDPcdgdPKpmJJ49uuphrUfiA7u6JTHdWwr13dXA&oe=6AEFF132" alt="RemyTCG Logo" class="logo-img">
+            <h1>REMYTCG</h1>
+        </div>
+        <div class="subtitle">Simplified Chinese Pokémon TCG • Direct Proxy Service</div>
+    </header>
+
+    <!-- BANDEAU DE NAVIGATION -->
     <nav class="top-nav">
-        <a href="#setup">Start</a>
-        <span class="nav-sep">•</span>
         <a href="#shop">Shop</a>
         <span class="nav-sep">•</span>
         <a href="#guide">FAQ</a>
@@ -585,32 +490,24 @@
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- HEADER PRO STYLE RPT SANS EMOJI SUR 1 LIGNE -->
-    <div class="header">
-        <div class="logo-container">
-            <img src="https://scontent-sin11-2.cdninstagram.com/v/t51.82787-19/846528981_18117825301906300_2410003667728457360_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=101&ig_cache_key=GNUBdTJ8AzntEF5AAJDeVyqRDXIhbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=R86uzwtI-38Q7kNvwHw5b96&_nc_oc=AdpjE0JmV25Oje8YXwqyXWLSepl4kTg9pO0uT4962FwCL-1H7v3HtRBW4FKTlXbPN55yXMCN73w_1xvjzhatgyu8&_nc_zt=24&_nc_ht=scontent-sin11-2.cdninstagram.com&_nc_gid=px0MMH314KMRbj77Pq-sog&_nc_ss=7b689&oh=00_AQTSj8vrDPcdgdPKpmJJ49uuphrUfiA7u6JTHdWwr13dXA&oe=6AEFF132" alt="RemyTCG Logo" class="logo-img">
-            <h1>RemyTCG</h1>
-        </div>
-        <div class="subtitle">Simplified Chinese Pokémon TCG • Direct Proxy Service</div>
-    </div>
-
-    <!-- BANNIÈRE HERO EXPLICATIVE DU PROXY SERVICE -->
-    <div id="setup" class="intro-banner">
-        <div class="intro-banner-text">
-            <h2>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: #FF6A00;"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                How Buying Direct from China Works (Proxy Service)
-            </h2>
-            <p style="margin-bottom: 8px;">Sugargoo acts as your verified agent in China: buy authentic Pokémon cards at local retail price (0% markup from RemyTCG), receive HD warehouse quality inspection photos, and ship worldwide with secure payments.</p>
-            <div style="font-size: 0.82em; color: #aaa; line-height: 1.45; display: flex; flex-direction: column; gap: 4px;">
-                <div>• <strong style="color: #FF6A00;">Browser Registration Required:</strong> Sugargoo tracks affiliate referral via browser cookies, not app codes. Sign up in Safari/Chrome via our link so we can assist with your parcels.</div>
-                <div>• <strong style="color: #FF6A00;">800 CNY Bonus:</strong> Unlocks 14 international shipping discount vouchers automatically upon sign up.</div>
+    <!-- HERO SECTION EPUREE -->
+    <section class="hero-section">
+        <h2 class="hero-title">Chinese Pokémon TCG.<br><span class="highlight">Zero Markup. Direct Proxy.</span></h2>
+        <p class="hero-desc">Buy authentic Pokémon cards at direct local retail price. Sugargoo acts as your verified agent in China for warehouse quality checks and safe worldwide shipping.</p>
+        
+        <div class="hero-features">
+            <div>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                Worldwide Shipping
+            </div>
+            <div>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                Secure Global Payments
             </div>
         </div>
-       <div class="intro-banner-action">
-            <a href="https://m.sugargoo.com/register?memberId=3894055016867374984" class="btn-main" target="_blank">Claim 800 CNY Coupons & Sign Up</a>
-        </div>
-    </div>
+
+        <a href="https://m.sugargoo.com/register?memberId=3894055016867374984" class="btn-main" target="_blank">Claim 800 CNY Coupons & Sign Up</a>
+    </section>
 
     <!-- CATALOGUE DES ARTICLES -->
     <div id="shop" class="container">
@@ -637,7 +534,7 @@
 
     <!-- GUIDE D'ACHAT & FAQ -->
     <div id="guide" class="faq-container">
-        <h2 style="text-align: center; color: #FF6A00; font-size: 1.5em; margin: 0 0 16px 0;">Buyer Guide & FAQ</h2>
+        <h2 style="text-align: center; color: #FF6A00; font-size: 1.5em; margin: 0 0 20px 0;">Buyer Guide & FAQ</h2>
         
         <div class="faq-grid-3">
             <div class="faq-item" style="border-color: #FF6A00;">
@@ -654,7 +551,9 @@
                         <h4>1. Buy</h4>
                         <p>Direct local retail price.</p>
                     </div>
-                    <div class="process-arrow">➔</div>
+                    <div class="process-arrow">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </div>
                     <div class="process-step">
                         <div class="process-icon">
                             <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
@@ -662,7 +561,9 @@
                         <h4>2. Warehouse</h4>
                         <p>Quality Check (QC) & 100d storage.</p>
                     </div>
-                    <div class="process-arrow">➔</div>
+                    <div class="process-arrow">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </div>
                     <div class="process-step">
                         <div class="process-icon">
                             <svg viewBox="0 0 24 24"><path d="M22 2L11 13"></path><path d="M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
@@ -718,18 +619,14 @@
         </div>
     </div>
 
-    <!-- WHOLESALE / B2B PLACE APRES LA FAQ -->
-    <div id="wholesale" class="intro-banner" style="border-color: #FFCB05; margin-top: 25px;">
-        <div class="intro-banner-text">
-            <h2 style="color: #FFCB05; display: flex; align-items: center; gap: 8px;">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
-                Wholesale & Bulk Orders
-            </h2>
-            <p>Factory-sealed cartons directly from Mainland distributors. Minimum order value: $500 USD.</p>
-        </div>
-        <div class="intro-banner-action">
-            <a href="mailto:contact.remytcg@gmail.com?subject=Wholesale%20Bulk%20Order%20Inquiry" class="btn-main" style="background: #FFCB05; color: #111;">Contact Us for Bulk Quote</a>
-        </div>
+    <!-- WHOLESALE / B2B -->
+    <div id="wholesale" class="wholesale-section">
+        <h2 class="wholesale-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            Wholesale & Bulk Orders
+        </h2>
+        <p>Factory-sealed cartons directly from Mainland distributors. Minimum order value: $500 USD.</p>
+        <a href="mailto:contact.remytcg@gmail.com?subject=Wholesale%20Bulk%20Order%20Inquiry" class="btn-main" style="background: #FFCB05; color: #111; box-shadow: 0 6px 15px rgba(255,203,5,0.2);">Contact Us for Bulk Quote</a>
     </div>
 
     <footer id="contact" class="footer-pro">
