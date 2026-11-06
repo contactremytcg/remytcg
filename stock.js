@@ -13,7 +13,7 @@ const formatSugargooLink = (taobaoId) => {
 
 const produits = [
     // =========================================================================
-    // SECTION 1 : TRENDING & BEST SELLERS
+    // SECTION 1 : TRENDING & BEST SELLERS (EXACTEMENT 4 ITEMS)
     // =========================================================================
     {
         section: "Trending & Best Sellers",
@@ -71,32 +71,6 @@ const produits = [
         ],
         isOfficial: true,
         fournisseur: "Official Store",
-        fournisseurBackup: "Pingtouge TCG"
-    },
-    {
-        section: "Trending & Best Sellers",
-        badgeCat: "Figure Box",
-        nom: "Charizard Figure Box",
-        description: "Charizard figurine, promos & packs.",
-        taobaoId: "1078493401671",
-        taobaoId2: "1075622019018",
-        videoUrl: "https://www.instagram.com/reel/Ddmb0FsBON1/",
-        images: [
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ujY7LxSFCuTbsYIDy-nzNPJNsdUKHIzHZcFeUz944A&s=10",
-            "https://www.bescards.com/cdn/shop/files/16017252548952-2c85b35689e1b991472aa902bfcf7cd2d1f8b144.webp?v=1789744309"
-        ],
-        fournisseur: "DunDun TCG",
-        fournisseurBackup: "Pingtouge TCG"
-    },
-    {
-        section: "Trending & Best Sellers",
-        badgeCat: "CSV10.5",
-        nom: "Black Bolt & White Flare",
-        description: "Official booster box.",
-        taobaoId: "1094128825003",
-        taobaoId2: "1093554321145",
-        images: ["https://www.yumecards.ca/cdn/shop/files/Product-2026-10-26T010221.441.jpg?v=1792991251"],
-        fournisseur: "DunDun TCG",
         fournisseurBackup: "Pingtouge TCG"
     },
 
