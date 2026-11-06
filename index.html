@@ -61,7 +61,7 @@
             box-sizing: border-box; 
         }
         .intro-banner-text { flex: 1; text-align: left; }
-        .intro-banner-text h2 { color: #FF6A00; margin: 0 0 6px 0; font-size: 1.15em; font-weight: 800; }
+        .intro-banner-text h2 { color: #FF6A00; margin: 0 0 6px 0; font-size: 1.15em; font-weight: 800; display: flex; align-items: center; gap: 8px; }
         .intro-banner-text p { color: #bbb; margin: 0; font-size: 0.88em; line-height: 1.45; }
         .intro-banner-action { min-width: 260px; flex-shrink: 0; }
         
@@ -239,7 +239,7 @@
 
         .card-content { padding: 12px; display: flex; flex-direction: column; flex-grow: 1; }
         
-        /* LIGNE META SANS CANNIBALISME */
+        /* LIGNE META : ANTI-CANNIBALISME GARANTI */
         .card-meta-row {
             display: flex;
             align-items: center;
@@ -287,34 +287,40 @@
             text-overflow: ellipsis;
         }
         
+        /* DESCRIPTION COURTE EN 1 LIGNE STRICTE (JAMAIS DE CANNIBALISME) */
         .card p { 
             color: #8e8e93; 
             font-size: 0.78em; 
-            line-height: 1.35; 
-            min-height: 2.6em; 
-            margin: 0 0 8px 0; 
+            line-height: 1.4; 
+            height: 1.4em; 
+            margin: 0 0 10px 0; 
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         
-        /* ZONE BASSE CRO : BOUTON PRINCIPAL EN PREMIER, LIEN SECONDAIRE EN DESSOUS */
+        /* FOOTER DE CARTE : BOUTON PRINCIPAL D'ABORD, LIEN DE SECOURS EN DESSOUS */
         .card-footer-action {
             margin-top: auto;
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            gap: 6px;
         }
         .card-backup-link {
             font-size: 0.68em;
-            font-weight: 700;
-            color: #ff944d;
+            font-weight: 600;
+            color: #888;
             text-decoration: none;
             text-align: center;
             display: block;
             padding: 2px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             transition: color 0.2s ease;
         }
         .card-backup-link:hover {
-            color: #ffffff;
-            text-decoration: underline;
+            color: #FF6A00;
         }
 
         .btn-main-card { 
@@ -357,4 +363,537 @@
             font-weight: 700;
             cursor: pointer;
             transition: all 0.2s ease;
-            margin-
+            margin-top: 8px;
+        }
+        .btn-expand-archive:hover {
+            border-color: #FF6A00;
+            color: #FF6A00;
+            background: rgba(255, 106, 0, 0.04);
+        }
+
+        .faq-container { max-width: 1560px; width: 95%; margin: 30px auto 0 auto; padding: 0; box-sizing: border-box; }
+        .faq-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+        .faq-item { background: #17181c; border: 1px solid rgba(255, 255, 255, 0.07); border-radius: 10px; padding: 18px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-start; }
+        .faq-item h3 { color: #FF6A00; margin-top: 0; font-size: 1.08em; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+        .faq-item p, .faq-item ul { color: #aaa; margin-bottom: 6px; font-size: 0.84em; line-height: 1.45;}
+        .faq-item ul { padding-left: 16px; margin-top: 4px; }
+        .faq-item li { margin-bottom: 4px; }
+
+        .process-container { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; background: #111215; padding: 10px 6px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.06); gap: 5px; }
+        .process-step { display: flex; flex-direction: column; align-items: center; text-align: center; flex: 1; }
+        .process-icon { width: 30px; height: 30px; background: #17181c; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 4px; border: 1.5px solid #FF6A00; color: #FF6A00; }
+        .process-icon svg { width: 15px; height: 15px; stroke: currentColor; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+        .process-step h4 { color: #fff; margin: 0 0 2px 0; font-size: 0.82em; }
+        .process-step p { color: #777; font-size: 0.7em; margin: 0; line-height: 1.2; }
+        .process-arrow { color: #FF6A00; font-size: 0.85em; font-weight: bold; }
+
+        /* BADGES SOURCES PRO */
+        .source-card {
+            background: #111215;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 6px;
+            padding: 6px 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        .source-tag {
+            font-size: 0.62em;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            width: fit-content;
+            padding: 1px 5px;
+            border-radius: 3px;
+            margin-bottom: 2px;
+        }
+        .source-tag-official { background: rgba(255, 203, 5, 0.15); color: #FFCB05; border: 1px solid rgba(255, 203, 5, 0.3); }
+        .source-tag-gold { background: rgba(255, 106, 0, 0.15); color: #FF6A00; border: 1px solid rgba(255, 106, 0, 0.3); }
+        .source-tag-cert { background: rgba(255, 255, 255, 0.08); color: #ccc; border: 1px solid rgba(255, 255, 255, 0.15); }
+
+        .footer-pro { background: #0c0d0f; border-top: 1px solid rgba(255, 255, 255, 0.07); padding: 30px 20px 20px 20px; font-size: 0.82em; margin-top: 30px; }
+        .footer-pro-inner { max-width: 1560px; margin: 0 auto; }
+        .footer-pro-top { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-bottom: 18px; }
+        .footer-pro-logo-container { display: flex; align-items: center; gap: 8px; }
+        .footer-pro-img { width: 28px; height: 28px; border-radius: 50%; border: 2px solid #FF6A00; object-fit: cover; }
+        .footer-pro-logo { font-size: 1.4em; font-weight: 900; color: #FF6A00; letter-spacing: 1px; margin: 0;}
+        .footer-pro-socials { display: flex; gap: 18px; flex-wrap: wrap; justify-content: center; }
+        .footer-pro-socials a { color: #aaa; text-decoration: none; display: flex; align-items: center; gap: 6px; font-weight: 700; font-size: 0.88em; transition: color 0.2s; }
+        .footer-pro-socials a:hover { color: #FF6A00; }
+        .footer-pro-socials svg { width: 16px; height: 16px; fill: currentColor; }
+        .footer-pro-disclaimer { text-align: center; color: #555; font-size: 0.78em; max-width: 1000px; margin: 0 auto 16px auto; line-height: 1.4; }
+        .footer-pro-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; padding-top: 14px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+        .footer-copyright { color: #555; font-size: 0.82em; }
+        .payment-row { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+        .payment-badge { background: #fff; width: 42px; height: 26px; border-radius: 3px; display: flex; justify-content: center; align-items: center; padding: 2px; box-sizing: border-box; }
+        .payment-badge img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(8px); justify-content: center; align-items: center; z-index: 9999; opacity: 0; transition: opacity 0.3s ease; }
+        .modal-content { background: #17181c; border: 2px solid #FF6A00; border-radius: 12px; padding: 25px 18px; max-width: 450px; width: 90%; text-align: center; box-shadow: 0 20px 50px rgba(255, 106, 0, 0.2); }
+        .modal-content h2 { color: #FF6A00; margin-top: 0; font-size: 1.5em; }
+        .modal-content p { color: #ddd; font-size: 0.9em; margin-bottom: 16px; }
+        .btn-modal-main { display: block; width: 100%; background: linear-gradient(135deg, #FF6A00 0%, #FF8533 100%); color: #fff; padding: 14px 18px; text-decoration: none; font-weight: 900; border-radius: 7px; font-size: 0.98em; margin-bottom: 8px; border: none; cursor: pointer; }
+        .btn-modal-secondary { display: block; width: 100%; background: transparent; color: #888; padding: 6px; text-decoration: underline; font-weight: 700; border: none; font-size: 0.82em; cursor: pointer; font-family: inherit; }
+
+        .btn-back-to-top {
+            position: fixed;
+            bottom: 22px;
+            right: 22px;
+            background: rgba(23, 24, 28, 0.92);
+            border: 1px solid #FF6A00;
+            color: #FF6A00;
+            padding: 8px 14px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.82em;
+            font-weight: 800;
+            cursor: pointer;
+            z-index: 99;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            backdrop-filter: blur(8px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.25s ease;
+            font-family: inherit;
+        }
+        .btn-back-to-top.visible { opacity: 1; visibility: visible; }
+        .btn-back-to-top:hover { background: #FF6A00; color: #fff; transform: translateY(-3px); }
+
+        @media (max-width: 992px) {
+            .faq-grid-3 { grid-template-columns: 1fr; }
+        }
+        
+        /* ADAPTATION MOBILE */
+        @media (max-width: 768px) {
+            body { background-image: none; background-color: #111215; }
+            .top-nav { gap: 8px; padding: 8px 6px; flex-wrap: nowrap; overflow-x: auto; justify-content: center; }
+            .top-nav a { font-size: 0.72em; letter-spacing: 0.5px; white-space: nowrap; }
+            .nav-sep { font-size: 0.6em; }
+            .header { padding: 12px 14px; }
+            .logo-img { width: 28px; height: 28px; border-width: 1.5px; }
+            h1 { font-size: 1.6em; }
+            .subtitle { font-size: 0.72em; margin-top: 2px; }
+            
+            .trust-bar { padding: 4px 8px; font-size: 0.68em; gap: 8px; justify-content: center; }
+            
+            .intro-banner { 
+                padding: 10px 12px; 
+                margin: 8px auto; 
+                flex-direction: column; 
+                gap: 6px;
+                border-radius: 8px;
+            }
+            .intro-banner-text h2 { font-size: 0.88em; margin-bottom: 2px; }
+            .intro-banner-text p { font-size: 0.74em; line-height: 1.35; }
+            .intro-banner-action { width: 100%; min-width: auto; }
+            .intro-banner-action .btn-main { padding: 8px 10px; font-size: 0.78em; width: 100%; }
+
+            .search-container { margin-bottom: 6px; }
+            .search-bar { padding: 7px 12px; font-size: 0.78em; }
+
+            .filter-wrapper {
+                margin-bottom: 12px;
+                gap: 4px;
+            }
+            .filter-nav-btn {
+                width: 24px;
+                height: 24px;
+                font-size: 11px;
+            }
+            .filter-pills { 
+                display: flex;
+                flex-wrap: nowrap; 
+                overflow-x: auto; 
+                justify-content: flex-start; 
+                padding: 2px 4px 6px 4px; 
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+            }
+            .filter-pills::-webkit-scrollbar { display: none; }
+            .filter-pill { font-size: 0.72em; padding: 5px 12px; flex-shrink: 0; }
+
+            .era-header { margin-bottom: 6px; padding-bottom: 3px; }
+            .era-title { font-size: 1.1em; }
+
+            .grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+            .image-wrapper, .card-img-single { height: 150px; }
+            
+            .card-badge { font-size: 0.58em; padding: 3px 5px; max-width: 45%; }
+            .badge-video { font-size: 0.58em; padding: 3px 6px; gap: 3px; }
+            .badge-video svg { width: 8px; height: 8px; }
+
+            .card-content { padding: 8px; }
+            .card-meta-row { margin-bottom: 2px; }
+            .category { font-size: 0.62em; max-width: 60%; }
+            .supplier-tag { font-size: 0.56em; padding: 1px 4px; }
+            .card h3 { font-size: 0.76em; height: 2.5em; line-height: 1.25; margin-bottom: 3px; }
+            .card p { font-size: 0.66em; height: 1.4em; line-height: 1.4; margin-bottom: 6px; }
+
+            .card-footer-action { gap: 4px; }
+            .card-backup-link { font-size: 0.62em; padding: 1px 0; }
+            .btn-main-card { height: 32px; font-size: 0.76em; border-radius: 5px; }
+            
+            .btn-back-to-top {
+                padding: 0;
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                justify-content: center;
+                font-size: 14px;
+                bottom: 16px;
+                right: 16px;
+            }
+            .btn-back-to-top span { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <button class="btn-back-to-top" id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Back to top">
+        ↑ <span>Back to top</span>
+    </button>
+
+    <div id="welcomeModal" class="modal-overlay">
+        <div class="modal-content">
+            <h2>Before you order</h2>
+            <p>To access local Chinese prices with <strong>0 markup</strong>, you need a free proxy account on Sugargoo[cite: 8].</p>
+            <p style="font-size: 0.85em; color: #aaa; line-height: 1.4; margin-bottom: 14px;">
+                <strong>Important:</strong> Sign up directly in your browser. Sugargoo has no manual referral code in the app. Using our browser link locks in your <strong>800 CNY (~$110 USD) Shipping Coupons</strong> and lets RemyTCG assist with your parcels!
+            </p>
+            <button class="btn-modal-main" onclick="registerAndClose()">Create Free Sugargoo Account</button>
+            <button class="btn-modal-secondary" onclick="continueToProduct()">I already created my account, continue</button>
+        </div>
+    </div>
+
+    <!-- BANDEAU DE NAVIGATION ALIGNÉ SUR LE SCROLL -->
+    <nav class="top-nav">
+        <a href="#setup">Start</a>
+        <span class="nav-sep">•</span>
+        <a href="#shop">Shop</a>
+        <span class="nav-sep">•</span>
+        <a href="#guide">FAQ</a>
+        <span class="nav-sep">•</span>
+        <a href="#wholesale">B2B</a>
+        <span class="nav-sep">•</span>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- HEADER PRO STYLE RPT SANS EMOJI SUR 1 LIGNE -->
+    <div class="header">
+        <div class="logo-container">
+            <img src="https://scontent-sin11-2.cdninstagram.com/v/t51.82787-19/846528981_18117825301906300_2410003667728457360_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=101&ig_cache_key=GNUBdTJ8AzntEF5AAJDeVyqRDXIhbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=R86uzwtI-38Q7kNvwHw5b96&_nc_oc=AdpjE0JmV25Oje8YXwqyXWLSepl4kTg9pO0uT4962FwCL-1H7v3HtRBW4FKTlXbPN55yXMCN73w_1xvjzhatgyu8&_nc_zt=24&_nc_ht=scontent-sin11-2.cdninstagram.com&_nc_gid=px0MMH314KMRbj77Pq-sog&_nc_ss=7b689&oh=00_AQTSj8vrDPcdgdPKpmJJ49uuphrUfiA7u6JTHdWwr13dXA&oe=6AEFF132" alt="RemyTCG Logo" class="logo-img">
+            <h1>RemyTCG</h1>
+        </div>
+        <div class="subtitle">Simplified Chinese Pokémon TCG • Direct Proxy Service</div>
+    </div>
+
+    <!-- BANDEAU DE RÉASSURANCE SUR 1 LIGNE -->
+    <div class="trust-bar">
+        <div class="trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            Global Shipping via Sugargoo
+        </div>
+        <div class="trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            Secure Global Payments
+        </div>
+    </div>
+
+    <!-- BANNIÈRE HERO EXPLICATIVE DU PROXY SERVICE -->
+    <div id="setup" class="intro-banner">
+        <div class="intro-banner-text">
+            <h2>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: #FF6A00;"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                How Buying Direct from China Works (Proxy Service)
+            </h2>
+            <p style="margin-bottom: 8px;">Sugargoo acts as your verified agent in China: buy authentic Pokémon cards at local retail price (0% markup from RemyTCG)[cite: 8], receive HD warehouse inspection photos, and ship safely to your door[cite: 7].</p>
+            <div style="font-size: 0.82em; color: #aaa; line-height: 1.45; display: flex; flex-direction: column; gap: 4px;">
+                <div>• <strong style="color: #FF6A00;">Browser Registration Required:</strong> Sugargoo tracks affiliate referral via browser cookies, not app codes. Sign up in Safari/Chrome via our link so we can assist with your parcels.</div>
+                <div>• <strong style="color: #FF6A00;">800 CNY Bonus:</strong> Unlocks 14 international shipping discount vouchers automatically upon sign up[cite: 7, 8].</div>
+            </div>
+        </div>
+        <div class="intro-banner-action">
+            <a href="https://m.sugargoo.com/register?memberId=3894055016867374984" class="btn-main" target="_blank">Create Free Sugargoo Account</a>
+        </div>
+    </div>
+
+    <!-- CATALOGUE DES ARTICLES -->
+    <div id="shop" class="container">
+        <div class="search-container">
+            <input type="text" id="search" class="search-bar" placeholder="Search booster box, UPC, blind boxes..." onkeyup="filtrer()">
+        </div>
+        <div class="filter-wrapper">
+            <button class="filter-nav-btn" onclick="scrollFilters(-180)" title="Scroll categories left">‹</button>
+            <div class="filter-pills" id="filterPills">
+                <button class="filter-pill active" onclick="selectPill(this, '')">All Releases</button>
+                <button class="filter-pill" onclick="selectPill(this, '30th Anniversary')">30th Anniversary</button>
+                <button class="filter-pill" onclick="selectPill(this, 'Scarlet & Violet Era')">Scarlet & Violet</button>
+                <button class="filter-pill" onclick="selectPill(this, 'Gem Packs')">Gem Packs</button>
+                <button class="filter-pill" onclick="selectPill(this, 'Collect 151 Series')">151 Series</button>
+                <button class="filter-pill" onclick="selectPill(this, 'Sword & Shield Era')">Sword & Shield</button>
+                <button class="filter-pill" onclick="selectPill(this, 'Festival Gift Boxes')">Festival Boxes</button>
+                <button class="filter-pill" onclick="selectPill(this, 'Coin Bags')">Coin Bags</button>
+                <button class="filter-pill" onclick="selectPill(this, 'Blind Boxes')">Blind Boxes</button>
+            </div>
+            <button class="filter-nav-btn" onclick="scrollFilters(180)" title="Scroll categories right">›</button>
+        </div>
+        <div id="catalogue"></div>
+    </div>
+
+    <!-- GUIDE D'ACHAT & FAQ -->
+    <div id="guide" class="faq-container">
+        <h2 style="text-align: center; color: #FF6A00; font-size: 1.5em; margin: 0 0 16px 0;">Buyer Guide & FAQ</h2>
+        
+        <div class="faq-grid-3">
+            <div class="faq-item" style="border-color: #FF6A00;">
+                <h3>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    1. What is a Proxy Agent?
+                </h3>
+                <p>Buying from Chinese marketplaces requires a local address & Chinese payment[cite: 7]. Sugargoo acts as your middleman[cite: 7]:</p>
+                <div class="process-container">
+                    <div class="process-step">
+                        <div class="process-icon">
+                            <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                        </div>
+                        <h4>1. Buy</h4>
+                        <p>Direct local retail price[cite: 7].</p>
+                    </div>
+                    <div class="process-arrow">➔</div>
+                    <div class="process-step">
+                        <div class="process-icon">
+                            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                        </div>
+                        <h4>2. Warehouse</h4>
+                        <p>Quality Check (QC) & 100d storage[cite: 7].</p>
+                    </div>
+                    <div class="process-arrow">➔</div>
+                    <div class="process-step">
+                        <div class="process-icon">
+                            <svg viewBox="0 0 24 24"><path d="M22 2L11 13"></path><path d="M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
+                        </div>
+                        <h4>3. Ship</h4>
+                        <p>Direct to your door[cite: 7].</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    2. Verified Sources
+                </h3>
+                <p>We curate exclusively from 4 verified Taobao/Tmall suppliers[cite: 7]:</p>
+                <div style="display: flex; flex-direction: column; gap: 6px; margin: 6px 0;">
+                    <div class="source-card">
+                        <span class="source-tag source-tag-official">Official Flagship</span>
+                        <span style="color: #FFCB05; font-weight: 800; font-size: 0.8em;">宝可梦官方旗舰店 (Pokémon Store)</span>
+                        <div style="color: #888; font-size: 0.68em;">Primary official flagship on Tmall[cite: 7]. 1M+ followers[cite: 7].</div>
+                    </div>
+                    <div class="source-card">
+                        <span class="source-tag source-tag-gold">Gold Seller 5.0</span>
+                        <span style="color: #FF6A00; font-weight: 800; font-size: 0.8em;">DunDun TCG (墩墩卡店)</span>
+                        <div style="color: #888; font-size: 0.68em;">Top 1% seller • 50,000+ completed sales[cite: 7].</div>
+                    </div>
+                    <div class="source-card">
+                        <span class="source-tag source-tag-cert">Certified Seller</span>
+                        <span style="color: #eee; font-weight: 800; font-size: 0.8em;">Pingtouge TCG (平头哥卡社)</span>
+                        <div style="color: #888; font-size: 0.68em;">Score 4.9/5 • 98% positive buyer feedback.</div>
+                    </div>
+                    <div class="source-card">
+                        <span class="source-tag source-tag-cert">Certified Seller</span>
+                        <span style="color: #eee; font-weight: 800; font-size: 0.8em;">Wanpi Cards (顽皮卡社)</span>
+                        <div style="color: #888; font-size: 0.68em;">Score 4.8/5 • 20,000+ completed sales.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"></polyline><rect x="2" y="7" width="20" height="5"></rect><line x1="12" y1="22" x2="12" y2="7"></line><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path></svg>
+                    3. 800 CNY Welcome Bonus
+                </h3>
+                <p>Registering via our link credits your account with <strong>14 discount vouchers</strong> worth 800 CNY (~$110 USD)[cite: 7]:</p>
+                <ul>
+                    <li><strong>Discounts:</strong> From 20 CNY off to 150 CNY off per parcel[cite: 7].</li>
+                    <li><strong>Validity:</strong> 90 days after registration[cite: 7].</li>
+                    <li><strong>Application:</strong> Usable on your international shipping checkout[cite: 7].</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- WHOLESALE / B2B PLACE APRES LA FAQ -->
+    <div id="wholesale" class="intro-banner" style="border-color: #FFCB05; margin-top: 25px;">
+        <div class="intro-banner-text">
+            <h2 style="color: #FFCB05; display: flex; align-items: center; gap: 8px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                Wholesale & Bulk Orders
+            </h2>
+            <p>Factory-sealed cartons directly from Mainland distributors. Minimum order value: $500 USD.</p>
+        </div>
+        <div class="intro-banner-action">
+            <a href="mailto:contact.remytcg@gmail.com?subject=Wholesale%20Bulk%20Order%20Inquiry" class="btn-main" style="background: #FFCB05; color: #111;">Contact Us for Bulk Quote</a>
+        </div>
+    </div>
+
+    <footer id="contact" class="footer-pro">
+        <div class="footer-pro-inner">
+            <div class="footer-pro-top">
+                <div class="footer-pro-logo-container">
+                    <img src="https://scontent-sin11-2.cdninstagram.com/v/t51.82787-19/846528981_18117825301906300_2410003667728457360_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=101&ig_cache_key=GNUBdTJ8AzntEF5AAJDeVyqRDXIhbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=R86uzwtI-38Q7kNvwHw5b96&_nc_oc=AdpjE0JmV25Oje8YXwqyXWLSepl4kTg9pO0uT4962FwCL-1H7v3HtRBW4FKTlXbPN55yXMCN73w_1xvjzhatgyu8&_nc_zt=24&_nc_ht=scontent-sin11-2.cdninstagram.com&_nc_gid=px0MMH314KMRbj77Pq-sog&_nc_ss=7b689&oh=00_AQTSj8vrDPcdgdPKpmJJ49uuphrUfiA7u6JTHdWwr13dXA&oe=6AEFF132" alt="RemyTCG Logo" class="footer-pro-img">
+                    <p class="footer-pro-logo">RemyTCG</p>
+                </div>
+                <div class="footer-pro-socials">
+                    <a href="https://instagram.com/remy.tcg" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        @remy.tcg
+                    </a>
+                    <a href="https://tiktok.com/@remy_tcg" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                        @remy_tcg
+                    </a>
+                    <a href="https://youtube.com/@remytcg" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        @remytcg
+                    </a>
+                    <a href="mailto:contact.remytcg@gmail.com">
+                        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        contact.remytcg@gmail.com
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-pro-disclaimer">
+                <strong>Disclaimer:</strong> Independent proxy curation service. No affiliation, sponsorship, or endorsement with Nintendo, Creatures Inc., or The Pokémon Company International.
+            </div>
+
+            <div class="footer-pro-bottom">
+                <div class="footer-copyright">
+                    © 2026 RemyTCG. All rights reserved.
+                </div>
+                <div class="payment-row">
+                    <div class="payment-badge"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV07yhKXZ1S8pQJ984d281j6woJ0cE8UBN0077uuZaXQ&s=10" alt="Visa"></div>
+                    <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard"></div>
+                    <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Discover_Card_logo.svg" alt="Discover"></div>
+                    <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Pay_Logo.svg" alt="Google Pay"></div>
+                    <div class="payment-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg" alt="Apple Pay"></div>
+                    <div class="payment-badge"><img src="https://thumb.wikimedia.org/wikipedia/en/thumb/c/c7/Alipay_logo_%282020%29.svg/960px-Alipay_logo_%282020%29.svg.png" alt="Alipay"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="stock.js"></script>
+    <script>
+        let pendingAction = null; 
+
+        function triggerProductAction(url) {
+            const hasSeenPopup = localStorage.getItem('remytcg_setup_done');
+            if (hasSeenPopup === 'true') {
+                window.open(url, '_blank');
+            } else {
+                pendingAction = url;
+                const modal = document.getElementById('welcomeModal');
+                modal.style.display = 'flex';
+                setTimeout(() => modal.style.opacity = '1', 10);
+            }
+        }
+
+        function registerAndClose() {
+            localStorage.setItem('remytcg_setup_done', 'true'); 
+            window.open('https://m.sugargoo.com/register?memberId=3894055016867374984', '_blank');
+            closeModal();
+        }
+
+        function continueToProduct() {
+            localStorage.setItem('remytcg_setup_done', 'true'); 
+            closeModal();
+            if (pendingAction) {
+                window.open(pendingAction, '_blank');
+                pendingAction = null;
+            }
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('welcomeModal');
+            modal.style.opacity = '0';
+            setTimeout(() => modal.style.display = 'none', 300);
+        }
+
+        function scrollFilters(offset) {
+            const pillsContainer = document.getElementById('filterPills');
+            pillsContainer.scrollBy({ left: offset, behavior: 'smooth' });
+        }
+
+        function slideCarousel(btn, direction) {
+            const wrapper = btn.closest('.image-wrapper');
+            const carousel = wrapper.querySelector('.card-carousel');
+            const images = carousel.querySelectorAll('.card-img');
+            const total = images.length;
+            if (total <= 1) return;
+
+            const itemWidth = carousel.getBoundingClientRect().width;
+            let current = Math.round(carousel.scrollLeft / itemWidth);
+            let next = current + direction;
+            if (next < 0) next = total - 1;
+            if (next >= total) next = 0;
+
+            carousel.scrollTo({ left: next * itemWidth, behavior: 'smooth' });
+            
+            const dots = wrapper.querySelectorAll('.carousel-dot');
+            dots.forEach((dot, idx) => dot.classList.toggle('active', idx === next));
+        }
+
+        function jumpToSlide(dot, targetIndex) {
+            const wrapper = dot.closest('.image-wrapper');
+            const carousel = wrapper.querySelector('.card-carousel');
+            const itemWidth = carousel.getBoundingClientRect().width;
+            carousel.scrollTo({ left: targetIndex * itemWidth, behavior: 'smooth' });
+            
+            const dots = wrapper.querySelectorAll('.carousel-dot');
+            dots.forEach((d, idx) => d.classList.toggle('active', idx === targetIndex));
+        }
+
+        function updateDotsOnScroll(carousel) {
+            const wrapper = carousel.closest('.image-wrapper');
+            const dots = wrapper.querySelectorAll('.carousel-dot');
+            const itemWidth = carousel.getBoundingClientRect().width;
+            if (itemWidth === 0) return;
+            const index = Math.round(carousel.scrollLeft / itemWidth);
+            dots.forEach((dot, idx) => dot.classList.toggle('active', idx === index));
+        }
+
+        function toggleArchive(btn, secId) {
+            const hiddenContainer = document.getElementById(secId);
+            const isHidden = hiddenContainer.style.display === 'none' || hiddenContainer.style.display === '';
+            if (isHidden) {
+                hiddenContainer.style.display = 'contents';
+                btn.innerHTML = 'Hide Archived Items';
+            } else {
+                hiddenContainer.style.display = 'none';
+                const count = hiddenContainer.querySelectorAll('.card').length;
+                btn.innerHTML = `View ${count} Archived Items (Click to expand)`;
+            }
+        }
+
+        function selectPill(btn, cat) {
+            document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+            window.activePillCategory = cat;
+            filtrer();
+        }
+
+        window.addEventListener('scroll', () => {
+            const btn = document.getElementById('backToTop');
+            if (window.scrollY > 350) {
+                btn.classList.add('visible');
+            } else {
+                btn.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>
