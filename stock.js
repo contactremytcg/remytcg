@@ -585,7 +585,8 @@ const produits = [
         taobaoId: "1038724485132",
         taobaoId2: "767333963100",
         images: ["https://lh3.googleusercontent.com/proxy/BGbaaxN3iStHvlwH1Au_E8Zj0YnmBaCPWX_4UzlBEekNSz9n7libOy4Jl54qAJaMQsuZ8VafNDAiuHKAnaPnkSF9na_nglyipJHqOnJigtXW9MYazYkZlLDceLPUwgskfC7Jn1KI1XauvKIkjKLEADYI41sXDRcZ9tZzzuyGcA"],
-        fournisseur: "Pingtouge TCG"
+        fournisseur: "Pingtouge TCG",
+        fournisseurBackup: "DunDun TCG"
     },
     {
         section: "Sword & Shield Era",
@@ -1026,23 +1027,6 @@ function genererCarteHtml(p) {
         `;
     }
 
-    let ligne1 = p.fournisseur ? `Supplier: <strong>${p.fournisseur}</strong>` : `Direct Verified Stock`;
-    let ligne2 = p.fournisseurBackup ? `Backup: <strong>${p.fournisseurBackup}</strong>` : `&nbsp;`;
-
-    let fournisseurHtml = `
-        <div class="supplier-info">
-            <svg class="supplier-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                <line x1="12" y1="22.08" x2="12" y2="12"></line>
-            </svg>
-            <div class="supplier-text">
-                <span>${ligne1}</span>
-                <span>${ligne2}</span>
-            </div>
-        </div>
-    `;
-
     let imagesHtml = '';
     const fallback = "https://placehold.co/600x400/1c1c1c/FF6A00?text=RemyTCG";
 
@@ -1073,39 +1057,44 @@ function genererCarteHtml(p) {
         `;
     }
 
+    // Fournisseur tag discret sur la même ligne que la catégorie
+    const fournisseurNom = p.fournisseur ? p.fournisseur : 'Verified Stock';
+    const fournisseurHeader = `
+        <div class="card-meta-row">
+            <span class="category">${catBadge}</span>
+            <span class="supplier-tag" title="Source">${fournisseurNom}</span>
+        </div>
+    `;
+
+    let backupLinkHtml = '';
+    if (p.taobaoId2 && p.taobaoId2.trim() !== "" && p.statut !== "out_of_stock") {
+        const sugargooUrl2 = formatSugargooLink(p.taobaoId2);
+        const backupNom = p.fournisseurBackup ? p.fournisseurBackup : 'Backup';
+        backupLinkHtml = `
+            <a href="javascript:void(0)" onclick="triggerProductAction('${sugargooUrl2}')" class="card-backup-link">
+                Alt Supplier: <strong>${backupNom}</strong> ↗
+            </a>
+        `;
+    }
+
     let boutonsHtml = '';
     if (p.statut === "out_of_stock") {
         boutonsHtml = `
             <button class="btn-main-card" style="background: #222327; color: #666; border: 1px solid #333338; cursor: not-allowed;">✕ Out of Stock</button>
-            <div class="btn-main-card btn-backup btn-backup-placeholder" aria-hidden="true"></div>
         `;
     } else if (p.statut === "coming_soon") {
         boutonsHtml = `
             <a href="https://instagram.com/remy.tcg" target="_blank" rel="noopener noreferrer" class="btn-main-card btn-notify">🔔 Follow IG for Drops</a>
-            <div class="btn-main-card btn-backup btn-backup-placeholder" aria-hidden="true"></div>
         `;
     } else if (!p.taobaoId || p.taobaoId.trim() === "") {
         boutonsHtml = `
             <button class="btn-main-card" style="background: #e74c3c; color: #fff; cursor: not-allowed;">⚠️ ID Missing</button>
-            <div class="btn-main-card btn-backup btn-backup-placeholder" aria-hidden="true"></div>
         `;
     } else {
         const sugargooUrl = formatSugargooLink(p.taobaoId);
-        
         boutonsHtml = `
             <button onclick="triggerProductAction('${sugargooUrl}')" class="btn-main-card btn-order">Order on Sugargoo</button>
         `;
-        
-        if (p.taobaoId2 && p.taobaoId2.trim() !== "") {
-            const sugargooUrl2 = formatSugargooLink(p.taobaoId2);
-            boutonsHtml += `
-                <button onclick="triggerProductAction('${sugargooUrl2}')" class="btn-main-card btn-backup">Backup Supplier</button>
-            `;
-        } else {
-            boutonsHtml += `
-                <div class="btn-main-card btn-backup btn-backup-placeholder" aria-hidden="true"></div>
-            `;
-        }
     }
 
     return `
@@ -1113,11 +1102,11 @@ function genererCarteHtml(p) {
             ${htmlBadge}
             ${imagesHtml}
             <div class="card-content">
-                <span class="category">${catBadge}</span>
+                ${fournisseurHeader}
                 <h3>${p.nom}</h3>
                 <p>${p.description}</p>
-                ${fournisseurHtml}
-                <div class="buttons-container">
+                <div class="card-footer-action">
+                    ${backupLinkHtml}
                     ${boutonsHtml}
                 </div>
             </div>
