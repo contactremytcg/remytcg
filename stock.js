@@ -16,7 +16,7 @@ const produits = [
     // SECTION 1 : TRENDING & BEST SELLERS
     // =========================================================================
     {
-        section: "Trending & Best Sellers",
+        section: "🔥 Trending & Best Sellers",
         badgeCat: "30th-C",
         nom: "30th Anniversary Booster Box",
         description: "Official booster box.",
@@ -30,7 +30,7 @@ const produits = [
         fournisseur: "DunDun TCG"
     },
     {
-        section: "Trending & Best Sellers",
+        section: "🔥 Trending & Best Sellers",
         badgeCat: "CBB7C",
         nom: "Gem Pack Vol. 7",
         description: "Official booster box.",
@@ -41,10 +41,10 @@ const produits = [
         fournisseurBackup: "Pingtouge TCG"
     },
     {
-        section: "Trending & Best Sellers",
+        section: "🔥 Trending & Best Sellers",
         badgeCat: "30th-UPC",
         nom: "Espeon & Umbreon EX Collector Display Box",
-        description: "Premium collection box with exclusive promos.",
+        description: "Exclusive Eeveelution promos & packs.",
         taobaoId: "1081612197981",
         taobaoId2: "1077143359404",
         videoUrl: "https://www.instagram.com/reel/DdWcScShlbf/",
@@ -57,10 +57,10 @@ const produits = [
         fournisseurBackup: "Pingtouge TCG"
     },
     {
-        section: "Trending & Best Sellers",
+        section: "🔥 Trending & Best Sellers",
         badgeCat: "Figure Vol. 4",
         nom: "Dream Figure Vol. 4 (Pikachu Edition)",
-        description: "Collectible figurine + booster packs.",
+        description: "Pikachu mystery figurine + packs.",
         taobaoId: "1082955160912",
         taobaoId2: "1079806548243",
         videoUrl: "https://www.instagram.com/reel/DdtlypOo0AW/",
@@ -74,10 +74,10 @@ const produits = [
         fournisseurBackup: "Pingtouge TCG"
     },
     {
-        section: "Trending & Best Sellers",
+        section: "🔥 Trending & Best Sellers",
         badgeCat: "Figure Box",
         nom: "Charizard Figure Box",
-        description: "Collectible figurine, promos & booster packs.",
+        description: "Charizard figurine, promos & packs.",
         taobaoId: "1078493401671",
         taobaoId2: "1075622019018",
         videoUrl: "https://www.instagram.com/reel/Ddmb0FsBON1/",
@@ -89,7 +89,7 @@ const produits = [
         fournisseurBackup: "Pingtouge TCG"
     },
     {
-        section: "Trending & Best Sellers",
+        section: "🔥 Trending & Best Sellers",
         badgeCat: "CSV10.5",
         nom: "Black Bolt & White Flare",
         description: "Official booster box.",
@@ -121,7 +121,7 @@ const produits = [
         section: "30th Anniversary",
         badgeCat: "30th-UPC",
         nom: "Espeon & Umbreon EX Collector Display Box",
-        description: "Premium collection box with exclusive promos.",
+        description: "Exclusive Eeveelution promos & packs.",
         taobaoId: "1081612197981",
         taobaoId2: "1077143359404",
         videoUrl: "https://www.instagram.com/reel/DdWcScShlbf/",
@@ -137,7 +137,7 @@ const produits = [
         section: "30th Anniversary",
         badgeCat: "Figure Box",
         nom: "Charizard Figure Box",
-        description: "Collectible figurine, promos & booster packs.",
+        description: "Charizard figurine, promos & packs.",
         taobaoId: "1078493401671",
         taobaoId2: "1075622019018",
         videoUrl: "https://www.instagram.com/reel/Ddmb0FsBON1/",
@@ -152,7 +152,7 @@ const produits = [
         section: "30th Anniversary",
         badgeCat: "Coin Bundle",
         nom: "30th Anniversary Coin Bag",
-        description: "3x booster packs + collectible coin.",
+        description: "3x booster packs + official coin.",
         taobaoId: "1078477045552",
         taobaoId2: "",
         videoUrl: "https://www.instagram.com/reel/DeMfqDRoxUK/",
@@ -163,7 +163,7 @@ const produits = [
         section: "30th Anniversary",
         badgeCat: "Special Box",
         nom: "Futuristic Box",
-        description: "Premium collection box with accessories.",
+        description: "Futuristic promo box & packs.",
         taobaoId: "1076581683957",
         taobaoId2: "", 
         videoUrl: "https://www.instagram.com/reel/DdbntgzBAte/",
@@ -174,7 +174,7 @@ const produits = [
         section: "30th Anniversary",
         badgeCat: "Deck Set",
         nom: "Umbreon ex Deck Set",
-        description: "Umbreon promo, deck box & packs.",
+        description: "Umbreon ex promo, deck box & packs.",
         taobaoId: "1081589285227",
         taobaoId2: "1083773308654",
         videoUrl: "https://www.instagram.com/reel/De7LWM6IYrS/",
@@ -189,7 +189,7 @@ const produits = [
         section: "30th Anniversary",
         badgeCat: "Deck Set",
         nom: "Espeon ex Deck Set",
-        description: "Espeon promo, deck box & packs.",
+        description: "Espeon ex promo, deck box & packs.",
         taobaoId: "1081585073446",
         taobaoId2: "1083773308654",
         videoUrl: "https://www.instagram.com/reel/DfC5r59Icam/",
@@ -204,7 +204,7 @@ const produits = [
         section: "30th Anniversary",
         badgeCat: "Keychain Set",
         nom: "Greninja Keychain Card Display Set",
-        description: "Greninja promo, keychain & packs.",
+        description: "3x packs, promo card & keychain.",
         taobaoId: "1080814663430",
         taobaoId2: "",
         videoUrl: "https://www.instagram.com/reel/DfICQ-UoZip/",
@@ -218,7 +218,7 @@ const produits = [
         section: "30th Anniversary",
         badgeCat: "Keychain Set",
         nom: "Sylveon Keychain Card Display Set",
-        description: "Sylveon promo, keychain & packs.",
+        description: "3x packs, promo card & keychain.",
         taobaoId: "1080814663430",
         taobaoId2: "",
         videoUrl: "https://www.instagram.com/reel/DepLHfNohcd/",
@@ -232,7 +232,7 @@ const produits = [
         section: "30th Anniversary",
         badgeCat: "Partner Vol. 1",
         nom: "First Partner Starter Pack Vol. 1",
-        description: "First partner promos + booster packs.",
+        description: "First Partner promos & packs.",
         taobaoId: "1036462263685",
         taobaoId2: "",
         videoUrl: "https://www.instagram.com/reel/DdUW0s5h-uF/",
@@ -246,7 +246,7 @@ const produits = [
         section: "30th Anniversary",
         badgeCat: "Partner Vol. 2",
         nom: "First Partner Starter Pack Vol. 2",
-        description: "First partner promos + booster packs.",
+        description: "First Partner promos & packs.",
         taobaoId: "1059308989628",
         taobaoId2: "1054578164218",
         images: [
@@ -261,7 +261,7 @@ const produits = [
         section: "30th Anniversary",
         badgeCat: "Partner Vol. 3",
         nom: "First Partner Starter Pack Vol. 3",
-        description: "First partner promos + booster packs.",
+        description: "First Partner promos & packs.",
         taobaoId: "1070165751188",
         taobaoId2: "1067989553110",
         images: [
@@ -624,7 +624,7 @@ const produits = [
         section: "Sword & Shield Era",
         badgeCat: "CS3B",
         nom: "Poké Ball Gift Set",
-        description: "Poké Ball accessories & booster packs.",
+        description: "Accessories, promo & booster packs.",
         taobaoId: "1038982704292",
         taobaoId2: "761115139755",
         images: [
@@ -638,7 +638,7 @@ const produits = [
         section: "Sword & Shield Era",
         badgeCat: "CS3A",
         nom: "Great Ball Gift Set",
-        description: "Great Ball accessories & booster packs.",
+        description: "Accessories, promo & booster packs.",
         taobaoId: "1038982704292",
         taobaoId2: "761115139755",
         images: [
@@ -692,7 +692,7 @@ const produits = [
         section: "Sword & Shield Era",
         badgeCat: "Special",
         nom: "Ultra Ball Gift Set",
-        description: "Ultra Ball accessories & booster packs.",
+        description: "Accessories, promo & booster packs.",
         taobaoId: "",
         taobaoId2: "",
         images: [
@@ -709,7 +709,7 @@ const produits = [
         section: "Festival Gift Boxes",
         badgeCat: "Mid-Autumn",
         nom: "2026 Mid-Autumn Gift Box",
-        description: "Limited festival box with promos & packs.",
+        description: "Festive promo box & booster packs.",
         taobaoId: "1071726804171",
         taobaoId2: "1071680335651",
         images: [
@@ -723,7 +723,7 @@ const produits = [
         section: "Festival Gift Boxes",
         badgeCat: "Dragon Boat",
         nom: "2026 Dragon Boat Festival Box",
-        description: "Limited festival box with promos & packs.",
+        description: "Festive promo box & booster packs.",
         taobaoId: "1058523215773",
         taobaoId2: "",
         images: [
@@ -736,7 +736,7 @@ const produits = [
         section: "Festival Gift Boxes",
         badgeCat: "Lunar New Year",
         nom: "2026 Lunar New Year Gift Box",
-        description: "Limited festival box with promos & packs.",
+        description: "Festive promo box & booster packs.",
         taobaoId: "1017089005184",
         taobaoId2: "",
         images: [
@@ -753,7 +753,7 @@ const produits = [
         section: "Coin Bags",
         badgeCat: "30th-C",
         nom: "30th Anniversary Coin Bag",
-        description: "3x booster packs + collectible coin.",
+        description: "3x booster packs + official coin.",
         taobaoId: "1078477045552",
         taobaoId2: "",
         videoUrl: "https://www.instagram.com/reel/DeMfqDRoxUK/",
@@ -764,7 +764,7 @@ const produits = [
         section: "Coin Bags",
         badgeCat: "CSV9",
         nom: "Stellar Crystal Coin Bag",
-        description: "3x booster packs + collectible coin.",
+        description: "3x booster packs + official coin.",
         taobaoId: "1053719752963",
         taobaoId2: "",
         images: [
@@ -777,7 +777,7 @@ const produits = [
         section: "Coin Bags",
         badgeCat: "CSV10",
         nom: "Chasing Glory Coin Bag",
-        description: "3x booster packs + collectible coin.",
+        description: "3x booster packs + official coin.",
         taobaoId: "1067353432814",
         taobaoId2: "1088794189729",
         images: ["https://images-eu.ssl-images-amazon.com/images/I/71cZJr3YPnL._AC_UL495_SR435,495_.jpg"],
@@ -789,7 +789,7 @@ const produits = [
         section: "Coin Bags",
         badgeCat: "CSV8",
         nom: "Bright Fantasy Coin Bag",
-        description: "3x booster packs + collectible coin.",
+        description: "3x booster packs + official coin.",
         taobaoId: "1026530979141",
         taobaoId2: "1038882806803",
         images: ["https://erp-image.sgliteasset.com/_next/image?url=https%3A%2F%2Fcdn1.sgliteasset.com%2Ftcglah%2Fimages%2Fproduct%2Fproduct-7525796%2F34x36X3U69d3424537017_1775452741.jpg&w=3840&q=85"],
@@ -801,7 +801,7 @@ const produits = [
         section: "Coin Bags",
         badgeCat: "CSV7",
         nom: "Blade Awakening Coin Bag",
-        description: "3x booster packs + collectible coin.",
+        description: "3x booster packs + official coin.",
         taobaoId: "1008157120043",
         taobaoId2: "1095040159008",
         images: ["https://main-wordpress-bucket-production.lon1.digitaloceanspaces.com/2026/04/pokemon-simplified-chinese-blade-awakening-csv7c-coin-set.png"],
@@ -817,7 +817,7 @@ const produits = [
         section: "Blind Boxes",
         badgeCat: "Pikachu Edition",
         nom: "Dream Figure Vol. 4 (Pikachu)",
-        description: "Collectible figurine + booster packs.",
+        description: "Pikachu mystery figurine + packs.",
         taobaoId: "1082955160912",
         taobaoId2: "1079806548243",
         videoUrl: "https://www.instagram.com/reel/DdtlypOo0AW/",
@@ -834,7 +834,7 @@ const produits = [
         section: "Blind Boxes",
         badgeCat: "Eevee Edition",
         nom: "Dream Figure Vol. 3 (Eevee)",
-        description: "Collectible figurine + booster packs.",
+        description: "Eeveelution mystery figurine + packs.",
         taobaoId: "1078195403792",
         taobaoId2: "1072080775449",
         images: [
@@ -850,7 +850,7 @@ const produits = [
         section: "Blind Boxes",
         badgeCat: "Vol. 2",
         nom: "Dream Figure Vol. 2 Blind Box",
-        description: "Collectible figurine + booster packs.",
+        description: "Mystery Pokémon figurine + packs.",
         taobaoId: "1044387395690",
         taobaoId2: "1045033219070",
         images: [
@@ -865,7 +865,7 @@ const produits = [
         section: "Blind Boxes",
         badgeCat: "Vol. 1",
         nom: "Dream Figure Vol. 1 Blind Box",
-        description: "Collectible figurine + booster packs.",
+        description: "Mystery Pokémon figurine + packs.",
         taobaoId: "994367267628",
         taobaoId2: "1096711400657",
         images: [
@@ -897,7 +897,7 @@ const produits = [
         section: "Premium Collection Boxes",
         badgeCat: "Master Strategy",
         nom: "Milton ex Master Strategy Set",
-        description: "Ready-to-play deck set + booster packs.",
+        description: "Deck building set & packs.",
         taobaoId: "1008155364462",
         taobaoId2: "",
         images: [
@@ -911,7 +911,7 @@ const produits = [
         section: "Premium Collection Boxes",
         badgeCat: "Master Strategy",
         nom: "Raging Bolt ex Master Strategy Set",
-        description: "Ready-to-play deck set + booster packs.",
+        description: "Deck building set & packs.",
         taobaoId: "1065661862776",
         taobaoId2: "",
         images: [
@@ -925,7 +925,7 @@ const produits = [
         section: "Premium Collection Boxes",
         badgeCat: "Master Strategy",
         nom: "Gholdengo ex Master Strategy Set",
-        description: "Ready-to-play deck set + booster packs.",
+        description: "Deck building set & packs.",
         taobaoId: "1065668842312",
         taobaoId2: "",
         images: ["https://www.japan2uk.com/cdn/shop/files/Pokemon_Gholdengo_ex_csvM2c_Simplified_Chinese_Master_Strategy_Deck_Building_Set_1024x1024.png?v=1785495434"],
@@ -936,7 +936,7 @@ const produits = [
         section: "Premium Collection Boxes",
         badgeCat: "Master Strategy",
         nom: "Dragapult ex Master Strategy Set",
-        description: "Ready-to-play deck set + booster packs.",
+        description: "Deck building set & packs.",
         taobaoId: "1066680325531",
         taobaoId2: "",
         images: ["https://ueeshop.ly200-cdn.com/u_file/UPBB/UPBB486/2609/08/products/78f7412ea38e8f041677eaecea8f40bb-172101dcce.png?x-oss-process=image/format,webp/quality,q_100"],
@@ -947,7 +947,7 @@ const produits = [
         section: "Premium Collection Boxes",
         badgeCat: "Mask Box",
         nom: "Ogerpon Wellspring Mask Gift Box",
-        description: "Special gift box with promo & packs.",
+        description: "Ogerpon ex promo, sleeves & packs.",
         taobaoId: "1049188091485",
         taobaoId2: "1051982944741",
         images: [
@@ -962,7 +962,7 @@ const produits = [
         section: "Premium Collection Boxes",
         badgeCat: "Mask Box",
         nom: "Ogerpon Cornerstone Mask Gift Box",
-        description: "Special gift box with promo & packs.",
+        description: "Ogerpon ex promo, sleeves & packs.",
         taobaoId: "1050912105033",
         taobaoId2: "1051982944741",
         images: [
@@ -977,7 +977,7 @@ const produits = [
         section: "Premium Collection Boxes",
         badgeCat: "Mask Box",
         nom: "Ogerpon Teal Mask Gift Box",
-        description: "Special gift box with promo & packs.",
+        description: "Ogerpon ex promo, sleeves & packs.",
         taobaoId: "1050909737218",
         taobaoId2: "1051982944741",
         images: [
@@ -992,7 +992,7 @@ const produits = [
         section: "Premium Collection Boxes",
         badgeCat: "Mask Box",
         nom: "Ogerpon Hearthflame Mask Gift Box",
-        description: "Special gift box with promo & packs.",
+        description: "Ogerpon ex promo, sleeves & packs.",
         taobaoId: "1050912901200",
         taobaoId2: "1051982944741",
         images: [
@@ -1011,7 +1011,7 @@ function genererCarteHtml(p) {
     
     let htmlBadge = '';
     if (p.statut === "out_of_stock") {
-        htmlBadge = `<div class="card-badge" style="background: #444;">Sold Out</div>`;
+        htmlBadge = `<div class="card-badge" style="background: #33343a;">Sold Out</div>`;
     } else if (p.badge) {
         htmlBadge = `<div class="card-badge" style="background: ${p.badge.color};">${p.badge.text}</div>`;
     }
@@ -1068,13 +1068,18 @@ function genererCarteHtml(p) {
         </div>
     `;
 
-    // Lien de secours compact sous le bouton : zéro cannibalisation, conversion pure
     let backupLinkHtml = '';
     if (p.taobaoId2 && p.taobaoId2.trim() !== "" && p.statut !== "out_of_stock") {
         const sugargooUrl2 = formatSugargooLink(p.taobaoId2);
+        let backupNom = p.fournisseurBackup ? p.fournisseurBackup : 'Alt';
+        if (backupNom.includes("Pingtouge")) backupNom = "Pingtouge";
+        if (backupNom.includes("DunDun")) backupNom = "DunDun";
+        if (backupNom.includes("Wanpi")) backupNom = "Wanpi";
+        if (backupNom.includes("Official")) backupNom = "Official";
+        
         backupLinkHtml = `
-            <a href="javascript:void(0)" onclick="triggerProductAction('${sugargooUrl2}')" class="card-backup-link" title="Order from alternate seller if primary is sold out">
-                Backup Seller →
+            <a href="javascript:void(0)" onclick="triggerProductAction('${sugargooUrl2}')" class="card-backup-link" title="Order from alternate seller">
+                Backup: ${backupNom} ↗
             </a>
         `;
     }
@@ -1090,7 +1095,7 @@ function genererCarteHtml(p) {
         `;
     } else if (!p.taobaoId || p.taobaoId.trim() === "") {
         boutonsHtml = `
-            <button class="btn-main-card" style="background: #e74c3c; color: #fff; cursor: not-allowed;">ID Missing</button>
+            <button class="btn-main-card" style="background: #222327; color: #777; cursor: not-allowed;">Unavailable</button>
         `;
     } else {
         const sugargooUrl = formatSugargooLink(p.taobaoId);
@@ -1122,7 +1127,7 @@ function afficher(liste) {
     container.innerHTML = '';
 
     const sectionsOrdre = [
-        "Trending & Best Sellers",
+        "🔥 Trending & Best Sellers",
         "30th Anniversary",
         "Scarlet & Violet Era",
         "Gem Packs",
@@ -1137,7 +1142,7 @@ function afficher(liste) {
     let globalArchiveIndex = 0;
 
     sectionsOrdre.forEach(secNom => {
-        if (secNom === "Trending & Best Sellers" && window.activePillCategory !== '') {
+        if (secNom === "🔥 Trending & Best Sellers" && window.activePillCategory !== '') {
             return;
         }
 
@@ -1171,7 +1176,7 @@ function afficher(liste) {
                     ${itemsArchive.map(p => genererCarteHtml(p)).join('')}
                 </div>
                 <button type="button" class="btn-expand-archive" onclick="toggleArchive(this, '${archiveId}')">
-                    View ${itemsArchive.length} Archived / Sold Out Item${itemsArchive.length > 1 ? 's' : ''} (Click to expand)
+                    View ${itemsArchive.length} Archived Items (Click to expand)
                 </button>
             `;
         }
