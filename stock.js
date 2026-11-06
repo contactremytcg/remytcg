@@ -1011,22 +1011,24 @@ function genererCarteHtml(p) {
         });
         dotsHtml += `</div>`;
 
+        // RETRAIT DE LOADING="LAZY" POUR CHARGEMENT INSTANTANÉ DES ARCHIVES
         imagesHtml = `
             <div class="image-wrapper">
                 ${videoBadgeHtml}
                 <button class="carousel-arrow prev" onclick="slideCarousel(this, -1)">‹</button>
                 <div class="card-carousel" onscroll="updateDotsOnScroll(this)">
-                    ${p.images.map(img => `<img src="${img}" alt="${p.nom}" class="card-img" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='${fallback}'">`).join('')}
+                    ${p.images.map(img => `<img src="${img}" alt="${p.nom}" class="card-img" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='${fallback}'">`).join('')}
                 </div>
                 <button class="carousel-arrow next" onclick="slideCarousel(this, 1)">›</button>
                 ${dotsHtml}
             </div>
         `;
     } else if (p.images && p.images.length === 1) {
+        // RETRAIT DE LOADING="LAZY" POUR CHARGEMENT INSTANTANÉ DES ARCHIVES
         imagesHtml = `
             <div class="image-wrapper">
                 ${videoBadgeHtml}
-                <img src="${p.images[0]}" alt="${p.nom}" class="card-img card-img-single" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='${fallback}'">
+                <img src="${p.images[0]}" alt="${p.nom}" class="card-img card-img-single" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='${fallback}'">
             </div>
         `;
     }
