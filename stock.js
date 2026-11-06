@@ -585,7 +585,8 @@ const produits = [
         taobaoId: "1038724485132",
         taobaoId2: "767333963100",
         images: ["https://lh3.googleusercontent.com/proxy/BGbaaxN3iStHvlwH1Au_E8Zj0YnmBaCPWX_4UzlBEekNSz9n7libOy4Jl54qAJaMQsuZ8VafNDAiuHKAnaPnkSF9na_nglyipJHqOnJigtXW9MYazYkZlLDceLPUwgskfC7Jn1KI1XauvKIkjKLEADYI41sXDRcZ9tZzzuyGcA"],
-        fournisseur: "Pingtouge TCG"
+        fournisseur: "Pingtouge TCG",
+        fournisseurBackup: "DunDun TCG"
     },
     {
         section: "Sword & Shield Era",
@@ -1080,7 +1081,7 @@ function genererCarteHtml(p) {
         backupLinkHtml = `
             <a href="javascript:void(0)" onclick="triggerProductAction('${sugargooUrl2}')" class="card-backup-link" title="Order from alternate seller">
                 <span>Backup: ${backupNom}</span>
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
             </a>
         `;
     } else {
@@ -1130,7 +1131,7 @@ function afficher(liste) {
     container.innerHTML = '';
 
     const sectionsOrdre = [
-        "Trending & Best Sellers",
+        "🔥 Trending & Best Sellers",
         "30th Anniversary",
         "Scarlet & Violet Era",
         "Gem Packs",
@@ -1145,11 +1146,11 @@ function afficher(liste) {
     let globalArchiveIndex = 0;
 
     sectionsOrdre.forEach(secNom => {
-        if (secNom === "Trending & Best Sellers" && window.activePillCategory !== '') {
+        if (secNom === "🔥 Trending & Best Sellers" && window.activePillCategory !== '') {
             return;
         }
 
-        const itemsSec = liste.filter(p => p.section === secNom || (secNom === "Trending & Best Sellers" && p.section.includes("Trending")));
+        const itemsSec = liste.filter(p => p.section === secNom);
         if (itemsSec.length === 0) return;
 
         const itemsActifs = itemsSec.filter(p => p.statut !== "out_of_stock");
